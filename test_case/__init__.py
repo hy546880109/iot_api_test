@@ -1,6 +1,6 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author : Mike Zhou
-# @Email : 公众号：测试开发技术
-# @File : __init__.py.py
-# @Project: 第25课时
+# @Author : Huny
+# @Email : hy546880109@qq.com
+# @time :  2020/12/2
+# @Project: 云平台接口测试用例

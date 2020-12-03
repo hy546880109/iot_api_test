@@ -1,10 +1,9 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author : Mike Zhou
-# @Email : 公众号：测试开发技术
-# @File : run_test_class.py
-# @Project: 第25课时
-
+# @Author : Huny
+# @Email : hy546880109@qq.com
+# @time :  2020/12/2
+# @Project: 云平台接口测试用例
 '''
 按指定类运行测试用例
 '''
@@ -13,9 +12,9 @@ import unittest
 import os
 
 
-dir_path1 = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append(dir_path1)
-print(dir_path1)
+dir_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(dir_path)
+
 
 from test_project.test_case.test_home_page import Home_page
 

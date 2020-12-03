@@ -2,14 +2,16 @@
 # -*- coding: utf-8 -*-
 # @Author : Huny
 # @Email : hy546880109@qq.com
-# @File : test_home_page.py
+# @time :  2020/12/2
 # @Project: 云平台接口测试用例
 
-import os,sys,unittest
+import unittest
+# from common import import_path
+# import_path.add_path()
 
-dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(dir_path)
-from test_project.common.http_requests import HttpRequests
+# dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# sys.path.append(dir_path)
+from common.http_requests import HttpRequests
 
 class Feedback(unittest.TestCase):
     
@@ -65,3 +67,6 @@ class Feedback(unittest.TestCase):
                 "keyword": "<keyword>"}
         response = Feedback.http.post('/api/userServiceZuul/feedback/exportExcel',data = data)
         self.assertEqual(200,response.status_code,'返回非200')
+
+if __name__ == '__main__':
+    unittest.main()
