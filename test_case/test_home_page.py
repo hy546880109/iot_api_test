@@ -39,28 +39,27 @@ class Home_page(unittest.TestCase):
 
     def test_002_activity_statistics(self):
         '''用户活跃度统计'''
-        data = {'userId': 'mikezhou', 'dateTime': 123456}
+        data = {'userId': 198, 'dateTime': 123456}
         response = Home_page.http.post(
             '/api/statisticServiceZuul/statistic/userActivity', data=data)
         self.assertEqual(200, response.status_code, '请求返回非200')
-        self.assertIn('10001', response.text, '响应不包含10001')
+        self.assertIn('success', response.text, '响应不包含success')
 
     def test_003_trend_statistics(self):
         '''设备状态趋势统计'''
-        payload = {'userId': globals()["equipmentid"], 'dateTime': 1}
+        payload = {'userId': 198, 'dateTime': 1}
         response = Home_page.http.post(
             '/api/statisticServiceZuul/statistic/deviceStatusTrend', data=payload)
         self.assertEqual(200, response.status_code, '请求返回非200')
-        self.assertIn('equipmentid', response.text, '响应不包含equipmentid')
+        self.assertIn('success', response.text, '响应不包含success')
 
     def test_004_chang(self):
         '''设备状态较前一日变化'''
-        payload = {'userId': globals()[
-            "equipmentid"], 'deviceTypeId': '20001', 'provinceId': 1, 'cityId': 1, 'districtId': 1}
+        payload = {'userId': 198, 'deviceTypeId': '20001', 'provinceId': 1, 'cityId': 1, 'districtId': 1}
         response = Home_page.http.post(
             '/api/statisticServiceZuul/statistic/deviceStatusChange', data=payload)
         self.assertEqual(200, response.status_code, '请求返回非200')
-        self.assertIn('win', response.text, '响应不包含win')
+        self.assertIn('success', response.text, '响应不包含success')
 
 
 if __name__ == '__main__':
