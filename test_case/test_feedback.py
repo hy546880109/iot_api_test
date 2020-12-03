@@ -6,15 +6,11 @@
 # @Project: 云平台接口测试用例
 
 import unittest
-# from common import import_path
-# import_path.add_path()
-
-# dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# sys.path.append(dir_path)
 from common.http_requests import HttpRequests
 
+
 class Feedback(unittest.TestCase):
-    
+
     @classmethod
     def setUpClass(cls) -> None:
         cls.url = 'http://10.10.100.224:10001'
@@ -29,34 +25,38 @@ class Feedback(unittest.TestCase):
                 "startTime": "<startTime>",
                 "endTime": "<endTime>",
                 "keyword": "<keyword>"}
-        response = Feedback.http.post('/api/userServiceZuul/feedback/findAllFeedback',data = data)
-        self.assertEqual(200,response.status_code,'返回非200')
+        response = Feedback.http.post(
+            '/api/userServiceZuul/feedback/findAllFeedback', data=data)
+        self.assertEqual(200, response.status_code, '返回非200')
 
     def test_002_add_feedback(self):
         '''新增反馈'''
         data = {
-                "unit": "<unit>",
-                "department": "<department>",
-                "telephone": "<telephone>",
-                "source": "<source>",
-                "feedbackContent": "<feedbackContent>",
-                "remarks": "<remarks>",
-                "注意token验证": "<注意token验证>"
-                }
-        response = Feedback.http.post('/api/userServiceZuul/feedback/addFeedback',data = data)
-        self.assertEqual(200,response.status_code,'返回非200')
+            "unit": "<unit>",
+            "department": "<department>",
+            "telephone": "<telephone>",
+            "source": "<source>",
+            "feedbackContent": "<feedbackContent>",
+            "remarks": "<remarks>",
+            "注意token验证": "<注意token验证>"
+        }
+        response = Feedback.http.post(
+            '/api/userServiceZuul/feedback/addFeedback', data=data)
+        self.assertEqual(200, response.status_code, '返回非200')
 
     def test_003_add_feedback(self):
         '''处理反馈'''
-        data = {"id": "<id>","remarks": "<remarks>"}
-        response = Feedback.http.post('/api/userServiceZuul/feedback/handleFeedback',data = data)
-        self.assertEqual(200,response.status_code,'返回非200')
+        data = {"id": "<id>", "remarks": "<remarks>"}
+        response = Feedback.http.post(
+            '/api/userServiceZuul/feedback/handleFeedback', data=data)
+        self.assertEqual(200, response.status_code, '返回非200')
 
     def test_004_add_feedback(self):
         '''删除反馈'''
-        data = {'ids':''}
-        response = Feedback.http.post('/api/userServiceZuul/feedback/deleteFeedback',data = data)
-        self.assertEqual(200,response.status_code,'返回非200')
+        data = {'ids': ''}
+        response = Feedback.http.post(
+            '/api/userServiceZuul/feedback/deleteFeedback', data=data)
+        self.assertEqual(200, response.status_code, '返回非200')
 
     def test_005_add_feedback(self):
         '''导出反馈内容'''
@@ -65,8 +65,10 @@ class Feedback(unittest.TestCase):
                 "startTime": "<startTime>",
                 "endTime": "<endTime>",
                 "keyword": "<keyword>"}
-        response = Feedback.http.post('/api/userServiceZuul/feedback/exportExcel',data = data)
-        self.assertEqual(200,response.status_code,'返回非200')
+        response = Feedback.http.post(
+            '/api/userServiceZuul/feedback/exportExcel', data=data)
+        self.assertEqual(200, response.status_code, '返回非200')
+
 
 if __name__ == '__main__':
     unittest.main()

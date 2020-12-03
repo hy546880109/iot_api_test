@@ -7,16 +7,11 @@
 '''
 按指定类运行测试用例
 '''
+from test_project.test_case.test_home_page import Home_page
 import sys
 import unittest
 import os
 
-
-dir_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.append(dir_path)
-
-
-from test_project.test_case.test_home_page import Home_page
 
 if __name__ == '__main__':
 
