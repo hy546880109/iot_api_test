@@ -1,9 +1,9 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author : Huny
-# @Email : hy546880109@qq.com
-# @time :  2020/12/2
-# @Project: 云平台接口测试用例
+# @Author : Mike Zhou
+# @Email : 公众号：测试开发技术
+# @File : http_requests.py
+# @Project: 第26课时
 
 import requests
 
@@ -20,23 +20,23 @@ class HttpRequests(object):
   # 封装你自己的get请求,获取资源
   def get(self, uri='', params='', data='', headers=None, cookies=None):
       url = self.url + uri
-      response = self.req.get(url, params=params, data=data, headers=headers, cookies=cookies,verify=False)
+      response = self.req.get(url, params=params, data=data, headers=headers, cookies=cookies)
       return response
 
   # 封装你自己的post方法，创建资源
-  def post(self, uri='', params='', data='', headers=None, cookies=None,timeout=None):
+  def post(self, uri='', params='', data='', headers=None, cookies=None):
       url = self.url + uri
-      response = self.req.post(url, params=params, data=data, headers=headers, cookies=cookies,verify=False,timeout=5)
+      response = self.req.post(url, params=params, data=data, headers=headers, cookies=cookies)
       return response
 
   # 封装你自己的put方法，更新资源
   def put(self, uri='', params='', data='', headers=None, cookies=None):
       url = self.url + uri
-      response = self.req.put(url, params=params, data=data, headers=headers, cookies=cookies,verify=False)
+      response = self.req.put(url, params=params, data=data, headers=headers, cookies=cookies)
       return response
 
   # 封装你自己的delete方法，删除资源
   def delete(self, uri='', params='', data='', headers=None, cookies=None):
       url = self.url + uri
-      response = self.req.delete(url, params=params, data=data, headers=headers, cookies=cookies,verify=False)
+      response = self.req.delete(url, params=params, data=data, headers=headers, cookies=cookies)
       return response
