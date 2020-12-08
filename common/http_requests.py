@@ -1,9 +1,9 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author : Mike Zhou
-# @Email : 公众号：测试开发技术
-# @File : http_requests.py
-# @Project: 第26课时
+# @Author : Huny
+# @Email : hy546880109@qq.com
+# @date  : 2020.12.08
+# @Project: 云平台接口测试用例
 
 import requests
 
@@ -13,9 +13,11 @@ class HttpRequests(object):
   def __init__(self,url):
     self.url = url
     self.req = requests.session()
-    self.headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
-        }
+    # self.token = admin_token.get_token()
+    # self.headers = {
+    #     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+    #     'Authorization':self.token
+    #     }
 
   # 封装你自己的get请求,获取资源
   def get(self, uri='', params='', data='', headers=None, cookies=None):

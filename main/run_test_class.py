@@ -1,10 +1,9 @@
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
-# @Author : Mike Zhou
-# @Email : 公众号：测试开发技术
-# @File : run_test_class.py
-# @Project: 第25课时
-
+# @Author : Huny
+# @Email : hy546880109@qq.com
+# @date  : 2020.12.08
+# @Project: 云平台接口测试用例
 '''
 按指定类运行测试用例
 '''
