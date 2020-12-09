@@ -16,7 +16,8 @@ class Conf(enum.Enum):
 
     SEND_EMAIL = 'haiy@szkexin.com.cn'
     SEND_EMAIL_PASSWD = '546880109.hy'
-    TO_EMAIL = ['haiy@szkexin.com.cn','zhangliguo@szkexin.com.cn','lishun@szkexin.com.cn','taochenghong@szkexin.com.cn','luqiming@szkexin.com.cn']
+    TO_EMAIL = ['haiy@szkexin.com.cn']
+    # TO_EMAIL = ['haiy@szkexin.com.cn','zhangliguo@szkexin.com.cn','lishun@szkexin.com.cn','taochenghong@szkexin.com.cn','luqiming@szkexin.com.cn']
     foxmail = 'smtp.263.net'
     qqmail = 'smtp.qq.com'
 

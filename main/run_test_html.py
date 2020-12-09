@@ -17,6 +17,7 @@ from test_project.test_case.test_microservice import Test_microservice
 from test_project.test_case.test_feedback import Feedback
 from test_project.test_case.test_message_config import Message_config
 from test_project.test_case.test_log import Log
+from test_project.test_case.test_websocket import Test_websoket
 
 
 from test_project.config.config_test import Conf
@@ -31,9 +32,10 @@ if __name__ == '__main__':
     suite3 = unittest.TestLoader().loadTestsFromTestCase(Feedback)
     suite4 = unittest.TestLoader().loadTestsFromTestCase(Message_config)
     suite5 = unittest.TestLoader().loadTestsFromTestCase(Log)
+    suite6 = unittest.TestLoader().loadTestsFromTestCase(Test_websoket)
 
     # 将多个测试类加载到测试套件中
-    suite = unittest.TestSuite([suite1,suite2,suite3,suite4,suite5])
+    suite = unittest.TestSuite([suite1,suite2,suite3,suite4,suite5,suite6])
 
     # 设置verbosity = 2，并生成HTML测试报告
     project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))

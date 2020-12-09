@@ -8,14 +8,21 @@
 
 import unittest
 from websocket import create_connection
-import json
+import websocket
 
-url = 'ws://10.10.100.184:9997/socketServer/'  # websocket连接地址，地址为虚拟地址
-# websocket.enableTrace(True)                      #打开跟踪，查看日志
-ws = create_connection(url)  # 创建连接
-data = {"userId": 198}  # 测试数据
 
-# new_data = json.dumps(data, ensure_ascii=False)  # 将data转化为字符串
-ws.send(data)  # 发送请求
-print(ws.recv())  # 打印服务器响应数据
-ws.close()  # 关闭连接
+class Test_websoket(unittest.TestCase):
+    def test_websk(self):
+        '''websocket 消息推送:  /socketServer/${userId} '''
+        url = 'ws://10.10.100.224:9997/socketServer/528'  # websocket连接地址
+        websocket.enableTrace(True)  # 打开跟踪，查看日志
+        ws = create_connection(url)  # 创建连接
+        # print(ws.getstatus())  # 打印连接状态
+        self.assertEqual(101, ws.getstatus(), 'websocket连接错误')  # 断言连接状态
+        # ws.settimeout(10)   #设置超时时间
+        # print(ws.gettimeout())  #获取超时时间
+        # ws.shutdown()  # 关闭连接
+
+
+if __name__ == '__main__':
+    unittest.main()
