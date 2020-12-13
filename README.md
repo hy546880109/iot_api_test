@@ -27,6 +27,7 @@
 
 * test_data：测试数据存放目录
 
+* __init__.py: python执行标识文件
 ### 成果展示：
 
 ![](https://ftp.bmp.ovh/imgs/2020/12/b52638d5912cdb51.png)
