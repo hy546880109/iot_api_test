@@ -569,7 +569,7 @@ class SMTP(object):
             raise ValueError("Please specify the email address to send")
 
         if subject is None:
-            subject = '自动化测试报告'
+            subject = '接口自动化测试报告'
         if contents is None:
             contents = env.get_template('mail.html').render(
                 mail_pass=str(RunResult.passed), 
@@ -581,7 +581,8 @@ class SMTP(object):
         msg = MIMEMultipart()
         msg['Subject'] = Header(subject, 'utf-8')
         msg['From'] = self.user
-        msg['To'] = to
+        msg['To'] = ','.join(to)
+
 
         text = MIMEText(contents, 'html', 'utf-8')
         msg.attach(text)

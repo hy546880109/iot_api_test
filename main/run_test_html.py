@@ -19,7 +19,6 @@ from test_project.test_case.test_message_config import Message_config
 from test_project.test_case.test_log import Log
 from test_project.test_case.test_websocket import Test_websoket
 
-
 from test_project.config.config_test import Conf
 from test_project.lib.TestRunner.HTMLTestRunner import HTMLTestRunner
 from test_project.lib.TestRunner.HTMLTestRunner import SMTP
@@ -37,7 +36,7 @@ if __name__ == '__main__':
     # 将多个测试类加载到测试套件中
     suite = unittest.TestSuite([suite1,suite2,suite3,suite4,suite5,suite6])
 
-    # 设置verbosity = 2，并生成HTML测试报告
+    # 设置verbosity = 2，并生成HTML测试报告s
     project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     report_dir = os.path.join(project_root, 'report')
     # 测试报告地址
@@ -45,15 +44,14 @@ if __name__ == '__main__':
     report_abspath = os.path.join(report_dir, "HTMLReport_{}.html".format(current_time))
     with open(report_abspath, 'wb') as f:
         runner = HTMLTestRunner(stream=f,
-                                title='云平台V3.0接口测试报告',
-                                description='测试用例执行情况',
+                                title='科信云平台V3.0接口自动化测试报告',
+                                description='接口测试用例执行情况',
                                 verbosity=2
                                 )
         runner.run(suite)
     smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.foxmail.value)
     users = Conf.TO_EMAIL.value
-    for user in users:
-        smtp.sender(to=user, attachments=report_abspath)
+    smtp.sender(to=users, attachments=report_abspath, subject = '科信云平台V3.0接口自动化测试报告')
     
 
 

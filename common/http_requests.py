@@ -26,9 +26,9 @@ class HttpRequests(object):
       return response
 
   # 封装你自己的post方法，创建资源
-  def post(self, uri='', params='', data='', headers=None, cookies=None):
+  def post(self, uri='', params='', data='', headers=None, cookies=None, timeout=10):
       url = self.url + uri
-      response = self.req.post(url, params=params, data=data, headers=headers, cookies=cookies)
+      response = self.req.post(url, params=params, data=data, headers=headers, cookies=cookies, timeout=timeout)
       return response
 
   # 封装你自己的put方法，更新资源

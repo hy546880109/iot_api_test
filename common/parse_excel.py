@@ -21,3 +21,4 @@ class ParseExcel(object):
             tmpList.append(line[1].value)
             dataList.append(tmpList)
         return dataList[2:]
+
