@@ -14,11 +14,10 @@ class Conf(enum.Enum):
     TEST_URL = 'http://10.10.100.184:10001'
     PROD_URL = 'http://10.10.100.224:10001'
 
-    SEND_EMAIL = 'haiy@szkexin.com.cn'
+    SEND_EMAIL = '***@szkexin.com.cn'
     SEND_EMAIL_PASSWD = '***'
-    # TO_EMAIL = ['taochenghong@szkexin.com.cn','haiy@szkexin.com.cn','zhangliguo@szkexin.com.cn','lishun@szkexin.com.cn',,'luqiming@szkexin.com.cn']
-    TO_EMAIL = ['haiy@szkexin.com.cn']
-    # TO_EMAIL = ['haiy@szkexin.com.cn','zhangliguo@szkexin.com.cn','lishun@szkexin.com.cn','taochenghong@szkexin.com.cn','luqiming@szkexin.com.cn','qiaoliang@szkexin.com.cn','zhaoyongfu@szkexin.com.cn','liugk@szkexin.com.cn','cuiqilu@szkexin.com.cn']
+    TO_EMAIL = ['***@szkexin.com.cn']
+   
     foxmail = 'smtp.263.net'
     qqmail = 'smtp.qq.com'
 
