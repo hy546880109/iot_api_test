@@ -44,14 +44,14 @@ if __name__ == '__main__':
     report_abspath = os.path.join(report_dir, "HTMLReport_{}.html".format(current_time))
     with open(report_abspath, 'wb') as f:
         runner = HTMLTestRunner(stream=f,
-                                title='科信云平台V3.0接口自动化测试报告',
+                                title='安天云平台V1.0接口自动化测试报告',
                                 description='接口测试用例执行情况',
                                 verbosity=2
                                 )
         runner.run(suite)
     smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.foxmail.value)
     users = Conf.TO_EMAIL.value
-    smtp.sender(to=users, attachments=report_abspath, subject = '科信云平台V3.0接口自动化测试报告')
+    smtp.sender(to=users, attachments=report_abspath, subject = '安天云平台V1.0接口自动化测试报告')
     
 
 

@@ -11,12 +11,14 @@ class Conf(enum.Enum):
     '''
     环境配置枚举类
     '''
-    TEST_URL = 'http://10.10.100.184:10001'
-    PROD_URL = 'http://10.10.100.224:10001'
+    # TEST_URL = 'http://192.168.1.15:9527/admin/v1.0'
+    TEST_URL = 'http://139.159.199.99:9527/admin/v1.0'
+    TEST_APP_URL = 'http://139.159.199.99:9527/api/v1.0'
+    PROD_URL = ''
 
-    SEND_EMAIL = '***@szkexin.com.cn'
-    SEND_EMAIL_PASSWD = '***'
-    TO_EMAIL = ['***@szkexin.com.cn']
+    SEND_EMAIL = 'hy546880109@qq.com'
+    SEND_EMAIL_PASSWD = 'lwveldyrecfybdce'  #邮箱授权码
+    TO_EMAIL = ['hy546880109@qq.com']
    
     foxmail = 'smtp.263.net'
     qqmail = 'smtp.qq.com'
