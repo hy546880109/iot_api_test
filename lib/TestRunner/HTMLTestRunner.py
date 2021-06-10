@@ -604,8 +604,10 @@ class SMTP(object):
             smtp.connect(self.host)
             smtp.login(self.user, self.password)
             smtp.sendmail(self.user, to, msg.as_string())
-            print(" 📧 Email sent successfully!!")
+            # print(" 📧 Email sent successfully!!")
+            print("Email sent successfully!!")
         except BaseException as msg:
-            print('❌ Email failed to send!!' + str(msg))
+            # print('❌ Email failed to send!!' + str(msg))
+            print('Email failed to send!!' + str(msg))
         finally:
             smtp.quit()
