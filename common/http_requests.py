@@ -21,16 +21,17 @@ class HttpRequests(object):
     def __init__(self, url):
         self.url = url
         self.req = requests.session()
-        # self.token = get_token()
+        self.token = get_token()
         self.headers = {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'token': self.token
         }
 
     # 封装你自己的get请求,获取资源
     def get(self, uri='', params='', data='', headers=None, cookies=None):
         url = self.url + uri
         response = self.req.get(
-            url, params=params, data=data, headers=headers, cookies=cookies)
+            url, params=params, data=data, headers=self.headers, cookies=cookies)
         return response
 
     # 封装你自己的post方法，创建资源

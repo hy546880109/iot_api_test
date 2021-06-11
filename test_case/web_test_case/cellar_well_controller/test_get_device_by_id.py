@@ -17,7 +17,7 @@ class Test_get_device(unittest.TestCase):
 
     def test_get_device_success(self):
         """获取窖井详情成功用例：/history/alarm/getCellarWellById"""
-        payload = {"id": 1391946012344671}
+        payload = {"id": 13919460123446761}
         response = Test_get_device.http.get('/history/alarm/getCellarWellById', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')

@@ -24,7 +24,7 @@ class Test_Add_Task(unittest.TestCase):
             "departmentId": 1382562817882931201,
             "dutyMan": "est proident tempor",
             "dutyManPhone": "18142359380",
-            "id": 13919460123446761,
+            "id": None,
             "images1": "http://dummyimage.com/400x400",
             "images2": "http://dummyimage.com/400x400",
             "images3": "http://dummyimage.com/400x400",

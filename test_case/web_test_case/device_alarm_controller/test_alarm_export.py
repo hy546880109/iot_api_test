@@ -14,18 +14,18 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''报警列表导出成功用例：/history/alarm/export'''
         payload = {
-            "terminalNo": "voluptate eiusmod id enim exercitation",
+            "terminalNo": "8888888031",
             "alarmStartDate": "2003-08-07",
-            "alarmType": 96222169,
-            "addrId": 78584975,
-            "departmentId": 88120510,
+            "alarmType": 1,
+            "addrId": 440305,
+            "departmentId": 1382562817882931201,
             "dissolveEndDate": "2015-04-06",
             "alarmEndDate": "1997-01-19",
             "dissolveStartDate": "2003-04-14",
-            "status": 38520350,
-            "pageSize": 64503461,
-            "pageNum": 84387936,
-            "dispatchStatus": 68933037
+            "status": 0,
+            "pageSize": 1,
+            "pageNum": 10,
+            "dispatchStatus": 1
         }
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post(

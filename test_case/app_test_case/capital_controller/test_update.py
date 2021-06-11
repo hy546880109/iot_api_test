@@ -14,7 +14,7 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''更新资产用例：/capital/update'''
         payload = {
-            "no": "88888880",
+            "no": "888888831",
             "departmentId": "1382562817882931201",
             "latitude": "22.54911",
             "images4": "../../assets/imgs/cover03.jpg",
@@ -29,10 +29,10 @@ class Test_Add_Task(unittest.TestCase):
             "dutyMan": "张三",
             "cityName": "深圳市",
             "areaName": "南山区",
-            "id": "1391946012344676354",
+            "id": "13919460123446761",
             "safeManPhone": "",
             "longitude": "113.93109",
-            "terminalNo": "88888881",
+            "terminalNo": "8888888031",
             "address": "大新路南头街道88-36号",
             "dutyManPhone": "12345678901",
             "provinceId": 44,
@@ -41,9 +41,10 @@ class Test_Add_Task(unittest.TestCase):
             "subType": 1,
             "provinceName": "广东省"
         }
-        headers = {'Content-Type':'application/json'}
+        headers = {'Content-Type': 'application/json'}
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/capital/update', data=payload, headers=headers)
+        response = Test_Add_Task.http.post(
+            '/capital/update', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
 
