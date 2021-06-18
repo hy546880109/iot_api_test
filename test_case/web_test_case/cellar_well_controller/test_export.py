@@ -20,30 +20,32 @@ class Test_Export(unittest.TestCase):
     def test_export_success(self):
         '''导出窖井列表信息成功用例：/device/export'''
         payload = {
-            "controlStatus": 0,
-            "no": "888888831",
-            "addrId": 440305,
-            "bluetoothStatus": "1",
-            "terminalNo": "8888888031",
-            "subType": 1,
+            "controlStatus": None,
+            "no": None,
+            "addrId": None,
+            "bluetoothStatus": None,
+            "terminalNo": None,
+            "subType": None,
             "hardwareVer": None,
-            "semaphore": "12",
-            "isOnline": 1,
-            "startDate": "2000-06-15",
-            "batteryNum": 71776813.17486387,
-            "departmentId": 1382562817882931201,
-            "coverType": 1,
-            "status": 1,
+            "semaphore": None,
+            "isOnline": None,
+            "startDate": None,
+            "batteryNum": None,
+            "departmentId": None,
+            "coverType": None,
+            "status": None,
             "pageSize": 1,
-            "pageNum": 10,
-            "endDate": "2021-06-10"
+            "pageNum": 1,
+            "endDate": None
         }
-
+        headers = {'Content-Type':'application/vnd.ms-excel;charset=UTF-8'}
         payload = json.dumps(payload)
         response = Test_Export.http.post(
-            '/device/export', data=payload)
+            '/device/export', data=payload,headers=headers)
+        print(response.content)
+        # print(response.text.encode('raw_unicode_escape'))
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '导出窖井列表信息失败')
+        self.assertEqual(None, str(response.json()['code']), '导出窖井列表信息失败')
 
 
 if __name__ == '__main__':

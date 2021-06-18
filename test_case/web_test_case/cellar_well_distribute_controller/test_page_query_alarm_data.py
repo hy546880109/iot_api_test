@@ -11,14 +11,14 @@ from common.http_requests import HttpRequests
 
 
 payload  = {
-    "addrid":44,
+    "addrid":None,
     "alarmStatus":None,
     "departmentId":None,
     "startDate":None,
     "endDate":None,
     "subType":None,
     'pageNum':1,
-    'pageSize':10
+    'pageSize':1
 }
 
 payload = json.dumps(payload)
@@ -31,12 +31,10 @@ class Test_Alarm_Data(unittest.TestCase):
         
     
     def test_alarm_data_success(self):
-        '''获取窖井报警详情成功用例：/device/pageQueryAlarmData'''
+        '''窖井分布-报警数据分布查询成功用例：/device/pageQueryAlarmData'''
         response = Test_Alarm_Data.http.post('/device/pageQueryAlarmData',data=payload)
-        print('payload:',payload)
-        print(response.text)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']),'获取窖井报警详情失败')
+        self.assertEqual(str(0), str(response.json()['code']),'窖井分布-报警数据分布查询失败')
 
 
 if __name__ == '__main__':

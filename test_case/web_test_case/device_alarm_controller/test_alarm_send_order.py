@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 import requests
 import demjson
 import json
@@ -12,11 +13,13 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
-
+        cls.mysql = Mysql_connet('device')
+        cls.alarm_id = cls.mysql.select_sql("select id from t_device_alarm")
+        
     def test_add_task_success(self):
         '''手动派单成功用例：/history/alarm/manualDistributeTask'''
         payload = {
-            "alarmId": 1402186326534623234,
+            "alarmId": Test_Add_Task.alarm_id,
             "departmentId": 1382562817882931201,
             "level": 0,
             "prvFinishTime": "2021-05-21 12:25:56",
@@ -24,10 +27,9 @@ class Test_Add_Task(unittest.TestCase):
             "workSrc": 0,
             "workType": 0
         }
-        headers = {'Content-Type': 'application/json'}
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post(
-            '/history/alarm/manualDistributeTask', data=payload,headers=headers)
+            '/history/alarm/manualDistributeTask', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '手动派单失败')
 

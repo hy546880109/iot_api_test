@@ -18,9 +18,9 @@ class Test_Page_Query_Area(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
 
     def test_page_query_area_success(self):
-        '''区域数据分布查询成功用例：/device/pageQueryAreaData'''
+        '''窖井分布-区域数据分布查询成功用例：/device/pageQueryAreaData'''
         payload = {
-            "addrid": 44,
+            "addrid": None,
             "alarmStatus": None,
             "departmentId": None,
             "startDate": None,
@@ -33,7 +33,7 @@ class Test_Page_Query_Area(unittest.TestCase):
         response = Test_Page_Query_Area.http.post(
             '/device/pageQueryAreaData', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '区域数据分布查询失败')
+        self.assertEqual(str(0), str(response.json()['code']), '窖井分布-区域数据分布查询失败')
 
 
 if __name__ == '__main__':

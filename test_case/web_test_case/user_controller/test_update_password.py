@@ -18,8 +18,8 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''修改密码成功用例：/user/updatePassword'''
         payload = {
-            "oldPassword": "hy",
-            "password": "aa"
+            "oldPassword": "123456",
+            "password": "123456"
         }
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post('/user/updatePassword',data=payload)
