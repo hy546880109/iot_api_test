@@ -63,6 +63,20 @@ class Mysql_connet():
             mysql_conn.rollback()
         mysql_conn.close()
 
+
+    def update_sql(self,sql):
+        mysql_conn = self.mysql_conn
+        try:
+            with mysql_conn.cursor() as cursor:
+                mysql_conn.ping(reconnect=True)
+                cursor.execute(sql)
+                mysql_conn.commit()
+            
+        except Exception as e:
+            mysql_conn.rollback()
+        mysql_conn.close()
+        
+
     def close(self):
         mysql_conn = self.mysql_conn
         mysql_conn.cursor().close()
