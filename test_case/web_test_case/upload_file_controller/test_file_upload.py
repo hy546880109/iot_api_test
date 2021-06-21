@@ -1,5 +1,6 @@
-import unittest,os,sys,json
-
+import json
+import os,sys
+import unittest
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
@@ -9,22 +10,20 @@ from common.http_requests import HttpRequests
 
 class Test_Add_Task(unittest.TestCase):
 
-    @classmethod
+    @classmethod 
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
         
     
     def test_add_task_success(self):
-        '''修改密码成功用例：/user/updatePassword'''
-        payload = {
-            "oldPassword": "e10adc3949ba59abbe56e057f20f883e",
-            "password": "e10adc3949ba59abbe56e057f20f883e"
-        }
-        payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/user/updatePassword',data=payload)
+        '''上传文件用例：/file/upload'''
+        payload  = {
+        'file' : ("1.bin",open('C:\\Users\Acer\Desktop/1.bin','rb'),'application/octet-stream')}
+        headers = {'Content-Type:Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryjBvb7f2WNtdzoUgP'}
+        response = Test_Add_Task.http.post('/file/upload',files=payload,headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '修改密码失败')
+        self.assertEqual(str(0), str(response.json()['code']), '上传文件失败')
 
 
 if __name__ == '__main__':

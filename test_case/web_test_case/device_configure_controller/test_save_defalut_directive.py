@@ -16,15 +16,14 @@ class Test_Add_Task(unittest.TestCase):
         
     
     def test_add_task_success(self):
-        '''修改密码成功用例：/user/updatePassword'''
+        '''恢复出厂设置成功用例：/device/config/saveDefalutDirective'''
         payload = {
-            "oldPassword": "e10adc3949ba59abbe56e057f20f883e",
-            "password": "e10adc3949ba59abbe56e057f20f883e"
+        "terminalNos": ["123456789"]
         }
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/user/updatePassword',data=payload)
+        response = Test_Add_Task.http.post('/device/config/saveDefalutDirective',data=payload)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '修改密码失败')
+        self.assertEqual(str(0), str(response.json()['code']),'恢复出厂设置失败')
 
 
 if __name__ == '__main__':

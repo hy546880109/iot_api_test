@@ -1,3 +1,4 @@
+import pandas as pd
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 import unittest
@@ -33,6 +34,11 @@ class Test_Add_Task(unittest.TestCase):
         }
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post('/operate/log/export', data=payload)
+        res = response.content
+        with open('work.xls','wb')as f:   #返回的xls内容写入新的文件中
+            f.write(res)
+        txt = pd.read_excel(r'work.xls')  #读取文件内容用作断言
+        print('txt:',txt)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '导出用户操作日志失败')
 

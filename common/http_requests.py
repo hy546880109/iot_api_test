@@ -31,14 +31,14 @@ class HttpRequests(object):
     def get(self, uri='', params='', data='', headers=None, cookies=None):
         url = self.url + uri
         response = self.req.get(
-            url, params=params, data=data, headers=self.headers, cookies=cookies)
+            url, params=params, data=data, headers=headers, cookies=cookies)
         return response
 
     # 封装你自己的post方法，创建资源
-    def post(self, uri='', params='', data='', headers=None, cookies=None, timeout=10):
+    def post(self, uri='', params='', data='', headers=None, cookies=None, timeout=10, files=None):
         url = self.url + uri
         response = self.req.post(
-            url, params=params, data=data, headers=self.headers, cookies=cookies, timeout=timeout)
+            url, params=params, data=data, headers=headers, cookies=cookies, timeout=timeout, files=files)
         return response
 
     # 封装你自己的put方法，更新资源
