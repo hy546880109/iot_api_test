@@ -19,7 +19,7 @@ class Test_Add_Task(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
 
     def test_add_task_success(self):
-        """成功用例：/upgrade/package/deleteBatchIds"""
+        """批量删除升级包成功用例：/upgrade/package/deleteBatchIds"""
         payload = [57292403983134, 83390078552882]
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post('/upgrade/package/deleteBatchIds', data=payload)

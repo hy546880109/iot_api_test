@@ -416,17 +416,17 @@
                                 
                                 <tr>
                                     <td> 开始时间</td>
-                                    <td class="text-right">2021-06-21 13:28:00</td>
+                                    <td class="text-right">2021-06-22 16:21:18</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 持续时间</td>
-                                    <td class="text-right">0:00:13.367009</td>
+                                    <td class="text-right">0:00:23.975222</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 状态</td>
-                                    <td class="text-right">Passed:104 Failed:3 Errors:4</td>
+                                    <td class="text-right">Passed:102 Failed:5 Errors:5</td>
                                 </tr>
                                 
                                 <tr>
@@ -499,35 +499,56 @@
         <div>获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>app_test_case.capital_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.2',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.2.1' class='hiddenRow'>
-    <td class='passCase'>
+<tr id='ft1.2.1' class='none'>
+    <td class='failCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>新增资产用例：/capital/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.37 s</div>
+        <div>0.11 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2.1')" >
+        fail</a>
+    <div id='div_ft1.2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.2.1: Traceback (most recent call last):
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\capital_controller\test_insert.py", line 50, in test_add_task_success
+    self.assertEqual(str(0), str(response.json()['code']), '新增资产失败')
+AssertionError: '0' != '500'
+- 0
++ 500
+ : 新增资产失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -577,7 +598,7 @@
         <div>修改设备参数用例：/termianal/modifyDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -603,7 +624,7 @@
         <div>获取我的信息用例：/termianal/getMyInfo</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -629,7 +650,7 @@
         <div>网关跟传感器蓝牙配对用例：/bluetooth/match</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -655,7 +676,7 @@
         <div>获取设备参数用例：/termianal/getDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -681,7 +702,7 @@
         <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -707,7 +728,7 @@
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -748,7 +769,7 @@
         <div>查询部门下所有的子部门成功用例：/department/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -789,7 +810,7 @@
         <div>获取窖井详情用例：/device/getDeviceById</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -815,7 +836,7 @@
         <div>获取我的报警用例：/work/order/getMyAlarms</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -841,7 +862,7 @@
         <div>获取分类下的所有字典值成功用例：/dictionary/getDictionaryByCode</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -867,7 +888,7 @@
         <div>获取字典分类成功用例：/dictionary/getAllDictionaryType</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -893,7 +914,7 @@
         <div>APP首页报警、工单未读数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -919,7 +940,7 @@
         <div>APP首页地图数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -945,7 +966,7 @@
         <div>APP首页报警、工单已读成功用例: /modifyRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -957,7 +978,7 @@
            [x]</a>
         </div>
         <pre>
-        pt1.17.1: {'token': '8340ec286dd94ec59a0462377364ab9d'}
+        pt1.17.1: {'token': 'd83bf45349114c80b15d3ad346ee2c9c'}
 
         </pre>
     </div>
@@ -986,7 +1007,7 @@
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1000,7 +1021,7 @@
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1034,7 +1055,7 @@ AssertionError: '{"code":500,"message":"输入的密码错误"}' not found in '{
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1080,7 +1101,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>修改头像成功用例: /user/modifyHeaderIcon</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1106,7 +1127,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>地址列表成功用例: /address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1132,7 +1153,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>成功用例: /address/sonList</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1158,7 +1179,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>上次头像成功用例: /user/doBase64</div>
     </td>
     <td style="color: #495057">
-        <div>0.28 s</div>
+        <div>0.48 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1184,7 +1205,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>地址列表成功用例: /address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1210,7 +1231,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>获取我的工单成功用例: /work/order/getMyWorkOrders</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1236,7 +1257,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>执行工单成功用例: /work/order/saveMyWorkOrder</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1262,26 +1283,26 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>布/撤控成功用例: /work/order/setControl</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>web_test_case.cellar_well_controller.test_delete.Test_Detele_Device</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.27',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.27.1' class='hiddenRow'>
-    <td class='passCase'>
+<tr id='ft1.27.1' class='none'>
+    <td class='failCase'>
         <div class='testcase'>test_delete_device_success</div>
     </td>
     <td style="color: #495057">
@@ -1290,7 +1311,25 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.27.1')" >
+        fail</a>
+    <div id='div_ft1.27.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.27.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.27.1: Traceback (most recent call last):
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\cellar_well_controller\test_delete.py", line 35, in test_delete_device_success
+    self.assertEqual(1,self.in_mysql,'数据库未删除，删除窖井用例执行失败')
+AssertionError: 1 != 0 : 数据库未删除，删除窖井用例执行失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -1314,7 +1353,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>批量删除工单成功用例：/device/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1356,7 +1395,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>导出窖井列表信息成功用例：/device/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>1.05 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1368,19 +1407,18 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
            [x]</a>
         </div>
         <pre>
-        et1.29.1: b'\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00;\x00\x03\x00\xfe\xff\t\x00\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\xfe\xff\xff\xff\x00\x00\x00\x00\x01\x00\x00\x00\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xffR\x00o\x00o\x00t\x00 \x00E\x00n\x00t\x00r\x00y\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16\x00\x05\x01\xff\xff\xff\xff\xff\xff\xff\xff\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00@\t\x00\x00\x00\x00\x00\x00W\x00o\x00r\x00k\x00b\x00o\x00o\x00k\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x12\x00\x02\x01\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x12\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xfe\xff\xff\xff\xfd\xff\xff\xff\xfe\xff\xff\xff\x04\x00\x00\x00\x05\x00\x00\x00\x06\x00\x00\x00\x07\x00\x00\x00\xfe\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x04\x00\x00\x00\x05\x00\x00\x00\x06\x00\x00\x00\x07\x00\x00\x00\x08\x00\x00\x00\t\x00\x00\x00\n\x00\x00\x00\x0b\x00\x00\x00\x0c\x00\x00\x00\r\x00\x00\x00\x0e\x00\x00\x00\x0f\x00\x00\x00\x10\x00\x00\x00\x11\x00\x00\x00\x12\x00\x00\x00\x13\x00\x00\x00\x14\x00\x00\x00\x15\x00\x00\x00\x16\x00\x00\x00\x17\x00\x00\x00\x18\x00\x00\x00\x19\x00\x00\x00\x1a\x00\x00\x00\x1b\x00\x00\x00\x1c\x00\x00\x00\x1d\x00\x00\x00\x1e\x00\x00\x00\x1f\x00\x00\x00 \x00\x00\x00!\x00\x00\x00"\x00\x00\x00#\x00\x00\x00$\x00\x00\x00\xfe\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\t\x08\x10\x00\x00\x06\x05\x00\xd3\x10\xcc\x07A\x00\x00\x00\x06\x00\x00\x00\xe1\x00\x02\x00\xb0\x04\xc1\x00\x02\x00\x00\x00\xe2\x00\x00\x00\\\x00p\x00\x04\x00\x00root                                                                                                         B\x00\x02\x00\xb0\x04a\x01\x02\x00\x00\x00=\x01\x02\x00\x00\x00\x9c\x00\x02\x00\x0e\x00\x19\x00\x02\x00\x00\x00\x12\x00\x02\x00\x00\x00\x13\x00\x02\x00\x00\x00\xaf\x01\x02\x00\x00\x00\xbc\x01\x02\x00\x00\x00=\x00\x12\x00h\x01\x0e\x01\\:\xbe#8\x00\x00\x00\x00\x00\x01\x00X\x02@\x00\x02\x00\x00\x00\x8d\x00\x02\x00\x00\x00"\x00\x02\x00\x00\x00\x0e\x00\x02\x00\x01\x00\xb7\x01\x02\x00\x00\x00\xda\x00\x02\x00\x00\x001\x00\x15\x00\xc8\x00\x00\x00\xff\x7f\x90\x01\x00\x00\x00\x00\x00\x00\x05\x00Arial1\x00\x15\x00\xc8\x00\x00\x00\xff\x7f\x90\x01\x00\x00\x00\x00\x00\x00\x05\x00Arial1\x00\x15\x00\xc8\x00\x00\x00\xff\x7f\x90\x01\x00\x00\x00\x00\x00\x00\x05\x00Arial1\x00\x15\x00\xc8\x00\x00\x00\xff\x7f\x90\x01\x00\x00\x00\x00\x00\x00\x05\x00Arial\x1e\x04\x1a\x00\x05\x00\x15\x00\x00"$"#,##0_);("$"#,##0)\x1e\x04\x1f\x00\x06\x00\x1a\x00\x00"$"#,##0_);[Red]("$"#,##0)\x1e\x04 \x00\x07\x00\x1b\x00\x00"$"#,##0.00_);("$"#,##0.00)\x1e\x04%\x00\x08\x00 \x00\x00"$"#,##0.00_);[Red]("$"#,##0.00)\x1e\x045\x00*\x000\x00\x00_("$"* #,##0_);_("$"* (#,##0);_("$"* "-"_);_(@_)\x1e\x04,\x00)\x00\'\x00\x00_(* #,##0_);_(* (#,##0);_(* "-"_);_(@_)\x1e\x04=\x00,\x008\x00\x00_("$"* #,##0.00_);_("$"* (#,##0.00);_("$"* "-"??_);_(@_)\x1e\x044\x00+\x00/\x00\x00_(* #,##0.00_);_(* (#,##0.00);_(* "-"??_);_(@_)\xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x02\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x02\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\xf5\xff \x00\x00\xf4\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\x01\x00 \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00+\x00\xf5\xff \x00\x00\xf8\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00)\x00\xf5\xff \x00\x00\xf8\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00,\x00\xf5\xff \x00\x00\xf8\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00*\x00\xf5\xff \x00\x00\xf8\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x01\x00\t\x00\xf5\xff \x00\x00\xf8\x00\x00\x00\x00\x00\x00\x00\x00\xc0 \xe0\x00\x14\x00\x00\x00\x00\x00\x01\x00"\x00\x00\x10\x00\x00\x08\x04\x08\x04\x00\x00\xc0 \x93\x02\x04\x00\x10\x80\x03\xff\x93\x02\x04\x00\x11\x80\x06\xff\x93\x02\x04\x00\x12\x80\x04\xff\x93\x02\x04\x00\x13\x80\x07\xff\x93\x02\x04\x00\x00\x80\x00\xff\x93\x02\x04\x00\x14\x80\x05\xff`\x01\x02\x00\x00\x00\x85\x00\x12\x00u\x06\x00\x00\x00\x00\x05\x01\xbe\x8b\x07Y\xe1Oo`h\x88\x8c\x00\x04\x00\x01\x00\x01\x00\xae\x01\x04\x00\x01\x00\x01\x04\x17\x00\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\xfc\x00\xfb\x00\x14\x00\x00\x00\x14\x00\x00\x00\x04\x00\x01\x96z\x95N\x16\x7f\xf7S\x04\x00\x01\xc8~\xefz\x16\x7f\xf7S\x02\x00\x010W@W\x02\x00\x01\xe8\x90\xe8\x95\x04\x00\x01\x96z\x95N\xc4\x89&lt;h\x04\x00\x01\x95N\xd6v{|\x8bW\x04\x00\x01(W/\x00\xbby\xbf~\x04\x00\x01\x03^\xa7c\xb6r\x01`\x04\x00\x01\x96z\x95N\xb6r\x01`\x04\x00\x01U_eQ\xf6e\xf4\x95\t\x00\x00123456789\x0f\x00\x00869951044459653\x14\x00\x01\x7f^\x1cN\x01w\xf1m3W\x02^WSq\\:S\x17gq\\\xef\x8d\x7f\x89=NW\x88S\x901\x004\x009\x00\xf7S\x01\x00\x00b\t\x00\x001200*1200\x02\x00\x014l\xe5l\x02\x00\x01\rN(W\x03\x00\x01\xf2]\x03^2\x96\x02\x00\x01ck8^\x13\x00\x002021-06-11 17:34:38\xff\x00\x1a\x00\x08\x00`\x05\x00\x00\x0c\x00\x00\x00\xb0\x05\x00\x00\\\x00\x00\x00&amp;\x06\x00\x00\xd2\x00\x00\x00\n\x00\x00\x00\t\x08\x10\x00\x00\x06\x10\x00\xbb\r\xcc\x07\xc1\x00\x00\x00\x06\x00\x00\x00\x0b\x02\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\xd9\x08\x00\x00\r\x00\x02\x00\x01\x00\x0c\x00\x02\x00d\x00\x0f\x00\x02\x00\x01\x00\x11\x00\x02\x00\x00\x00\x10\x00\x08\x00\xfc\xa9\xf1\xd2MbP?_\x00\x02\x00\x01\x00*\x00\x02\x00\x00\x00+\x00\x02\x00\x00\x00\x82\x00\x02\x00\x01\x00\x80\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00%\x02\x04\x00\x00\x00\xff\x00\x81\x00\x02\x00\xc1\x04\x14\x00\x00\x00\x15\x00\x00\x00\x83\x00\x02\x00\x00\x00\x84\x00\x02\x00\x00\x00\xa1\x00"\x00\x01\x00d\x00\x01\x00\x01\x00\x01\x00\x02\x00,\x01,\x01\x00\x00\x00\x00\x00\x00\xe0?\x00\x00\x00\x00\x00\x00\xe0?\x01\x00U\x00\x02\x00\x08\x00}\x00\x0c\x00\x00\x00\x01\x00i\x08\x0f\x00\x02\x00\x02\x00}\x00\x0c\x00\x02\x00\x03\x00\x03\x05\x0f\x00\x02\x00\x02\x00}\x00\x0c\x00\x04\x00\x05\x00i\x08\x0f\x00\x02\x00\x02\x00}\x00\x0c\x00\x06\x00\x06\x00\xab\x07\x0f\x00\x02\x00\x02\x00}\x00\x0c\x00\x07\x00\t\x00i\x08\x0f\x00\x02\x00\x02\x00\x00\x02\x0e\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\n\x00\x00\x00\x08\x02\x10\x00\x00\x00\x00\x00\n\x00\xff\x00\x00\x00\x00\x00\x00\x01\x0f\x00\x08\x02\x10\x00\x01\x00\x00\x00\n\x00\xff\x00\x00\x00\x00\x00\x00\x01\x0f\x00\xfd\x00\n\x00\x00\x00\x00\x00\x15\x00\x00\x00\x00\x00\xfd\x00\n\x00\x00\x00\x01\x00\x15\x00\x01\x00\x00\x00\xfd\x00\n\x00\x00\x00\x02\x00\x15\x00\x02\x00\x00\x00\xfd\x00\n\x00\x00\x00\x03\x00\x15\x00\x03\x00\x00\x00\xfd\x00\n\x00\x00\x00\x04\x00\x15\x00\x04\x00\x00\x00\xfd\x00\n\x00\x00\x00\x05\x00\x15\x00\x05\x00\x00\x00\xfd\x00\n\x00\x00\x00\x06\x00\x15\x00\x06\x00\x00\x00\xfd\x00\n\x00\x00\x00\x07\x00\x15\x00\x07\x00\x00\x00\xfd\x00\n\x00\x00\x00\x08\x00\x15\x00\x08\x00\x00\x00\xfd\x00\n\x00\x00\x00\t\x00\x15\x00\t\x00\x00\x00\xfd\x00\n\x00\x01\x00\x00\x00\x0f\x00\n\x00\x00\x00\xfd\x00\n\x00\x01\x00\x01\x00\x0f\x00\x0b\x00\x00\x00\xfd\x00\n\x00\x01\x00\x02\x00\x0f\x00\x0c\x00\x00\x00\xfd\x00\n\x00\x01\x00\x03\x00\x0f\x00\r\x00\x00\x00\xfd\x00\n\x00\x01\x00\x04\x00\x0f\x00\x0e\x00\x00\x00\xfd\x00\n\x00\x01\x00\x05\x00\x0f\x00\x0f\x00\x00\x00\xfd\x00\n\x00\x01\x00\x06\x00\x0f\x00\x10\x00\x00\x00\xfd\x00\n\x00\x01\x00\x07\x00\x0f\x00\x11\x00\x00\x00\xfd\x00\n\x00\x01\x00\x08\x00\x0f\x00\x12\x00\x00\x00\xfd\x00\n\x00\x01\x00\t\x00\x0f\x00\x13\x00\x00\x00\xd7\x00\x08\x00@\x01\x00\x00\x14\x00\x8c\x00&gt;\x02\x12\x00\xb6\x06\x00\x00\x00\x00@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x1d\x00\x0f\x00\x03\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\n\x00\x00\x00\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
-Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\cellar_well_controller\test_export.py", line 48, in test_export_success
-    self.assertEqual(None, str(response.json()['code']), '导出窖井列表信息失败')
-  File "E:\python3.9.2\lib\site-packages\requests\models.py", line 900, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "E:\python3.9.2\lib\json\__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "E:\python3.9.2\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "E:\python3.9.2\lib\json\decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+        et1.29.1: Traceback (most recent call last):
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\cellar_well_controller\test_export.py", line 61, in test_export_success
+    txt = pd.read_excel(r'device.xls')  #读取文件内容用作断言
+  File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 336, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 1071, in __init__
+    ext = inspect_excel_format(
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 965, in inspect_excel_format
+    raise ValueError("File is not a recognized excel file")
+ValueError: File is not a recognized excel file
 
         </pre>
     </div>
@@ -1435,7 +1473,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取窖井列表信息成功用例：/device/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1461,7 +1499,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>成功用例：/device/getAlarmDetailByNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1487,7 +1525,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>窖井分布-报警数据分布查询成功用例：/device/pageQueryAlarmData</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1513,7 +1551,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>窖井分布-区域数据分布查询成功用例：/device/pageQueryAreaData</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1539,7 +1577,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>窖井分布-设备数据分布查询成功用例：/device/pageQueryDeviceData</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1565,7 +1603,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>删除部门成功用例：/department/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1591,7 +1629,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>批量删除部门成功用例：/department/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1617,7 +1655,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1643,7 +1681,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1705,29 +1743,50 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
     <td></td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>web_test_case.department_controller.test_save_orupdate.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.41',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.41.1' class='hiddenRow'>
-    <td class='passCase'>
+<tr id='ft1.41.1' class='none'>
+    <td class='failCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>新增或者更新部门信息成功用例：/department/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>1.05 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.41.1')" >
+        fail</a>
+    <div id='div_ft1.41.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.41.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.41.1: Traceback (most recent call last):
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\department_controller\test_save_orupdate.py", line 44, in test_add_task_success
+    self.assertEqual(str(0), str(response.json()['code']), '新增或者更新部门信息失败')
+AssertionError: '0' != '-1'
+- 0
++ -1
+ : 新增或者更新部门信息失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -1751,7 +1810,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>批量删除报警成功用例：/history/alarm/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1777,7 +1836,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>报警列表导出成功用例：/history/alarm/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1790,17 +1849,17 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         </div>
         <pre>
         et1.43.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_export.py", line 34, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '报警列表导出失败')
-  File "E:\python3.9.2\lib\site-packages\requests\models.py", line 900, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "E:\python3.9.2\lib\json\__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "E:\python3.9.2\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "E:\python3.9.2\lib\json\decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_export.py", line 39, in test_add_task_success
+    txt = pd.read_excel(r'alarm.xls')  #读取文件内容用作断言
+  File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 336, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 1071, in __init__
+    ext = inspect_excel_format(
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 965, in inspect_excel_format
+    raise ValueError("File is not a recognized excel file")
+ValueError: File is not a recognized excel file
 
         </pre>
     </div>
@@ -1829,7 +1888,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取窖井详情用例：/history/alarm/getCellarWellById</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1855,7 +1914,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取历史报警列表成功用例：/history/alarm/historyAlarmTaskPageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1881,7 +1940,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>手动派单成功用例：/history/alarm/manualDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.68 s</div>
+        <div>0.88 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1907,7 +1966,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>自动派单成功用例：/history/alarm/autoDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.18 s</div>
+        <div>0.71 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1933,7 +1992,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取报警的图像信息成功用例：/history/alarm/getAlarmPictures</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1959,7 +2018,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>首页-关于成功用例：/index/about</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1985,7 +2044,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>窖井报警分类占比/数量成功用例：/index/getIndexAlarmPercent</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2063,7 +2122,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>平台事件总览成功用例：/index/getIndexPlatformView</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2089,7 +2148,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>平台今日公告成功用例：/index/getIndexTodayNotice</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2115,7 +2174,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>窖井分类占比/数量成功用例：/index/getIndexTypePercent</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2141,7 +2200,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2155,7 +2214,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2169,7 +2228,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2195,7 +2254,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获得所有资源成功用例：/menu/getAllMenu</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2221,7 +2280,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>增加角色资源成功用例：/menu/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2247,7 +2306,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取角色的资源用例：/menu/queryRoleOwnsMenus</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2273,7 +2332,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>删除用户操作日志成功用例：/operate/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2299,7 +2358,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>导出用户操作日志成功用例：/operate/log/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -2312,17 +2371,17 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         </div>
         <pre>
         et1.61.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\operation_log_controller\test_expor.py", line 37, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '导出用户操作日志失败')
-  File "E:\python3.9.2\lib\site-packages\requests\models.py", line 900, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "E:\python3.9.2\lib\json\__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "E:\python3.9.2\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "E:\python3.9.2\lib\json\decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\operation_log_controller\test_expor.py", line 40, in test_add_task_success
+    txt = pd.read_excel('work.xls')  #读取文件内容用作断言
+  File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 336, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 1071, in __init__
+    ext = inspect_excel_format(
+  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 965, in inspect_excel_format
+    raise ValueError("File is not a recognized excel file")
+ValueError: File is not a recognized excel file
 
         </pre>
     </div>
@@ -2351,7 +2410,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取所有的日志操作类型成功用例：/operate/log/getAllOperationType</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2377,7 +2436,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>页面查询成功用例：/operate/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2403,7 +2462,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取上一级地址成功用例：/address/getProvinceCityDistrictById</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2429,7 +2488,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>通过名称获取上一级地址成功用例：/address/getProvinceCityDistrictByName</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2455,7 +2514,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>根据查询条件获取地区信息成功用例：/address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2481,7 +2540,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取子下所有地区信息成功用例：/address/sonlist</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2507,7 +2566,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>批量删除成功用例：/push/set/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2533,7 +2592,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>创建任务成功用例：/push/set/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2559,7 +2618,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取个人报警推送设置列表成功用例：/push/set/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2585,7 +2644,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>更新任务成功用例：/push/set/update</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2611,7 +2670,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>删除角色成功用例：/role/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2637,7 +2696,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>批量删除角色成功用例：/role/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2663,7 +2722,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取角色详细成功用例：/role/getRoleById</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2689,7 +2748,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>增加用户角色成功用例：/userRole/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2715,7 +2774,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>查询角色列表成功用例：/role/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2741,7 +2800,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>新增或修改角色信息成功用例：/role/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2767,7 +2826,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>创建任务成功用例： /task/add</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2793,7 +2852,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取自动派单列表成功用例: /task/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2819,7 +2878,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>删除任务成功用例：/task/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2845,7 +2904,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>任务管理用例： /task/updateStatus</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2871,7 +2930,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>查询角色列表成功用例：/device/upgrade/cancel</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2897,7 +2956,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>取消传感器设备升级成功用例：/device/upgrade/cancelSensorUpgrade</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2923,7 +2982,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取设备升级列表成功用例：/device/upgrade/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2949,7 +3008,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>执行设备升级成功用例：/device/upgrade/save</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2975,7 +3034,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>传感器设备升级成功用例：/device/upgrade/sensorUpgrade</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3001,7 +3060,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>批量删除设备上报日志成功用例：/up/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3027,7 +3086,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>设备上报日志列表成功用例：/up/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3050,10 +3109,10 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>成功用例：/upgrade/package/deleteBatchIds</div>
+        <div>批量删除升级包成功用例：/upgrade/package/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.23 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3079,7 +3138,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取升级包硬件版本号用例：/upgrade/package/getAllHardwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3105,7 +3164,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取硬件升级包所有软件版本号用例：/upgrade/package/getAllSoftwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3131,7 +3190,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取包上传人用例：/upgrade/package/getUploadUser</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3157,7 +3216,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>上传升级包成功用例：/upgrade/package/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3183,35 +3242,97 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取升级包列表用例：/upgrade/package/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.36 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_sensor_softwarever.Test_Add_Task</td>
+<tr class='errorClass'>
+    <td>unittest.suite._ErrorHolder</td>
+    <td>
+    Placeholder for a TestCase inside a result. As far as a TestResult
+    is concerned, this looks exactly like a unit test. Used to insert
+    arbitrary errors into a test suite run.
+    </td>
     <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.95',1)">Detail</a></td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1.95',2)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.95.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
+<tr id='et1.95.1' class='none'>
+    <td class='errorCase'>
+        <div class='testcase'>Test_Add_Task)</div>
     </td>
     <td style="color: #495057">
-        <div>获取传感器软件版本号用例：/upgrade/package/getSensorSoftwareVer</div>
+        <div></div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.00 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.95.1')" >
+        error</a>
+    <div id='div_et1.95.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.95.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        et1.95.1: Traceback (most recent call last):
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\upgrade_package_controller\test_upgrade_sensor_softwarever.py", line 30, in setUpClass
+    cls.http = HttpRequests(cls.url)
+  File "C:\Users\Acer\Desktop\iot_api_test\common\http_requests.py", line 24, in __init__
+    self.token = get_token()
+  File "C:\Users\Acer\Desktop\iot_api_test\common\login_token.py", line 39, in get_token
+    token = res.json()['data']['token']
+KeyError: 'data'
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='et1.95.2' class='none'>
+    <td class='errorCase'>
+        <div class='testcase'>Test_Add_Task)</div>
+    </td>
+    <td style="color: #495057">
+        <div></div>
+    </td>
+    <td style="color: #495057">
+        <div>0.00 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.95.2')" >
+        error</a>
+    <div id='div_et1.95.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.95.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        et1.95.2: Traceback (most recent call last):
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\upload_file_controller\test_file_upload.py", line 16, in setUpClass
+    cls.http = HttpRequests(cls.url)
+  File "C:\Users\Acer\Desktop\iot_api_test\common\http_requests.py", line 24, in __init__
+    self.token = get_token()
+  File "C:\Users\Acer\Desktop\iot_api_test\common\login_token.py", line 39, in get_token
+    token = res.json()['data']['token']
+KeyError: 'data'
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -3235,7 +3356,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>批量删除用户成功用例：/user/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.17 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3261,7 +3382,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取维修人员成功用例：/user/getMaintainer</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3287,7 +3408,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>通过用户账号获取用户信息成功用例：/user/getUserByCode</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3313,7 +3434,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取用户列表成功用例：/user/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.23 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3339,7 +3460,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>重置密码成功用例：/user/resetPwd</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3365,56 +3486,35 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>新增或修改用户信息成功用例：/user/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.user_controller.test_update_password.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.102',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.102.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.102.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>修改密码成功用例：/user/updatePassword</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.10 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.102.1')" >
-        fail</a>
-    <div id='div_ft1.102.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.102.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.102.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\user_controller\test_update_password.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '修改密码失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 修改密码失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -3464,56 +3564,87 @@ AssertionError: '0' != '500'
         <div>批量删除工单成功用例：/work/order/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>web_test_case.work_order_controller.test_export.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1.105',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='et1.105.1' class='none'>
-    <td class='errorCase'>
+<tr id='pt1.105.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>导出工单成功用例：/work/order/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.49 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.105.1')" >
-        error</a>
-    <div id='div_et1.105.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.105.1')" >
+        pass</a>
+    <div id='div_pt1.105.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.105.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.105.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        et1.105.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\work_order_controller\test_export.py", line 37, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'导出工单失败')
-  File "E:\python3.9.2\lib\site-packages\requests\models.py", line 900, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "E:\python3.9.2\lib\json\__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "E:\python3.9.2\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "E:\python3.9.2\lib\json\decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+        pt1.105.1: txt:               窖井编号 终端编号      地址                   部门   窖井规格     井盖类型                 在/离线                 布控状态                   窖井状态 录入时间
+0   GD202106221638    b  自动生成工单  2021-06-22 16:21:26    黄先春     倾斜告警                  NaN                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+1   GD202106228821    b    手动工单  2021-06-22 16:21:25  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+2   GD202106228483    b    手动工单  2021-06-22 16:15:35  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+3   GD202106226849    b    手动工单  2021-06-22 16:14:29  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+4   GD202106223690    b    手动工单  2021-06-22 16:07:47  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+5   GD202106220356    b    手动工单  2021-06-22 15:57:28  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+6   GD202106227074    b    手动工单  2021-06-22 15:54:05  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+7   GD202106222426    b    手动工单  2021-06-22 15:51:45  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+8   GD202106221642    b    手动工单  2021-06-22 11:42:08  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+9   GD202106227946    b    手动工单  2021-06-22 11:39:58    黄先春     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+10  GD202106221996   系统    手动工单  2021-06-22 11:30:13    黄先春   单点水位报警  2021-06-24 00:00:00                  NaN  广东省深圳市南山区科技中二路粤海街道29号  已派单
+11  GD202106224859    b    手动工单  2021-06-22 11:19:47  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+12  GD202106220625    b    手动工单  2021-06-22 10:30:32  超级管理员     倾斜告警  2021-06-23 00:00:00  2021-06-22 10:38:24   广东省深圳市南山区朗山路西丽街道149号  已完成
+13  GD202106229653    b    手动工单  2021-06-22 10:28:57  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+14  GD202106227808    b    手动工单  2021-06-22 10:23:21  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+15  GD202106229352   系统    手动工单  2021-06-22 10:18:49  超级管理员  多点水位1报警  2021-06-23 00:00:00                  NaN  广东省深圳市南山区科技中二路粤海街道29号  已派单
+16  GD202106226983   系统    手动工单  2021-06-22 10:17:57  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN  广东省深圳市南山区科技中二路粤海街道29号  已派单
+17  GD202106220697    b    手动工单  2021-06-22 10:11:47  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+18  GD202106227295   系统    手动工单  2021-06-22 10:11:06    黄先春     倾斜告警  2021-06-23 00:00:00                  NaN  广东省深圳市南山区科技中二路粤海街道29号  已派单
+19  GD202106228270    b    手动工单  2021-06-22 10:10:01  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+20  GD202106221735    b    手动工单  2021-06-22 09:09:33  超级管理员     倾斜告警  2021-06-25 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+21  GD202106227795    b    手动工单  2021-06-22 09:07:05  超级管理员     倾斜告警  2021-06-23 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+22  GD202106217092    b    手动工单  2021-06-21 19:08:03  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+23  GD202106216982    b    手动工单  2021-06-21 14:50:24  超级管理员     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+24  GD202106214225    b    手动工单  2021-06-21 14:44:55  超级管理员     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+25  GD202106215514    b    手动工单  2021-06-21 14:26:50  超级管理员     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+26  GD202106213529   系统    手动工单  2021-06-21 14:20:53  超级管理员   单点水位报警  2021-06-22 00:00:00                  NaN  广东省深圳市南山区科技中二路粤海街道29号  已派单
+27  GD202106214431    b    手动工单  2021-06-21 14:19:45    黄先春     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+28  GD202106219226    b    手动工单  2021-06-21 14:18:15    黄先春     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+29  GD202106214818    b    手动工单  2021-06-21 14:17:47    黄先春     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+30  GD202106219139    b    手动工单  2021-06-21 14:05:36    黄先春     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+31  GD202106219390    b    手动工单  2021-06-21 14:02:02  超级管理员     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+32  GD202106217029    b    手动工单  2021-06-21 14:00:15  超级管理员     倾斜告警  2021-06-22 00:00:00                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+33  GD202106218875    b    手动工单  2021-06-21 13:28:05  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+34  GD202106217671    b    手动工单  2021-06-21 11:11:58  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+35  GD202106211305    b    手动工单  2021-06-21 10:00:07  超级管理员     倾斜告警  2021-05-21 12:25:56  2021-06-22 14:08:25   广东省深圳市南山区朗山路西丽街道149号  已完成
+36  GD202106216311    b    手动工单  2021-06-21 09:53:11  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+37  GD202106188125    b    手动工单  2021-06-18 18:22:20  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+38  GD202106186320    b    手动工单  2021-06-18 16:58:03  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+39  GD202106180867    b    手动工单  2021-06-18 16:57:43  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  处理中
+40  GD202106180075    b    手动工单  2021-06-18 16:54:25  超级管理员     倾斜告警  2021-05-21 12:25:56                  NaN   广东省深圳市南山区朗山路西丽街道149号  已派单
+41  GD202106118064    b    手动工单  2021-06-11 17:52:15  超级管理员     倾斜告警  2021-06-12 00:00:00  2021-06-11 17:54:58   广东省深圳市南山区朗山路西丽街道149号  已完成
 
         </pre>
     </div>
@@ -3542,7 +3673,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>查看回单结果成功用例：/work/order/getWorkOrderById</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3568,7 +3699,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         <div>获取历史工单列表成功用例：/work/order/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3578,10 +3709,10 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
                     <td>总数</td>
                     <td> </td>
                     <td> </td>
-                    <td>111</td>
-                    <td class="text text-success">104</td>
-                    <td class="text text-danger">3</td>
-                    <td class="text text-warning">4</td>
+                    <td>112</td>
+                    <td class="text text-success">102</td>
+                    <td class="text text-danger">5</td>
+                    <td class="text text-warning">5</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -3602,7 +3733,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
         ],
         datasets: [
             {
-                data: [104, 3, 4, 0],
+                data: [102, 5, 5, 0],
                 backgroundColor: [
                     "#10c469",
                     "#f9c851",

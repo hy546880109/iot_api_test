@@ -32,6 +32,8 @@ class Test_Detele_Device(unittest.TestCase):
             '/device/delete', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '删除窖井失败')
+        self.in_mysql = self.mysql.select_sql(
+            'select is_delete from t_cellar_well where id=13919460123446761')   #再次查询删除标识位
         self.assertEqual(1,self.in_mysql,'数据库未删除，删除窖井用例执行失败')
 
 if __name__ == '__main__':

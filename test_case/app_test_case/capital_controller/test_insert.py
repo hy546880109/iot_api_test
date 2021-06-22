@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 import unittest
 import json
 from config.config_test import Conf
@@ -10,7 +11,12 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
-
+        cls.mysql = Mysql_connet("device")
+        cls.in_mysql = cls.mysql.select_sql("select is_delete from t_cellar_well where id=123112312312321")
+        if cls.in_mysql == 1:
+            cls.mysql.update_sql("update t_cellar_well set is_delete=0 where id=123112312312321")
+        elif cls.in_mysql is None:
+            pass
     def test_add_task_success(self):
         '''新增资产用例：/capital/insert'''
         payload = {
@@ -24,14 +30,14 @@ class Test_Add_Task(unittest.TestCase):
             "departmentId": 1382562817882931201,
             "dutyMan": "est proident tempor",
             "dutyManPhone": "18142359380",
-            "id": None,
+            "id": 12311231231221,
             "images1": "http://dummyimage.com/400x400",
             "images2": "http://dummyimage.com/400x400",
             "images3": "http://dummyimage.com/400x400",
             "images4": "http://dummyimage.com/400x400",
             "latitude": "22.54901",
             "longitude": "113.93109",
-            "no": "888888801",
+            "no": "8888801",
             "provinceId": 44,
             "provinceName": "广东省",
             "remark": "qui voluptate",
@@ -39,11 +45,11 @@ class Test_Add_Task(unittest.TestCase):
             "safeManPhone": "18174576460",
             "spec": "1",
             "subType": 0,
-            "terminalNo": "88888881011",
+            "terminalNo": "88881011",
             "type": 8,
             "userId": 1377074593995628546
         }
-        headers = {'Content-Type':'application/json', 'Accept-Encoding': 'gzip, deflate, br', 'Cache-Control': 'no-cache', 'User-Agent': 'apifox/1.0.0 (https://www.apifox.cn)'}
+        headers = {'Content-Type':'application/json'}
         payload = json.dumps(payload).encode('utf-8')
         response = Test_Add_Task.http.post('/capital/insert', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')

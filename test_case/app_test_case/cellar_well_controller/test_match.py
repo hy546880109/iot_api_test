@@ -18,8 +18,10 @@ class Test_Add_Task(unittest.TestCase):
             "bindStatus": 0
         }
         payload = json.dumps(payload)
+        headers = {
+            'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/bluetooth/match', data=payload)
+            '/bluetooth/match', data=payload,headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '网关跟传感器蓝牙配对失败')
 

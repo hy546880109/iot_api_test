@@ -32,7 +32,7 @@ class Test_Add_Task(unittest.TestCase):
         """新增或者更新部门信息成功用例：/department/saveOrUpdate"""
         payload = {
             "addrId": None,
-            "name": "b",
+            "name": "b222222222222",
             "remark": "in ut qui cillum veniam",
             "id": None,
             "pid": 0
