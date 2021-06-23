@@ -23,7 +23,8 @@ class Test_Add_Task(unittest.TestCase):
         "pushType": "0,0,1"
         }
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/push/set/update',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/push/set/update',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'更新任务失败')
 

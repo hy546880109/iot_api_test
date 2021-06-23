@@ -28,7 +28,7 @@ if __name__ == '__main__':
     with open(report_abspath, 'wb') as f:
         runner = HTMLTestRunner(stream=f,
                                 title='安天智慧城市项目V1.0接口自动化测试报告',
-                                description='{}接口测试用例执行情况'.format(Conf.TEST_URL),
+                                description='{}接口测试用例执行情况'.format(Conf.TEST_URL.value),
                                 verbosity=2
                                 )
         runner.run(suite)
@@ -36,6 +36,6 @@ if __name__ == '__main__':
     smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.qqmail.value)      #qq邮箱
     users = Conf.TO_EMAIL.value
     smtp.sender(to=users, attachments=report_abspath, subject = '安天智慧城市项目V1.0接口自动化测试报告')
-    
+
 
 

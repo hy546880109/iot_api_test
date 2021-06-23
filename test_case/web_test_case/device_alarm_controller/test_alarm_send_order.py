@@ -28,8 +28,9 @@ class Test_Add_Task(unittest.TestCase):
             "workType": 0
         }
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/history/alarm/manualDistributeTask', data=payload)
+            '/history/alarm/manualDistributeTask', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '手动派单失败')
 

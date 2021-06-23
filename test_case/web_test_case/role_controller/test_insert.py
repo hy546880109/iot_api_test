@@ -28,7 +28,8 @@ class Test_Add_Task(unittest.TestCase):
     }
     ]
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/userRole/insert',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/userRole/insert',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'增加用户角色失败')
 

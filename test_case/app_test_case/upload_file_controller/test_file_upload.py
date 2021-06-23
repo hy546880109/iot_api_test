@@ -26,7 +26,8 @@ class Test_Get_Index(unittest.TestCase):
             "base64Str": Test_Get_Index.icon
         }
         payload = json.dumps(payload)
-        response = Test_Get_Index.http.post('/user/doBase64', data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Get_Index.http.post('/user/doBase64', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '上传头像失败')
 

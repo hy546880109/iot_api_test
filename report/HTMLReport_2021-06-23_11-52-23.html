@@ -416,22 +416,22 @@
                                 
                                 <tr>
                                     <td> 开始时间</td>
-                                    <td class="text-right">2021-06-22 12:21:56</td>
+                                    <td class="text-right">2021-06-23 11:52:23</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 持续时间</td>
-                                    <td class="text-right">0:00:12.816079</td>
+                                    <td class="text-right">0:00:11.489625</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 状态</td>
-                                    <td class="text-right">Passed:49 Failed:59 Errors:4</td>
+                                    <td class="text-right">Passed:108 Failed:2 Errors:2</td>
                                 </tr>
                                 
                                 <tr>
                                     <td>详情:</td>
-                                    <td class="text-right">Conf.TEST_URL接口测试用例执行情况</td>
+                                    <td class="text-right">http://139.159.199.99:9527/admin/v1.0接口测试用例执行情况</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -479,191 +479,107 @@
                     </tr>
                 </thead>
                 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.capital_controller.test_get_capital.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.1',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.1.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.1.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1.1')" >
-        fail</a>
-    <div id='div_ft1.1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.1.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\capital_controller\test_get_capital.py", line 19, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取资产失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取资产失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.capital_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.2',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.2.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.2.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>新增资产用例：/capital/insert</div>
     </td>
     <td style="color: #495057">
-        <div>1.04 s</div>
+        <div>0.09 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2.1')" >
-        fail</a>
-    <div id='div_ft1.2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.2.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\capital_controller\test_insert.py", line 50, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '新增资产失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 新增资产失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.capital_controller.test_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.3',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.3.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.3.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>更新资产用例：/capital/update</div>
     </td>
     <td style="color: #495057">
-        <div>0.25 s</div>
+        <div>0.07 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3.1')" >
-        fail</a>
-    <div id='div_ft1.3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.3.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\capital_controller\test_update.py", line 49, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 更新资产失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.cellar_well_controller.test_get_device_parameters.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.4',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.4.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.4.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>修改设备参数用例：/termianal/modifyDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.09 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4.1')" >
-        fail</a>
-    <div id='div_ft1.4.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.4.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\cellar_well_controller\test_get_device_parameters.py", line 36, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '修改设备参数失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 修改设备参数失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -687,56 +603,35 @@ AssertionError: '0' != '500'
         <div>获取我的信息用例：/termianal/getMyInfo</div>
     </td>
     <td style="color: #495057">
-        <div>0.14 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.cellar_well_controller.test_match.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.6',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.6.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.6.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>网关跟传感器蓝牙配对用例：/bluetooth/match</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6.1')" >
-        fail</a>
-    <div id='div_ft1.6.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.6.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\cellar_well_controller\test_match.py", line 24, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '网关跟传感器蓝牙配对失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 网关跟传感器蓝牙配对失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -760,7 +655,7 @@ AssertionError: '0' != '500'
         <div>获取设备参数用例：/termianal/getDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -792,46 +687,39 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.department_controller.test_get_myself_and_son.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.9',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.9.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.9.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.9.1')" >
-        fail</a>
-    <div id='div_ft1.9.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9.1')" >
+        pass</a>
+    <div id='div_pt1.9.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.9.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        ft1.9.1: data: {"id": 13}
-Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\department_controller\test_get_myself_and_son.py", line 25, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'查询部门下所有的子部门失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 查询部门下所有的子部门失败
+        pt1.9.1: data: {"id": 13}
 
         </pre>
     </div>
@@ -840,46 +728,39 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.department_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.10',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.10.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.10.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>查询部门下所有的子部门成功用例：/department/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.10.1')" >
-        fail</a>
-    <div id='div_ft1.10.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10.1')" >
+        pass</a>
+    <div id='div_pt1.10.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.10.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        ft1.10.1: data: {"name": "a", "pageNum": 1, "pageSize": 10, "addrId": 1, "pid": 1}
-Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\department_controller\test_page_query.py", line 31, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'查询部门下所有的子部门失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 查询部门下所有的子部门失败
+        pt1.10.1: data: {"name": "a", "pageNum": 1, "pageSize": 10, "addrId": 1, "pid": 1}
 
         </pre>
     </div>
@@ -908,150 +789,87 @@ AssertionError: '0' != '500'
         <div>获取窖井详情用例：/device/getDeviceById</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.device_alarm_controller.test_get_my_alarms.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.12',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.12.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.12.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取我的报警用例：/work/order/getMyAlarms</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.09 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.12.1')" >
-        fail</a>
-    <div id='div_ft1.12.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.12.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.12.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\device_alarm_controller\test_get_my_alarms.py", line 31, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取我的报警失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取我的报警失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.dictionary_controller.test_get_dictionary_bycode.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.13',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.13.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.13.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取分类下的所有字典值成功用例：/dictionary/getDictionaryByCode</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.13.1')" >
-        fail</a>
-    <div id='div_ft1.13.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.13.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.13.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\dictionary_controller\test_get_dictionary_bycode.py", line 26, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'获取分类下的所有字典值失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取分类下的所有字典值失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.dictionary_controller.test_get_dictionary_type.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.14',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.14.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.14.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取字典分类成功用例：/dictionary/getAllDictionaryType</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.14.1')" >
-        fail</a>
-    <div id='div_ft1.14.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.14.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.14.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\dictionary_controller\test_get_dictionary_type.py", line 26, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'获取字典分类失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取字典分类失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1075,7 +893,7 @@ AssertionError: '0' != '500'
         <div>APP首页报警、工单未读数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1101,7 +919,7 @@ AssertionError: '0' != '500'
         <div>APP首页地图数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1127,7 +945,7 @@ AssertionError: '0' != '500'
         <div>APP首页报警、工单已读成功用例: /modifyRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1139,7 +957,7 @@ AssertionError: '0' != '500'
            [x]</a>
         </div>
         <pre>
-        pt1.17.1: {'token': 'caedf28eb0b7448bbf53f48572ec39e0'}
+        pt1.17.1: {'token': 'f992c517e3da456485aca9680f7e40a2'}
 
         </pre>
     </div>
@@ -1153,15 +971,15 @@ AssertionError: '0' != '500'
     <td></td>
     <td></td>
     <td>3</td>
-    <td>0</td>
-    <td>3</td>
+    <td>1</td>
+    <td>2</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.18',3)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.18.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.18.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
     </td>
     <td style="color: #495057">
@@ -1170,27 +988,7 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18.1')" >
-        fail</a>
-    <div id='div_ft1.18.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.18.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.18.1: Traceback (most recent call last):
-  File "E:\python3.9.2\lib\site-packages\ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\login_controller\test_login.py", line 49, in test_login_success
-    self.assertIn(exp, response.text, '登陆失败')
-AssertionError: '"code":"hy"' not found in '{"code":500,"message":"Content type \'application/octet-stream\' not supported"}' : 登陆失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1202,7 +1000,7 @@ AssertionError: '"code":"hy"' not found in '{"code":500,"message":"Content type 
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1217,9 +1015,9 @@ AssertionError: '"code":"hy"' not found in '{"code":500,"message":"Content type 
         ft1.18.2: Traceback (most recent call last):
   File "E:\python3.9.2\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\login_controller\test_login.py", line 49, in test_login_success
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\login_controller\test_login.py", line 50, in test_login_success
     self.assertIn(exp, response.text, '登陆失败')
-AssertionError: '{"code":500,"message":"输入的密码错误"}' not found in '{"code":500,"message":"Content type \'application/octet-stream\' not supported"}' : 登陆失败
+AssertionError: '{"code":500,"message":"输入的密码错误"}' not found in '{"code":500,"message":"status 404 reading LoginFeignApi#login(LoginRequest)"}' : 登陆失败
 
         </pre>
     </div>
@@ -1236,7 +1034,7 @@ AssertionError: '{"code":500,"message":"输入的密码错误"}' not found in '{
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1251,9 +1049,9 @@ AssertionError: '{"code":500,"message":"输入的密码错误"}' not found in '{
         ft1.18.3: Traceback (most recent call last):
   File "E:\python3.9.2\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\login_controller\test_login.py", line 49, in test_login_success
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\login_controller\test_login.py", line 50, in test_login_success
     self.assertIn(exp, response.text, '登陆失败')
-AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{"code":500,"message":"Content type \'application/octet-stream\' not supported"}' : 登陆失败
+AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{"code":500,"message":"status 404 reading LoginFeignApi#login(LoginRequest)"}' : 登陆失败
 
         </pre>
     </div>
@@ -1282,56 +1080,35 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
         <div>修改头像成功用例: /user/modifyHeaderIcon</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.province_city_district_controller.test_list.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.20',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.20.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.20.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
     <td style="color: #495057">
         <div>地址列表成功用例: /address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.03 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.20.1')" >
-        fail</a>
-    <div id='div_ft1.20.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.20.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.20.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\province_city_district_controller\test_list.py", line 25, in test_get_index_success
-    self.assertEqual(str(0), str(response.json()['code']), '地址列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 地址列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1355,7 +1132,7 @@ AssertionError: '0' != '500'
         <div>成功用例: /address/sonList</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1387,67 +1164,46 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.work_order_controller.test_get__work_orders.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.23',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.23.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.23.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
     <td style="color: #495057">
         <div>地址列表成功用例: /address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.23.1')" >
-        fail</a>
-    <div id='div_ft1.23.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.23.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.23.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\work_order_controller\test_get__work_orders.py", line 25, in test_get_index_success
-    self.assertEqual(str(0), str(response.json()['code']), '地址列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 地址列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.work_order_controller.test_get_cellar_well_detail.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.24',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.24.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.24.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
     <td style="color: #495057">
@@ -1456,122 +1212,59 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.24.1')" >
-        fail</a>
-    <div id='div_ft1.24.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.24.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.24.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\work_order_controller\test_get_cellar_well_detail.py", line 23, in test_get_index_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取我的工单失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取我的工单失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.work_order_controller.test_save_mywork_order.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.25',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.25.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.25.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
     <td style="color: #495057">
         <div>执行工单成功用例: /work/order/saveMyWorkOrder</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.25.1')" >
-        fail</a>
-    <div id='div_ft1.25.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.25.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.25.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\work_order_controller\test_save_mywork_order.py", line 23, in test_get_index_success
-    self.assertEqual(str(0), str(response.json()['code']), '执行工单失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 执行工单失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.work_order_controller.test_set_control.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.26',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.26.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.26.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
     <td style="color: #495057">
         <div>布/撤控成功用例: /work/order/setControl</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.26.1')" >
-        fail</a>
-    <div id='div_ft1.26.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.26.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.26.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\app_test_case\work_order_controller\test_set_control.py", line 24, in test_get_index_success
-    self.assertEqual(str(0), str(response.json()['code']), '布/撤控失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 布/撤控失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1595,53 +1288,46 @@ AssertionError: '0' != '500'
         <div>删除窖井成功用例：/device/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.cellar_well_controller.test_delete_batch_ids.Test_Delete_Batch</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.28',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.28.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.28.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_delete_batch_success</div>
     </td>
     <td style="color: #495057">
         <div>批量删除工单成功用例：/device/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.28.1')" >
-        fail</a>
-    <div id='div_ft1.28.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.28.1')" >
+        pass</a>
+    <div id='div_pt1.28.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.28.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.28.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        ft1.28.1: payload: [1403288961291399169]
-{"code":500,"message":"Content type 'application/octet-stream' not supported"}
-Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\cellar_well_controller\test_delete_batch_ids.py", line 38, in test_delete_batch_success
-    self.assertEqual(str(0), str(response.json()['code']), '批量删除工单失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 批量删除工单失败
+        pt1.28.1: payload: [null]
+{"code":0,"message":"操作成功"}
 
         </pre>
     </div>
@@ -1650,50 +1336,44 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>web_test_case.cellar_well_controller.test_export.Test_Export</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1.29',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='et1.29.1' class='none'>
-    <td class='errorCase'>
+<tr id='pt1.29.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_export_success</div>
     </td>
     <td style="color: #495057">
         <div>导出窖井列表信息成功用例：/device/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.29.1')" >
-        error</a>
-    <div id='div_et1.29.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.29.1')" >
+        pass</a>
+    <div id='div_pt1.29.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.29.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.29.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        et1.29.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\cellar_well_controller\test_export.py", line 61, in test_export_success
-    txt = pd.read_excel(r'device.xls')  #读取文件内容用作断言
-  File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
-    return func(*args, **kwargs)
-  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 336, in read_excel
-    io = ExcelFile(io, storage_options=storage_options, engine=engine)
-  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 1071, in __init__
-    ext = inspect_excel_format(
-  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 965, in inspect_excel_format
-    raise ValueError("File is not a recognized excel file")
-ValueError: File is not a recognized excel file
+        pt1.29.1: E:\python3.9.2\lib\site-packages\openpyxl\styles\stylesheet.py:221: UserWarning: Workbook contains no default style, apply openpyxl's default
+  warn("Workbook contains no default style, apply openpyxl's default")
+       窖井编号             终端编号                      地址               部门       窖井规格 井盖类型 在/离线 布控状态 窖井状态                 录入时间
+0   8888801         88881011  广东省深圳市南山区大新路南头街道88-36号  b11111111111111  1200*1200   水泥   不在  已撤防   正常  2021-06-23 11:52:22
+1  88888888  869951044459661      广东省深圳市南山区科伟路粤海街道2栋               研发  1200*1200   水泥   不在  已撤防   正常  2021-06-23 11:47:12
+2  88888801         88888810    广东省深圳市南山区朗山路西丽街道149号              NaN  1200*1200   水泥   不在  已撤防   正常  2021-06-09 10:21:29
 
         </pre>
     </div>
@@ -1722,26 +1402,26 @@ ValueError: File is not a recognized excel file
         <div>获取窖井详情成功用例：/device/getDeviceById</div>
     </td>
     <td style="color: #495057">
-        <div>0.45 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.cellar_well_controller.test_page_query.Test_Device_List</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.31',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.31.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.31.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_device_list_success</div>
     </td>
     <td style="color: #495057">
@@ -1750,28 +1430,7 @@ ValueError: File is not a recognized excel file
     <td style="color: #495057">
         <div>0.07 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.31.1')" >
-        fail</a>
-    <div id='div_ft1.31.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.31.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.31.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\cellar_well_controller\test_page_query.py", line 44, in test_device_list_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取窖井列表信息失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取窖井列表信息失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1792,10 +1451,10 @@ AssertionError: '0' != '500'
         <div class='testcase'>test_get_alarm_success</div>
     </td>
     <td style="color: #495057">
-        <div>成功用例：/device/getAlarmDetailByNo</div>
+        <div>窖井分布-获取窖井报警详情成功用例：/device/getAlarmDetailByNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1821,7 +1480,7 @@ AssertionError: '0' != '500'
         <div>窖井分布-报警数据分布查询成功用例：/device/pageQueryAlarmData</div>
     </td>
     <td style="color: #495057">
-        <div>0.20 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1847,7 +1506,7 @@ AssertionError: '0' != '500'
         <div>窖井分布-区域数据分布查询成功用例：/device/pageQueryAreaData</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1873,7 +1532,7 @@ AssertionError: '0' != '500'
         <div>窖井分布-设备数据分布查询成功用例：/device/pageQueryDeviceData</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1899,56 +1558,35 @@ AssertionError: '0' != '500'
         <div>删除部门成功用例：/department/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.department_controller.test_delete_batchids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.37',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.37.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.37.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>批量删除部门成功用例：/department/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.10 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.37.1')" >
-        fail</a>
-    <div id='div_ft1.37.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.37.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.37.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\department_controller\test_delete_batchids.py", line 48, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '批量删除部门失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 批量删除部门失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1978,20 +1616,20 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.department_controller.test_get_myself_and_son.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.39',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.39.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.39.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -2002,22 +1640,15 @@ AssertionError: '0' != '500'
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.39.1')" >
-        fail</a>
-    <div id='div_ft1.39.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.39.1')" >
+        pass</a>
+    <div id='div_pt1.39.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.39.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.39.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        ft1.39.1: data: {"id": 1382562817882931201}
-Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\department_controller\test_get_myself_and_son.py", line 32, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'查询部门下所有的子部门失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 查询部门下所有的子部门失败
+        pt1.39.1: data: {"id": 1382562817882931201}
 
         </pre>
     </div>
@@ -2026,20 +1657,20 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.department_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.40',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.40.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.40.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -2050,22 +1681,15 @@ AssertionError: '0' != '500'
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.40.1')" >
-        fail</a>
-    <div id='div_ft1.40.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.40.1')" >
+        pass</a>
+    <div id='div_pt1.40.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.40.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.40.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        ft1.40.1: data: {"id": 1382562817882931201}
-Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\department_controller\test_page_query.py", line 38, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '查询部门下所有的子部门失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 查询部门下所有的子部门失败
+        pt1.40.1: data: {"id": 1382562817882931201}
 
         </pre>
     </div>
@@ -2074,20 +1698,20 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.department_controller.test_save_orupdate.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.41',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.41.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.41.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -2096,45 +1720,24 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.41.1')" >
-        fail</a>
-    <div id='div_ft1.41.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.41.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.41.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\department_controller\test_save_orupdate.py", line 44, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '新增或者更新部门信息失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 新增或者更新部门信息失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.device_alarm_controller.test_alarm_delete.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.42',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.42.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.42.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -2143,75 +1746,47 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.42.1')" >
-        fail</a>
-    <div id='div_ft1.42.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.42.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.42.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_delete.py", line 37, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '批量删除报警失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 批量删除报警失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>web_test_case.device_alarm_controller.test_alarm_export.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1.43',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='et1.43.1' class='none'>
-    <td class='errorCase'>
+<tr id='pt1.43.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>报警列表导出成功用例：/history/alarm/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.43.1')" >
-        error</a>
-    <div id='div_et1.43.1' class="popup_window">
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.43.1')" >
+        pass</a>
+    <div id='div_pt1.43.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.43.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.43.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        et1.43.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_export.py", line 39, in test_add_task_success
-    txt = pd.read_excel(r'alarm.xls')  #读取文件内容用作断言
-  File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
-    return func(*args, **kwargs)
-  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 336, in read_excel
-    io = ExcelFile(io, storage_options=storage_options, engine=engine)
-  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 1071, in __init__
-    ext = inspect_excel_format(
-  File "E:\python3.9.2\lib\site-packages\pandas\io\excel\_base.py", line 965, in inspect_excel_format
-    raise ValueError("File is not a recognized excel file")
-ValueError: File is not a recognized excel file
+        pt1.43.1: E:\python3.9.2\lib\site-packages\openpyxl\styles\stylesheet.py:221: UserWarning: Workbook contains no default style, apply openpyxl's default
+  warn("Workbook contains no default style, apply openpyxl's default")
+Empty DataFrame
+Columns: [终端编号, 地址, 部门, 报警类型, 报警值, 报警时间, 消警时间, 派单状态, 报警状态]
+Index: []
 
         </pre>
     </div>
@@ -2240,150 +1815,87 @@ ValueError: File is not a recognized excel file
         <div>获取窖井详情用例：/history/alarm/getCellarWellById</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.device_alarm_controller.test_alarm_list.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.45',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.45.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.45.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取历史报警列表成功用例：/history/alarm/historyAlarmTaskPageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.07 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.45.1')" >
-        fail</a>
-    <div id='div_ft1.45.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.45.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.45.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_list.py", line 44, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取历史报警失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取历史报警失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.device_alarm_controller.test_alarm_send_order.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.46',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.46.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.46.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>手动派单成功用例：/history/alarm/manualDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.12 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.46.1')" >
-        fail</a>
-    <div id='div_ft1.46.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.46.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.46.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_send_order.py", line 34, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '手动派单失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 手动派单失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.device_alarm_controller.test_auto_order.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.47',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.47.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.47.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>自动派单成功用例：/history/alarm/autoDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.47.1')" >
-        fail</a>
-    <div id='div_ft1.47.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.47.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.47.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\device_alarm_controller\test_auto_order.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '派单失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 派单失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -2407,56 +1919,35 @@ AssertionError: '0' != '500'
         <div>获取报警的图像信息成功用例：/history/alarm/getAlarmPictures</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.index_controller.test_about.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.49',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.49.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.49.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>首页-关于成功用例：/index/about</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.49.1')" >
-        fail</a>
-    <div id='div_ft1.49.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.49.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.49.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\index_controller\test_about.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'首页-关于失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 首页-关于失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -2480,7 +1971,7 @@ AssertionError: '0' != '500'
         <div>窖井报警分类占比/数量成功用例：/index/getIndexAlarmPercent</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2506,7 +1997,7 @@ AssertionError: '0' != '500'
         <div>窖井报警趋势统计成功用例：/index/getIndexAlarmRstrend</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2558,7 +2049,7 @@ AssertionError: '0' != '500'
         <div>平台事件总览成功用例：/index/getIndexPlatformView</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2584,7 +2075,7 @@ AssertionError: '0' != '500'
         <div>平台今日公告成功用例：/index/getIndexTodayNotice</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2616,54 +2107,34 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.login_controller.test_login.Test_login</td>
     <td></td>
     <td></td>
     <td>3</td>
-    <td>0</td>
     <td>3</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.56',3)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.56.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.56.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
     </td>
     <td style="color: #495057">
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.56.1')" >
-        fail</a>
-    <div id='div_ft1.56.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.56.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.56.1: Traceback (most recent call last):
-  File "E:\python3.9.2\lib\site-packages\ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\login_controller\test_login.py", line 56, in test_login_success
-    self.assertIn(exp, response.text)
-AssertionError: '"code":"hy"' not found in '{"code":500,"message":"Content type \'application/octet-stream\' not supported"}'
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr id='ft1.56.2' class='none'>
-    <td class='failCase'>
+<tr id='pt1.56.2' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_login_success_2___hy___234567___abcd______code__500__message___输入的密码错误____</div>
     </td>
     <td style="color: #495057">
@@ -2672,61 +2143,21 @@ AssertionError: '"code":"hy"' not found in '{"code":500,"message":"Content type 
     <td style="color: #495057">
         <div>0.03 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.56.2')" >
-        fail</a>
-    <div id='div_ft1.56.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.56.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.56.2: Traceback (most recent call last):
-  File "E:\python3.9.2\lib\site-packages\ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\login_controller\test_login.py", line 56, in test_login_success
-    self.assertIn(exp, response.text)
-AssertionError: '{"code":500,"message":"输入的密码错误"}' not found in '{"code":500,"message":"Content type \'application/octet-stream\' not supported"}'
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr id='ft1.56.3' class='none'>
-    <td class='failCase'>
+<tr id='pt1.56.3' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_login_success_3___a___123456___qw12______code__500__message___输入的账号错误____</div>
     </td>
     <td style="color: #495057">
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.56.3')" >
-        fail</a>
-    <div id='div_ft1.56.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.56.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.56.3: Traceback (most recent call last):
-  File "E:\python3.9.2\lib\site-packages\ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\login_controller\test_login.py", line 56, in test_login_success
-    self.assertIn(exp, response.text)
-AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{"code":500,"message":"Content type \'application/octet-stream\' not supported"}'
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -2756,20 +2187,20 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.menu_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.58',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.58.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.58.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -2778,28 +2209,7 @@ AssertionError: '{"code":500,"message":"输入的账号错误"}' not found in '{
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.58.1')" >
-        fail</a>
-    <div id='div_ft1.58.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.58.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.58.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\menu_controller\test_insert.py", line 36, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '增加角色资源失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 增加角色资源失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -2823,56 +2233,35 @@ AssertionError: '0' != '500'
         <div>获取角色的资源用例：/menu/queryRoleOwnsMenus</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.operation_log_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.60',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.60.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.60.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>删除用户操作日志成功用例：/operate/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.60.1')" >
-        fail</a>
-    <div id='div_ft1.60.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.60.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.60.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\operation_log_controller\test_delete_batch_ids.py", line 21, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '删除用户操作日志失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 删除用户操作日志失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -2909,7 +2298,7 @@ AssertionError: '0' != '500'
         </div>
         <pre>
         et1.61.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\operation_log_controller\test_expor.py", line 40, in test_add_task_success
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\operation_log_controller\test_expor.py", line 42, in test_add_task_success
     txt = pd.read_excel('work.xls')  #读取文件内容用作断言
   File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
     return func(*args, **kwargs)
@@ -2948,26 +2337,26 @@ ValueError: File is not a recognized excel file
         <div>获取所有的日志操作类型成功用例：/operate/log/getAllOperationType</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.operation_log_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.63',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.63.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.63.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -2976,28 +2365,7 @@ ValueError: File is not a recognized excel file
     <td style="color: #495057">
         <div>0.07 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.63.1')" >
-        fail</a>
-    <div id='div_ft1.63.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.63.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.63.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\operation_log_controller\test_page_query.py", line 35, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'页面查询失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 页面查询失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -3021,7 +2389,7 @@ AssertionError: '0' != '500'
         <div>获取上一级地址成功用例：/address/getProvinceCityDistrictById</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3053,50 +2421,29 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.province_city_controller.test_list.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.66',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.66.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.66.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>根据查询条件获取地区信息成功用例：/address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.66.1')" >
-        fail</a>
-    <div id='div_ft1.66.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.66.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.66.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\province_city_controller\test_list.py", line 30, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'根据查询条件获取地区信息失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 根据查询条件获取地区信息失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -3120,73 +2467,52 @@ AssertionError: '0' != '500'
         <div>获取子下所有地区信息成功用例：/address/sonlist</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.push_set_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.68',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.68.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.68.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>批量删除成功用例：/push/set/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.68.1')" >
-        fail</a>
-    <div id='div_ft1.68.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.68.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.68.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\push_set_controller\test_delete_batch_ids.py", line 24, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'批量删除失败')
-AssertionError: '0' != '415'
-- 0
-+ 415
- : 批量删除失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.push_set_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.69',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.69.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.69.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -3195,92 +2521,50 @@ AssertionError: '0' != '415'
     <td style="color: #495057">
         <div>0.06 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.69.1')" >
-        fail</a>
-    <div id='div_ft1.69.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.69.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.69.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\push_set_controller\test_insert.py", line 29, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'创建任务失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 创建任务失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.push_set_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.70',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.70.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.70.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取个人报警推送设置列表成功用例：/push/set/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.70.1')" >
-        fail</a>
-    <div id='div_ft1.70.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.70.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.70.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\push_set_controller\test_page_query.py", line 28, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取个人报警推送设置列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取个人报警推送设置列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.push_set_controller.test_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.71',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.71.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.71.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -3289,28 +2573,7 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.71.1')" >
-        fail</a>
-    <div id='div_ft1.71.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.71.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.71.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\push_set_controller\test_update.py", line 28, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'更新任务失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 更新任务失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -3340,50 +2603,29 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.role_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.73',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.73.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.73.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>批量删除角色成功用例：/role/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.03 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.73.1')" >
-        fail</a>
-    <div id='div_ft1.73.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.73.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.73.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\role_controller\test_delete_batch_ids.py", line 24, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'批量删除角色失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 批量删除角色失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -3413,67 +2655,46 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.role_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.75',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.75.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.75.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>增加用户角色成功用例：/userRole/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.75.1')" >
-        fail</a>
-    <div id='div_ft1.75.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.75.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.75.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\role_controller\test_insert.py", line 33, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'增加用户角色失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 增加用户角色失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.role_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.76',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.76.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.76.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -3482,45 +2703,24 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.76.1')" >
-        fail</a>
-    <div id='div_ft1.76.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.76.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.76.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\role_controller\test_page_query.py", line 28, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'查询角色列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 查询角色列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.role_controller.test_save_or_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.77',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.77.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.77.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -3529,169 +2729,85 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.03 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.77.1')" >
-        fail</a>
-    <div id='div_ft1.77.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.77.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.77.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\role_controller\test_save_or_update.py", line 28, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'新增或修改角色信息失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 新增或修改角色信息失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.task_controller.test_task_add.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.78',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.78.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.78.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>创建任务成功用例： /task/add</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.78.1')" >
-        fail</a>
-    <div id='div_ft1.78.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.78.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.78.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\task_controller\test_task_add.py", line 34, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '创建任务失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 创建任务失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.task_controller.test_task_auto.Test_Auto_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.79',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.79.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.79.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_auto_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取自动派单列表成功用例: /task/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.79.1')" >
-        fail</a>
-    <div id='div_ft1.79.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.79.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.79.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\task_controller\test_task_auto.py", line 29, in test_auto_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取自动派单列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取自动派单列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.task_controller.test_task_delete.Test_Delete_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.80',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.80.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.80.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_delete_task_success</div>
     </td>
     <td style="color: #495057">
         <div>删除任务成功用例：/task/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.03 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.80.1')" >
-        fail</a>
-    <div id='div_ft1.80.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.80.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.80.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\task_controller\test_task_delete.py", line 27, in test_delete_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'删除任务失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 删除任务失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -3721,161 +2837,98 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.terminal_upgrade_controller.test_cancel.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.82',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.82.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.82.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>查询角色列表成功用例：/device/upgrade/cancel</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.82.1')" >
-        fail</a>
-    <div id='div_ft1.82.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.82.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.82.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\terminal_upgrade_controller\test_cancel.py", line 23, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'查询角色列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 查询角色列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.terminal_upgrade_controller.test_cancel_sensor_upgrade.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.83',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.83.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.83.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>取消传感器设备升级成功用例：/device/upgrade/cancelSensorUpgrade</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.06 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.83.1')" >
-        fail</a>
-    <div id='div_ft1.83.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.83.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.83.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\terminal_upgrade_controller\test_cancel_sensor_upgrade.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'取消传感器设备升级失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 取消传感器设备升级失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.terminal_upgrade_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.84',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.84.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.84.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取设备升级列表成功用例：/device/upgrade/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.08 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.84.1')" >
-        fail</a>
-    <div id='div_ft1.84.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.84.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.84.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\terminal_upgrade_controller\test_page_query.py", line 36, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取设备升级列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取设备升级列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.terminal_upgrade_controller.test_save.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.85',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.85.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.85.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -3884,45 +2937,24 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.85.1')" >
-        fail</a>
-    <div id='div_ft1.85.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.85.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.85.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\terminal_upgrade_controller\test_save.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'执行设备升级失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 执行设备升级失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.terminal_upgrade_controller.test_sensor_upgrade.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.86',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.86.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.86.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -3931,169 +2963,85 @@ AssertionError: '0' != '500'
     <td style="color: #495057">
         <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.86.1')" >
-        fail</a>
-    <div id='div_ft1.86.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.86.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.86.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\terminal_upgrade_controller\test_sensor_upgrade.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'传感器设备升级失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 传感器设备升级失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.up_ins_log_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.87',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.87.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.87.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>批量删除设备上报日志成功用例：/up/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.87.1')" >
-        fail</a>
-    <div id='div_ft1.87.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.87.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.87.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\up_ins_log_controller\test_delete_batch_ids.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'批量删除设备上报日志失败')
-AssertionError: '0' != '415'
-- 0
-+ 415
- : 批量删除设备上报日志失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.up_ins_log_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.88',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.88.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.88.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>设备上报日志列表成功用例：/up/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.88.1')" >
-        fail</a>
-    <div id='div_ft1.88.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.88.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.88.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\up_ins_log_controller\test_page_query.py", line 31, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'设备上报日志列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 设备上报日志列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.upgrade_package_controller.test_upgrade_delete.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.89',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.89.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.89.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>成功用例：/upgrade/package/deleteBatchIds</div>
+        <div>批量删除升级包成功用例：/upgrade/package/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.89.1')" >
-        fail</a>
-    <div id='div_ft1.89.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.89.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.89.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\upgrade_package_controller\test_upgrade_delete.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '批量删除升级包失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 批量删除升级包失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -4117,7 +3065,7 @@ AssertionError: '0' != '500'
         <div>获取升级包硬件版本号用例：/upgrade/package/getAllHardwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4143,7 +3091,7 @@ AssertionError: '0' != '500'
         <div>获取硬件升级包所有软件版本号用例：/upgrade/package/getAllSoftwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4169,103 +3117,61 @@ AssertionError: '0' != '500'
         <div>获取包上传人用例：/upgrade/package/getUploadUser</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.upgrade_package_controller.test_upgrade_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.93',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.93.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.93.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>上传升级包成功用例：/upgrade/package/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.93.1')" >
-        fail</a>
-    <div id='div_ft1.93.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.93.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.93.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\upgrade_package_controller\test_upgrade_insert.py", line 37, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '上传升级包失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 上传升级包失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.upgrade_package_controller.test_upgrade_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.94',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.94.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.94.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取升级包列表用例：/upgrade/package/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.94.1')" >
-        fail</a>
-    <div id='div_ft1.94.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.94.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.94.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\upgrade_package_controller\test_upgrade_page_query.py", line 36, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取升级包列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取升级包列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -4289,7 +3195,7 @@ AssertionError: '0' != '500'
         <div>获取传感器软件版本号用例：/upgrade/package/getSensorSoftwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4315,7 +3221,7 @@ AssertionError: '0' != '500'
         <div>上传文件用例：/file/upload</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.20 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4341,7 +3247,7 @@ AssertionError: '0' != '500'
         <div>批量删除用户成功用例：/user/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.01 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4367,7 +3273,7 @@ AssertionError: '0' != '500'
         <div>获取维修人员成功用例：/user/getMaintainer</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.02 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4419,7 +3325,7 @@ AssertionError: '0' != '500'
         <div>获取用户列表成功用例：/user/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.03 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4497,7 +3403,7 @@ AssertionError: '0' != '500'
         <div>修改密码成功用例：/user/updatePassword</div>
     </td>
     <td style="color: #495057">
-        <div>0.02 s</div>
+        <div>0.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4529,50 +3435,29 @@ AssertionError: '0' != '500'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.work_order_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.105',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.105.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.105.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>批量删除工单成功用例：/work/order/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.105.1')" >
-        fail</a>
-    <div id='div_ft1.105.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.105.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.105.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\work_order_controller\test_delete_batch_ids.py", line 27, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'批量删除工单失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 批量删除工单失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -4596,7 +3481,7 @@ AssertionError: '0' != '500'
         <div>导出工单成功用例：/work/order/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -4609,7 +3494,7 @@ AssertionError: '0' != '500'
         </div>
         <pre>
         et1.106.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\work_order_controller\test_export.py", line 40, in test_add_task_success
+  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\work_order_controller\test_export.py", line 41, in test_add_task_success
     txt = pd.read_excel(r'work.xls')  #读取文件内容用作断言
   File "E:\python3.9.2\lib\site-packages\pandas\util\_decorators.py", line 299, in wrapper
     return func(*args, **kwargs)
@@ -4654,20 +3539,20 @@ ValueError: File is not a recognized excel file
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.work_order_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.108',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.108.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.108.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
@@ -4676,28 +3561,7 @@ ValueError: File is not a recognized excel file
     <td style="color: #495057">
         <div>0.04 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.108.1')" >
-        fail</a>
-    <div id='div_ft1.108.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.108.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.108.1: Traceback (most recent call last):
-  File "c:\Users\Acer\Desktop\iot_api_test\test_case\web_test_case\work_order_controller\test_page_query.py", line 37, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'获取历史工单列表失败')
-AssertionError: '0' != '500'
-- 0
-+ 500
- : 获取历史工单列表失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -4706,9 +3570,9 @@ AssertionError: '0' != '500'
                     <td> </td>
                     <td> </td>
                     <td>112</td>
-                    <td class="text text-success">49</td>
-                    <td class="text text-danger">59</td>
-                    <td class="text text-warning">4</td>
+                    <td class="text text-success">108</td>
+                    <td class="text text-danger">2</td>
+                    <td class="text text-warning">2</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -4729,7 +3593,7 @@ AssertionError: '0' != '500'
         ],
         datasets: [
             {
-                data: [49, 59, 4, 0],
+                data: [108, 2, 2, 0],
                 backgroundColor: [
                     "#10c469",
                     "#f9c851",

@@ -44,7 +44,8 @@ class Test_login(unittest.TestCase):
             "validateCode": code  # 暂时屏蔽验证码用来测试
         }
         payload = json.dumps(payload)
-        response = Test_login.http.post('/login', data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_login.http.post('/login', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(exp, response.text, '登陆失败')
 

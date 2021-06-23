@@ -26,7 +26,8 @@ class Test_Add_Task(unittest.TestCase):
         }
         payload = json.dumps(payload)
         print('data:',payload)
-        response = Test_Add_Task.http.post('/department/pageQuery',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/department/pageQuery',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'查询部门下所有的子部门失败')
 

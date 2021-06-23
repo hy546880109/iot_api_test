@@ -20,8 +20,9 @@ class Test_Add_Task(unittest.TestCase):
             "alarmType": "amet sed"
         }
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/voice/call', data=payload)
+            '/voice/call', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '语音通知失败')
 

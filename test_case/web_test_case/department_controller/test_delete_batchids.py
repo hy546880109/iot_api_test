@@ -42,8 +42,9 @@ class Test_Add_Task(unittest.TestCase):
         '''批量删除部门成功用例：/department/deleteBatchIds'''
         payload = [Test_Add_Task.department_id, Test_Add_Task.department_id1]
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/department/deleteBatchIds', data=payload)
+            '/department/deleteBatchIds', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '批量删除部门失败')
         is_delete = self.mysql.select_sql("select is_delete from t_department where id='1382562817882931201'")

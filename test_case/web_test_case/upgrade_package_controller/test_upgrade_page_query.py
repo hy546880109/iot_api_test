@@ -30,8 +30,9 @@ class Test_Add_Task(unittest.TestCase):
             "pageSize": 100000000
         }
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/upgrade/package/pageQuery', data=payload)
+            '/upgrade/package/pageQuery', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取升级包列表失败')
 

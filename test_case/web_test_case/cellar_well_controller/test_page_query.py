@@ -1,3 +1,4 @@
+from common.login_token import get_token
 import json
 import unittest
 import os
@@ -39,7 +40,8 @@ class Test_Device_List(unittest.TestCase):
         }
 
         payload = json.dumps(payload)
-        response = Test_Device_List.http.post('/device/pageQuery', data=payload)
+        headers = {'Content-Type': 'application/json', 'token': get_token()}
+        response = Test_Device_List.http.post('/device/pageQuery', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取窖井列表信息失败')
 

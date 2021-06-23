@@ -32,7 +32,8 @@ class Test_Add_Task(unittest.TestCase):
     
     def test_add_task_success(self):
         '''获取升级包硬件版本号用例：/upgrade/package/getAllHardwareVer'''
-        response = Test_Add_Task.http.post('/upgrade/package/getAllHardwareVer',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/upgrade/package/getAllHardwareVer',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取升级包硬件版本号失败')
 

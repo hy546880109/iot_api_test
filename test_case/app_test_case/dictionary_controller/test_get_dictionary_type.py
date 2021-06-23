@@ -21,7 +21,8 @@ class Test_Add_Task(unittest.TestCase):
             "code": "5"
         }
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/dictionary/getAllDictionaryType',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/dictionary/getAllDictionaryType',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'获取字典分类失败')
 

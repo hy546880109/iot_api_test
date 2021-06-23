@@ -19,8 +19,7 @@ class Test_Add_Task(unittest.TestCase):
         '''上传文件用例：/file/upload'''
         payload = {
             'file': ("1.bin", open('1.bin', 'rb'), 'application/octet-stream')}
-        header = {"Content-Type" :'application/octet-stream'}
-        response = Test_Add_Task.http.post('/file/upload', files=payload, headers=header)
+        response = Test_Add_Task.http.post('/file/upload', files=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '上传文件失败')
 

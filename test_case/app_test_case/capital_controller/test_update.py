@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 import unittest
 import json
 from config.config_test import Conf
@@ -10,36 +11,44 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
+        cls.mysql = Mysql_connet('device')
+        cls.in_mysql = cls.mysql.select_sql(
+        'select is_delete from t_cellar_well where id=13919460123446761')
+        if cls.in_mysql is None:  # 如果不存在则插入一条数据
+            cls.mysql.insert_sql("INSERT  INTO `t_cellar_well`(`id`,`no`,`terminal_no`,`province_id`,`province_name`,`city_id`,`city_name`,`area_id`,`area_name`,`address`,`spec`,`department_id`,`department_name`,`type`,`sub_type`,`cover_type`,`is_online`,`control_status`,`status`,`is_delete`,`create_at`,`create_by`,`update_at`,`longitude`,`latitude`) VALUES\
+        (13919460123446761,'88888801','88888810',44,'广东省',4403,'深圳市',440303,'南山区','大新路南头街道88-36号','1',1382562817882931201,'b',0,1,1,1,1,0,0,'2021-06-09 10:21:29',NULL,NULL,'113.93109','22.54901')")
+        elif cls.in_mysql == 1:
+            cls.mysql.update_sql("update t_cellar_well set is_delete=0 where id=13919460123446761")
+        cls.device_id = cls.mysql.select_sql(
+            'select id from t_cellar_well where id=13919460123446761')
 
     def test_add_task_success(self):
         '''更新资产用例：/capital/update'''
         payload = {
-            "no": "888888831",
-            "departmentId": "1382562817882931201",
-            "latitude": "22.54911",
-            "images4": "../../assets/imgs/cover03.jpg",
-            "remark": "",
-            "cityId": 4403,
-            "images1": "../../assets/imgs/cover00.jpg",
-            "spec": "1",
-            "createAt": "Tue May 18 10:39:25 CST 2021",
-            "images3": "../../assets/imgs/cover02.jpg",
-            "images2": "../../assets/imgs/cover01.jpg",
-            "coverType": 0,
-            "dutyMan": "张三",
-            "cityName": "深圳市",
-            "areaName": "南山区",
-            "id": "13919460123446761",
-            "safeManPhone": "",
-            "longitude": "113.93109",
-            "terminalNo": "8888888031",
-            "address": "大新路南头街道88-36号",
-            "dutyManPhone": "12345678901",
-            "provinceId": 44,
-            "safeMan": "",
-            "areaId": 440305,
-            "subType": 1,
-            "provinceName": "广东省"
+            'address': "朗山路西丽街道149号",
+            'areaId': 440305,
+            'areaName': "南山区",
+            'cityId': 4403,
+            'cityName': "深圳市",
+            'coverType': 0,
+            'createAt': "2021-06-12",
+            'departmentId': "1404711946925690882",
+            'dutyMan': "",
+            'dutyManPhone': "",
+            'id': "13919460123446761",
+            'images1': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/0cec685333534204a3a499ebdd76ebe3.jpg",
+            'images2': None,
+            'images3': None,
+            'images4': None,
+            'latitude': 22.545266,
+            'longitude': 113.937628,
+            'no': "88888801",
+            'provinceId': 44,
+            'provinceName': "广东省",
+            'spec': "1",
+            'subType': 1,
+            'terminalNo': "88888810",
+            'type': 0
         }
         headers = {'Content-Type': 'application/json'}
         payload = json.dumps(payload)

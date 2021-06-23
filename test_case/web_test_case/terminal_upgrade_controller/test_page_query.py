@@ -31,7 +31,8 @@ class Test_Add_Task(unittest.TestCase):
             "terminalNo": None
         }
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/device/upgrade/pageQuery', data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/device/upgrade/pageQuery', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取设备升级列表失败')
 

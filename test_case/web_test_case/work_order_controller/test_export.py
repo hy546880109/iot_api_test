@@ -33,7 +33,8 @@ class Test_Add_Task(unittest.TestCase):
             "finishStartDate": None
         }
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/work/order/export',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/work/order/export',data=payload, headers=headers)
         res = response.content
         with open('work.xls','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)

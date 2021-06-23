@@ -25,8 +25,9 @@ class Test_Add_Task(unittest.TestCase):
         }
 
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json', 'token': get_token()}
         response = Test_Add_Task.http.post(
-            '/work/order/getMyAlarms', data=payload)
+            '/work/order/getMyAlarms', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取我的报警失败')
 

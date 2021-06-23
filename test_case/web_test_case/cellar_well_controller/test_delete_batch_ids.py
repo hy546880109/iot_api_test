@@ -23,6 +23,8 @@ class Test_Delete_Batch(unittest.TestCase):
         if cls.in_mysql is None:  # 如果不存在则插入一条数据
             cls.mysql.insert_sql("insert  into `t_work_order`(`id`,`work_no`,`work_src`,`work_type`,`terminal_no`,`alarm_id`,`user_id`,`reason`,`level`,`prv_finish_time`,`actual_finish_time`,`status`,`create_at`,`create_by`,`address`,`longitude`,`latitude`,`is_delete`,`is_read`) values \
 (1403288961291399169,'GD202106118064',0,0,'869951044459653',1403278067702444033,1377074593995628546,NULL,0,'2021-06-12 00:00:00','2021-06-11 17:54:58',2,'2021-06-11 17:52:15',NULL,'南山区高新中二道粤海街道25号','113.937336','22.545404',0,1))")
+        elif cls.in_mysql == 1:
+            cls.mysql.update_sql("update t_work_order set is_delete=0 where id=1403288961291399169")
         cls.work_id = cls.mysql.select_sql(
             'select id from t_work_order where id="1403288961291399169"')
 
@@ -30,8 +32,9 @@ class Test_Delete_Batch(unittest.TestCase):
         '''批量删除工单成功用例：/device/deleteBatchIds'''
         payload = [Test_Delete_Batch.work_id]
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Delete_Batch.http.post(
-            '/device/deleteBatchIds', data=payload)
+            '/device/deleteBatchIds', data=payload, headers=headers)
         print('payload:', payload)
         print(response.text)
         self.assertEqual(200, response.status_code, '返回非200')

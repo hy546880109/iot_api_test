@@ -17,22 +17,23 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''报警列表导出成功用例：/history/alarm/export'''
         payload = {
-            "terminalNo": "8888888031",
-            "alarmStartDate": "2003-08-07",
-            "alarmType": 1,
-            "addrId": 440305,
-            "departmentId": 1382562817882931201,
-            "dissolveEndDate": "2015-04-06",
-            "alarmEndDate": "1997-01-19",
-            "dissolveStartDate": "2003-04-14",
-            "status": 0,
+            "terminalNo": None,
+            "alarmStartDate": None,
+            "alarmType": None,
+            "addrId": None,
+            "departmentId": None,
+            "dissolveEndDate": None,
+            "alarmEndDate": None,
+            "dissolveStartDate": None,
+            "status":None,
             "pageSize": 1,
             "pageNum": 10,
-            "dispatchStatus": 1
+            "dispatchStatus": None
         }
         payload = json.dumps(payload)
+        headers = {'Content-Type':'application/json;charset=UTF-8'}
         response = Test_Add_Task.http.post(
-            '/history/alarm/export', data=payload)
+            '/history/alarm/export', data=payload, headers=headers)
         res = response.content
         with open('alarm.xls','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
@@ -40,7 +41,7 @@ class Test_Add_Task(unittest.TestCase):
         print(txt)
 
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '报警列表导出失败')
+        self.assertIn(str('终端编号'), str(txt), '报警列表导出失败')
 
 
 if __name__ == '__main__':

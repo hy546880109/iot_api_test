@@ -24,7 +24,8 @@ class Test_Auto_Task(unittest.TestCase):
             "pageNum": 2
         }
         payload = json.dumps(payload)
-        response = Test_Auto_Task.http.post('/task/pageQuery', data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Auto_Task.http.post('/task/pageQuery', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取自动派单列表失败')
 

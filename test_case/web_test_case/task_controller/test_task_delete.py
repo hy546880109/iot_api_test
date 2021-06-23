@@ -22,7 +22,8 @@ class Test_Delete_Task(unittest.TestCase):
         '''删除任务成功用例：/task/deleteBatchIds'''
         payload = [57292403983134, 83390078552882]
         payload = json.dumps(payload)
-        response = Test_Delete_Task.http.post('/task/deleteBatchIds',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Delete_Task.http.post('/task/deleteBatchIds',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'删除任务失败')
 

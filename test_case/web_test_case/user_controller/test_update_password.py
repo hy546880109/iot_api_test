@@ -22,7 +22,8 @@ class Test_Add_Task(unittest.TestCase):
             "password": "e10adc3949ba59abbe56e057f20f883e"
         }
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post('/user/updatePassword',data=payload)
+        headers = {'Content-Type': 'application/json'}
+        response = Test_Add_Task.http.post('/user/updatePassword',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '修改密码失败')
 

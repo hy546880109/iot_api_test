@@ -38,8 +38,9 @@ class Test_Add_Task(unittest.TestCase):
             "dissolveEndDate": "2002-09-21"
         }
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/history/alarm/historyAlarmTaskPageQuery', data=payload)
+            '/history/alarm/historyAlarmTaskPageQuery', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取历史报警失败')
 

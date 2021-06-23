@@ -31,8 +31,9 @@ class Test_Add_Task(unittest.TestCase):
             "name": "app"
         }
         payload = json.dumps(payload)
+        headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/upgrade/package/insert', data=payload)
+            '/upgrade/package/insert', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '上传升级包失败')
 

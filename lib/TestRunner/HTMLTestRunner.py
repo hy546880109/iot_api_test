@@ -183,6 +183,8 @@ class _TestResult(TestResult):
         self.result = []
         self.case_start_time = None
         self.case_end_time = None
+        self.outputBuffer = io.StringIO()
+        self.test_start_time = round(time.time(), 2)
 
     def startTest(self, test):
         self.case_start_time = time.time()
@@ -375,7 +377,7 @@ class HTMLTestRunner(Template_mixin):
         RunResult.passed = result.success_count
         RunResult.failed = result.failure_count
         RunResult.errors = result.error_count
-        RunResult.Skiped = result.skip_count
+        RunResult.skiped = result.skip_count
         if result.success_count:
             status.append('Passed:%s' % result.success_count)
         if result.failure_count:
@@ -569,7 +571,7 @@ class SMTP(object):
             raise ValueError("Please specify the email address to send")
 
         if subject is None:
-            subject = '接口自动化测试报告'
+            subject = '自动化测试报告'
         if contents is None:
             contents = env.get_template('mail.html').render(
                 mail_pass=str(RunResult.passed), 
