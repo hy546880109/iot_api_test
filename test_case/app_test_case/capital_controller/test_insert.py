@@ -13,8 +13,8 @@ class Test_Add_Task(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet("device")
         cls.in_mysql = cls.mysql.select_sql("select is_delete from t_cellar_well where id=123112312312321")
-        if cls.in_mysql == 1:
-            cls.mysql.update_sql("update t_cellar_well set is_delete=0 where id=123112312312321")
+        if cls.in_mysql == 1 or cls.in_mysql == 0:
+            cls.mysql.update_sql("delete from t_cellar_well where id=123112312312321")
         elif cls.in_mysql is None:
             pass
     def test_add_task_success(self):

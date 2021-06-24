@@ -62,7 +62,7 @@ class Test_Export(unittest.TestCase):
         print(txt)
        
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertIn(str('终端编号'), str(txt), '导出窖井列表信息失败')
+        self.assertIn(str('终端编号'), str(txt), '导出列表信息失败')
 
 
 if __name__ == '__main__':
