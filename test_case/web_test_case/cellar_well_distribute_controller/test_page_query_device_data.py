@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 import json
 import unittest
 import os
@@ -16,13 +17,20 @@ class Test_Device_Data(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_user()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_user()
+        cls.mysql.close()   
 
     def test_device_data_success(self):
         '''窖井分布-设备数据分布查询成功用例：/device/pageQueryDeviceData'''
         payload = {
             "addrid": None,
             "alarmStatus": None,
-            "departmentId": None,
+            "departmentId": self.mysql.department_id,
             "startDate": None,
             "endDate": None,
             "subType": None,

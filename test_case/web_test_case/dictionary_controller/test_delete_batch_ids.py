@@ -17,11 +17,10 @@ class Test_Add_Task(unittest.TestCase):
     
     def test_add_task_success(self):
         '''批量删除字典值成功用例：/dictionary/deleteBatchIds'''
-        payload  = {"ids": [57292403983134, 83390078552882]}
+        payload  =  [1404994626598809602]
         payload = json.dumps(payload)
         
         headers = {'Content-Type': 'application/json'}
-        print('data:',payload)
         response = Test_Add_Task.http.post('/dictionary/deleteBatchIds',data=payload,headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'批量删除字典值失败')

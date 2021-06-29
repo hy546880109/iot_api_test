@@ -1,23 +1,34 @@
 import pymysql
-import json
-import random
-import faker
 
 host = '139.159.202.43'
 port = 3306
 user = 'root'
 password = 'Antian!2020'
 
-faker = faker.Faker(locale='zh_CN')
 
 
 class Mysql_connet():
     def __init__(self, db):
         self.mysql_conn = pymysql.connect(
             host=host, port=port, user=user, password=password, db=db)
+        self.cur = self.mysql_conn
+        self.user_id = 123456789
+        self.department_id = 234567891
+        self.role_id = 345678912
+        self.device_id = 456789123
+        self.no = 567891234
+        self.terminal_no = 678912345
+        self.user_role_id = 789123456
+        self.role_menu_id = 789123456
+        self.menu_id = 1234512345
+        self.capital_id = 1234554321
+        self.alarm_id = 12334565434
+        self.work_order_id = 1232135674
+        self.task_id = 12346473453
+        self.capital_id = 124345657563
 
     def insert_sql(self, sql):
-        mysql_conn = self.mysql_conn
+        mysql_conn = self.cur
         try:
             with mysql_conn.cursor() as cursor:
                 mysql_conn.ping(reconnect=True)
@@ -26,10 +37,9 @@ class Mysql_connet():
 
         except Exception as e:
             mysql_conn.rollback()
-        mysql_conn.close()
 
     def delete_sql(self, sql):
-        mysql_conn = self.mysql_conn
+        mysql_conn = self.cur
         try:
             with mysql_conn.cursor() as cursor:
                 mysql_conn.ping(reconnect=True)
@@ -38,10 +48,10 @@ class Mysql_connet():
 
         except Exception as e:
             mysql_conn.rollback()
-        mysql_conn.close()
+
 
     def select_sql(self, sql):
-        mysql_conn = self.mysql_conn
+        mysql_conn = self.cur
         try:
             with mysql_conn.cursor() as cursor:
                 mysql_conn.ping(reconnect=True)
@@ -53,10 +63,10 @@ class Mysql_connet():
 
         except Exception as e:
             mysql_conn.rollback()
-        mysql_conn.close()
+
 
     def update_sql(self, sql):
-        mysql_conn = self.mysql_conn
+        mysql_conn = self.cur
         try:
             with mysql_conn.cursor() as cursor:
                 mysql_conn.ping(reconnect=True)
@@ -65,31 +75,13 @@ class Mysql_connet():
 
         except Exception as e:
             mysql_conn.rollback()
-        mysql_conn.close()
+  
 
     def close(self):
-        mysql_conn = self.mysql_conn
+        mysql_conn = self.cur
         mysql_conn.cursor().close()
         mysql_conn.close()
 
-
-class Mysql_data(Mysql_connet):
-    def __init__(self):
-
-        self.user_id = faker.random_number(20)
-        self.department_id = faker.random_number(20)
-        self.role_id = faker.random_number(20)
-        self.device_id = faker.random_number(20)
-        self.no = faker.random_number(20)
-        self.terminal_no = faker.random_number(20)
-        self.user_role_id = faker.random_number(20)
-        self.role_menu_id = faker.random_number(20)
-        self.menu_id = faker.random_number(20)
-        self.capital_id = faker.random_number(20)
-        self.alarm_id = faker.random_number(20)
-        self.work_order_id = faker.random_number(20)
-        self.task_id = faker.random_number(20)
-        self.capital_id = faker.random_number(20)
 
     def insert_user(self):
         self.mysql_conn = Mysql_connet('user')
@@ -106,16 +98,17 @@ class Mysql_data(Mysql_connet):
 
     def delete_user(self):
         self.mysql_conn = Mysql_connet('user')
-        self.mysql_conn.insert_sql(
+        self.mysql_conn.delete_sql(
             "delete from t_department where id={}".format(self.department_id))
-        self.mysql_conn.insert_sql(
-            "delete from t_role where id={}".format(self.role_id))
-        self.mysql_conn.insert_sql(
-            "delete from t_role_menu where id={}".format(self.role_menu_id))
-        self.mysql_conn.insert_sql(
-            "delete from t_user where where id={}".format(self.user_id))
-        self.mysql_conn.insert_sql(
+        self.mysql_conn.delete_sql(
+            "delete from t_user where id={}".format(self.user_id))
+        self.mysql_conn.delete_sql(
             "delete from t_user_role where id={}".format(self.user_role_id))
+        self.mysql_conn.delete_sql(
+            "delete from t_role where id={}".format(self.role_id))
+        self.mysql_conn.delete_sql(
+            "delete from t_role_menu where id={}".format(self.role_menu_id))
+
 
     def insert_device(self):
         self.mysql_conn = Mysql_connet('device')
@@ -124,7 +117,7 @@ class Mysql_data(Mysql_connet):
         self.mysql_conn.insert_sql("INSERT INTO `t_capital` VALUES ({}, {}, 0, {}, '系统', '', '', NULL, NULL, NULL, 0, NULL, '2021-06-11 17:44:36', NULL, NULL)".format(
             self.capital_id, self.terminal_no, self.department_id))
         self.mysql_conn.insert_sql("INSERT INTO `t_images` VALUES (1403287037510955009, {}, 0, 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/7b6cbc69d2324e83bac5bb8b08090440.jpg', 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/f9ffa1050a884c1f990803e07b92b16d.jpg', 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/5e665f4c55f24b1d944f42b7b61a0fa7.jpg', NULL, 0)".format(self.terminal_no))
-        self.mysql_conn.insert_sql("INSERT INTO `t_cellar_well_terminal` VALUES (1403287037427068930, {}, {}, 'ZK-PCB-210507', 'ZK-20210611.1', '95', '27', '0', 0, 1, 0, NULL, NULL, 0000000000, 3, '2021-06-15 11:53:13', '86995104449897874', '0', 0, 1, '{\"ch4\":5,\"domain\":\"antiancorp.com\",\"gasHeartbeat\":86400,\"ip\":\"139.159.199.99\",\"leanangle\":20,\"logNum\":10,\"openangle\":120,\"port\":9999,\"sensorHeartbeat\":86400,\"siltHeartbeat\":86400,\"siltHigh\":150,\"wakeHeartbeat\":86400,\"waterLevel1\":50,\"waterLevel2\":50}', '898604851920C0319067', '0', '2147483647', '460080533209067', '20000', '15000', '25000', '15', '30', '250')".format(self.no, self.terminal_no))
+        self.mysql_conn.insert_sql("INSERT INTO `t_cellar_well_terminal` VALUES (1403284529103253505,{},{},NULL,NULL,'0','0','0',NULL,1,0,NULL,NULL,0000000000,0,NULL,NULL,'0',0,1,NULL,NULL,'0',NULL,NULL,'0','0','0','0','0','0')".format(self.no, self.terminal_no))
         self.mysql_conn.insert_sql(
             "INSERT INTO `t_cellar_well_control_log` VALUES (1403295756407812097, {}, 0, '2021-06-11 18:19:15')".format(self.terminal_no))
         self.mysql_conn.insert_sql(
@@ -150,7 +143,7 @@ class Mysql_data(Mysql_connet):
         self.mysql_conn.delete_sql(
             "delete from t_images where id={}".format(1403287037510955009))
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_terminal where id={}".format(1403287037427068930))
+            "delete from t_cellar_well_terminal where id={}".format(1403284529103253505))
         self.mysql_conn.delete_sql(
             "delete from t_cellar_well_control_log where id={}".format(1403295756407812097))
         self.mysql_conn.delete_sql(
@@ -168,9 +161,3 @@ class Mysql_data(Mysql_connet):
         # self.mysql_conn.delete_sql("delete from t_device_param where id={}".format())
 
 
-if __name__ == "__main__":
-
-    q = Mysql_data()
-    print(q.user_id)
-    print(q.device_id)
-    print(q.department_id)

@@ -20,6 +20,7 @@ class Test_Add_Task(unittest.TestCase):
         payload = {
             "id": 220322
             }
+        
         response = Test_Add_Task.http.get('/address/getProvinceCityDistrictById',params=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'获取上一级地址失败')

@@ -4,7 +4,7 @@ from common.md5 import Md5_add
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.parse_excel import ParseExcel
-from common.mysql_data import Mysql_connet, Mysql_data
+from common.mysql_data import Mysql_connet
 import os
 import sys
 import json
@@ -26,22 +26,18 @@ def get_test_data():
 
 @ddt.ddt
 class Test_login(unittest.TestCase):
-
-    # @classmethod
-    # def setUpClass(cls) -> None:
-    #     cls.url = Conf.TEST_URL.value
-    #     cls.http = HttpRequests(cls.url)
     
     @classmethod
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
-        cls.mysql=Mysql_data()
+        cls.mysql=Mysql_connet('user')
         cls.mysql.insert_user()
-        
+
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_user()
+        cls.mysql.close()
 
     @ddt.data(*get_test_data().getDatasFromSheet())
     def test_login_success(self, data):

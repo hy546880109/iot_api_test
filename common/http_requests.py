@@ -21,11 +21,11 @@ class HttpRequests(object):
     def __init__(self, url):
         self.url = url
         self.req = requests.session()
-        self.token = get_token()
-        self.headers = {
-            'Content-Type': 'application/json',
-            'token': self.token
-        }
+        # self.token = get_token()
+        # self.headers = {
+        #     'Content-Type': 'application/json',
+        #     'token': self.token
+        # }
 
     # 封装你自己的get请求,获取资源
     def get(self, uri='', params='', data='', headers=None, cookies=None):

@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 from common.login_token import get_token
 import json
 import unittest
@@ -16,6 +17,16 @@ class Test_Device_List(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_device()
+        cls.mysql.insert_user()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_device()
+        cls.mysql.delete_user()
+        cls.mysql.close()        
+
 
     def test_device_list_success(self):
         '''获取窖井列表信息成功用例：/device/pageQuery'''

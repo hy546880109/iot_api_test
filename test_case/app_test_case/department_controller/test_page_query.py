@@ -1,3 +1,4 @@
+from common.login_token import get_token
 import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
@@ -26,7 +27,7 @@ class Test_Add_Task(unittest.TestCase):
         }
         payload = json.dumps(payload)
         print('data:',payload)
-        headers = {'Content-Type': 'application/json'}
+        headers = {'Content-Type': 'application/json', 'token': get_token()}
         response = Test_Add_Task.http.post('/department/pageQuery',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'查询部门下所有的子部门失败')

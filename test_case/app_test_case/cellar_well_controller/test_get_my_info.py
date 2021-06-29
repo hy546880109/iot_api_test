@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 import unittest, json
 from config.config_test import Conf
 from common.http_requests import HttpRequests
@@ -9,7 +10,7 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
-
+        
     def test_add_task_success(self):
         '''获取我的信息用例：/termianal/getMyInfo'''
         headers = {'token': get_token()}

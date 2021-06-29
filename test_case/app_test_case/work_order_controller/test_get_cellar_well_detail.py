@@ -1,3 +1,4 @@
+from common.login_token import get_token
 import unittest
 import json
 from config.config_test import Conf
@@ -17,7 +18,7 @@ class Test_Get_Index(unittest.TestCase):
             "pageSize": 10
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
+        headers = {'Content-Type': 'application/json','token': get_token()}
         response = Test_Get_Index.http.post(
             '/work/order/getMyWorkOrders', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')

@@ -1,4 +1,5 @@
 # import pytest
+from common.mysql_data import Mysql_connet
 import json
 import os
 import ddt
@@ -31,6 +32,13 @@ class Test_login(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_user()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_user()
+        cls.mysql.close()   
 
     @ddt.data(*get_test_data().getDatasFromSheet())
     def test_login_success(self, data):

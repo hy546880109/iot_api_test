@@ -12,8 +12,7 @@ class Test_Get_Index(unittest.TestCase):
 
     def test_get_index_success(self):
         """APP首页报警、工单已读成功用例: /modifyRead"""
-        headers = {'token':get_token()}
-        print(headers)
+        headers = {'Content-Type': 'application/json', 'token': get_token()}
         response = Test_Get_Index.http.get('/modifyRead', headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), 'APP首页报警、工单已读失败')

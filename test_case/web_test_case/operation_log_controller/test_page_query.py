@@ -21,10 +21,10 @@ class Test_Add_Task(unittest.TestCase):
             "createName": "斯元话定经书低",
             "logType": 93686580,
             "endDate": "2007-01-03",
-            "pageSize": -2434082,
-            "logFrom": -45580018,
+            "pageSize": 2434082,
+            "logFrom": 45580018,
             "operateType": "est reprehenderit ipsum eiusmod nisi",
-            "departmentId": -82619406,
+            "departmentId": 82619406,
             "pageNum": 97211303,
             "addrId": 98456171,
             "startDate": "1992-12-19"

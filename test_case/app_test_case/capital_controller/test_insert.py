@@ -1,3 +1,4 @@
+from common.login_token import get_token
 from common.mysql_data import Mysql_connet
 import unittest
 import json
@@ -11,12 +12,16 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
-        cls.mysql = Mysql_connet("device")
-        cls.in_mysql = cls.mysql.select_sql("select is_delete from t_cellar_well where id=123112312312321")
-        if cls.in_mysql == 1 or cls.in_mysql == 0:
-            cls.mysql.update_sql("delete from t_cellar_well where id=123112312312321")
-        elif cls.in_mysql is None:
-            pass
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_device()
+        cls.mysql.insert_user()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_device()
+        cls.mysql.delete_user()
+        cls.mysql.close()    
+
     def test_add_task_success(self):
         '''新增资产用例：/capital/insert'''
         payload = {
@@ -27,7 +32,7 @@ class Test_Add_Task(unittest.TestCase):
             "cityName": "深圳市",
             "coverType": 71,
             "createAt": "1977-02-03 14:57:32",
-            "departmentId": 1382562817882931201,
+            "departmentId": self.mysql.department_id,
             "dutyMan": "est proident tempor",
             "dutyManPhone": "18142359380",
             "id": 12311231231221,
@@ -37,7 +42,7 @@ class Test_Add_Task(unittest.TestCase):
             "images4": "http://dummyimage.com/400x400",
             "latitude": "22.54901",
             "longitude": "113.93109",
-            "no": "8888801",
+            "no": self.mysql.no,
             "provinceId": 44,
             "provinceName": "广东省",
             "remark": "qui voluptate",
@@ -45,11 +50,11 @@ class Test_Add_Task(unittest.TestCase):
             "safeManPhone": "18174576460",
             "spec": "1",
             "subType": 0,
-            "terminalNo": "88881011",
+            "terminalNo": self.mysql.terminal_no,
             "type": 8,
-            "userId": 1377074593995628546
+            "userId": self.mysql.user_id
         }
-        headers = {'Content-Type':'application/json'}
+        headers = {'Content-Type':'application/json', 'token': get_token()}
         payload = json.dumps(payload).encode('utf-8')
         response = Test_Add_Task.http.post('/capital/insert', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')

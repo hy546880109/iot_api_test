@@ -18,7 +18,14 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
-        
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_device()
+
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_device()
+        cls.mysql.close()
 
 
     def test_add_task_success(self):

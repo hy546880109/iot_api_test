@@ -41,7 +41,7 @@ class Test_Add_Task(unittest.TestCase):
         txt = pd.read_excel(r'work.xls')  #读取文件内容用作断言
         print('txt:',txt)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertIn(str('窖井编号'), str(txt),'导出工单失败')
+        self.assertIn(str('工单编号'), str(txt),'导出工单失败')
 
 
 
