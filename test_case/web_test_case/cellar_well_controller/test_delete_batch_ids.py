@@ -10,7 +10,6 @@ path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 
-
 class Test_Delete_Batch(unittest.TestCase):
 
     @classmethod
@@ -19,6 +18,11 @@ class Test_Delete_Batch(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('device')
         cls.mysql.insert_device()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_device()
+        cls.mysql.close()
 
 
     def test_delete_batch_success(self):
