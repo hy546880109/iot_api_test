@@ -24,7 +24,6 @@ class Test_Delete_Batch(unittest.TestCase):
         cls.mysql.delete_device()
         cls.mysql.close()
 
-
     def test_delete_batch_success(self):
         '''批量删除工单成功用例：/device/deleteBatchIds'''
         payload = [self.mysql.work_order_id]
