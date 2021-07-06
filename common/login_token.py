@@ -18,7 +18,7 @@ def get_token():
     payload = {
     "code": code,
     "password": "e10adc3949ba59abbe56e057f20f883e",
-    "validateCode": 'code'  # 暂时屏蔽验证码用来测试
+    "validateCode": '1234'  # 暂时屏蔽验证码用来测试
     }
     headers = {'Content-Type': 'application/json'}
     payload = json.dumps(payload)

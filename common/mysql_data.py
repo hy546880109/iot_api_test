@@ -1,10 +1,11 @@
 import pymysql
+from config.config_test import Conf
 
-host = '139.159.202.43'
-port = 3306
-user = 'root'
-password = 'Antian!2020'
 
+host = Conf.host.value
+port = Conf.port.value
+user = Conf.user.value
+password = Conf.password.value
 
 
 class Mysql_connet():
@@ -85,7 +86,7 @@ class Mysql_connet():
 
     def insert_user(self):
         self.mysql_conn = Mysql_connet('user')
-        self.mysql_conn.insert_sql("insert  into `t_department`(`id`,`name`,`pid`,`province_id`,`province_name`,`city_id`,`city_name`,`area_id`,`area_name`,`remark`,`is_delete`,`create_at`,`create_by`,`update_at`,`update_by`) values \
+        self.mysql_conn.insert_sql("insert  into `t_department`(`id`,`name`,`pid`,`province_id`,`province_name`,`city_id`,`city_name`,`area_id`,`area_name`,`remark`,`is_delete`,`create_at`,`create_by`,`update_at`,`update_by`) values\
         ({},'移动部门',0,11,'北京',1101,'北京市辖',110101,'东城区','in ut qui cillum veniam',0,'2021-04-15 13:13:57',NULL,'2021-06-08 18:02:27',NULL)".format(self.department_id))
         self.mysql_conn.insert_sql("insert  into `t_user`(`id`,`code`,`name`,`password`,`salt`,`level`,`phone`,`icon`,`email`,`is_delete`,`status`,`department_id`,`province_id`,`province_name`,`city_id`,`city_name`,`area_id`,`area_name`,`last_login_time`,`create_at`,`create_by`,`update_at`,`update_by`,`remark`,`jpush_id`) values \
         ({},'hy','黄先春','2bd8934d1902b74caa2ce4f77bb84812','c0ae9feb',1,'180358812635','https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/87fef3cda6e14762a572e4022a017a97.jpg','huang_xc@sohu.com',0,0,{},43,'湖南',4311,'永州',431129,'江华瑶族自治县','2021-06-03 09:15:10','2021-03-31 09:45:43',NULL,'2021-05-14 17:16:16',NULL,NULL,NULL)".format(self.user_id, self.department_id))
