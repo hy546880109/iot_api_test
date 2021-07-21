@@ -24,9 +24,15 @@ class Mysql_connet():
         self.menu_id = 1234512345
         self.capital_id = 1234554321
         self.alarm_id = 12334565434
-        self.work_order_id = 1232135674
+        self.push_message_id = 1234509876
         self.task_id = 12346473453
+        self.push_set_id = 123456321456
         self.capital_id = 124345657563
+        self.cellar_well_terminal_id = 111222333444
+        self.cellar_well_control_log_id = 222333444555
+        self.cellar_well_sensor_id = 333444555666
+        self.images_id = 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/04263299e3db47f58d87df1b4e982e85.jpg'
+        self.work_order_id = 333444555666777
 
     def insert_sql(self, sql):
         mysql_conn = self.cur
@@ -50,7 +56,6 @@ class Mysql_connet():
         except Exception as e:
             mysql_conn.rollback()
 
-
     def select_sql(self, sql):
         mysql_conn = self.cur
         try:
@@ -65,7 +70,6 @@ class Mysql_connet():
         except Exception as e:
             mysql_conn.rollback()
 
-
     def update_sql(self, sql):
         mysql_conn = self.cur
         try:
@@ -76,13 +80,11 @@ class Mysql_connet():
 
         except Exception as e:
             mysql_conn.rollback()
-  
 
     def close(self):
         mysql_conn = self.cur
         mysql_conn.cursor().close()
         mysql_conn.close()
-
 
     def insert_user(self):
         self.mysql_conn = Mysql_connet('user')
@@ -110,29 +112,29 @@ class Mysql_connet():
         self.mysql_conn.delete_sql(
             "delete from t_role_menu where id={}".format(self.role_menu_id))
 
-
     def insert_device(self):
         self.mysql_conn = Mysql_connet('device')
         self.mysql_conn.insert_sql("INSERT  INTO `t_cellar_well`(`id`,`no`,`terminal_no`,`province_id`,`province_name`,`city_id`,`city_name`,`area_id`,`area_name`,`address`,`spec`,`department_id`,`department_name`,`type`,`sub_type`,`cover_type`,`is_online`,`control_status`,`status`,`is_delete`,`create_at`,`create_by`,`update_at`,`longitude`,`latitude`) VALUES\
         ({},{},{},44,'广东省',4403,'深圳市',440303,'南山区','大新路南头街道88-36号','1',1382562817882931201,'b',0,1,1,1,1,0,0,'2021-06-09 10:21:29',NULL,NULL,'113.93109','22.54901')".format(self.device_id, self.no, self.terminal_no))
         self.mysql_conn.insert_sql("INSERT INTO `t_capital` VALUES ({}, {}, 0, {}, '系统', '', '', NULL, NULL, NULL, 0, NULL, '2021-06-11 17:44:36', NULL, NULL)".format(
             self.capital_id, self.terminal_no, self.department_id))
-        self.mysql_conn.insert_sql("INSERT INTO `t_images` VALUES (1403287037510955009, {}, 0, 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/7b6cbc69d2324e83bac5bb8b08090440.jpg', 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/f9ffa1050a884c1f990803e07b92b16d.jpg', 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/5e665f4c55f24b1d944f42b7b61a0fa7.jpg', NULL, 0)".format(self.terminal_no))
-        self.mysql_conn.insert_sql("INSERT INTO `t_cellar_well_terminal` VALUES (1403284529103253505,{},{},NULL,NULL,'0','0','0',NULL,1,0,NULL,NULL,0000000000,0,NULL,NULL,'0',0,1,NULL,NULL,'0',NULL,NULL,'0','0','0','0','0','0')".format(self.no, self.terminal_no))
+        self.mysql_conn.insert_sql("INSERT INTO `t_images` VALUES ({}, {}, 0, 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/7b6cbc69d2324e83bac5bb8b08090440.jpg', NULL, NULL, NULL, 0,'2021-06-11 17:44:36')".format(self.images_id, self.terminal_no))
+        self.mysql_conn.insert_sql("INSERT INTO `t_cellar_well_terminal` VALUES ({},{},{},NULL,NULL,'0','0','0',NULL,1,0,NULL,NULL,0000000000,0,NULL,NULL,'0',0,1,NULL,NULL,'0',NULL,NULL,'0','0','0','0','0','0')".format(
+            self.cellar_well_terminal_id, self.no, self.terminal_no))
         self.mysql_conn.insert_sql(
-            "INSERT INTO `t_cellar_well_control_log` VALUES (1403295756407812097, {}, 0, '2021-06-11 18:19:15')".format(self.terminal_no))
+            "INSERT INTO `t_cellar_well_control_log` VALUES ({}, {}, 0, '2021-06-11 18:19:15')".format(self.cellar_well_control_log_id, self.terminal_no))
         self.mysql_conn.insert_sql(
-            "INSERT INTO `t_cellar_well_sensor` VALUES (1403287188904357889, {}, 90, 20, 10, 0, 'V1.0', 'V1.0', 0, 0, 0, '2021-06-11 17:45:12', '0', 0, NULL, 20, 30)".format(self.terminal_no))
+            "INSERT INTO `t_cellar_well_sensor` VALUES ({}, {}, 90, 20, 10, 0, 'V1.0', 'V1.0', 0, 0, 0, '2021-06-11 17:45:12', '0', 0, NULL, 20, 30)".format(self.cellar_well_sensor_id, self.terminal_no))
         self.mysql_conn.insert_sql(
             "INSERT INTO `t_device_alarm` VALUES ({}, {}, 51, 0, 0, '2021-06-18 16:44:02', NULL, NULL, 0)".format(self.alarm_id, self.terminal_no))
         self.mysql_conn.insert_sql(
-            "INSERT INTO `t_push_message` VALUES (1403288965368262658, {}, {}, NULL, '2021-06-11 17:52:15', '2021-06-11 17:52:16', 1, NULL, 0)".format(self.alarm_id, self.user_id))
+            "INSERT INTO `t_push_message` VALUES ({}, {}, {}, NULL, '2021-06-11 17:52:15', '2021-06-11 17:52:16', 1, NULL, 0)".format(self.push_message_id, self.alarm_id, self.user_id))
         self.mysql_conn.insert_sql(
-            "INSERT INTO `t_push_set` VALUES (1403288766956711938, {}, {}, '8', 0, 1, 1, '2021-06-11 17:51:29', 1377074593995628546)".format(self.user_id, self.department_id))
+            "INSERT INTO `t_push_set` VALUES ({}, {}, {}, '8', 0, 1, 1, '2021-06-11 17:51:29', 1377074593995628546)".format(self.push_set_id, self.user_id, self.department_id))
         self.mysql_conn.insert_sql(
-            "INSERT INTO `t_task` VALUES (1403291589383565314, {}, 0, '2021-06-11 18:02:41', 1377074593995628546, 1377074593995628546, 0, '1,21,3', 6, 0, NULL, '告警后立即触发', 0, 1)".format(self.department_id))
+            "INSERT INTO `t_task` VALUES ({}, {}, 0, '2021-07-19 17:12:10', NULL, {}, 0, '4,1,109', 2, 0, NULL, '111', 0, 0, 0, 0, 0)".format(self.task_id, self.department_id, self.user_id))
         self.mysql_conn.insert_sql("insert  into `t_work_order`(`id`,`work_no`,`work_src`,`work_type`,`terminal_no`,`alarm_id`,`user_id`,`reason`,`level`,`prv_finish_time`,`actual_finish_time`,`status`,`create_at`,`create_by`,`address`,`longitude`,`latitude`,`is_delete`,`is_read`) values \
-        (1403288961291399169,'GD202106118064',0,0,{},{},{},NULL,0,'2021-06-12 00:00:00','2021-06-11 17:54:58',2,'2021-06-11 17:52:15',NULL,'南山区高新中二道粤海街道25号','113.937336','22.545404',0,1)".format(self.terminal_no, self.alarm_id, self.user_id))
+        ({},'GD202106118064',0,0,{},{},{},NULL,0,'2021-06-12 00:00:00','2021-06-11 17:54:58',2,'2021-06-11 17:52:15',NULL,'南山区高新中二道粤海街道25号','113.937336','22.545404',0,1)".format(self.work_order_id, self.terminal_no, self.alarm_id, self.user_id))
         # self.mysql_conn.insert_sql("insert into t_device_param")
 
     def delete_device(self):
@@ -142,23 +144,21 @@ class Mysql_connet():
         self.mysql_conn.delete_sql(
             "delete from t_capital where id={}".format(self.capital_id))
         self.mysql_conn.delete_sql(
-            "delete from t_images where id={}".format(1403287037510955009))
+            "delete from t_images where id={}".format(self.images_id))
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_terminal where id={}".format(1403284529103253505))
+            "delete from t_cellar_well_terminal where id={}".format(self.cellar_well_terminal_id))
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_control_log where id={}".format(1403295756407812097))
+            "delete from t_cellar_well_control_log where id={}".format(self.cellar_well_control_log_id))
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_sensor where id={}".format(1403287188904357889))
+            "delete from t_cellar_well_sensor where id={}".format(self.cellar_well_sensor_id))
         self.mysql_conn.delete_sql(
             "delete from t_device_alarm where id={}".format(self.alarm_id))
         self.mysql_conn.delete_sql(
-            "delete from t_push_message where id={}".format(1403288965368262658))
+            "delete from t_push_message where id={}".format(self.push_message_id))
         self.mysql_conn.delete_sql(
-            "delete from t_push_set where id={}".format(1403288766956711938))
+            "delete from t_push_set where id={}".format(self.push_set_id))
         self.mysql_conn.delete_sql(
-            "delete from t_task where id={}".format(1403291589383565314))
+            "delete from t_task where id={}".format(self.task_id))
         self.mysql_conn.delete_sql(
-            "delete from t_work_order where id={}".format(1403288961291399169))
+            "delete from t_work_order where id={}".format(self.work_order_id))
         # self.mysql_conn.delete_sql("delete from t_device_param where id={}".format())
-
-

@@ -18,19 +18,17 @@ class Test_Add_Task(unittest.TestCase):
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('device')
-        cls.mysql.insert_device()
         cls.mysql.insert_user()
 
     @classmethod
     def tearDownClass(cls) -> None:
-        cls.mysql.delete_device()
         cls.mysql.delete_user()
         cls.mysql.close()
 
     def test_add_task_success(self):
         """新增或者更新部门信息成功用例：/department/saveOrUpdate"""
         payload = {
-            "addrId": None,
+            "addrId": 440305,
             "name": "b222222222222",
             "remark": "in ut qui cillum veniam",
             "id": self.mysql.department_id,

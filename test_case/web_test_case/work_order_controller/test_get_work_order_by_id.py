@@ -1,3 +1,4 @@
+from common.mysql_data import Mysql_connet
 import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
@@ -13,12 +14,17 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
-        
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_device()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_device()
     
     def test_add_task_success(self):
         '''查看回单结果成功用例：/work/order/getWorkOrderById'''
         payload = {
-            "id": 1,
+            "id": self.mysql.work_order_id,
         }
 
         response = Test_Add_Task.http.get('/work/order/getWorkOrderById',params=payload)
