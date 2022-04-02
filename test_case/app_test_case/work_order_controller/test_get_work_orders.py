@@ -21,7 +21,8 @@ class Test_Get_Index(unittest.TestCase):
     def test_get_index_success(self):
         """根据工单ID获取窖井信息成功用例: /work/order/getAppCellarWellDetail"""
         payload = {
-            "id": self.mysql.work_order_id,
+            # "id": self.mysql.work_order_id
+            "id": 1422033768985702401
         }
         headers = {'Content-Type': 'application/json','token': get_token()}
         response = Test_Get_Index.http.get('/work/order/getAppCellarWellDetail', params=payload, headers=headers)

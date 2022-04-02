@@ -10,18 +10,27 @@
 '''
 
 import os
+import sys
+
+
+def add_syspath():
+    path = os.path.join((os.path.dirname((
+        os.path.dirname(os.path.abspath(__file__))))))
+    sys.path.append(path)
+
+add_syspath()
 import time
 import unittest
-from test_project.test_case.test_home_page import Home_page
-from test_project.test_case.test_microservice import Test_microservice
-from test_project.test_case.test_feedback import Feedback
-from test_project.test_case.test_message_config import Message_config
-from test_project.test_case.test_log import Log
-from test_project.test_case.test_websocket import Test_websoket
+from iot_api_test.test_case.test_home_page import Home_page
+from iot_api_test.test_case.test_microservice import Test_microservice
+from iot_api_test.test_case.test_feedback import Feedback
+from iot_api_test.test_case.test_message_config import Message_config
+from iot_api_test.test_case.test_log import Log
+from iot_api_test.test_case.test_websocket import Test_websoket
 
-from test_project.config.config_test import Conf
-from test_project.lib.TestRunner.HTMLTestRunner import HTMLTestRunner
-from test_project.lib.TestRunner.HTMLTestRunner import SMTP
+from iot_api_test.config.config_test import Conf
+from iot_api_test.lib.TestRunner.HTMLTestRunner import HTMLTestRunner
+from iot_api_test.lib.TestRunner.HTMLTestRunner import SMTP
 
 if __name__ == '__main__':
     

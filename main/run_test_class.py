@@ -7,9 +7,19 @@
 '''
 按指定类运行测试用例
 '''
+import os
+import sys
 
+
+def add_syspath():
+    path = os.path.join((os.path.dirname((
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))))
+    sys.path.append(path)
+
+add_syspath()
+print(sys.path)
 import unittest
-from test_project.test_case.test_battal import TestBattal
+from iot_api_test.test_case.test_battal import TestBattal
 
 
 if __name__ == '__main__':

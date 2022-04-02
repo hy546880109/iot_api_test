@@ -1,3 +1,4 @@
+from common.login_token import get_token
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 import requests
@@ -21,17 +22,16 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''上传升级包成功用例：/upgrade/package/insert'''
         payload = {
-            "url": "http://www.baidu.com",
-            "type": 0,
-            "createAt": "2000-12-17 07:14:18",
-            "remark": "第一次發佈版本",
-            "ver": "1.0",
-            "size": 531,
-            "deviceType": 0,
-            "name": "app"
+          "id": "",
+          "name": "iWellGatewayV1.0.0.bin",
+          "remark": "iWellGatewayV1.0.0",
+          "size": 76696,
+          "type": "0",
+          "url": "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/5a5cf672bb4540c1b7bcc362493877e6.bin",
+          "ver": "iWellGatewayV1.0.0"
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
+        headers = {'Content-Type': 'application/json','token': get_token()}
         response = Test_Add_Task.http.post(
             '/upgrade/package/insert', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
