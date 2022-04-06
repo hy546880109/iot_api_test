@@ -1,5 +1,4 @@
 import requests
-import demjson
 import json
 import os,sys
 import unittest

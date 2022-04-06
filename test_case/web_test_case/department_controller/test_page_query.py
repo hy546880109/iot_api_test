@@ -1,14 +1,11 @@
-from common.mysql_data import Mysql_connet
-from common.http_requests import HttpRequests
-from config.config_test import Conf
-import unittest
-import os
-import sys
-import json
+import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
+from common.mysql_data import Mysql_connet
+from common.http_requests import HttpRequests
+from config.config_test import Conf
 
 
 class Test_Add_Task(unittest.TestCase):

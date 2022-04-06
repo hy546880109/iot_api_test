@@ -13,10 +13,10 @@ class Conf(enum.Enum):
     '''
     # TEST_URL = 'http://192.168.1.15:9527/admin/v1.0'
     # TEST_URL = 'http://139.159.199.99:9527/admin/v1.0'
-    TEST_URL = 'http://106.52.198.240/:9527/admin/v1.0'
+    TEST_URL = 'http://106.52.198.240:9527/admin/v1.0'
 
     # TEST_APP_URL = 'http://139.159.199.99:9527/api/v1.0'
-    TEST_APP_URL = 'http://106.52.198.240/:9527/api/v1.0'
+    TEST_APP_URL = 'http://106.52.198.240:9527/api/v1.0'
     PROD_URL = ''
 
     SEND_EMAIL = 'hy546880109@qq.com'
@@ -33,6 +33,7 @@ class Conf(enum.Enum):
     
     # host = '139.159.202.43'
     # port = 3306
+
     # user = 'root'
     # password = 'Antian!2020'
 

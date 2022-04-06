@@ -1,12 +1,16 @@
 # import pytest
-
+import os
+import sys
+def add_syspath():
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__))))))
+    sys.path.append(path)
+add_syspath()
 from common.md5 import Md5_add
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.parse_excel import ParseExcel
 from common.mysql_data import Mysql_connet
-import os
-import sys
 import json
 import ddt
 import unittest
@@ -48,7 +52,7 @@ class Test_login(unittest.TestCase):
             "code": users,
             "password": password,
             # "password": "e10adc3949ba59abbe56e057f20f883e",
-            "validateCode": code       #暂时屏蔽验证码用来测试
+            # "validateCode": code       #暂时屏蔽验证码用来测试
         }
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}

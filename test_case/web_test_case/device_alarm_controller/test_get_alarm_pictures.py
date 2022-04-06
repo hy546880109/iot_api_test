@@ -1,9 +1,12 @@
-import json
+import unittest,os,sys,json
+
+path = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
+sys.path.append(path)
 from common.login_token import get_token
 from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
 from config.config_test import Conf
-import unittest
 
 
 class Test_Add_Task(unittest.TestCase):

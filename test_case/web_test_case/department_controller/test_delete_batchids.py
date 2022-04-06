@@ -1,14 +1,12 @@
-from common.http_requests import HttpRequests
-from config.config_test import Conf
-import unittest
-import os
-import sys
-import json
-from common.mysql_data import Mysql_connet
+import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
+from common.http_requests import HttpRequests
+from config.config_test import Conf
+from common.mysql_data import Mysql_connet
+
 
 
 # payload = json.dumps(payload)

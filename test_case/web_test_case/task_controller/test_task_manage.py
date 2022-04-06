@@ -1,14 +1,16 @@
-from common.http_requests import HttpRequests
-from config.config_test import Conf
-import requests
-import demjson
-import json
-import os
-import sys
 import unittest
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
-sys.path.append(path)
+import os,sys
+
+
+def add_syspath():
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__))))))
+    sys.path.append(path)
+add_syspath()
+import json
+import requests
+from config.config_test import Conf
+from common.http_requests import HttpRequests
 
 
 class Test_Add_Task(unittest.TestCase):

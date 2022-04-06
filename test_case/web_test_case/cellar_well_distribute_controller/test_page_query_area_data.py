@@ -1,16 +1,12 @@
-from common.mysql_data import Mysql_connet
-from common.login_token import get_token
-from config.config_test import Conf
-from common.http_requests import HttpRequests
-import json
-import unittest
-import os
-import sys
+import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
-
+from common.mysql_data import Mysql_connet
+from common.login_token import get_token
+from config.config_test import Conf
+from common.http_requests import HttpRequests
 
 class Test_Page_Query_Area(unittest.TestCase):
 

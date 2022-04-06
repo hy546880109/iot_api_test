@@ -1,5 +1,13 @@
 import json
 import unittest
+import os,sys
+
+
+def add_syspath():
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__))))))
+    sys.path.append(path)
+add_syspath()
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.md5 import Md5_add

@@ -7,6 +7,11 @@
 
 
 import unittest
+import unittest,os,sys,json
+
+path = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
+sys.path.append(path)
 from websocket import create_connection
 import websocket
 

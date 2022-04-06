@@ -172,3 +172,7 @@ class Mysql_connet():
         self.mysql_conn.delete_sql(
             "delete from t_work_order where id={}".format(self.work_order_id))
         # self.mysql_conn.delete_sql("delete from t_device_param where id={}".format())
+
+if __name__ == "main":
+    con = Mysql_connet('user')
+    con.delete_user()

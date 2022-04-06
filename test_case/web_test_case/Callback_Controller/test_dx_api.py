@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # _*_ codeing: utf-8 _*_
-import unittest
+import unittest,os,sys,json
+
+path = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
+sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
@@ -23,15 +27,15 @@ class Test_Detele_Device(unittest.TestCase):
         cls.mysql.close()
 
     def test_delete_device_success(self):
-        """µçÐÅ»Øµ÷³É¹¦ÓÃÀý£º/cwting/callback"""
+        """ï¿½ï¿½ï¿½Å»Øµï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/cwting/callback"""
         payload = {"id": Test_Detele_Device.device_id}
         response = Test_Detele_Device.http.get(
             '/cwting/callback', params=payload)
-        self.assertEqual(200, response.status_code, '·µ»Ø·Ç200')
-        self.assertEqual(str(0), str(response.json()['code']), 'É¾³ý½Ñ¾®Ê§°Ü')
+        self.assertEqual(200, response.status_code, 'ï¿½ï¿½ï¿½Ø·ï¿½200')
+        self.assertEqual(str(0), str(response.json()['code']), 'É¾ï¿½ï¿½ï¿½Ñ¾ï¿½Ê§ï¿½ï¿½')
         self.in_mysql = self.mysql.select_sql(
-            'select is_delete from t_cellar_well where id={}'.format(Test_Detele_Device.device_id))  # ÔÙ´Î²éÑ¯É¾³ý±êÊ¶Î»
-        self.assertEqual(1, self.in_mysql, 'Êý¾Ý¿âÎ´É¾³ý£¬É¾³ý½Ñ¾®ÓÃÀýÖ´ÐÐÊ§°Ü')
+            'select is_delete from t_cellar_well where id={}'.format(Test_Detele_Device.device_id))  # ï¿½Ù´Î²ï¿½Ñ¯É¾ï¿½ï¿½ï¿½ï¿½Ê¶Î»
+        self.assertEqual(1, self.in_mysql, 'ï¿½ï¿½ï¿½Ý¿ï¿½Î´É¾ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½Ê§ï¿½ï¿½')
 
 
 if __name__ == '__main__':

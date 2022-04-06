@@ -1,9 +1,7 @@
 import requests
-import demjson
 import json
-import os
-import sys
-import unittest
+import unittest,os,sys,json
+
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)

@@ -24,14 +24,14 @@ def get_token():
     uri = Conf.TEST_URL.value
     mysql = Mysql_connet('user')
     mysql.insert_user()
-    code = mysql.select_sql('select code from t_user where code="cs"')
-    password = mysql.select_sql('select password from t_user where code="cs"')
+    code = mysql.select_sql('select code from t_user where code="hy"')
+    password = mysql.select_sql('select password from t_user where code="hy"')
     payload = {
     "code": code,
-    "password": password,
-    "validateCode": '1234'  # 暂时屏蔽验证码用来测试
+    "password": 'e10adc3949ba59abbe56e057f20f883e'
+    # "validateCode": '1234'  # 暂时屏蔽验证码用来测试
     }
-    headers = {'Content-Type': 'application/json'}
+    headers = {'Content-Type': 'application/json','Connection': 'close'}
     payload = json.dumps(payload)
     url = uri + '/login'
     res = requests.post(url, data=payload, headers=headers)
