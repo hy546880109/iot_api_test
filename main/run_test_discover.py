@@ -4,11 +4,11 @@
 # @Email : hy546880109@qq.com
 # @date  : 2020.12.08
 # @Project: 云平台接口测试用例
-import os,sys,time
-import unittest
-# path = os.path.join(os.path.dirname(
-#     os.path.dirname(os.path.abspath(__file__))))
-# sys.path.append(path)
+import unittest,os,sys,json,time
+
+path = os.path.join(os.path.dirname(os.path.dirname(
+    (os.path.abspath(__file__)))))
+sys.path.append(path)
 from config.config_test import Conf
 from lib.TestRunner.HTMLTestRunner import HTMLTestRunner
 from lib.TestRunner.HTMLTestRunner import SMTP

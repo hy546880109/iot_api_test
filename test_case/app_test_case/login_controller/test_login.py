@@ -1,10 +1,11 @@
-# import pytest
-from common.mysql_data import Mysql_connet
-import json
-import os
-import ddt
-import unittest
+import unittest,os,sys,json
 
+path = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
+sys.path.append(path)# import pytest
+
+from common.mysql_data import Mysql_connet
+import ddt
 from common.parse_excel import ParseExcel
 from config.config_test import Conf
 from common.http_requests import HttpRequests

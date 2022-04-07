@@ -1,12 +1,11 @@
-from common.mysql_data import Mysql_connet
-from common.login_token import get_token
-import unittest,os,sys
-
-from requests.api import head
+import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
+from common.mysql_data import Mysql_connet
+from common.login_token import get_token
+from requests.api import head
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 

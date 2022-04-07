@@ -1,5 +1,9 @@
+import unittest,os,sys,json
+
+path = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__)))))
+sys.path.append(path)
 from common.login_token import get_token
-import unittest, json
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
