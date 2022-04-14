@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc114a85-f25a-408f-b5e6-5e634f1769ac" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alarm.xls" beforeDir="false" afterPath="$PROJECT_DIR$/alarm.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/device.xls" beforeDir="false" afterPath="$PROJECT_DIR$/device.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_all_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_all_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work.xls" beforeDir="false" afterPath="$PROJECT_DIR$/work.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mysql_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/mysql_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
-  <component name="RunManager" selected="Python 测试.Unittest (test_get_all_menu.py 内)">
+  <component name="RunManager" selected="Python.mysql_data">
+    <configuration name="mysql_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iot_api_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/mysql_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittest (test_get_all_menu.py 内)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -40,20 +58,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_all_menu.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_dx_api.Test_Detele_Device 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="iot_api_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/Callback_Controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_dx_api.Test_Detele_Device&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="test_get_all_menu.Test_Add_Task 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -100,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mysql_data" />
         <item itemvalue="Python 测试.Unittest (test_get_all_menu.py 内)" />
         <item itemvalue="Python 测试.test_get_all_menu.Test_Add_Task 的 Unittest" />
         <item itemvalue="Python 测试.test_login.Test_login 的 Unittest" />
         <item itemvalue="Python 测试.test_get_device_by_id.Test_get_device 的 Unittest" />
-        <item itemvalue="Python 测试.test_dx_api.Test_Detele_Device 的 Unittest" />
       </list>
     </recent_temporary>
   </component>
@@ -129,5 +133,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/mysql_data.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

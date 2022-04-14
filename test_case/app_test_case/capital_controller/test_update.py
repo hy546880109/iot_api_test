@@ -1,4 +1,7 @@
+import time
 import unittest,os,sys,json
+
+from pymysql import NULL
 
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
@@ -29,38 +32,38 @@ class Test_Add_Task(unittest.TestCase):
         '''更新资产用例：/capital/update'''
 
         payload = {
-        'address': "南山区科技中二路2栋靠近深圳软件园2期",
-        'areaId': 440305,
-        'areaName': "南山区",
-        'cityId': 4403,
-        'cityName': "深圳市",
-        'coverType': 0,
-        'createAt': "2021-07-30",
-        'departmentId': "1420253676542480386",
-        'dutyMan': "hh",
-        'dutyManPhone': "13246988667",
-        "hardwareVer": "string",
-        'id': "1420635818199941122",
-        'images1': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/94fc06af67a44905982c9e9b2acc881a.jpg",
-        'images2': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/1d9dfa552a1e4f3481d4504ddf2f7d52.jpg",
-        'images3': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/c90355d70cc84648a0d6af8f033a6390.jpg",
-        'images4': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/5910b93f881746868d3378e31411ad75.jpg",
-        'latitude': 22.545395,
-        'longitude': 113.937587,
-        "mac": "string",
-        "name": "string",
-        "remark": "string",
-        'no': "869951044459604",
-        'provinceId': 44,
-        'provinceName': "广东省",
-        'spec': "2",
-        "safeMan": "string",
-        "safeManPhone": "string",
-        "softwareVer": "string",
-        'subType': 5,
-        'terminalNo': "869951044459604",
-        'type': 0,
-        "userId": 0
+            'address': "南山区科技中二路29号靠近深圳软件园2期",
+            'areaId': 440305,
+            'areaName': "南山区",
+            'cityId': 4403,
+            'cityName': "深圳市",
+            'coverType': 0,
+            'createAt': "2022-04-13",
+            'departmentId': self.mysql.department_id,
+            'dutyMan': "",
+            'dutyManPhone': "",
+            'hardwareVer': "IGW-NB-K-BX-V1.0",
+            'iccid': "89861119212002368684",
+            'id': self.mysql.capital_id,
+            'images1': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/962d361a1b3742c8bd295ad8748e4aa2.jpg",
+            'images2': NULL,
+            'images3': NULL,
+            'images4': NULL,
+            'imsi': "460113036642806",
+            'latitude': 22.545289,
+            'longitude': 113.937628,
+            'mac': "C3:B2:5D:7E:AE:7B",
+            'name': "hh",
+            'no': self.mysql.no,
+            'provinceId': 44,
+            'provinceName': "广东省",
+            'remark': "",
+            'softwareVer': "ZL-V1.0.5-220411",
+            'spec': "1",
+            'subType': 2,
+            'terminalNo': self.mysql.terminal_no,
+            'type': 2,
+            'unitId': "1"
         }
 
         headers = {'Content-Type': 'application/json','token': get_token(),'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7','Accept-Encoding': 'gzip, deflate','X-Requested-With': 'com.antancorp.iot.device.service.impl','Accept': 'application/json'}
@@ -68,7 +71,7 @@ class Test_Add_Task(unittest.TestCase):
         response = Test_Add_Task.http.post(
             '/capital/update', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
+        self.assertEqual(str(-1), str(response.json()['code']), '更新资产失败')
 
 
 if __name__ == '__main__':
