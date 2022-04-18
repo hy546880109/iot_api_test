@@ -38,7 +38,7 @@ class Mysql_connet():
         self.cellar_well_terminal_id = 111222333444
         self.cellar_well_control_log_id = 222333444555
         self.cellar_well_sensor_id = 333444555666
-        self.images_id = 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/04263299e3db47f58d87df1b4e982e85.jpg'
+        self.images_id = '1231232131'
         self.work_order_id = 333444555666777
         self.value = '{"alarmIsSwitch":0,"angleBluetoothSignalValue":10,"angleKillAlarmValue":"12","angleQuake":"250","angleStaticMaxValue":"150","angleStaticTime":"2","broadcastCyc":1,"ch4Level1":"50","ch4Level2":"20","ch4Level3":"10","coverIsSwitch":1,"domain":"www.antan.com","gasHeartbeat":86400,"ip":"106.52.198.240","leanangle":15,"logNum":0,"moduleType":"1,2,4,16","monitorModel":0,"openangle":15,"port":9999,"qxAlarmNum":15,"qxDayAbnormalWakeNum":1500,"sensorAlarmShakeNum":9,"sensorHeartbeat":86400,"sensorHeartbeatDuration":24,"sensorIsSwitch":0,"siltHeartbeat":86400,"siltHigh":1,"terminalHeartbeatDuration":24,"timeout":1000,"wakeHeartbeat":86400,"waterLevel1":10,"waterLevel2":20,"waterRemoveQuakeTime":5}'
         self.value = json.dumps(self.value)
