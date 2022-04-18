@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.login_token import get_token
 from common.mysql_data import Mysql_connet
@@ -27,9 +27,8 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''获取设备参数用例：/termianal/getDeviceParameters'''
         palyload = {'terminalNo' : self.mysql.terminal_no}
-        headers = {'token': get_token()}
         response = Test_Add_Task.http.get(
-            '/termianal/getDeviceParameters', params=palyload, headers=headers)
+            '/termianal/getDeviceParameters', params=palyload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取设备参数失败')
 

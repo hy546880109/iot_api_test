@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.login_token import get_token
 from config.config_test import Conf
@@ -20,15 +20,16 @@ class Test_Get_Index(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
+        cls.mysql.close()
 
     def test_get_index_success(self):
-        """根据工单ID获取窖井信息成功用例: /work/order/getAppCellarWellDetail"""
+        """根据工单ID获取窖井信息成功用例: /work/order/getCellarWellDetail"""
         payload = {
-            # "id": self.mysql.work_order_id
-            "id": 1422033768985702401
+            "id": self.mysql.work_order_id
+            # "id": 1422033768985702401
         }
-        headers = {'Content-Type': 'application/json','token': get_token()}
-        response = Test_Get_Index.http.get('/work/order/getAppCellarWellDetail', params=payload, headers=headers)
+        # headers = {'Content-Type': 'application/json','token': get_token()}
+        response = Test_Get_Index.http.get('/work/order/getCellarWellDetail', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '根据工单ID获取窖井信息失败')
 

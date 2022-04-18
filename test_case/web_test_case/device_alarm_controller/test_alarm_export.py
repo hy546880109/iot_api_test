@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
 path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
 import pandas as pd
@@ -28,18 +28,32 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''报警列表导出成功用例：/history/alarm/export'''
         payload = {
-            "terminalNo": None,
-            "alarmStartDate": None,
-            "alarmType": None,
-            "addrId": None,
-            "departmentId": None,
-            "dissolveEndDate": None,
-            "alarmEndDate": None,
-            "dissolveStartDate": None,
-            "status":None,
-            "pageSize": 1,
-            "pageNum": 10,
-            "dispatchStatus": None
+            'addrId': None,
+            'batteryNum': None,
+            'bluetoothStatus': None,
+            'controlStatus': None,
+            'departmentId': None,
+            'endDate': None,
+            'hardwareVer': None,
+            'innerCapStatus': None,
+            'installStatus': None,
+            'isOnline': None,
+            'lockStatus': None,
+            'mac': None,
+            'moduleType': None,
+            'name': None,
+            'no': None,
+            'outCapStuatus': None,
+            'pageNum': 1,
+            'pageSize': 10,
+            'semaphore': None,
+            'startDate': None,
+            'startNun': 1,
+            'status': None,
+            'subType': None,
+            'terminalNo': None,
+            'total': 7,
+            'type': None
         }
         payload = json.dumps(payload)
         headers = {'Content-Type':'application/json;charset=UTF-8'}

@@ -30,16 +30,32 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''导出用户操作日志成功用例：/operate/log/export'''
         payload = {
-            "addrId": None,
-            "createName": None,
-            "departmentId": None,
-            "logFrom": None,
-            "logType": None,
-            "operateType": None,
-            "startDate": None,
-            "endDate": None,
-            "pageNum": 1,
-            "pageSize": 10
+            'addrId': None,
+            'batteryNum': None,
+            'bluetoothStatus': None,
+            'controlStatus': None,
+            'departmentId': None,
+            'endDate': None,
+            'hardwareVer': None,
+            'innerCapStatus': None,
+            'installStatus': None,
+            'isOnline': None,
+            'lockStatus': None,
+            'mac': None,
+            'moduleType': None,
+            'name': None,
+            'no': None,
+            'outCapStuatus': None,
+            'pageNum': 1,
+            'pageSize': 10,
+            'semaphore': None,
+            'startDate': None,
+            'startNun': 1,
+            'status': None,
+            'subType': None,
+            'terminalNo': None,
+            'total': 7,
+            'type': None
         }
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}

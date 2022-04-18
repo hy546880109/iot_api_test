@@ -1,8 +1,8 @@
 import unittest,os,sys,json
 import pandas as pd
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
@@ -19,18 +19,32 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''导出工单成功用例：/work/order/export'''
         payload = {
-            "addrId": None,
-            "pageSize": 1,
-            "alarmType": None,
-            "finishEndDate": None,
-            "overtimeStatus": None,
-            "status": None,
-            "pageNum": 1,
-            "departmentId": None,
-            "workOrderEndDate": None,
-            "workOrderStartDate": None,
-            "workSrc": None,
-            "finishStartDate": None
+            'addrId': None,
+            'batteryNum': None,
+            'bluetoothStatus': None,
+            'controlStatus': None,
+            'departmentId': None,
+            'endDate': None,
+            'hardwareVer': None,
+            'innerCapStatus': None,
+            'installStatus': None,
+            'isOnline': None,
+            'lockStatus': None,
+            'mac': None,
+            'moduleType': None,
+            'name': None,
+            'no': None,
+            'outCapStuatus': None,
+            'pageNum': 1,
+            'pageSize': 10,
+            'semaphore': None,
+            'startDate': None,
+            'startNun': 1,
+            'status': None,
+            'subType': None,
+            'terminalNo': None,
+            'total': 7,
+            'type': None
         }
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}

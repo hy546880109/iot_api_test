@@ -1,7 +1,10 @@
+from pickle import NONE
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+from pymysql import NULL
+
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
@@ -32,36 +35,45 @@ class Test_Export(unittest.TestCase):
     def test_export_success(self):
         '''导出窖井列表信息成功用例：/device/export'''
         payload = {
-            "controlStatus": None,
-            "no": None,
-            "addrId": None,
-            "bluetoothStatus": None,
-            "terminalNo": None,
-            "subType": None,
-            "hardwareVer": None,
-            "semaphore": None,
-            "isOnline": None,
-            "startDate": None,
-            "batteryNum": None,
-            "departmentId": None,
-            "coverType": None,
-            "status": None,
-            "pageSize": 10,
-            "pageNum": 1,
-            "endDate": None
+            'addrId': None,
+            'batteryNum': None,
+            'bluetoothStatus': None,
+            'controlStatus': None,
+            'departmentId': None,
+            'endDate': None,
+            'hardwareVer': None,
+            'innerCapStatus': None,
+            'installStatus': None,
+            'isOnline': None,
+            'lockStatus': None,
+            'mac': None,
+            'moduleType': None,
+            'name': None,
+            'no': None,
+            'outCapStuatus': None,
+            'pageNum': 1,
+            'pageSize': 10,
+            'semaphore': None,
+            'startDate': None,
+            'startNun': 1,
+            'status': None,
+            'subType': None,
+            'terminalNo': None,
+            'total': 7,
+            'type': None
         }
         headers = {'Content-Type':'application/json;charset=UTF-8'}
         payload = json.dumps(payload)
         response = Test_Export.http.post(
             '/device/export', data=payload,headers=headers)
         res = response.content
-        with open('device.xls','wb')as f:   #返回的xls内容写入新的文件中
+        with open('device.xlsx','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
-        txt = pd.read_excel(r'device.xls')  #读取文件内容用作断言
+        txt = pd.read_excel(r'device.xlsx')  #读取文件内容用作断言
         print(txt)
-       
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(str('终端编号'), str(txt), '导出列表信息失败')
+
 
 
 if __name__ == '__main__':
