@@ -16,11 +16,10 @@ class Test_Add_Task(unittest.TestCase):
         
     
     def test_add_task_success(self):
-        '''获取所有的日志操作类型成功用例：/operate/log/getAllOperationType'''
-        playday = {'logType':1}
-        response = Test_Add_Task.http.get('/operate/log/getAllOperationType',params=playday)
+        '''平台事件总览: 工单相关内容成功用例：/index/getIndexPlatformView_w'''
+        response = Test_Add_Task.http.get('/index/getIndexPlatformView_w')
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']),'获取所有的日志操作类型失败')
+        self.assertEqual(str(0), str(response.json()['code']),'平台事件总览: 工单相关内容失败')
 
 
 if __name__ == '__main__':

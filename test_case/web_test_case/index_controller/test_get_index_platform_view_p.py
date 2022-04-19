@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
@@ -16,10 +16,10 @@ class Test_Add_Task(unittest.TestCase):
         
     
     def test_add_task_success(self):
-        '''平台事件总览成功用例：/index/getIndexPlatformView'''
-        response = Test_Add_Task.http.get('/index/getIndexPlatformView')
+        '''平台事件总览: 消息推送信息成功用例：/index/getIndexPlatformView_p'''
+        response = Test_Add_Task.http.get('/index/getIndexPlatformView_p')
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']),'平台事件总览失败')
+        self.assertEqual(str(0), str(response.json()['code']),'平台事件总览: 消息推送信息失败')
 
 
 if __name__ == '__main__':

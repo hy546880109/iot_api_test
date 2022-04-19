@@ -1,7 +1,8 @@
+from email import header
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
@@ -26,13 +27,14 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''自动派单成功用例：/history/alarm/autoDistributeTask'''
         payload = [
-            self.mysql.alarm_id
+            self.mysql.alarm_id,
         ]
 
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
+        # cookies = dict(cookieucode='admin',cookieupwd='e10adc3949ba59abbe56e057f20f883e')
+        header = {'Origin':'http://106.52.198.240:8081'}
         response = Test_Add_Task.http.post(
-            '/history/alarm/autoDistributeTask', data=payload, headers=headers)
+            '/history/alarm/autoDistributeTask', data=payload, headers=header)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '派单失败')
 

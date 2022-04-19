@@ -25,7 +25,7 @@ class Mysql_connet():
         self.cur = self.mysql_conn
         self.user_id = 123456789
         self.mac = str('C3:B2:5D:7E:AE:7A')
-        self.department_id = 234567891
+        self.department_id = '234567891'
         self.role_id = 345678912
         self.device_id = 456789123
         self.no = 567891234

@@ -14,6 +14,7 @@ class Test_Add_Task(unittest.TestCase):
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('user')
+        cls.mysql.delete_user()
         cls.mysql.insert_user()
 
     @classmethod
