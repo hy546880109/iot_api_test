@@ -24,7 +24,7 @@ class Test_Add_Task(unittest.TestCase):
     
     def test_add_task_success(self):
         '''获取维修人员成功用例：/user/getMaintainer'''
-        payload = self.mysql.department_id
+        payload = {'departmentId':self.mysql.department_id}
         response = Test_Add_Task.http.get('/user/getMaintainer',params=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'获取维修人员失败')

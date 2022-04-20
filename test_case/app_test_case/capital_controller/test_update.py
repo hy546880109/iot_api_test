@@ -71,7 +71,7 @@ class Test_Add_Task(unittest.TestCase):
         response = Test_Add_Task.http.post(
             '/capital/update', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(-1), str(response.json()['code']), '更新资产失败')
+        self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
 
 
 if __name__ == '__main__':

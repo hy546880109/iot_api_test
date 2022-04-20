@@ -25,10 +25,10 @@ class Test_Add_Task(unittest.TestCase):
         cls.mysql.close() 
         
     def test_add_task_success(self):
-        '''获取设备参数用例：/termianal/getDeviceParameters'''
+        '''获取设备参数用例：/terminal/getDeviceParameters'''
         palyload = {'terminalNo' : self.mysql.terminal_no}
         response = Test_Add_Task.http.get(
-            '/termianal/getDeviceParameters', params=palyload)
+            '/terminal/getDeviceParameters', params=palyload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取设备参数失败')
 

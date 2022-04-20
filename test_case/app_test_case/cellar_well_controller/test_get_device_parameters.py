@@ -27,7 +27,7 @@ class Test_Add_Task(unittest.TestCase):
 
 
     def test_add_task_success(self):
-        '''修改设备参数用例：/termianal/modifyDeviceParameters'''
+        '''修改设备参数用例：/terminal/modifyDeviceParameters'''
         payload = {
             'angleKillAlarmValue': 10,
             'angleQuake': 250,
@@ -58,7 +58,7 @@ class Test_Add_Task(unittest.TestCase):
         headers = {
             'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/termianal/modifyDeviceParameters', data=payload,headers=headers)
+            '/terminal/modifyDeviceParameters', data=payload,headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '修改设备参数失败')
 

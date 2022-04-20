@@ -23,13 +23,13 @@ class Test_Get_Index(unittest.TestCase):
         cls.mysql.close()
 
     def test_get_index_success(self):
-        """根据工单ID获取窖井信息成功用例: /work/order/getCellarWellDetail"""
+        """根据工单ID获取窖井信息成功用例: /work/order/getCellarWellDetailByWorkId"""
         payload = {
             "id": self.mysql.work_order_id
             # "id": 1422033768985702401
         }
         # headers = {'Content-Type': 'application/json','token': get_token()}
-        response = Test_Get_Index.http.get('/work/order/getCellarWellDetail', params=payload)
+        response = Test_Get_Index.http.get('/work/order/getCellarWellDetailByWorkId', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '根据工单ID获取窖井信息失败')
 

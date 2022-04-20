@@ -19,8 +19,8 @@ class Test_Add_Task(unittest.TestCase):
         cls.mysql.insert_user()
         
     def test_add_task_success(self):
-        '''获取我的信息用例：/termianal/getMyInfo'''
-        response = Test_Add_Task.http.get('/termianal/getMyInfo',headers=headers)
+        '''获取我的信息用例：/terminal/getMyInfo'''
+        response = Test_Add_Task.http.get('/terminal/getMyInfo',headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取我的信息失败')
 

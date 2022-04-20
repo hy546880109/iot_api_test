@@ -11,11 +11,11 @@ class Conf(enum.Enum):
     '''
     环境配置枚举类
     '''
-    # TEST_URL = 'http://192.168.1.15:9527/admin/v1.0'
+    # TEST_URL = 'http://124.71.31.43:9527/admin/v1.0'
     # TEST_URL = 'http://139.159.199.99:9527/admin/v1.0'
     TEST_URL = 'http://106.52.198.240:9527/admin/v1.0'
 
-    # TEST_APP_URL = 'http://139.159.199.99:9527/api/v1.0'
+    # TEST_APP_URL = 'http://124.71.31.43:9527/api/v1.0'
     TEST_APP_URL = 'http://106.52.198.240:9527/api/v1.0'
     PROD_URL = ''
 
@@ -26,14 +26,14 @@ class Conf(enum.Enum):
     foxmail = 'smtp.263.net'
     qqmail = 'smtp.qq.com'
 
+
     host = '106.52.198.240'
     port = 3306
     user = 'root'
     password = 'Root_2021'
     
-    # host = '139.159.202.43'
+    # host = '124.71.31.43'
     # port = 3306
-
     # user = 'root'
     # password = 'Antian!2020'
 
