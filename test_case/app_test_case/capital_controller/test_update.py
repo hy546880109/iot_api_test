@@ -44,7 +44,7 @@ class Test_Add_Task(unittest.TestCase):
             'dutyManPhone': "",
             'hardwareVer': "IGW-NB-K-BX-V1.0",
             'iccid': "89861119212002368684",
-            'id': self.mysql.capital_id,
+            'id': self.mysql.device_id,
             'images1': "https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/962d361a1b3742c8bd295ad8748e4aa2.jpg",
             'images2': NULL,
             'images3': NULL,
@@ -66,7 +66,7 @@ class Test_Add_Task(unittest.TestCase):
             'unitId': "1"
         }
 
-        headers = {'Content-Type': 'application/json','token': get_token(),'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7','Accept-Encoding': 'gzip, deflate','X-Requested-With': 'com.antancorp.iot.device.service.impl','Accept': 'application/json'}
+        headers = {'Content-Type': 'application/json','Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7','Accept-Encoding': 'gzip, deflate','X-Requested-With': 'com.antancorp.iot.device.service.impl','Accept': 'application/json'}
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post(
             '/capital/update', data=payload, headers=headers)
