@@ -27,9 +27,9 @@ class Mysql_connet():
         self.mac = str('C3:B2:5D:7E:AE:7A')
         self.department_id = '234567891'
         self.role_id = 345678912
-        self.device_id = 456789123
-        self.no = 567891234
-        self.terminal_no = 678912345
+        self.device_id = '456789123'
+        self.no = '567891234'
+        self.terminal_no = '678912345'
         self.user_role_id = 789123456
         self.role_menu_id = 789123456
         self.menu_id = 1234512345
@@ -43,6 +43,11 @@ class Mysql_connet():
         self.cellar_well_sensor_id = 333444555666
         self.images_id = 1231232121
         self.work_order_id = 333444555666777
+        self.key_id = 1232233412
+        self.lock_id = '8997987343'
+        self.key_authorize_id = '12312344512'
+        self.key_authorize_log_id = '0091230123'
+        self.authorize_id = 12320091231
         self.value = '{"alarmIsSwitch":0,"angleBluetoothSignalValue":10,"angleKillAlarmValue":"12","angleQuake":"250","angleStaticMaxValue":"150","angleStaticTime":"2","broadcastCyc":1,"ch4Level1":"50","ch4Level2":"20","ch4Level3":"10","coverIsSwitch":1,"domain":"www.antan.com","gasHeartbeat":86400,"ip":"106.52.198.240","leanangle":15,"logNum":0,"moduleType":"1,2,4,16","monitorModel":0,"openangle":15,"port":9999,"qxAlarmNum":15,"qxDayAbnormalWakeNum":1500,"sensorAlarmShakeNum":9,"sensorHeartbeat":86400,"sensorHeartbeatDuration":24,"sensorIsSwitch":0,"siltHeartbeat":86400,"siltHigh":1,"terminalHeartbeatDuration":24,"timeout":1000,"wakeHeartbeat":86400,"waterLevel1":10,"waterLevel2":20,"waterRemoveQuakeTime":5}'
         self.value = json.dumps(self.value)
 
@@ -150,14 +155,25 @@ class Mysql_connet():
              `is_delete`, `create_at`) VALUES ({}, {}, 1506887104729194497,0, 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/ce8ca0ed40e34647b42f04059408a722.jpg',\
              NULL, NULL, NULL, 0,'2022-03-24 14:54:17');"
                                    .format(self.images_id, self.terminal_no))
-        # self.mysql_conn.insert_sql("INSERT INTO `t_cellar_well_terminal`(`id`, `no`, `terminal_no`, `hardware_ver`, `software_ver`, `battery_num`,\
-        #      `semaphore`, `heart_rate`, `is_online`, `alarm_status`, `protect_status`, `last_protect_at`, `create_at`, `alarm_total`, `heart_total`,\
-        #      `last_heart_time`, `sim`, `sinr`, `upgrade_status`, `upgrade_at`, `config_status`, `config_value`, `curr_config_value`, `config_at`, `iccid`,\
-        #      `is_delete`, `mac`, `imsi`, `firedamp`, `co`, `hs`, `mud_high`, `water_high`, `temperature`, `install_status`, `down_config_value`, `lean_angle`,\
-        #      `name`, `remark`, `third_id`, `lock_id`, `lock_status`, `inner_cap_status`, `out_cap_stuatus`, `lock_temperature`, `lock_humidity`, `unlocking_at`)\
-        #      VALUES ({}, {}, {}, 'IGW-NB-K-BX-V1.0', 'ZL-V1.0.3-220324', '0', '0', '0', 0, 1, 1, '2022-03-24 14:54:17', NULL,\
-        #      0000000004, 0, NULL, NULL, '0', 0, NULL, 4, NULL, NULL, NULL, NULL, '1', {}, '460081087908397', NULL, '0', '0', '0', '0', '0', 0, NULL,\
-        #      NULL, NULL, NULL, NULL, NULL, 1, 0, 0, NULL, NULL, NULL);"
+
+        self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_key`(`id`, `lock_id`, `name`, `mac`, `type`, `is_online`, `is_delete`, `battery_num`,\
+             `remark`, `user_id`, `department_id`, `create_at`, `create_by`, `update_at`, `update_by`) VALUES \
+            ({}, NULL, 'ss', 'F2:A0:25:6D:03:56', 0, 1, 0, 0, NULL, {}, {}, '2022-02-17 16:16:03',\
+             1456088038487625729, '2022-04-12 14:23:36', 1512260802038464514);"
+            .format(self.key_id, self.user_id, self.department_id))
+
+        self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_key_authorize`(`id`, `key_id`, `name`, `type`, `department_id`, `start_at`, `end_at`,\
+       `status`, `is_delete`, `create_at`, `create_by`, `authorize_by`, `authorize_at`, `update_at`, `update_by`) VALUES \
+        ({}, {}, '上市', 0, {}, '2022-03-25 00:00:00', '2022-03-26 00:00:00', 0, 1, '2022-03-25 14:07:19',\
+        1456088038487625729, NULL, NULL, NULL, NULL);"
+        .format(self.key_authorize_id, self.key_id, self.department_id))
+
+        self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_key_authorize_log`(`id`, `pid`, `authorize_at`, `authorize_by`, `mobile`, `status`, `remark`)\
+         VALUES ({}, {}, '2022-03-25 14:00:27', 1456088038487625729, '18025372646', 1, 'xxxxxx');".format(self.key_authorize_log_id, self.authorize_id))
+
+        self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_key_user_relate`(`authorize_id`, `key_id`, `user_id`, `terminal_no`) VALUES\
+        ({}, {}, {}, {});".format(self.authorize_id, self.key_id, self.user_id, self.terminal_no))
+
         self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_terminal`(`id`, `no`, `terminal_no`, `hardware_ver`, `software_ver`, `battery_num`,\
              `semaphore`, `heart_rate`, `is_online`, `alarm_status`, `protect_status`, `last_protect_at`, `create_at`, `alarm_total`, `heart_total`,\
             `last_heart_time`, `sim`, `sinr`, `upgrade_status`, `upgrade_at`, `config_status`, `config_value`, `curr_config_value`, `config_at`,\
@@ -172,6 +188,7 @@ class Mysql_connet():
         self.mysql_conn.insert_sql(
             "INSERT INTO `t_cellar_well_control_log` (`id`, `terminal_no`, `status`, `create_at`) VALUES ({}, {}, 0, '2022-03-24 13:58:52')"
             .format(self.cellar_well_control_log_id, self.terminal_no))
+            
         self.mysql_conn.insert_sql(
             "INSERT INTO `t_cellar_well_sensor` (`id`, `terminal_no`, `battery_num`, `lean_angle`, `open_angle`, `is_online`, `hardware_ver`, `software_ver`,\
             `upgrade_status`, `upgrade_at`, `type`, `is_delete`, `create_at`, `mac`, `bind_status`, `sensor_no`, `lean_alarm_value`, `open_alarm_value`,\
@@ -227,13 +244,19 @@ class Mysql_connet():
             "delete from t_task where id={}".format(self.task_id))
         self.mysql_conn.delete_sql(
             "delete from t_work_order where id={}".format(self.work_order_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key where id={}".format(self.key_id))
 
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize where id={}".format(self.key_authorize_id))
+
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize_log where id={}".format(self.key_authorize_log_id))
+
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_user_relate where id={}".format(self.authorize_id))
 
 if __name__ == '__main__':
     con = Mysql_connet('device')
     print(con)
     # con.insert_device()
-    # con.delete_device()
+    con.delete_device()
     # con.insert_user()
-    con.delete_user()
+    # con.delete_user()
     con.close()
