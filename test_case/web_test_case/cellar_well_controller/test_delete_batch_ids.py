@@ -22,7 +22,7 @@ class Test_Delete_Batch(unittest.TestCase):
         cls.mysql.close()
 
     def test_delete_batch_success(self):
-        '''批量删除工单成功用例：/device/deleteBatchIds'''
+        '''批量删除设备成功用例：/device/deleteBatchIds'''
         payload = [self.mysql.work_order_id]
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
@@ -31,7 +31,7 @@ class Test_Delete_Batch(unittest.TestCase):
         print('payload:', payload)
         print(response.text)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '批量删除工单失败')
+        self.assertEqual(str(0), str(response.json()['code']), '批量删除设备失败')
 
 
 if __name__ == '__main__':
