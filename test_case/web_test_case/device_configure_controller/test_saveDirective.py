@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
@@ -16,7 +16,7 @@ class Test_Add_Task(unittest.TestCase):
         
     
     def test_add_task_success(self):
-        '''获取设备配置列表成功用例：/device/config/pageQuery'''
+        '''保存设备配置参数成功用例：/device/config/saveDirective'''
         payload = {
         "terminalNoList": [
         "ea ex nisi id",
@@ -45,9 +45,9 @@ class Test_Add_Task(unittest.TestCase):
 }
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
-        response = Test_Add_Task.http.post('/device/config/pageQuery',data=payload, headers=headers)
+        response = Test_Add_Task.http.post('/device/config/saveDirective',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']),'获取设备配置列表失败')
+        self.assertEqual(str(0), str(response.json()['code']),'保存设备配置参数失败')
 
 
 if __name__ == '__main__':
