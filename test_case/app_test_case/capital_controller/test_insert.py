@@ -10,7 +10,7 @@ import unittest
 import json
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-
+# from test_case.web_test_case.cellar_well_controller.test_delete import Test_Detele_Device
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -19,6 +19,7 @@ class Test_Add_Task(unittest.TestCase):
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('device')
+        cls.mysql.delete_device()
 
     @classmethod
     def tearDownClass(cls) -> None:

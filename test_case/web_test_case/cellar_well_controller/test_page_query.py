@@ -48,8 +48,8 @@ class Test_Device_List(unittest.TestCase):
         }
 
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json', 'token': get_token()}
-        response = Test_Device_List.http.post('/device/pageQuery', data=payload, headers=headers)
+        # headers = {'Content-Type': 'application/json', 'token': get_token()}
+        response = Test_Device_List.http.post('/device/pageQuery', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取窖井列表信息失败')
 

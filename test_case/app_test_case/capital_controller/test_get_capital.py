@@ -27,9 +27,8 @@ class Test_Add_Task(unittest.TestCase):
         '''获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo'''
         payload = {"terminalNo": self.mysql.no}
         payload = json.dumps(payload)
-        headers = {
-            'Content-Type': 'application/json','token': get_token()}
-        response = Test_Add_Task.http.post('/capital/getCapitalByTerminalNoOrSensorNo', data=payload,headers=headers)
+        
+        response = Test_Add_Task.http.post('/capital/getCapitalByTerminalNoOrSensorNo', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取资产失败')
 

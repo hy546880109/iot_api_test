@@ -21,9 +21,9 @@ class Test_Get_Index(unittest.TestCase):
             "pageSize": 10
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json','token': get_token()}
+        # headers = {'Content-Type': 'application/json','token': get_token()}
         response = Test_Get_Index.http.post(
-            '/work/order/getMyWorkOrders', data=payload, headers=headers)
+            '/work/order/getMyWorkOrders', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取我的工单失败')
 

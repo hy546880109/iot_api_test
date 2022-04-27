@@ -30,9 +30,9 @@ class Test_Get_Index(unittest.TestCase):
             "terminalNo": self.mysql.terminal_no
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json','token': get_token()}
+        # headers = {'Content-Type': 'application/json','token': get_token()}
         response = Test_Get_Index.http.post(
-            '/work/order/setControl', data=payload, headers=headers)
+            '/work/order/setControl', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '布/撤控失败')
 

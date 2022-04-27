@@ -27,9 +27,9 @@ class Test_Add_Task(unittest.TestCase):
           "terminalNo": self.mysql.terminal_no
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json', 'token': get_token()}
+        
         response = Test_Add_Task.http.post(
-            '/device/getDeviceAlarms', data=payload, headers=headers)
+            '/device/getDeviceAlarms', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取设备某种报警类型下的报警信息失败')
 

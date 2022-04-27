@@ -28,9 +28,9 @@ class Test_Add_Task(unittest.TestCase):
         payload = {
             'id': self.mysql.device_id
         }
-        headers = {'token': get_token()}
+       
         response = Test_Add_Task.http.get(
-            '/device/getDeviceById', params=payload, headers=headers)
+            '/device/getDeviceById', params=payload)
 
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')

@@ -27,8 +27,8 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''根据ID获取部门成功用例：/department/getDepartmentById'''
         payload  = {"id":self.mysql.department_id}
-        headers = {'token': get_token()}
-        response = Test_Add_Task.http.get('/department/getDepartmentById',params=payload, headers=headers)
+        
+        response = Test_Add_Task.http.get('/department/getDepartmentById',params=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'根据ID获取部门失败')
 

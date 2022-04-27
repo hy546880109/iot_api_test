@@ -72,7 +72,7 @@ class Test_Export(unittest.TestCase):
         txt = pd.read_excel(r'device.xlsx')  #读取文件内容用作断言
         print(txt)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertIn(str('终端编号'), str(txt), '导出列表信息失败')
+        self.assertIn(str('窖井编号'), str(txt), '导出列表信息失败')
 
 
 

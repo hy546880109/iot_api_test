@@ -3,7 +3,6 @@ import unittest
 import os
 import sys
 
-
 def add_syspath():
     path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
         os.path.dirname(os.path.abspath(__file__))))))
@@ -11,7 +10,7 @@ def add_syspath():
 add_syspath()
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-
+from common.mysql_data import Mysql_connet
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -19,25 +18,22 @@ class Test_Add_Task(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
+        cls.mysql = Mysql_connet('user')
+        cls.mysql.delete_user()
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        cls.mysql.delete_user()
+        cls.mysql.close()
 
     def test_add_task_success(self):
         '''增加角色资源成功用例：/menu/insert'''
         payload = [
-            {
-                "owns": False,
-                "roleId": 39590059,
-                "menuId": 61918944
-            },
-            {
-                "menuId": 87668902,
-                "roleId": 42174822,
-                "owns": True
-            },
-            {
-                "roleId": 13223315,
-                "menuId": 79588311,
-                "owns": False
-            }
+          {
+            "menuId": self.mysql.menu_id,
+            "owns": True,
+            "roleId": self.mysql.role_id
+          }
         ]
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}

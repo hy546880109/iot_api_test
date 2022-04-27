@@ -33,11 +33,11 @@ class Test_Page_Query_Area(unittest.TestCase):
             'spec': "",
             'subType': ""
         }
-        headers = {'token' : get_token(),'Content-Type': 'application/json'}
+        # headers = {'token' : get_token(),'Content-Type': 'application/json'}
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
         response = Test_Page_Query_Area.http.post(
-            '/device/pageQueryAreaData', data=payload, headers=headers)
+            '/device/pageQueryAreaData', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(
             response.json()['code']), '窖井分布-区域数据分布查询失败')

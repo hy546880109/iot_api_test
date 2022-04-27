@@ -122,8 +122,8 @@ class Mysql_connet():
             "INSERT INTO `user`.`t_role`(`id`, `name`, `remark`, `is_delete`, `create_at`, `create_by`, `update_at`, `update_by`) VALUES ({}, '施工人员', '施工人员', 0,\
             '2021-06-24 09:21:23', 1377074593995628546, '2021-06-30 10:06:57', NULL);"
             .format(self.role_id))
-        self.mysql_conn.insert_sql("INSERT INTO `user`.`t_role_menu`(`id`, `role_id`, `menu_id`) VALUES ({}, {}, 10);"
-                                   .format(self.role_menu_id, self.role_id))
+        self.mysql_conn.insert_sql("INSERT INTO `user`.`t_role_menu`(`id`, `role_id`, `menu_id`) VALUES ({}, {}, {});"
+                                   .format(self.role_menu_id, self.role_id, self.menu_id))
 
     def delete_user(self):
         self.mysql_conn = Mysql_connet('user')

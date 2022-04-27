@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.login_token import get_token
 from sys import int_info
@@ -30,8 +30,8 @@ class Test_Get_Index(unittest.TestCase):
             "base64Str": 'https://antian-iot-oss.obs.cn-south-1.myhuaweicloud.com:443/bf75aa98846240248412a9c8433aed6b.jpg'
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json', 'token': get_token()}
-        response = Test_Get_Index.http.post('/user/doBase64', data=payload, headers=headers)
+        # headers = {'Content-Type': 'application/json', 'token': get_token()}
+        response = Test_Get_Index.http.post('/user/doBase64', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '上传头像失败')
 
