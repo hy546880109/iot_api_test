@@ -223,34 +223,35 @@ class Mysql_connet():
     def delete_device(self):
         self.mysql_conn = Mysql_connet('device')
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well where no={}".format(self.no))
+            # "delete from t_cellar_well where no={}".format(self.no))
+            "delete from t_cellar_well")
         self.mysql_conn.delete_sql(
-            "delete from t_capital where no={}".format(self.no))
+            "delete from t_capital")
         self.mysql_conn.delete_sql(
-            "delete from t_images where id={}".format(self.images_id))
+            "delete from t_images ")
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_terminal where id={}".format(self.cellar_well_terminal_id))
+            "delete from t_cellar_well_terminal ")
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_control_log where id={}".format(self.cellar_well_control_log_id))
+            "delete from t_cellar_well_control_log ")
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_sensor where id={}".format(self.cellar_well_sensor_id))
+            "delete from t_cellar_well_sensor ")
         self.mysql_conn.delete_sql(
-            "delete from t_device_alarm where id={}".format(self.alarm_id))
+            "delete from t_device_alarm ")
         self.mysql_conn.delete_sql(
-            "delete from t_push_message where id={}".format(self.push_message_id))
+            "delete from t_push_message ")
         self.mysql_conn.delete_sql(
-            "delete from t_push_set where id={}".format(self.push_set_id))
+            "delete from t_push_set ")
         self.mysql_conn.delete_sql(
-            "delete from t_task where id={}".format(self.task_id))
+            "delete from t_task ")
         self.mysql_conn.delete_sql(
-            "delete from t_work_order where id={}".format(self.work_order_id))
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key where id={}".format(self.key_id))
+            "delete from t_work_order ")
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key ")
 
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize where id={}".format(self.key_authorize_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize ")
 
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize_log where id={}".format(self.key_authorize_log_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize_log ")
 
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key_user_relate where id={}".format(self.authorize_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_user_relate ")
 
 if __name__ == '__main__':
     con = Mysql_connet('device')
