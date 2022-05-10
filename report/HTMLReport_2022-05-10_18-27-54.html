@@ -416,22 +416,22 @@
                                 
                                 <tr>
                                     <td> 开始时间</td>
-                                    <td class="text-right">2022-04-19 19:11:41</td>
+                                    <td class="text-right">2022-05-10 18:27:54</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 持续时间</td>
-                                    <td class="text-right">0:03:57.288020</td>
+                                    <td class="text-right">0:03:05.092004</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 状态</td>
-                                    <td class="text-right">Passed:111 Failed:6</td>
+                                    <td class="text-right">Passed:132 Failed:6</td>
                                 </tr>
                                 
                                 <tr>
                                     <td>详情:</td>
-                                    <td class="text-right">http://106.52.198.240:9527/admin/v1.0接口测试用例执行情况</td>
+                                    <td class="text-right">http://139.159.199.99:9527/admin/v1.0接口测试用例执行情况</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -499,7 +499,7 @@
         <div>获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo</div>
     </td>
     <td style="color: #495057">
-        <div>1.36 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -525,124 +525,51 @@
         <div>新增资产用例：/capital/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.24 s</div>
+        <div>0.19 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>app_test_case.capital_controller.test_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.3',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.3.1' class='hiddenRow'>
-    <td class='passCase'>
+<tr id='ft1.3.1' class='none'>
+    <td class='failCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>更新资产用例：/capital/update</div>
     </td>
     <td style="color: #495057">
-        <div>1.41 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='failClass'>
-    <td>app_test_case.cellar_well_controller.test_get_device_parameters.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.4',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='ft1.4.1' class='none'>
-    <td class='failCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>修改设备参数用例：/termianal/modifyDeviceParameters</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.17 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3.1')" >
         fail</a>
-    <div id='div_ft1.4.1' class="popup_window">
+    <div id='div_ft1.3.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        ft1.4.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\cellar_well_controller\test_get_device_parameters.py", line 63, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '修改设备参数失败')
-AssertionError: '0' != '404'
+        ft1.3.1: Traceback (most recent call last):
+  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\capital_controller\test_update.py", line 74, in test_add_task_success
+    self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
+AssertionError: '0' != '-1'
 - 0
-+ 404
- : 修改设备参数失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-    <td></td>
-</tr>
-
-<tr class='failClass'>
-    <td>app_test_case.cellar_well_controller.test_get_my_info.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.5',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='ft1.5.1' class='none'>
-    <td class='failCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取我的信息用例：/termianal/getMyInfo</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5.1')" >
-        fail</a>
-    <div id='div_ft1.5.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.5.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\cellar_well_controller\test_get_my_info.py", line 25, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取我的信息失败')
-AssertionError: '0' != '404'
-- 0
-+ 404
- : 获取我的信息失败
++ -1
+ : 更新资产失败
 
         </pre>
     </div>
@@ -652,7 +579,59 @@ AssertionError: '0' != '404'
 </tr>
 
 <tr class='passClass'>
-    <td>app_test_case.cellar_well_controller.test_match.Test_Add_Task</td>
+    <td>app_test_case.capital_controller.test_updateImage4Name.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.4',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.4.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>更新设备名称用例：/capital/updateImage4Name</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.15 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.cellar_well_controller.test_getDefaultDeviceParam.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.5',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.5.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取设备缺省配置用例：/terminal/getDefaultDeviceParam</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.cellar_well_controller.test_getDeviceParameters.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -668,64 +647,43 @@ AssertionError: '0' != '404'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>网关跟传感器蓝牙配对用例：/bluetooth/match</div>
+        <div>获取设备参数用例：/terminal/getDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>1.38 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
-    <td>app_test_case.cellar_well_controller.test_modify_device_parameters.Test_Add_Task</td>
+<tr class='passClass'>
+    <td>app_test_case.cellar_well_controller.test_getTerminalBylNo.Test_Add_Task</td>
     <td></td>
     <td></td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.7',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.7.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.7.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取设备参数用例：/termianal/getDeviceParameters</div>
+        <div>根据设备编码获取设备信息用例：/device/getTerminalBylNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.06 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7.1')" >
-        fail</a>
-    <div id='div_ft1.7.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.7.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\cellar_well_controller\test_modify_device_parameters.py", line 33, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取设备参数失败')
-AssertionError: '0' != '404'
-- 0
-+ 404
- : 获取设备参数失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>app_test_case.department_controller.test_get_department_byid.Test_Add_Task</td>
+    <td>app_test_case.cellar_well_controller.test_get_device_parameters.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -741,17 +699,17 @@ AssertionError: '0' != '404'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
+        <div>修改设备参数用例：/terminal/modifyDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>1.31 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>app_test_case.department_controller.test_get_myself_and_son.Test_Add_Task</td>
+    <td>app_test_case.cellar_well_controller.test_get_my_info.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -767,22 +725,152 @@ AssertionError: '0' != '404'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
+        <div>获取我的信息用例：/terminal/getMyInfo</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.12 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.cellar_well_controller.test_match.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.10',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.10.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>网关跟传感器蓝牙配对用例：/bluetooth/match</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.10 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.cellar_well_controller.test_modify_device_parameters.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.11',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.11.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取设备参数用例：/terminal/getDeviceParameters</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.10 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.cellar_well_controller.test_query.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.12',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.12.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>搜索设备用例：/device/query</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.department_controller.test_get_department_byid.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.13',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.13.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.04 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.department_controller.test_get_myself_and_son.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.14',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.14.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>1.31 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.14.1')" >
         pass</a>
-    <div id='div_pt1.9.1' class="popup_window">
+    <div id='div_pt1.14.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.14.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.9.1: data: {"id": "234567891"}
+        pt1.14.1: data: {"id": "234567891"}
 
         </pre>
     </div>
@@ -799,11 +887,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.10',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.15',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.10.1' class='hiddenRow'>
+<tr id='pt1.15.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -811,19 +899,66 @@ AssertionError: '0' != '404'
         <div>查询部门下所有的子部门成功用例：/department/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>1.29 s</div>
+        <div>0.85 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.15.1')" >
         pass</a>
-    <div id='div_pt1.10.1' class="popup_window">
+    <div id='div_pt1.15.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.15.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.10.1: data: {"name": "a", "pageNum": 1, "pageSize": 10, "addrId": 1, "pid": 1}
+        pt1.15.1: data: {"name": "a", "pageNum": 1, "pageSize": 10, "addrId": 1, "pid": 1}
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='failClass'>
+    <td>app_test_case.device_alarm_controller.test_alarm_get.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.16',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='ft1.16.1' class='none'>
+    <td class='failCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取窖井详情用例：/device/getDeviceById</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.09 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.16.1')" >
+        fail</a>
+    <div id='div_ft1.16.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.16.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.16.1: Traceback (most recent call last):
+  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\device_alarm_controller\test_alarm_get.py", line 36, in test_add_task_success
+    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
+AssertionError: '0' != '-1'
+- 0
++ -1
+ : 获取窖井详情失败
 
         </pre>
     </div>
@@ -833,28 +968,75 @@ AssertionError: '0' != '404'
 </tr>
 
 <tr class='passClass'>
-    <td>app_test_case.device_alarm_controller.test_alarm_get.Test_Add_Task</td>
+    <td>app_test_case.device_alarm_controller.test_getDeviceAlarms.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.11',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.17',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.11.1' class='hiddenRow'>
+<tr id='pt1.17.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取窖井详情用例：/device/getDeviceById</div>
+        <div>获取设备某种报警类型下的报警信息用例：/device/getDeviceAlarms</div>
     </td>
     <td style="color: #495057">
-        <div>1.32 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='failClass'>
+    <td>app_test_case.device_alarm_controller.test_getDeviceByTerminalNo.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.18',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='ft1.18.1' class='none'>
+    <td class='failCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取窖井详情用例：/device/getDeviceByTerminalNo</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.76 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18.1')" >
+        fail</a>
+    <div id='div_ft1.18.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.18.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.18.1: Traceback (most recent call last):
+  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\device_alarm_controller\test_getDeviceByTerminalNo.py", line 36, in test_add_task_success
+    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
+AssertionError: '0' != '-1'
+- 0
++ -1
+ : 获取窖井详情失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -866,11 +1048,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.12',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.19',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.12.1' class='hiddenRow'>
+<tr id='pt1.19.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -878,7 +1060,7 @@ AssertionError: '0' != '404'
         <div>获取我的报警用例：/work/order/getMyAlarms</div>
     </td>
     <td style="color: #495057">
-        <div>1.27 s</div>
+        <div>0.90 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -892,11 +1074,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.13',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.20',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.13.1' class='hiddenRow'>
+<tr id='pt1.20.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -904,7 +1086,7 @@ AssertionError: '0' != '404'
         <div>获取分类下的所有字典值成功用例：/dictionary/getDictionaryByCode</div>
     </td>
     <td style="color: #495057">
-        <div>1.24 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -918,11 +1100,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.14',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.21',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.14.1' class='hiddenRow'>
+<tr id='pt1.21.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -930,7 +1112,7 @@ AssertionError: '0' != '404'
         <div>获取字典分类成功用例：/dictionary/getAllDictionaryType</div>
     </td>
     <td style="color: #495057">
-        <div>1.32 s</div>
+        <div>0.82 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -944,11 +1126,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.15',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.22',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.15.1' class='hiddenRow'>
+<tr id='pt1.22.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -956,7 +1138,7 @@ AssertionError: '0' != '404'
         <div>APP首页报警、工单未读数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>1.32 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -970,11 +1152,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.16',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.23',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.16.1' class='hiddenRow'>
+<tr id='pt1.23.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -982,7 +1164,7 @@ AssertionError: '0' != '404'
         <div>APP首页地图数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>1.31 s</div>
+        <div>0.76 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -996,11 +1178,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.17',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.24',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.17.1' class='hiddenRow'>
+<tr id='pt1.24.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1008,7 +1190,7 @@ AssertionError: '0' != '404'
         <div>获取版本号成功用例: /getVersionInfo</div>
     </td>
     <td style="color: #495057">
-        <div>1.35 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1022,11 +1204,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.18',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.25',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.18.1' class='hiddenRow'>
+<tr id='pt1.25.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1034,7 +1216,33 @@ AssertionError: '0' != '404'
         <div>APP首页报警、工单已读成功用例: /modifyRead</div>
     </td>
     <td style="color: #495057">
-        <div>1.29 s</div>
+        <div>0.80 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.login_controller.test_getUserMenus.Test_Get_Index</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.26',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.26.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_get_index_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取用户的资源成功用例: /menu/getUserMenus</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1048,11 +1256,11 @@ AssertionError: '0' != '404'
     <td>3</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.19',3)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.27',3)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.19.1' class='hiddenRow'>
+<tr id='pt1.27.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
     </td>
@@ -1060,15 +1268,29 @@ AssertionError: '0' != '404'
         <div>登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr id='pt1.19.2' class='hiddenRow'>
+<tr id='pt1.27.2' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_login_success_2___hy___234567___abcd______code__1005__message___输入的密码错误____</div>
+    </td>
+    <td style="color: #495057">
+        <div>登陆用例 /login</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.10 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr id='pt1.27.3' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_success_3___a___123456___qw12______code__1004__message___账户未创建请联系管理员____</div>
     </td>
     <td style="color: #495057">
         <div>登陆用例 /login</div>
@@ -1080,12 +1302,50 @@ AssertionError: '0' != '404'
     <td></td>
 </tr>
 
-<tr id='pt1.19.3' class='hiddenRow'>
+<tr class='passClass'>
+    <td>app_test_case.login_controller.test_resetPwd.Test_Get_Index</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.28',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.28.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_login_success_3___a___123456___qw12______code__1004__message___账户未创建请联系管理员____</div>
+        <div class='testcase'>test_get_index_success</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>重置密码成功用例: /user/resetPwd</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.login_controller.test_updatePassword.Test_Get_Index</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.29',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.29.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_get_index_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>修改密码成功用例: /user/updatePassword</div>
     </td>
     <td style="color: #495057">
         <div>0.10 s</div>
@@ -1102,11 +1362,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.20',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.30',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.20.1' class='hiddenRow'>
+<tr id='pt1.30.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1114,7 +1374,7 @@ AssertionError: '0' != '404'
         <div>修改头像成功用例: /user/modifyHeaderIcon</div>
     </td>
     <td style="color: #495057">
-        <div>1.35 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1128,11 +1388,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.21',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.31',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.21.1' class='hiddenRow'>
+<tr id='pt1.31.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1140,7 +1400,7 @@ AssertionError: '0' != '404'
         <div>地址列表成功用例: /address/list</div>
     </td>
     <td style="color: #495057">
-        <div>1.33 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1154,11 +1414,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.22',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.32',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.22.1' class='hiddenRow'>
+<tr id='pt1.32.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1166,7 +1426,7 @@ AssertionError: '0' != '404'
         <div>获取下属子地址列表成功用例: /address/sonList</div>
     </td>
     <td style="color: #495057">
-        <div>1.29 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1180,11 +1440,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.23',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.33',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.23.1' class='hiddenRow'>
+<tr id='pt1.33.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1192,25 +1452,103 @@ AssertionError: '0' != '404'
         <div>上次头像成功用例: /user/doBase64</div>
     </td>
     <td style="color: #495057">
-        <div>1.65 s</div>
+        <div>0.26 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>app_test_case.work_order_controller.test_get_cellar_well_detail.Test_Get_Index</td>
+    <td>app_test_case.work_order_controller.test_getCellarWellDetailByAlarmId.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.24',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.34',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.24.1' class='hiddenRow'>
+<tr id='pt1.34.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_get_index_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>根据报警ID获取窖井信息成功用例: /work/order/getCellarWellDetailByAlarmId</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.09 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.work_order_controller.test_getCellarWellDetailByTerminalNo.Test_Get_Index</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.35',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.35.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_get_index_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>根据窖井编码获取窖井信息成功用例: /work/order/getCellarWellDetailByTerminalNo</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.work_order_controller.test_getCellarWellDetailByWorkId.Test_Get_Index</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.36',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.36.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_get_index_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>根据工单ID获取窖井信息成功用例: /work/order/getCellarWellDetailByWorkId</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.13 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>app_test_case.work_order_controller.test_get_my_work_orders.Test_Get_Index</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.37',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.37.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1218,72 +1556,25 @@ AssertionError: '0' != '404'
         <div>获取我的工单成功用例: /work/order/getMyWorkOrders</div>
     </td>
     <td style="color: #495057">
-        <div>1.33 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
-    <td>app_test_case.work_order_controller.test_get_work_orders.Test_Get_Index</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.25',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='ft1.25.1' class='none'>
-    <td class='failCase'>
-        <div class='testcase'>test_get_index_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>根据工单ID获取窖井信息成功用例: /work/order/getCellarWellDetail</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.14 s</div>
-    </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.25.1')" >
-        fail</a>
-    <div id='div_ft1.25.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.25.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.25.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\work_order_controller\test_get_work_orders.py", line 34, in test_get_index_success
-    self.assertEqual(str(0), str(response.json()['code']), '根据工单ID获取窖井信息失败')
-AssertionError: '0' != '404'
-- 0
-+ 404
- : 根据工单ID获取窖井信息失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-    <td></td>
-</tr>
-
 <tr class='passClass'>
-    <td>app_test_case.work_order_controller.test_save_mywork_order.Test_Get_Index</td>
+    <td>app_test_case.work_order_controller.test_saveMyWorkOrder.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.26',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.38',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.26.1' class='hiddenRow'>
+<tr id='pt1.38.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1291,25 +1582,25 @@ AssertionError: '0' != '404'
         <div>执行工单成功用例: /work/order/saveMyWorkOrder</div>
     </td>
     <td style="color: #495057">
-        <div>1.28 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>app_test_case.work_order_controller.test_set_control.Test_Get_Index</td>
+    <td>app_test_case.work_order_controller.test_setControl.Test_Get_Index</td>
     <td></td>
     <td></td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.27',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.39',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.27.1' class='hiddenRow'>
+<tr id='pt1.39.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_index_success</div>
     </td>
@@ -1317,7 +1608,7 @@ AssertionError: '0' != '404'
         <div>布/撤控成功用例: /work/order/setControl</div>
     </td>
     <td style="color: #495057">
-        <div>1.26 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1331,11 +1622,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.28',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.40',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.28.1' class='hiddenRow'>
+<tr id='pt1.40.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_delete_device_success</div>
     </td>
@@ -1343,7 +1634,7 @@ AssertionError: '0' != '404'
         <div>删除窖井成功用例：/device/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.48 s</div>
+        <div>0.34 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1357,31 +1648,31 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.29',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.41',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.29.1' class='hiddenRow'>
+<tr id='pt1.41.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_delete_batch_success</div>
     </td>
     <td style="color: #495057">
-        <div>批量删除工单成功用例：/device/deleteBatchIds</div>
+        <div>批量删除设备成功用例：/device/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.14 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.29.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.41.1')" >
         pass</a>
-    <div id='div_pt1.29.1' class="popup_window">
+    <div id='div_pt1.41.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.29.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.41.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.29.1: payload: [333444555666777]
+        pt1.41.1: payload: [333444555666777]
 {"code":0,"message":"操作成功"}
 
         </pre>
@@ -1399,11 +1690,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.30',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.42',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.30.1' class='hiddenRow'>
+<tr id='pt1.42.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_export_success</div>
     </td>
@@ -1411,29 +1702,22 @@ AssertionError: '0' != '404'
         <div>导出窖井列表信息成功用例：/device/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.21 s</div>
+        <div>0.20 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.30.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.42.1')" >
         pass</a>
-    <div id='div_pt1.30.1' class="popup_window">
+    <div id='div_pt1.42.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.30.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.42.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.30.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-              窖井编号             终端编号  设备名称  设备类型       设备模式              蓝牙MAC                             地址  ... 安装状态 锁状态 内盖状态 外盖状态                 录入时间                 ICCID             IMSI
-0  868482050093609  868482050093609    hw  智慧窖井       开盖检测  CA:FF:11:42:34:8F  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  ...  未完成  --   --   --  2022-04-19 15:09:05  89861119212002368759  460113036642813
-1  862592051651472  862592051651472    hh   窖井锁       水位检测  C3:B2:5D:7E:AE:7B  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  ...  已完成  上锁    关    开  2022-04-13 15:48:16  89861119212002368684  460113036642806
-2        567891234        678912345    hy   窖井锁  气体检测+水位检测  C3:B2:5D:7E:AE:7B  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  ...  已完成  上锁    关    开  2022-04-12 14:10:04  89861119212002368684  460113036642806
-3  862592051650946  862592051650946  48v2  智慧窖井       开盖检测  EB:36:3D:DF:71:8F  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  ...  未完成  --   --   --  2022-04-11 18:39:47  89860490102070508342  460081087908342
-4  862592051649799  862592051649799  48v1  智慧窖井       开盖检测  F8:8A:19:B7:0F:B3  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  ...  未完成  --   --   --  2022-04-11 18:39:14  89860490102070508334  460081087908334
-5  862592051533795  862592051533795    jl  智慧警铃       开盖检测  D5:03:42:C6:9E:70  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  ...  未完成  --   --   --  2022-03-28 15:47:22  89860490102070508360  460081087908360
-6  862592051533308  862592051533308    cs  智慧窖井  开盖检测+水位检测  C4:B4:76:55:AA:45  广东省深圳市南山区南山区高新中二道29号靠近深圳软件园2期  ...  未完成  --   --   --  2022-03-25 18:11:04  89860490102070508353  460081087908353
-
-[7 rows x 20 columns]
+        pt1.42.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
+Empty DataFrame
+Columns: [窖井编号, 终端编号, 设备名称, 设备类型, 设备模式, 蓝牙MAC, 地址, 部门, 窖井规格, 井盖类型, 在/离线, 布控状态, 窖井状态, 安装状态, 锁状态, 内盖状态, 外盖状态, 录入时间, ICCID, IMSI]
+Index: []
 
         </pre>
     </div>
@@ -1442,29 +1726,50 @@ AssertionError: '0' != '404'
     <td></td>
 </tr>
 
-<tr class='passClass'>
+<tr class='failClass'>
     <td>web_test_case.cellar_well_controller.test_get_device_by_id.Test_get_device</td>
     <td></td>
     <td></td>
     <td>1</td>
+    <td>0</td>
     <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.31',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.43',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.31.1' class='hiddenRow'>
-    <td class='passCase'>
+<tr id='ft1.43.1' class='none'>
+    <td class='failCase'>
         <div class='testcase'>test_get_device_success</div>
     </td>
     <td style="color: #495057">
         <div>获取窖井详情成功用例：/device/getDeviceById</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.10 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.43.1')" >
+        fail</a>
+    <div id='div_ft1.43.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.43.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.43.1: Traceback (most recent call last):
+  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\cellar_well_controller\test_get_device_by_id.py", line 34, in test_get_device_success
+    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
+AssertionError: '0' != '-1'
+- 0
++ -1
+ : 获取窖井详情失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -1476,11 +1781,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.32',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.44',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.32.1' class='hiddenRow'>
+<tr id='pt1.44.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_device_list_success</div>
     </td>
@@ -1488,9 +1793,108 @@ AssertionError: '0' != '404'
         <div>获取窖井列表信息成功用例：/device/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>1.26 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.cellar_well_controller.test_query.Test_Device_List</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.45',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.45.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_device_list_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>搜索设备成功用例：/device/pageQuery</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.cellar_well_controller.test_setControl.Test_Device_List</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.46',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.46.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_device_list_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>布/撤控成功用例：/device/setControl</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.11 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='failClass'>
+    <td>web_test_case.cellar_well_controller.test_update.Test_Device_List</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.47',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='ft1.47.1' class='none'>
+    <td class='failCase'>
+        <div class='testcase'>test_device_list_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>更新资产成功用例：/device/update</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.13 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.47.1')" >
+        fail</a>
+    <div id='div_ft1.47.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.47.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.47.1: Traceback (most recent call last):
+  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\cellar_well_controller\test_update.py", line 68, in test_device_list_success
+    self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
+AssertionError: '0' != '-1'
+- 0
++ -1
+ : 更新资产失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
@@ -1502,11 +1906,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.33',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.48',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.33.1' class='hiddenRow'>
+<tr id='pt1.48.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_get_alarm_success</div>
     </td>
@@ -1514,7 +1918,7 @@ AssertionError: '0' != '404'
         <div>窖井分布-获取窖井报警详情成功用例：/device/getAlarmDetailByNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1528,11 +1932,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.34',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.49',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.34.1' class='hiddenRow'>
+<tr id='pt1.49.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_alarm_data_success</div>
     </td>
@@ -1540,7 +1944,7 @@ AssertionError: '0' != '404'
         <div>窖井分布-报警数据分布查询成功用例：/device/pageQueryAlarmData</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1554,11 +1958,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.35',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.50',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.35.1' class='hiddenRow'>
+<tr id='pt1.50.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_page_query_area_success</div>
     </td>
@@ -1566,7 +1970,7 @@ AssertionError: '0' != '404'
         <div>窖井分布-区域数据分布查询成功用例：/device/pageQueryAreaData</div>
     </td>
     <td style="color: #495057">
-        <div>1.19 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1580,11 +1984,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.36',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.51',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.36.1' class='hiddenRow'>
+<tr id='pt1.51.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_device_data_success</div>
     </td>
@@ -1592,7 +1996,7 @@ AssertionError: '0' != '404'
         <div>窖井分布-设备数据分布查询成功用例：/device/pageQueryDeviceData</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1606,11 +2010,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.37',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.52',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.37.1' class='hiddenRow'>
+<tr id='pt1.52.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -1618,7 +2022,7 @@ AssertionError: '0' != '404'
         <div>删除部门成功用例：/department/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1632,11 +2036,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.38',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.53',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.38.1' class='hiddenRow'>
+<tr id='pt1.53.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -1644,7 +2048,7 @@ AssertionError: '0' != '404'
         <div>批量删除部门成功用例：/department/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.20 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1658,11 +2062,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.39',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.54',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.39.1' class='hiddenRow'>
+<tr id='pt1.54.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -1670,7 +2074,7 @@ AssertionError: '0' != '404'
         <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1684,11 +2088,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.40',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.55',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.40.1' class='hiddenRow'>
+<tr id='pt1.55.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -1696,19 +2100,19 @@ AssertionError: '0' != '404'
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.40.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.55.1')" >
         pass</a>
-    <div id='div_pt1.40.1' class="popup_window">
+    <div id='div_pt1.55.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.40.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.55.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.40.1: data: {"id": "234567891"}
+        pt1.55.1: data: {"id": "234567891"}
 
         </pre>
     </div>
@@ -1725,11 +2129,11 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.41',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.56',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.41.1' class='hiddenRow'>
+<tr id='pt1.56.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -1737,19 +2141,19 @@ AssertionError: '0' != '404'
         <div>查询部门下所有的子部门成功用例：/department/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.41.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.56.1')" >
         pass</a>
-    <div id='div_pt1.41.1' class="popup_window">
+    <div id='div_pt1.56.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.41.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.56.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.41.1: data: {"id": "234567891"}
+        pt1.56.1: data: {"id": "234567891"}
 
         </pre>
     </div>
@@ -1766,440 +2170,6 @@ AssertionError: '0' != '404'
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.42',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.42.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>新增或者更新部门信息成功用例：/department/saveOrUpdate</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.21 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.device_alarm_controller.test_alarm_delete.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.43',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.43.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>批量删除报警成功用例：/history/alarm/deleteBatchIds</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.18 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.device_alarm_controller.test_alarm_export.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.44',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.44.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>报警列表导出成功用例：/history/alarm/export</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.23 s</div>
-    </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.44.1')" >
-        pass</a>
-    <div id='div_pt1.44.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.44.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        pt1.44.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-              终端编号  设备类型  设备名称                             地址   部门        报警类型  报警值  阀值                 报警时间  消警时间 派单状态 报警状态
-0  862592051651472   窖井锁    hh  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部    水位蓝色淤堵报警  NaN NaN  2022-04-13 15:52:25   NaN  未派单  未消警
-1  862592051651472   窖井锁    hh  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部      水位蓝色报警  NaN NaN  2022-04-13 15:51:13   NaN  未派单  未消警
-2  862592051651472   窖井锁    hh  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部   窖井锁外盖掀盖报警  NaN NaN  2022-04-13 15:49:55   NaN  未派单  未消警
-3  862592051650938   窖井锁    ss  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部   窖井锁外盖掀盖报警  NaN NaN  2022-04-12 16:10:46   NaN  未派单  未消警
-4  862592051650946  智慧窖井  48v2  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部  角度传感器低电量报警   0% NaN  2022-04-11 19:44:24   NaN  未派单  未消警
-5  862592051649799  智慧窖井  48v1  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部  角度传感器低电量报警   0% NaN  2022-04-10 00:26:51   NaN  未派单  未消警
-6  862592051650938   窖井锁    ss  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部  CH4传感器故障报警  NaN NaN  2022-04-02 00:25:43   NaN  未派单  未消警
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.device_alarm_controller.test_alarm_get.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.45',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.45.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取窖井详情用例：/history/alarm/getCellarWellById</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.device_alarm_controller.test_alarm_list.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.46',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.46.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取历史报警列表成功用例：/history/alarm/historyAlarmTaskPageQuery</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.12 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.device_alarm_controller.test_alarm_send_order.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.47',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.47.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>手动派单成功用例：/history/alarm/manualDistributeTask</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.20 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='failClass'>
-    <td>web_test_case.device_alarm_controller.test_auto_order.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.48',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='ft1.48.1' class='none'>
-    <td class='failCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>自动派单成功用例：/history/alarm/autoDistributeTask</div>
-    </td>
-    <td style="color: #495057">
-        <div>1.39 s</div>
-    </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.48.1')" >
-        fail</a>
-    <div id='div_ft1.48.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.48.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.48.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\device_alarm_controller\test_auto_order.py", line 43, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '派单失败')
-AssertionError: '0' != '3006'
-- 0
-+ 3006
- : 派单失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.device_alarm_controller.test_get_alarm_pictures.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.49',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.49.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取报警的图像信息成功用例：/history/alarm/getAlarmPictures</div>
-    </td>
-    <td style="color: #495057">
-        <div>1.25 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_about.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.50',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.50.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>首页-关于成功用例：/index/about</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.10 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_alarm_percent.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.51',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.51.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>窖井报警分类占比/数量成功用例：/index/getIndexAlarmPercent</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_alarm_rstrend.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.52',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.52.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>窖井报警趋势统计成功用例：/index/getIndexAlarmRstrend</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.25 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_basic_data.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.53',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.53.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>数据概况成功用例：/index/getIndexBasicData</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.09 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_platform_view_c.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.54',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.54.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>平台事件总览： 布控/撤控信息成功用例：/index/getIndexPlatformView_c</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_platform_view_p.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.55',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.55.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>平台事件总览: 消息推送信息成功用例：/index/getIndexPlatformView_p</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.12 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_platform_view_w.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.56',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.56.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>平台事件总览: 工单相关内容成功用例：/index/getIndexPlatformView_w</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_today_notice.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td><a href="javascript:showClassDetail('c1.57',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
@@ -2209,17 +2179,17 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>平台今日公告成功用例：/index/getIndexTodayNotice</div>
+        <div>新增或者更新部门信息成功用例：/department/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.index_controller.test_get_index_type_percent.Test_Add_Task</td>
+    <td>web_test_case.device_alarm_controller.test_alarm_delete.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2235,97 +2205,108 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>窖井分类占比/数量成功用例：/index/getIndexTypePercent</div>
+        <div>批量删除报警成功用例：/history/alarm/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.login_controller.test_login.Test_login</td>
+    <td>web_test_case.device_alarm_controller.test_alarm_export.Test_Add_Task</td>
     <td></td>
     <td></td>
-    <td>3</td>
-    <td>3</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.59',3)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.59',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
 <tr id='pt1.59.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
+        <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>报警列表导出成功用例：/history/alarm/export</div>
     </td>
     <td style="color: #495057">
         <div>0.16 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.59.1')" >
+        pass</a>
+    <div id='div_pt1.59.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.59.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        pt1.59.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
+Empty DataFrame
+Columns: [终端编号, 设备类型, 设备名称, 地址, 部门, 报警类型, 报警值, 阀值, 报警时间, 消警时间, 派单状态, 报警状态]
+Index: []
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
-<tr id='pt1.59.2' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_login_success_2___hy___234567___abcd______code__1005__message___输入的密码错误____</div>
-    </td>
-    <td style="color: #495057">
-        <div>登陆用例 /login</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.07 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr id='pt1.59.3' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_login_success_3___a___123456___qw12______code__1004__message___账户未创建请联系管理员____</div>
-    </td>
-    <td style="color: #495057">
-        <div>登陆用例 /login</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.07 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.menu_controller.test_get_all_menu.Test_Add_Task</td>
+<tr class='failClass'>
+    <td>web_test_case.device_alarm_controller.test_alarm_get.Test_Add_Task</td>
     <td></td>
     <td></td>
-    <td>1</td>
     <td>1</td>
     <td>0</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.60',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.60.1' class='hiddenRow'>
-    <td class='passCase'>
+<tr id='ft1.60.1' class='none'>
+    <td class='failCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获得所有资源成功用例：/menu/getAllMenu</div>
+        <div>获取窖井详情用例：/history/alarm/getCellarWellById</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.08 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.60.1')" >
+        fail</a>
+    <div id='div_ft1.60.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.60.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.60.1: Traceback (most recent call last):
+  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_get.py", line 33, in test_add_task_success
+    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
+AssertionError: '0' != '-1'
+- 0
++ -1
+ : 获取窖井详情失败
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.menu_controller.test_get_user_menus.Test_Add_Task</td>
+    <td>web_test_case.device_alarm_controller.test_alarm_list.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2341,17 +2322,17 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取用户的资源成功用例：/menu/getUserMenus</div>
+        <div>获取历史报警列表成功用例：/history/alarm/historyAlarmTaskPageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.menu_controller.test_insert.Test_Add_Task</td>
+    <td>web_test_case.device_alarm_controller.test_alarm_send_order.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2367,17 +2348,17 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>增加角色资源成功用例：/menu/insert</div>
+        <div>手动派单成功用例：/history/alarm/manualDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.21 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.menu_controller.test_query_role_owns_menus.Test_Add_Task</td>
+    <td>web_test_case.device_alarm_controller.test_auto_order.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2393,17 +2374,17 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取角色的资源用例：/menu/queryRoleOwnsMenus</div>
+        <div>自动派单成功用例：/history/alarm/autoDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.82 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.operation_log_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td>web_test_case.device_alarm_controller.test_get_alarm_pictures.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2419,17 +2400,17 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>删除用户操作日志成功用例：/operate/log/deleteBatchIds</div>
+        <div>获取报警的图像信息成功用例：/history/alarm/getAlarmPictures</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.92 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.operation_log_controller.test_expor.Test_Add_Task</td>
+    <td>web_test_case.index_controller.test_about.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2445,30 +2426,448 @@ AssertionError: '0' != '3006'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
+        <div>首页-关于成功用例：/index/about</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.14 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_alarm_percent.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.66',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.66.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>窖井报警分类占比/数量成功用例：/index/getIndexAlarmPercent</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_alarm_rstrend.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.67',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.67.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>窖井报警趋势统计成功用例：/index/getIndexAlarmRstrend</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_basic_data.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.68',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.68.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>数据概况成功用例：/index/getIndexBasicData</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_platform_view_c.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.69',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.69.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>平台事件总览： 布控/撤控信息成功用例：/index/getIndexPlatformView_c</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_platform_view_p.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.70',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.70.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>平台事件总览: 消息推送信息成功用例：/index/getIndexPlatformView_p</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.09 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_platform_view_w.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.71',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.71.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>平台事件总览: 工单相关内容成功用例：/index/getIndexPlatformView_w</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_today_notice.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.72',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.72.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>平台今日公告成功用例：/index/getIndexTodayNotice</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.09 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.index_controller.test_get_index_type_percent.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.73',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.73.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>窖井分类占比/数量成功用例：/index/getIndexTypePercent</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.07 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.login_controller.test_login.Test_login</td>
+    <td></td>
+    <td></td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.74',3)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.74.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
+    </td>
+    <td style="color: #495057">
+        <div>登陆用例 /login</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.10 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr id='pt1.74.2' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_success_2___hy___234567___abcd______code__1005__message___输入的密码错误____</div>
+    </td>
+    <td style="color: #495057">
+        <div>登陆用例 /login</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.04 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr id='pt1.74.3' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_success_3___a___123456___qw12______code__1004__message___账户未创建请联系管理员____</div>
+    </td>
+    <td style="color: #495057">
+        <div>登陆用例 /login</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.04 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.menu_controller.test_get_all_menu.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.75',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.75.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获得所有资源成功用例：/menu/getAllMenu</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.13 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.menu_controller.test_get_user_menus.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.76',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.76.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取用户的资源成功用例：/menu/getUserMenus</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.menu_controller.test_insert.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.77',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.77.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>增加角色资源成功用例：/menu/insert</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.11 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.menu_controller.test_query_role_owns_menus.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.78',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.78.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取角色的资源用例：/menu/queryRoleOwnsMenus</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.operation_log_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.79',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.79.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>删除用户操作日志成功用例：/operate/log/deleteBatchIds</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.operation_log_controller.test_expor.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.80',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.80.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
         <div>导出用户操作日志成功用例：/operate/log/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.31 s</div>
+        <div>0.24 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.65.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.80.1')" >
         pass</a>
-    <div id='div_pt1.65.1' class="popup_window">
+    <div id='div_pt1.80.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.65.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.80.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.65.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部门    操作类型                 操作时间 操作员
-0  操作日志   平台      NaN   NaN  广东深圳  测试部    用户登录  2022-04-19 19:14:29  hy
-1  操作日志   平台      NaN   NaN  广东深圳  测试部    用户登录  2022-04-19 19:14:28  hy
-2  操作日志   平台      NaN   NaN  广东深圳  测试部    用户登录  2022-04-19 19:14:26  hy
-3  操作日志   平台      NaN   NaN  广东深圳  测试部    用户登录  2022-04-19 19:14:25  hy
-4  操作日志   平台      NaN   NaN  广东深圳  测试部  增加角色资源  2022-04-19 19:14:26  hy
-5  操作日志   平台      NaN   NaN  广东深圳  测试部    用户登录  2022-04-19 19:14:23  hy
-6  操作日志   平台      NaN   NaN  广东深圳  测试部    用户登录  2022-04-19 19:14:22  hy
+        pt1.80.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
+txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  部门    操作类型                 操作时间 操作员
+0  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:06  hy
+1  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:05  hy
+2  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:04  hy
+3  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:03  hy
+4  操作日志   平台      NaN   NaN  广东深圳南山区 NaN  增加角色资源  2022-05-10 18:30:03  hy
+5  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:01  hy
+6  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:00  hy
 
         </pre>
     </div>
@@ -2485,396 +2884,6 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.66',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.66.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取所有的日志操作类型成功用例：/operate/log/getAllOperationType</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.operation_log_controller.test_page_query.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.67',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.67.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>页面查询成功用例：/operate/log/pageQuery</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.province_city_controller.test_get_province_city_district_byid.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.68',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.68.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取上一级地址成功用例：/address/getProvinceCityDistrictById</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.09 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.province_city_controller.test_get_province_city_district_byname.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.69',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.69.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>通过名称获取上一级地址成功用例：/address/getProvinceCityDistrictByName</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.09 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.province_city_controller.test_list.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.70',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.70.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>根据查询条件获取地区信息成功用例：/address/list</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.12 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.province_city_controller.test_sonlist.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.71',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.71.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取子下所有地区信息成功用例：/address/sonlist</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.09 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.push_set_controller.test_delete_batch_ids.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.72',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.72.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>批量删除成功用例：/push/set/deleteBatchIds</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.10 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.push_set_controller.test_insert.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.73',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.73.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>创建任务成功用例：/push/set/insert</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.17 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.push_set_controller.test_page_query.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.74',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.74.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取个人报警推送设置列表成功用例：/push/set/pageQuery</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.13 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.push_set_controller.test_update.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.75',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.75.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>更新任务成功用例：/push/set/update</div>
-    </td>
-    <td style="color: #495057">
-        <div>1.55 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.role_controller.test_delete.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.76',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.76.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>删除角色成功用例：/role/delete</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.11 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.role_controller.test_delete_batch_ids.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.77',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.77.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>批量删除角色成功用例：/role/deleteBatchIds</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.14 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.role_controller.test_get_role_by_id.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.78',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.78.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>获取角色详细成功用例：/role/getRoleById</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.09 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.role_controller.test_insert.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.79',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.79.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>增加用户角色成功用例：/userRole/insert</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.17 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.role_controller.test_page_query.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.80',1)">Detail</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.80.1' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
-    </td>
-    <td style="color: #495057">
-        <div>查询角色列表成功用例：/role/pageQuery</div>
-    </td>
-    <td style="color: #495057">
-        <div>0.12 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
-
-<tr class='passClass'>
-    <td>web_test_case.role_controller.test_save_or_update.Test_Add_Task</td>
-    <td></td>
-    <td></td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td><a href="javascript:showClassDetail('c1.81',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
@@ -2884,17 +2893,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>新增或修改角色信息成功用例：/role/saveOrUpdate</div>
+        <div>获取所有的日志操作类型成功用例：/operate/log/getAllOperationType</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.task_controller.test_task_add.Test_Add_Task</td>
+    <td>web_test_case.operation_log_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2910,17 +2919,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>创建任务成功用例： /task/add</div>
+        <div>页面查询成功用例：/operate/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.task_controller.test_task_auto.Test_Auto_Task</td>
+    <td>web_test_case.province_city_controller.test_get_province_city_district_byid.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2933,20 +2942,20 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
 
 <tr id='pt1.83.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_auto_task_success</div>
+        <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取自动派单列表成功用例: /task/pageQuery</div>
+        <div>获取上一级地址成功用例：/address/getProvinceCityDistrictById</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.task_controller.test_task_delete.Test_Delete_Task</td>
+    <td>web_test_case.province_city_controller.test_get_province_city_district_byname.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2959,20 +2968,20 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
 
 <tr id='pt1.84.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_delete_task_success</div>
+        <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>删除任务成功用例：/task/deleteBatchIds</div>
+        <div>通过名称获取上一级地址成功用例：/address/getProvinceCityDistrictByName</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.task_controller.test_task_manage.Test_Add_Task</td>
+    <td>web_test_case.province_city_controller.test_list.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -2988,17 +2997,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>任务管理用例： /task/updateStatus</div>
+        <div>根据查询条件获取地区信息成功用例：/address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.terminal_upgrade_controller.test_cancel.Test_Add_Task</td>
+    <td>web_test_case.province_city_controller.test_sonlist.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3014,17 +3023,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>取消设备升级成功用例：/device/upgrade/cancelBatch</div>
+        <div>获取子下所有地区信息成功用例：/address/sonlist</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.terminal_upgrade_controller.test_cancel_sensor_upgrade.Test_Add_Task</td>
+    <td>web_test_case.push_set_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3040,17 +3049,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>取消传感器设备升级成功用例：/device/upgrade/cancelSensorUpgrade</div>
+        <div>批量删除成功用例：/push/set/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.terminal_upgrade_controller.test_page_query.Test_Add_Task</td>
+    <td>web_test_case.push_set_controller.test_getPushSetByUserId.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3066,17 +3075,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取设备升级列表成功用例：/device/upgrade/pageQuery</div>
+        <div>获取用户的推送方式成功用例：/push/set/getPushSetByUserId</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.05 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.terminal_upgrade_controller.test_save.Test_Add_Task</td>
+    <td>web_test_case.push_set_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3092,17 +3101,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>执行设备升级成功用例：/device/upgrade/saveBatch</div>
+        <div>创建任务成功用例：/push/set/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.terminal_upgrade_controller.test_sensor_upgrade.Test_Add_Task</td>
+    <td>web_test_case.push_set_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3118,17 +3127,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>传感器设备升级成功用例：/device/upgrade/sensorUpgrade</div>
+        <div>获取个人报警推送设置列表成功用例：/push/set/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.up_ins_log_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td>web_test_case.push_set_controller.test_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3144,17 +3153,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>批量删除设备上报日志成功用例：/up/log/deleteBatchIds</div>
+        <div>更新任务成功用例：/push/set/update</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.86 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.up_ins_log_controller.test_page_query.Test_Add_Task</td>
+    <td>web_test_case.role_controller.test_delete.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3170,17 +3179,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>设备上报日志列表成功用例：/up/log/pageQuery</div>
+        <div>删除角色成功用例：/role/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.17 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_delete.Test_Add_Task</td>
+    <td>web_test_case.role_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3196,17 +3205,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>批量删除升级包成功用例：/upgrade/package/deleteBatchIds</div>
+        <div>批量删除角色成功用例：/role/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.18 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_get_hardware.Test_Add_Task</td>
+    <td>web_test_case.role_controller.test_get_role_by_id.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3222,17 +3231,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取升级包硬件版本号用例：/upgrade/package/getAllHardwareVer</div>
+        <div>获取角色详细成功用例：/role/getRoleById</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.04 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_get_software.Test_Add_Task</td>
+    <td>web_test_case.role_controller.test_insert.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3248,17 +3257,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取硬件升级包所有软件版本号用例：/upgrade/package/getAllSoftwareVer</div>
+        <div>增加用户角色成功用例：/userRole/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_get_upload_user.Test_Add_Task</td>
+    <td>web_test_case.role_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3274,17 +3283,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取包上传人用例：/upgrade/package/getUploadUser</div>
+        <div>查询角色列表成功用例：/role/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_insert.Test_Add_Task</td>
+    <td>web_test_case.role_controller.test_save_or_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3300,17 +3309,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>上传升级包成功用例：/upgrade/package/insert</div>
+        <div>新增或修改角色信息成功用例：/role/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>1.31 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_page_query.Test_Add_Task</td>
+    <td>web_test_case.task_controller.test_task_add.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3326,17 +3335,17 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取升级包列表用例：/upgrade/package/pageQuery</div>
+        <div>创建任务成功用例： /task/add</div>
     </td>
     <td style="color: #495057">
-        <div>0.14 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upgrade_package_controller.test_upgrade_sensor_softwarever.Test_Add_Task</td>
+    <td>web_test_case.task_controller.test_task_auto.Test_Auto_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3349,20 +3358,20 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
 
 <tr id='pt1.99.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
+        <div class='testcase'>test_auto_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取传感器软件版本号用例：/upgrade/package/getSensorSoftwareVer</div>
+        <div>获取自动派单列表成功用例: /task/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.19 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.upload_file_controller.test_file_upload.Test_Add_Task</td>
+    <td>web_test_case.task_controller.test_task_delete.Test_Delete_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3375,20 +3384,20 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
 
 <tr id='pt1.100.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_add_task_success</div>
+        <div class='testcase'>test_delete_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>上传文件用例：/file/upload</div>
+        <div>删除任务成功用例：/task/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>1.41 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td>web_test_case.task_controller.test_task_manage.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3404,64 +3413,43 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称 省/市/区   部
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>批量删除用户成功用例：/user/deleteBatchIds</div>
+        <div>任务管理用例： /task/updateStatus</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
-    <td>web_test_case.user_controller.test_get_main_tainer.Test_Add_Task</td>
+<tr class='passClass'>
+    <td>web_test_case.terminal_upgrade_controller.test_cancel.Test_Add_Task</td>
     <td></td>
     <td></td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.102',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.102.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.102.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取维修人员成功用例：/user/getMaintainer</div>
+        <div>取消设备升级成功用例：/device/upgrade/cancelBatch</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.19 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.102.1')" >
-        fail</a>
-    <div id='div_ft1.102.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.102.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.102.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\user_controller\test_get_main_tainer.py", line 30, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']),'获取维修人员失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 获取维修人员失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_get_send_personnel.Test_Add_Task</td>
+    <td>web_test_case.terminal_upgrade_controller.test_cancel_sensor_upgrade.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3477,17 +3465,17 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取派单人员成功用例：/user/getSendpersonnel</div>
+        <div>取消传感器设备升级成功用例：/device/upgrade/cancelSensorUpgrade</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_get_user_by_code.Test_Add_Task</td>
+    <td>web_test_case.terminal_upgrade_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3503,7 +3491,7 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>通过用户账号获取用户信息成功用例：/user/getUserByCode</div>
+        <div>获取设备升级列表成功用例：/device/upgrade/pageQuery</div>
     </td>
     <td style="color: #495057">
         <div>0.08 s</div>
@@ -3513,7 +3501,7 @@ AssertionError: '0' != '-1'
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_page_query.Test_Add_Task</td>
+    <td>web_test_case.terminal_upgrade_controller.test_save.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3529,17 +3517,17 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取用户列表成功用例：/user/pageQuery</div>
+        <div>执行设备升级成功用例：/device/upgrade/saveBatch</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_reset_pwd.Test_Add_Task</td>
+    <td>web_test_case.terminal_upgrade_controller.test_sensor_upgrade.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3555,17 +3543,17 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>重置密码成功用例：/user/resetPwd</div>
+        <div>传感器设备升级成功用例：/device/upgrade/sensorUpgrade</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_save_or_update.Test_Add_Task</td>
+    <td>web_test_case.up_ins_log_controller.test_delete_batch_ids.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3581,17 +3569,17 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>新增或修改用户信息成功用例：/user/saveOrUpdate</div>
+        <div>批量删除设备上报日志成功用例：/up/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.user_controller.test_update_password.Test_Add_Task</td>
+    <td>web_test_case.up_ins_log_controller.test_export.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3607,17 +3595,17 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>修改密码成功用例：/user/updatePassword</div>
+        <div>导出设备上报指令日志成功用例：/ins/log/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.36 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.verification_code_controller.test_get_captcha.Test_Get_Code</td>
+    <td>web_test_case.up_ins_log_controller.test_getLogTotal.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3630,20 +3618,20 @@ AssertionError: '0' != '-1'
 
 <tr id='pt1.109.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_get_captcha_success</div>
+        <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取验证码用例：/captcha</div>
+        <div>getLogTotal成功用例：/up/log/getLogTotal</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.work_order_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td>web_test_case.up_ins_log_controller.test_page_query.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3659,17 +3647,17 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>批量删除工单成功用例：/work/order/deleteBatchIds</div>
+        <div>设备上报日志列表成功用例：/up/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.06 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
 <tr class='passClass'>
-    <td>web_test_case.work_order_controller.test_export.Test_Add_Task</td>
+    <td>web_test_case.upgrade_package_controller.test_getSensorHardwareVer.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
@@ -3685,30 +3673,571 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
+        <div>获取传感器硬件所有版本号用例：/upgrade/package/getSensorHardwareVer</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_getUpgradePackage.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.112',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.112.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取版本号用例：/ver/getUpgradePackage</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.07 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_delete.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.113',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.113.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>批量删除升级包成功用例：/upgrade/package/deleteBatchIds</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.10 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_get_hardware.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.114',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.114.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取升级包硬件版本号用例：/upgrade/package/getAllHardwareVer</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_get_software.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.115',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.115.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取硬件升级包所有软件版本号用例：/upgrade/package/getAllSoftwareVer</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.07 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_get_upload_user.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.116',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.116.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取包上传人用例：/upgrade/package/getUploadUser</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.07 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_insert.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.117',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.117.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>上传升级包成功用例：/upgrade/package/insert</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.91 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_page_query.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.118',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.118.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取升级包列表用例：/upgrade/package/pageQuery</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.11 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upgrade_package_controller.test_upgrade_sensor_softwarever.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.119',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.119.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取传感器软件版本号用例：/upgrade/package/getSensorSoftwareVer</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.07 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upload_file_controller.test_file_upload.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.120',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.120.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>上传文件用例：/file/upload</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.90 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.upload_file_controller.test_uploadfile.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.121',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.121.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>上传文件用例：/file/uploadfile</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.96 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.122',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.122.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>批量删除用户成功用例：/user/deleteBatchIds</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_get_main_tainer.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.123',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.123.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取维修人员成功用例：/user/getMaintainer</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_get_send_personnel.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.124',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.124.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取派单人员成功用例：/user/getSendpersonnel</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.06 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_get_user_by_code.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.125',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.125.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>通过用户账号获取用户信息成功用例：/user/getUserByCode</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_page_query.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.126',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.126.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取用户列表成功用例：/user/pageQuery</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_reset_pwd.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.127',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.127.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>重置密码成功用例：/user/resetPwd</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.04 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_save_or_update.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.128',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.128.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>新增或修改用户信息成功用例：/user/saveOrUpdate</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.user_controller.test_update_password.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.129',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.129.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>修改密码成功用例：/user/updatePassword</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.verification_code_controller.test_get_captcha.Test_Get_Code</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.130',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.130.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_get_captcha_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>获取验证码用例：/captcha</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.work_order_controller.test_delete_batch_ids.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.131',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.131.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>批量删除工单成功用例：/work/order/deleteBatchIds</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.08 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>web_test_case.work_order_controller.test_export.Test_Add_Task</td>
+    <td></td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.132',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.132.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_add_task_success</div>
+    </td>
+    <td style="color: #495057">
         <div>导出工单成功用例：/work/order/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.21 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.111.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.132.1')" >
         pass</a>
-    <div id='div_pt1.111.1' class="popup_window">
+    <div id='div_pt1.132.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.111.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.132.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
-        pt1.111.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-txt:              工单编号             终端编号  设备名称  设备类型   部门    工单来源                 派单时间 施工人       报警类型  报警值  阀值               预计完成时间  实际完成时间                           设备地址 工单状态
-0  GD202204136411  862592051651472    hh   窖井锁  测试部  自动生成工单  2022-04-13 15:51:21  ha     水位蓝色报警  NaN NaN  2022-04-13 17:51:21     NaN  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  已派单
-1  GD202204135579  862592051651472    hh   窖井锁  测试部  自动生成工单  2022-04-13 15:50:03  ha  窖井锁外盖掀盖报警  NaN NaN  2022-04-13 17:50:03     NaN  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  已派单
-2  GD202204133185  862592051649799  48v1  智慧窖井  测试部  自动生成工单  2022-04-13 13:35:16  ha     水位红色报警  NaN NaN  2022-04-13 15:35:16     NaN  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  已派单
-3  GD202204139277  862592051650946  48v2  智慧窖井  测试部  自动生成工单  2022-04-13 11:25:50  ha     水位红色报警  NaN NaN  2022-04-13 13:25:50     NaN  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  已派单
-4  GD202204138816  862592051533308    cs  智慧窖井  测试部  自动生成工单  2022-04-13 11:03:31  ha     水位红色报警  NaN NaN  2022-04-13 13:03:31     NaN  广东省深圳市南山区南山区高新中二道29号靠近深圳软件园2期  已派单
-5  GD202204133679  862592051533308    cs  智慧窖井  测试部  自动生成工单  2022-04-13 11:03:28  ha     水位红色报警  NaN NaN  2022-04-13 13:03:28     NaN  广东省深圳市南山区南山区高新中二道29号靠近深圳软件园2期  已派单
-6  GD202204132324  862592051533308    cs  智慧窖井  测试部  自动生成工单  2022-04-13 11:03:26  ha     水位红色报警  NaN NaN  2022-04-13 13:03:26     NaN  广东省深圳市南山区南山区高新中二道29号靠近深圳软件园2期  已派单
+        pt1.132.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
+txt: Empty DataFrame
+Columns: [工单编号, 终端编号, 设备名称, 设备类型, 部门, 工单来源, 派单时间, 施工人, 报警类型, 报警值, 阀值, 预计完成时间, 实际完成时间, 设备地址, 工单状态]
+Index: []
 
         </pre>
     </div>
@@ -3725,11 +4254,11 @@ txt:              工单编号             终端编号  设备名称  设备类
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.112',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.133',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.112.1' class='hiddenRow'>
+<tr id='pt1.133.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -3737,7 +4266,7 @@ txt:              工单编号             终端编号  设备名称  设备类
         <div>查看回单结果成功用例：/work/order/getWorkOrderById</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3751,11 +4280,11 @@ txt:              工单编号             终端编号  设备名称  设备类
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.113',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.134',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='pt1.113.1' class='hiddenRow'>
+<tr id='pt1.134.1' class='hiddenRow'>
     <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
@@ -3763,7 +4292,7 @@ txt:              工单编号             终端编号  设备名称  设备类
         <div>获取历史工单列表成功用例：/work/order/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3773,8 +4302,8 @@ txt:              工单编号             终端编号  设备名称  设备类
                     <td>总数</td>
                     <td> </td>
                     <td> </td>
-                    <td>117</td>
-                    <td class="text text-success">111</td>
+                    <td>138</td>
+                    <td class="text text-success">132</td>
                     <td class="text text-danger">6</td>
                     <td class="text text-warning">0</td>
                     <td>&nbsp;</td>
@@ -3797,7 +4326,7 @@ txt:              工单编号             终端编号  设备名称  设备类
         ],
         datasets: [
             {
-                data: [111, 6, 0, 0],
+                data: [132, 6, 0, 0],
                 backgroundColor: [
                     "#10c469",
                     "#f9c851",
