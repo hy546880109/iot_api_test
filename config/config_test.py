@@ -8,8 +8,10 @@
 from enum import Enum
 from sys import argv
 
+#默认不带参数的ip
 if len(argv) == 1:
     ip = '106.52.198.240'
+    # ip = '139.159.199.99'
 else:
     ip = argv[1]
 class Conf(Enum):
@@ -27,11 +29,11 @@ class Conf(Enum):
     # TEST_APP_URL = 'http://106.52.198.240:9527/api/v1.0'
     TEST_APP_URL =   'http://' + ip + ':9527/api/v1.0'
 
-    host = '106.52.198.240'
+    host = ip
     port = 3306
     user = 'root'
-    # password = 'Antian!2020'
-    password = 'Root_2021'
+    password = 'Antian!2020'
+    
 
     # host = '139.159.202.43'
     # port = 3306
