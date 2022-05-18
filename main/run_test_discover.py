@@ -4,6 +4,7 @@
 # @Email : hy546880109@qq.com
 # @date  : 2020.12.08
 # @Project: 云平台接口测试用例
+import threading
 import unittest,os,sys,json,time
 
 path = os.path.join(os.path.dirname(os.path.dirname(
@@ -27,9 +28,6 @@ def run_test():
     path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'test_case')
     print(path)
     suite = unittest.defaultTestLoader.discover(path, pattern='test*.py')
-    # runner = unittest.TextTestRunner()
-    # runner.run(suite)
-
     project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     report_dir = os.path.join(project_root, 'report')
     # 测试报告地址
@@ -49,6 +47,13 @@ def run_test():
     smtp.sender(to=users, attachments=report_abspath, subject = '安天智慧城市项目V1.0接口自动化测试报告')
 
 
+def tThread():
+    m = threading.Thread(target=run_test, args=())
+    m.run()
+
+
 if __name__ == '__main__':
-    run_test()
+    tThread()
+
+
 

@@ -3,8 +3,7 @@ import unittest,os,sys,json
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
-from common.login_token import get_token
-from sys import int_info
+
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
@@ -15,8 +14,8 @@ class Test_Get_Index(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
-        cls.mysql = Mysql_connet('device')
-        cls.mysql.insert_user()
+        cls.mysql = Mysql_connet('user')
+        # cls.mysql.insert_user()
 
     @classmethod
     def tearDownClass(cls) -> None:

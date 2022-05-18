@@ -416,22 +416,22 @@
                                 
                                 <tr>
                                     <td> 开始时间</td>
-                                    <td class="text-right">2022-05-10 18:27:54</td>
+                                    <td class="text-right">2022-05-17 18:36:48</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 持续时间</td>
-                                    <td class="text-right">0:03:05.092004</td>
+                                    <td class="text-right">0:04:05.748955</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> 状态</td>
-                                    <td class="text-right">Passed:132 Failed:6</td>
+                                    <td class="text-right">Passed:138</td>
                                 </tr>
                                 
                                 <tr>
                                     <td>详情:</td>
-                                    <td class="text-right">http://139.159.199.99:9527/admin/v1.0接口测试用例执行情况</td>
+                                    <td class="text-right">http://106.52.198.240:9527/admin/v1.0接口测试用例执行情况</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -499,7 +499,7 @@
         <div>获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -525,56 +525,35 @@
         <div>新增资产用例：/capital/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.19 s</div>
+        <div>0.22 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.capital_controller.test_update.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.3',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.3.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.3.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>更新资产用例：/capital/update</div>
     </td>
     <td style="color: #495057">
-        <div>0.14 s</div>
+        <div>0.20 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3.1')" >
-        fail</a>
-    <div id='div_ft1.3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.3.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\capital_controller\test_update.py", line 74, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 更新资产失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -598,7 +577,7 @@ AssertionError: '0' != '-1'
         <div>更新设备名称用例：/capital/updateImage4Name</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.19 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -624,7 +603,7 @@ AssertionError: '0' != '-1'
         <div>获取设备缺省配置用例：/terminal/getDefaultDeviceParam</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -650,7 +629,7 @@ AssertionError: '0' != '-1'
         <div>获取设备参数用例：/terminal/getDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -676,7 +655,7 @@ AssertionError: '0' != '-1'
         <div>根据设备编码获取设备信息用例：/device/getTerminalBylNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -702,7 +681,7 @@ AssertionError: '0' != '-1'
         <div>修改设备参数用例：/terminal/modifyDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.18 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -728,7 +707,7 @@ AssertionError: '0' != '-1'
         <div>获取我的信息用例：/terminal/getMyInfo</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.17 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -754,7 +733,7 @@ AssertionError: '0' != '-1'
         <div>网关跟传感器蓝牙配对用例：/bluetooth/match</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -780,7 +759,7 @@ AssertionError: '0' != '-1'
         <div>获取设备参数用例：/terminal/getDeviceParameters</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -806,7 +785,7 @@ AssertionError: '0' != '-1'
         <div>搜索设备用例：/device/query</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -832,7 +811,7 @@ AssertionError: '0' != '-1'
         <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -858,7 +837,7 @@ AssertionError: '0' != '-1'
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -899,7 +878,7 @@ AssertionError: '0' != '-1'
         <div>查询部门下所有的子部门成功用例：/department/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.85 s</div>
+        <div>1.10 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -920,50 +899,29 @@ AssertionError: '0' != '-1'
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.device_alarm_controller.test_alarm_get.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.16',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.16.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.16.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
-        <div>获取窖井详情用例：/device/getDeviceById</div>
+        <div>获取窖井详情:id 为窖井ID用例：/device/getDeviceById</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.10 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.16.1')" >
-        fail</a>
-    <div id='div_ft1.16.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.16.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.16.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\device_alarm_controller\test_alarm_get.py", line 36, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 获取窖井详情失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -987,56 +945,35 @@ AssertionError: '0' != '-1'
         <div>获取设备某种报警类型下的报警信息用例：/device/getDeviceAlarms</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>app_test_case.device_alarm_controller.test_getDeviceByTerminalNo.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.18',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.18.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.18.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取窖井详情用例：/device/getDeviceByTerminalNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.76 s</div>
+        <div>0.10 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18.1')" >
-        fail</a>
-    <div id='div_ft1.18.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.18.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.18.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\app_test_case\device_alarm_controller\test_getDeviceByTerminalNo.py", line 36, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 获取窖井详情失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1060,7 +997,7 @@ AssertionError: '0' != '-1'
         <div>获取我的报警用例：/work/order/getMyAlarms</div>
     </td>
     <td style="color: #495057">
-        <div>0.90 s</div>
+        <div>1.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1086,7 +1023,7 @@ AssertionError: '0' != '-1'
         <div>获取分类下的所有字典值成功用例：/dictionary/getDictionaryByCode</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1112,7 +1049,7 @@ AssertionError: '0' != '-1'
         <div>获取字典分类成功用例：/dictionary/getAllDictionaryType</div>
     </td>
     <td style="color: #495057">
-        <div>0.82 s</div>
+        <div>1.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1138,7 +1075,7 @@ AssertionError: '0' != '-1'
         <div>APP首页报警、工单未读数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1164,7 +1101,7 @@ AssertionError: '0' != '-1'
         <div>APP首页地图数据成功用例: /getNoRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.76 s</div>
+        <div>1.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1190,7 +1127,7 @@ AssertionError: '0' != '-1'
         <div>获取版本号成功用例: /getVersionInfo</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1216,7 +1153,7 @@ AssertionError: '0' != '-1'
         <div>APP首页报警、工单已读成功用例: /modifyRead</div>
     </td>
     <td style="color: #495057">
-        <div>0.80 s</div>
+        <div>1.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1242,7 +1179,7 @@ AssertionError: '0' != '-1'
         <div>获取用户的资源成功用例: /menu/getUserMenus</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1265,10 +1202,10 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>app登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1279,7 +1216,7 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_login_success_2___hy___234567___abcd______code__1005__message___输入的密码错误____</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>app登陆用例 /login</div>
     </td>
     <td style="color: #495057">
         <div>0.10 s</div>
@@ -1293,10 +1230,10 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_login_success_3___a___123456___qw12______code__1004__message___账户未创建请联系管理员____</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>app登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1322,7 +1259,7 @@ AssertionError: '0' != '-1'
         <div>重置密码成功用例: /user/resetPwd</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1348,7 +1285,7 @@ AssertionError: '0' != '-1'
         <div>修改密码成功用例: /user/updatePassword</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1374,7 +1311,7 @@ AssertionError: '0' != '-1'
         <div>修改头像成功用例: /user/modifyHeaderIcon</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1400,7 +1337,7 @@ AssertionError: '0' != '-1'
         <div>地址列表成功用例: /address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1426,7 +1363,7 @@ AssertionError: '0' != '-1'
         <div>获取下属子地址列表成功用例: /address/sonList</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1452,7 +1389,7 @@ AssertionError: '0' != '-1'
         <div>上次头像成功用例: /user/doBase64</div>
     </td>
     <td style="color: #495057">
-        <div>0.26 s</div>
+        <div>0.33 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1478,7 +1415,7 @@ AssertionError: '0' != '-1'
         <div>根据报警ID获取窖井信息成功用例: /work/order/getCellarWellDetailByAlarmId</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1504,7 +1441,7 @@ AssertionError: '0' != '-1'
         <div>根据窖井编码获取窖井信息成功用例: /work/order/getCellarWellDetailByTerminalNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1530,7 +1467,7 @@ AssertionError: '0' != '-1'
         <div>根据工单ID获取窖井信息成功用例: /work/order/getCellarWellDetailByWorkId</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1556,7 +1493,7 @@ AssertionError: '0' != '-1'
         <div>获取我的工单成功用例: /work/order/getMyWorkOrders</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1582,7 +1519,7 @@ AssertionError: '0' != '-1'
         <div>执行工单成功用例: /work/order/saveMyWorkOrder</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1608,7 +1545,7 @@ AssertionError: '0' != '-1'
         <div>布/撤控成功用例: /work/order/setControl</div>
     </td>
     <td style="color: #495057">
-        <div>0.12 s</div>
+        <div>0.23 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1634,7 +1571,7 @@ AssertionError: '0' != '-1'
         <div>删除窖井成功用例：/device/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.34 s</div>
+        <div>0.57 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1660,7 +1597,7 @@ AssertionError: '0' != '-1'
         <div>批量删除设备成功用例：/device/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1702,7 +1639,7 @@ AssertionError: '0' != '-1'
         <div>导出窖井列表信息成功用例：/device/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.20 s</div>
+        <div>0.23 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1715,9 +1652,10 @@ AssertionError: '0' != '-1'
         </div>
         <pre>
         pt1.42.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-Empty DataFrame
-Columns: [窖井编号, 终端编号, 设备名称, 设备类型, 设备模式, 蓝牙MAC, 地址, 部门, 窖井规格, 井盖类型, 在/离线, 布控状态, 窖井状态, 安装状态, 锁状态, 内盖状态, 外盖状态, 录入时间, ICCID, IMSI]
-Index: []
+        窖井编号       终端编号 设备名称     设备类型       设备模式              蓝牙MAC  ... 锁状态 内盖状态 外盖状态                 录入时间                 ICCID             IMSI
+0  567891234  678912345   hy  NB智慧窖井锁  气体检测+水位检测  C3:B2:5D:7E:AE:7B  ...  上锁    关    开  2022-04-12 14:10:04  89861119212002368684  460113036642806
+
+[1 rows x 20 columns]
 
         </pre>
     </div>
@@ -1726,50 +1664,29 @@ Index: []
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.cellar_well_controller.test_get_device_by_id.Test_get_device</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.43',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.43.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.43.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_get_device_success</div>
     </td>
     <td style="color: #495057">
         <div>获取窖井详情成功用例：/device/getDeviceById</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.09 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.43.1')" >
-        fail</a>
-    <div id='div_ft1.43.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.43.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.43.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\cellar_well_controller\test_get_device_by_id.py", line 34, in test_get_device_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 获取窖井详情失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1793,7 +1710,7 @@ AssertionError: '0' != '-1'
         <div>获取窖井列表信息成功用例：/device/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1819,7 +1736,7 @@ AssertionError: '0' != '-1'
         <div>搜索设备成功用例：/device/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1845,56 +1762,35 @@ AssertionError: '0' != '-1'
         <div>布/撤控成功用例：/device/setControl</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.20 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.cellar_well_controller.test_update.Test_Device_List</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.47',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.47.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.47.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_device_list_success</div>
     </td>
     <td style="color: #495057">
         <div>更新资产成功用例：/device/update</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.28 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.47.1')" >
-        fail</a>
-    <div id='div_ft1.47.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.47.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.47.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\cellar_well_controller\test_update.py", line 68, in test_device_list_success
-    self.assertEqual(str(0), str(response.json()['code']), '更新资产失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 更新资产失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -1918,7 +1814,7 @@ AssertionError: '0' != '-1'
         <div>窖井分布-获取窖井报警详情成功用例：/device/getAlarmDetailByNo</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1944,7 +1840,7 @@ AssertionError: '0' != '-1'
         <div>窖井分布-报警数据分布查询成功用例：/device/pageQueryAlarmData</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1970,7 +1866,7 @@ AssertionError: '0' != '-1'
         <div>窖井分布-区域数据分布查询成功用例：/device/pageQueryAreaData</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -1996,7 +1892,7 @@ AssertionError: '0' != '-1'
         <div>窖井分布-设备数据分布查询成功用例：/device/pageQueryDeviceData</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2022,7 +1918,7 @@ AssertionError: '0' != '-1'
         <div>删除部门成功用例：/department/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2048,7 +1944,7 @@ AssertionError: '0' != '-1'
         <div>批量删除部门成功用例：/department/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.21 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2074,7 +1970,7 @@ AssertionError: '0' != '-1'
         <div>根据ID获取部门成功用例：/department/getDepartmentById</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2100,7 +1996,7 @@ AssertionError: '0' != '-1'
         <div>查询部门下所有的子部门成功用例：/department/getMySelfAndSon</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -2141,7 +2037,7 @@ AssertionError: '0' != '-1'
         <div>查询部门下所有的子部门成功用例：/department/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -2182,7 +2078,7 @@ AssertionError: '0' != '-1'
         <div>新增或者更新部门信息成功用例：/department/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.22 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2208,7 +2104,7 @@ AssertionError: '0' != '-1'
         <div>批量删除报警成功用例：/history/alarm/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.17 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2234,7 +2130,7 @@ AssertionError: '0' != '-1'
         <div>报警列表导出成功用例：/history/alarm/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -2247,9 +2143,8 @@ AssertionError: '0' != '-1'
         </div>
         <pre>
         pt1.59.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-Empty DataFrame
-Columns: [终端编号, 设备类型, 设备名称, 地址, 部门, 报警类型, 报警值, 阀值, 报警时间, 消警时间, 派单状态, 报警状态]
-Index: []
+        终端编号     设备类型 设备名称                             地址   部门      报警类型  报警值  阀值                 报警时间                 消警时间 派单状态 报警状态
+0  678912345  NB智慧窖井锁   hy  广东省深圳市南山区南山区科技中二路29号靠近深圳软件园2期  测试部  水位黄色淤堵报警  NaN NaN  2022-04-12 16:13:19  2022-04-12 16:37:02  未派单  已消警
 
         </pre>
     </div>
@@ -2258,50 +2153,29 @@ Index: []
     <td></td>
 </tr>
 
-<tr class='failClass'>
+<tr class='passClass'>
     <td>web_test_case.device_alarm_controller.test_alarm_get.Test_Add_Task</td>
     <td></td>
     <td></td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1.60',1)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft1.60.1' class='none'>
-    <td class='failCase'>
+<tr id='pt1.60.1' class='hiddenRow'>
+    <td class='passCase'>
         <div class='testcase'>test_add_task_success</div>
     </td>
     <td style="color: #495057">
         <div>获取窖井详情用例：/history/alarm/getCellarWellById</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.12 s</div>
     </td>
-    <td colspan='5' align='center'>
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.60.1')" >
-        fail</a>
-    <div id='div_ft1.60.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.60.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        ft1.60.1: Traceback (most recent call last):
-  File "c:\Users\test\Desktop\hy\iot_api_test\test_case\web_test_case\device_alarm_controller\test_alarm_get.py", line 33, in test_add_task_success
-    self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')
-AssertionError: '0' != '-1'
-- 0
-+ -1
- : 获取窖井详情失败
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-    </td>
+    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -2325,7 +2199,7 @@ AssertionError: '0' != '-1'
         <div>获取历史报警列表成功用例：/history/alarm/historyAlarmTaskPageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2351,7 +2225,7 @@ AssertionError: '0' != '-1'
         <div>手动派单成功用例：/history/alarm/manualDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.15 s</div>
+        <div>0.18 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2377,7 +2251,7 @@ AssertionError: '0' != '-1'
         <div>自动派单成功用例：/history/alarm/autoDistributeTask</div>
     </td>
     <td style="color: #495057">
-        <div>0.82 s</div>
+        <div>1.03 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2403,7 +2277,7 @@ AssertionError: '0' != '-1'
         <div>获取报警的图像信息成功用例：/history/alarm/getAlarmPictures</div>
     </td>
     <td style="color: #495057">
-        <div>0.92 s</div>
+        <div>1.24 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2429,7 +2303,7 @@ AssertionError: '0' != '-1'
         <div>首页-关于成功用例：/index/about</div>
     </td>
     <td style="color: #495057">
-        <div>0.14 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2455,7 +2329,7 @@ AssertionError: '0' != '-1'
         <div>窖井报警分类占比/数量成功用例：/index/getIndexAlarmPercent</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2481,7 +2355,7 @@ AssertionError: '0' != '-1'
         <div>窖井报警趋势统计成功用例：/index/getIndexAlarmRstrend</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2507,7 +2381,7 @@ AssertionError: '0' != '-1'
         <div>数据概况成功用例：/index/getIndexBasicData</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2533,7 +2407,7 @@ AssertionError: '0' != '-1'
         <div>平台事件总览： 布控/撤控信息成功用例：/index/getIndexPlatformView_c</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2559,7 +2433,7 @@ AssertionError: '0' != '-1'
         <div>平台事件总览: 消息推送信息成功用例：/index/getIndexPlatformView_p</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2585,7 +2459,7 @@ AssertionError: '0' != '-1'
         <div>平台事件总览: 工单相关内容成功用例：/index/getIndexPlatformView_w</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2611,7 +2485,7 @@ AssertionError: '0' != '-1'
         <div>平台今日公告成功用例：/index/getIndexTodayNotice</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2637,7 +2511,7 @@ AssertionError: '0' != '-1'
         <div>窖井分类占比/数量成功用例：/index/getIndexTypePercent</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2660,10 +2534,10 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_login_success_1___hy___123456__1234____code___hy___</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>web登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2674,10 +2548,10 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_login_success_2___hy___234567___abcd______code__1005__message___输入的密码错误____</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>web登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2688,10 +2562,10 @@ AssertionError: '0' != '-1'
         <div class='testcase'>test_login_success_3___a___123456___qw12______code__1004__message___账户未创建请联系管理员____</div>
     </td>
     <td style="color: #495057">
-        <div>登陆用例 /login</div>
+        <div>web登陆用例 /login</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2717,7 +2591,7 @@ AssertionError: '0' != '-1'
         <div>获得所有资源成功用例：/menu/getAllMenu</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2743,7 +2617,7 @@ AssertionError: '0' != '-1'
         <div>获取用户的资源成功用例：/menu/getUserMenus</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2769,7 +2643,7 @@ AssertionError: '0' != '-1'
         <div>增加角色资源成功用例：/menu/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.20 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2795,7 +2669,7 @@ AssertionError: '0' != '-1'
         <div>获取角色的资源用例：/menu/queryRoleOwnsMenus</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2821,7 +2695,7 @@ AssertionError: '0' != '-1'
         <div>删除用户操作日志成功用例：/operate/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2847,7 +2721,7 @@ AssertionError: '0' != '-1'
         <div>导出用户操作日志成功用例：/operate/log/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.24 s</div>
+        <div>0.30 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -2860,14 +2734,14 @@ AssertionError: '0' != '-1'
         </div>
         <pre>
         pt1.80.1: D:\python3.9.7\lib\site-packages\openpyxl-3.0.9-py3.9.egg\openpyxl\styles\stylesheet.py:226: UserWarning: Workbook contains no default style, apply openpyxl's default
-txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  部门    操作类型                 操作时间 操作员
-0  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:06  hy
-1  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:05  hy
-2  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:04  hy
-3  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:03  hy
-4  操作日志   平台      NaN   NaN  广东深圳南山区 NaN  增加角色资源  2022-05-10 18:30:03  hy
-5  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:01  hy
-6  操作日志   平台      NaN   NaN  广东深圳南山区 NaN    用户登录  2022-05-10 18:30:00  hy
+txt:    日志类型 日志来源  设备IMEI号  设备名称        省/市/区    部门    操作类型                 操作时间    操作员
+0  操作日志   平台      NaN   NaN          NaN   NaN    用户登录  2022-06-28 12:00:30  超级管理员
+1  操作日志   平台      NaN   NaN  湖南永州江华瑶族自治县  移动部门    用户登录  2022-05-17 18:39:48    黄先春
+2  操作日志   平台      NaN   NaN  湖南永州江华瑶族自治县  移动部门    用户登录  2022-05-17 18:39:47    黄先春
+3  操作日志   平台      NaN   NaN  湖南永州江华瑶族自治县  移动部门    用户登录  2022-05-17 18:39:46    黄先春
+4  操作日志   平台      NaN   NaN  湖南永州江华瑶族自治县  移动部门    用户登录  2022-05-17 18:39:44    黄先春
+5  操作日志   平台      NaN   NaN  湖南永州江华瑶族自治县  移动部门  增加角色资源  2022-05-17 18:39:45    黄先春
+6  操作日志   平台      NaN   NaN  湖南永州江华瑶族自治县  移动部门    用户登录  2022-05-17 18:39:43    黄先春
 
         </pre>
     </div>
@@ -2896,7 +2770,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取所有的日志操作类型成功用例：/operate/log/getAllOperationType</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2922,7 +2796,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>页面查询成功用例：/operate/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2948,7 +2822,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取上一级地址成功用例：/address/getProvinceCityDistrictById</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -2974,7 +2848,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>通过名称获取上一级地址成功用例：/address/getProvinceCityDistrictByName</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3000,7 +2874,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>根据查询条件获取地区信息成功用例：/address/list</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3026,7 +2900,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取子下所有地区信息成功用例：/address/sonlist</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3052,7 +2926,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>批量删除成功用例：/push/set/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3078,7 +2952,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取用户的推送方式成功用例：/push/set/getPushSetByUserId</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3104,7 +2978,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>创建任务成功用例：/push/set/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3130,7 +3004,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取个人报警推送设置列表成功用例：/push/set/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3156,7 +3030,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>更新任务成功用例：/push/set/update</div>
     </td>
     <td style="color: #495057">
-        <div>0.86 s</div>
+        <div>1.26 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3182,7 +3056,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>删除角色成功用例：/role/delete</div>
     </td>
     <td style="color: #495057">
-        <div>0.17 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3208,7 +3082,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>批量删除角色成功用例：/role/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.09 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3234,7 +3108,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取角色详细成功用例：/role/getRoleById</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3260,7 +3134,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>增加用户角色成功用例：/userRole/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.19 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3286,7 +3160,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>查询角色列表成功用例：/role/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3312,7 +3186,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>新增或修改角色信息成功用例：/role/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3338,7 +3212,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>创建任务成功用例： /task/add</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3364,7 +3238,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取自动派单列表成功用例: /task/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.19 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3390,7 +3264,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>删除任务成功用例：/task/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3416,7 +3290,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>任务管理用例： /task/updateStatus</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3442,7 +3316,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>取消设备升级成功用例：/device/upgrade/cancelBatch</div>
     </td>
     <td style="color: #495057">
-        <div>0.19 s</div>
+        <div>0.17 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3494,7 +3368,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取设备升级列表成功用例：/device/upgrade/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3520,7 +3394,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>执行设备升级成功用例：/device/upgrade/saveBatch</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3546,7 +3420,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>传感器设备升级成功用例：/device/upgrade/sensorUpgrade</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.12 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3572,7 +3446,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>批量删除设备上报日志成功用例：/up/log/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3598,7 +3472,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>导出设备上报指令日志成功用例：/ins/log/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.36 s</div>
+        <div>0.20 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3624,7 +3498,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>getLogTotal成功用例：/up/log/getLogTotal</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3650,7 +3524,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>设备上报日志列表成功用例：/up/log/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3676,7 +3550,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取传感器硬件所有版本号用例：/upgrade/package/getSensorHardwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3702,7 +3576,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取版本号用例：/ver/getUpgradePackage</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3728,7 +3602,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>批量删除升级包成功用例：/upgrade/package/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.10 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3754,7 +3628,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取升级包硬件版本号用例：/upgrade/package/getAllHardwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3780,7 +3654,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取硬件升级包所有软件版本号用例：/upgrade/package/getAllSoftwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3806,7 +3680,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取包上传人用例：/upgrade/package/getUploadUser</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3832,7 +3706,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>上传升级包成功用例：/upgrade/package/insert</div>
     </td>
     <td style="color: #495057">
-        <div>0.91 s</div>
+        <div>1.21 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3858,7 +3732,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取升级包列表用例：/upgrade/package/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.11 s</div>
+        <div>0.16 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3884,7 +3758,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取传感器软件版本号用例：/upgrade/package/getSensorSoftwareVer</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3910,7 +3784,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>上传文件用例：/file/upload</div>
     </td>
     <td style="color: #495057">
-        <div>0.90 s</div>
+        <div>1.25 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3936,7 +3810,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>上传文件用例：/file/uploadfile</div>
     </td>
     <td style="color: #495057">
-        <div>0.96 s</div>
+        <div>1.16 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3962,7 +3836,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>批量删除用户成功用例：/user/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.13 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -3988,7 +3862,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取维修人员成功用例：/user/getMaintainer</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.11 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4014,7 +3888,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取派单人员成功用例：/user/getSendpersonnel</div>
     </td>
     <td style="color: #495057">
-        <div>0.06 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4040,7 +3914,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>通过用户账号获取用户信息成功用例：/user/getUserByCode</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.07 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4092,7 +3966,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>重置密码成功用例：/user/resetPwd</div>
     </td>
     <td style="color: #495057">
-        <div>0.04 s</div>
+        <div>0.08 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4118,7 +3992,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>新增或修改用户信息成功用例：/user/saveOrUpdate</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.14 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4144,7 +4018,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>修改密码成功用例：/user/updatePassword</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4170,7 +4044,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>获取验证码用例：/captcha</div>
     </td>
     <td style="color: #495057">
-        <div>0.05 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4196,7 +4070,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>批量删除工单成功用例：/work/order/deleteBatchIds</div>
     </td>
     <td style="color: #495057">
-        <div>0.08 s</div>
+        <div>0.09 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4222,7 +4096,7 @@ txt:    日志类型 日志来源  设备IMEI号  设备名称    省/市/区  �
         <div>导出工单成功用例：/work/order/export</div>
     </td>
     <td style="color: #495057">
-        <div>0.16 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -4266,7 +4140,7 @@ Index: []
         <div>查看回单结果成功用例：/work/order/getWorkOrderById</div>
     </td>
     <td style="color: #495057">
-        <div>0.13 s</div>
+        <div>0.10 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4292,7 +4166,7 @@ Index: []
         <div>获取历史工单列表成功用例：/work/order/pageQuery</div>
     </td>
     <td style="color: #495057">
-        <div>0.07 s</div>
+        <div>0.15 s</div>
     </td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
@@ -4303,8 +4177,8 @@ Index: []
                     <td> </td>
                     <td> </td>
                     <td>138</td>
-                    <td class="text text-success">132</td>
-                    <td class="text text-danger">6</td>
+                    <td class="text text-success">138</td>
+                    <td class="text text-danger">0</td>
                     <td class="text text-warning">0</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -4326,7 +4200,7 @@ Index: []
         ],
         datasets: [
             {
-                data: [132, 6, 0, 0],
+                data: [138, 0, 0, 0],
                 backgroundColor: [
                     "#10c469",
                     "#f9c851",

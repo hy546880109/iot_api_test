@@ -17,10 +17,12 @@ class Test_Add_Task(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('device')
         cls.mysql.insert_device()
+        cls.mysql.insert_user()
 
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
+        cls.mysql.delete_user()
         cls.mysql.close() 
         
     def test_add_task_success(self):
@@ -28,9 +30,8 @@ class Test_Add_Task(unittest.TestCase):
         payload = {
             'terminalNo': self.mysql.terminal_no
         }
-        headers = {'token': get_token()}
         response = Test_Add_Task.http.get(
-            '/device/getDeviceByTerminalNo', params=payload, headers=headers)
+            '/device/getDeviceByTerminalNo', params=payload)
 
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取窖井详情失败')

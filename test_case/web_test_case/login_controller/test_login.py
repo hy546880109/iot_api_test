@@ -45,7 +45,7 @@ class Test_login(unittest.TestCase):
 
     @ddt.data(*get_test_data().getDatasFromSheet())
     def test_login_success(self, data):
-        '''登陆用例 /login'''
+        '''web登陆用例 /login'''
         users,passwd,code,exp = tuple(data)
         password = Md5_add(str(passwd))
         payload = {
@@ -58,7 +58,7 @@ class Test_login(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         response = Test_login.http.post('/login',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertIn(exp, response.text)
+        self.assertIn(exp, response.text, 'web登录失败')
 
 
 if __name__ == "__main__":

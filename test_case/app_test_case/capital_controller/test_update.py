@@ -53,7 +53,7 @@ class Test_Add_Task(unittest.TestCase):
             'latitude': 22.545289,
             'longitude': 113.937628,
             'mac': "C3:B2:5D:7E:AE:7B",
-            'name': "hh",
+            'name': "hy",
             'no': self.mysql.no,
             'provinceId': 44,
             'provinceName': "广东省",

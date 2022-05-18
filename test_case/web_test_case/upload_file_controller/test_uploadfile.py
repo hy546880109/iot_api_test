@@ -17,9 +17,10 @@ class Test_Add_Task(unittest.TestCase):
 
     def test_add_task_success(self):
         '''上传文件用例：/file/uploadfile'''
+        file_path = os.path.join(path,'1.bin')
         data = {'bucketName':'antian-apk'}
         payload = {
-            'file': ("1.bin", open('1.bin', 'rb'), 'application/x-msdownload')}
+            'file': ("1.bin", open(file_path, 'rb'), 'application/x-msdownload')}
         header = {'token': get_token(), 'Accept': 'application/json, text/plain, */*'}    
         # response = Test_Add_Task.http.post('/file/uploadfile', files=payload,headers=header)
         response = requests.post(self.url + '/file/uploadfile', files=payload, data=data, headers=header)

@@ -15,6 +15,7 @@ class Test_Get_Index(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('device')
 
+
     def test_get_index_success(self):
         """测试删除电信平台数据成功用例: /iot/platform/deleteByDeviceId"""
         params = {'terminalNo':self.mysql.terminal_no}
