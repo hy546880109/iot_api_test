@@ -24,7 +24,8 @@ class HttpRequests(object):
         self.token = get_token()
         self.headers = {
             'Content-Type': 'application/json',
-            'token': self.token
+            'token': self.token,
+            'Connection': 'close'
         }
 
     # 封装你自己的get请求,获取资源
