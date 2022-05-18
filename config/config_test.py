@@ -11,9 +11,14 @@ from sys import argv
 #默认不带参数的ip
 if len(argv) == 1:
     ip = '106.52.198.240'
-    # ip = '139.159.199.99'
-else:
+    host = ip
+    
+elif len(argv) > 1:
     ip = argv[1]
+    host = argv[2]
+
+else:
+    print('传参错误')
 class Conf(Enum):
     '''
     环境配置枚举类
@@ -29,16 +34,11 @@ class Conf(Enum):
     # TEST_APP_URL = 'http://106.52.198.240:9527/api/v1.0'
     TEST_APP_URL =   'http://' + ip + ':9527/api/v1.0'
 
-    host = ip
+    host = host
     port = 3306
     user = 'root'
     password = 'Antian!2020'
-    
-
     # host = '139.159.202.43'
-    # port = 3306
-    # user = 'root'
-    # password = 'Antian!2020'
 
     SEND_EMAIL = 'hy546880109@qq.com'
     SEND_EMAIL_PASSWD = 'lwveldyrecfybdce'  # 邮箱授权码
@@ -48,7 +48,7 @@ class Conf(Enum):
     qqmail = 'smtp.qq.com'
 
 if __name__ == '__main__':
-
-    print(Conf.TEST_URL)
+    print(type(ip))
+    print(Conf.host)
     print(Conf.TEST_URL.value)
-    print(','.join(Conf.TO_EMAIL.value))
+    print(Conf.host.value)

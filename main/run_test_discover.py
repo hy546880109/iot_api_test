@@ -5,7 +5,7 @@
 # @date  : 2020.12.08
 # @Project: 云平台接口测试用例
 import threading
-import unittest,os,sys,json,time
+import unittest,os,sys,time
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     (os.path.abspath(__file__)))))
