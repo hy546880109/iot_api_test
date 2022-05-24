@@ -19,31 +19,25 @@ def add_syspath():
     sys.path.append(path)
 
 add_syspath()
+print(sys.path)
 import time
 import unittest
-from iot_api_test.test_case.test_home_page import Home_page
-from iot_api_test.test_case.test_microservice import Test_microservice
-from iot_api_test.test_case.test_feedback import Feedback
-from iot_api_test.test_case.test_message_config import Message_config
-from iot_api_test.test_case.test_log import Log
-from iot_api_test.test_case.test_websocket import Test_websoket
+from test_case.web_test_case.cellar_well_controller.test_get_device_by_id import Test_get_device
+from test_case.app_test_case.cellar_well_controller.test_get_my_info import Test_Add_Task
 
-from iot_api_test.config.config_test import Conf
-from iot_api_test.lib.TestRunner.HTMLTestRunner import HTMLTestRunner
-from iot_api_test.lib.TestRunner.HTMLTestRunner import SMTP
+from config.config_test import Conf
+from lib.TestRunner.HTMLTestRunner import HTMLTestRunner
+from lib.TestRunner.HTMLTestRunner import SMTP
 
 if __name__ == '__main__':
     
     # 根据给定的测试类，获取其中所有以test开头的测试方法，并返回一个测试套件
-    suite1 = unittest.TestLoader().loadTestsFromTestCase(Home_page)
-    suite2 = unittest.TestLoader().loadTestsFromTestCase(Test_microservice)
-    suite3 = unittest.TestLoader().loadTestsFromTestCase(Feedback)
-    suite4 = unittest.TestLoader().loadTestsFromTestCase(Message_config)
-    suite5 = unittest.TestLoader().loadTestsFromTestCase(Log)
-    suite6 = unittest.TestLoader().loadTestsFromTestCase(Test_websoket)
+    suite1 = unittest.TestLoader().loadTestsFromTestCase(Test_get_device)
+    suite2 = unittest.TestLoader().loadTestsFromTestCase(Test_Add_Task)
+    
 
     # 将多个测试类加载到测试套件中
-    suite = unittest.TestSuite([suite1,suite2,suite3,suite4,suite5,suite6])
+    suite = unittest.TestSuite([suite1,suite2])
 
     # 设置verbosity = 2，并生成HTML测试报告s
     project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -58,9 +52,12 @@ if __name__ == '__main__':
                                 verbosity=2
                                 )
         runner.run(suite)
-    smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.foxmail.value)
-    users = Conf.TO_EMAIL.value
-    smtp.sender(to=users, attachments=report_abspath, subject = '安天云平台V1.0接口自动化测试报告')
+    # smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.foxmail.value) 
+    # users = Conf.TO_EMAIL.value
+    # smtp.sender(to=users, attachments=report_abspath, subject = '安天云平台V1.0接口自动化测试报告')
     
 
+    smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.qqmail.value)      #qq邮箱
+    users = Conf.TO_EMAIL.value
+    smtp.sender(to=users, attachments=report_abspath, subject = '安天智慧城市项目V1.0接口自动化测试报告')
 
