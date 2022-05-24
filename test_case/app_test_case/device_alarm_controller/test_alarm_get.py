@@ -17,7 +17,6 @@ class Test_Add_Task(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('device')
         cls.mysql.insert_device()
-        cls.mysql.insert_user()
 
     @classmethod
     def tearDownClass(cls) -> None:

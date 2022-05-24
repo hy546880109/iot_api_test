@@ -9,23 +9,20 @@
 '''
 import os
 import sys
-
-
-def add_syspath():
-    path = os.path.join((os.path.dirname((
-        os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))))
-    sys.path.append(path)
-
-add_syspath()
-print(sys.path)
 import unittest
-from iot_api_test.test_case.test_battal import TestBattal
+
+path = os.path.join(os.path.dirname(os.path.dirname(
+    (os.path.abspath(__file__)))))
+sys.path.append(path)
+
+
+from test_case.web_test_case.cellar_well_controller.test_get_device_by_id import Test_get_device
 
 
 if __name__ == '__main__':
 
     # 根据给定的测试类，获取其中所有以test开头的测试方法，并返回一个测试套件
-    suite1 = unittest.TestLoader().loadTestsFromTestCase(TestBattal)
+    suite1 = unittest.TestLoader().loadTestsFromTestCase(Test_get_device)
 
     # 将多个测试类加载到测试套件中
     suite = unittest.TestSuite([suite1])
