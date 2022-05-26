@@ -158,7 +158,7 @@ class Mysql_connet():
 
         self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_key`(`id`, `lock_id`, `name`, `mac`, `type`, `is_online`, `is_delete`, `battery_num`,\
              `remark`, `user_id`, `department_id`, `create_at`, `create_by`, `update_at`, `update_by`) VALUES \
-            ({}, NULL, 'ss', 'F2:A0:25:6D:03:56', 0, 1, 0, 0, NULL, {}, {}, '2022-02-17 16:16:03',\
+            ({}, NULL, 'ss', 'C3:B2:5D:7E:AE:7A', 0, 1, 0, 0, NULL, {}, {}, '2022-02-17 16:16:03',\
              1456088038487625729, '2022-04-12 14:23:36', 1512260802038464514);"
             .format(self.key_id, self.user_id, self.department_id))
 

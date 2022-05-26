@@ -23,12 +23,12 @@ class Test_Add_Task(unittest.TestCase):
         cls.mysql.close()
 
     def test_add_task_success(self):
-        '''批量删除锁授权成功用例：/key/authorize/deleteBatchIds'''
+        '''批量删除锁授权成功用例：/key/deleteBatchIds'''
         payload = [self.mysql.device_id]
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/key/authorize/deleteBatchIds', data=payload, headers=headers)
+            '/key/deleteBatchIds', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '批量删除锁授权失败')
 

@@ -7,8 +7,10 @@
 
 from enum import Enum
 from sys import argv
-
+global ip
+global host
 #默认不带参数的ip
+
 if len(argv) == 1:
     ip = '106.52.198.240'
     host = ip
@@ -16,7 +18,6 @@ if len(argv) == 1:
 elif len(argv) > 1:
     ip = argv[1]
     host = argv[2]
-
 else:
     print('传参错误')
 class Conf(Enum):
@@ -27,7 +28,7 @@ class Conf(Enum):
     # TEST_URL = 'http://139.159.199.99:9527/admin/v1.0'
     # TEST_URL = 'http://106.52.198.240:9527/admin/v1.0'
     TEST_URL =   'http://' + ip + ':9527/admin/v1.0'
-
+    TEST_WS_URL = 'ws://' + ip + ':8003/websocket/'
 
     # TEST_APP_URL = 'http://124.71.31.43:9527/api/v1.0'
     # TEST_APP_URL = 'http://139.159.199.99:9527/api/v1.0'

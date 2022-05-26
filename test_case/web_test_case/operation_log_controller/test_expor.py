@@ -67,6 +67,7 @@ class Test_Add_Task(unittest.TestCase):
         txt = pd.read_excel('work.xls')  #读取文件内容用作断言
         print('txt:',txt)
         self.assertEqual(200, response.status_code, '返回非200')
+        self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出xlsx文件失败')
         self.assertIn(str('操作员'), str(txt), '导出用户操作日志失败')
 
 
