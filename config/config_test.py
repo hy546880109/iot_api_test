@@ -15,9 +15,14 @@ if len(argv) == 1:
     ip = '106.52.198.240'
     host = ip
     
-elif len(argv) > 1:
+elif len(argv) == 2:
+    ip = argv[1]
+    host = argv[1]
+
+elif len(argv) > 2:
     ip = argv[1]
     host = argv[2]
+    
 else:
     print('传参错误')
 class Conf(Enum):

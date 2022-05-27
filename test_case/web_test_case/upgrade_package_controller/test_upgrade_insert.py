@@ -7,17 +7,19 @@ sys.path.append(path)
 from common.login_token import get_token
 from common.http_requests import HttpRequests
 from config.config_test import Conf
-import requests
-import json
 
-class Test_Add_Task(unittest.TestCase):
+class Test_Add_Upgrade(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
 
-    def test_add_task_success(self):
+    @classmethod
+    def tearDown(cls) -> None:
+        pass
+
+    def test_add_upgrade_success(self):
         '''上传升级包成功用例：/upgrade/package/insert'''
         payload = {
           "id": "",
@@ -29,11 +31,12 @@ class Test_Add_Task(unittest.TestCase):
           "ver": "iWellGatewayV1.0.0"
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json','token': get_token()}
-        response = Test_Add_Task.http.post(
-            '/upgrade/package/insert', data=payload, headers=headers)
+        # headers = {'Content-Type': 'application/json','token': get_token()}
+        response = Test_Add_Upgrade.http.post(
+            '/upgrade/package/insert', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '上传升级包失败')
+
 
 
 if __name__ == '__main__':
