@@ -1,5 +1,4 @@
-from tkinter import N
-import unittest,os,sys,json
+import unittest,os,sys
 
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
