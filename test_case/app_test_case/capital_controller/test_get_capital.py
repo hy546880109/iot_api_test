@@ -6,7 +6,6 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -21,13 +20,13 @@ class Test_Add_Task(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
-        cls.mysql.close()    
+        cls.mysql.close()
 
     def test_add_task_success(self):
         '''获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo'''
         payload = {"terminalNo": self.mysql.no}
         payload = json.dumps(payload)
-        
+
         response = Test_Add_Task.http.post('/capital/getCapitalByTerminalNoOrSensorNo', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取资产失败')

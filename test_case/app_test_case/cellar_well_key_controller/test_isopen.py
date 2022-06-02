@@ -7,7 +7,7 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
+
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -22,12 +22,12 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_user()
         cls.mysql.delete_device()
-        cls.mysql.close() 
-    
+        cls.mysql.close()
+
     def test_add_task_success(self):
         '''获取钥匙当天是否开了锁用例：/key/isOpen'''
         data = {
-            'terminalNo':self.mysql.terminal_no 
+            'terminalNo':self.mysql.terminal_no
         }
         response = Test_Add_Task.http.get('/key/isOpen',params=data)
         self.assertEqual(200, response.status_code, '返回非200')

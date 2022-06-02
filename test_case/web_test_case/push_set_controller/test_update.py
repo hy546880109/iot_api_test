@@ -6,7 +6,7 @@ def add_syspath():
         os.path.dirname(os.path.abspath(__file__))))))
     sys.path.append(path)
 add_syspath()
-from common.login_token import get_token
+
 from common.mysql_data import Mysql_connet
 import unittest,os,sys,json
 
@@ -31,7 +31,7 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
         cls.mysql.delete_user()
-    
+
     def test_add_task_success(self):
         '''更新任务成功用例：/push/set/update'''
         payload = {
@@ -42,8 +42,8 @@ class Test_Add_Task(unittest.TestCase):
         'userId': self.mysql.user_id
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json', 'token': get_token(), 'Accept': 'application/json, text/plain'}
-        response = Test_Add_Task.http.post('/push/set/update',data=payload, headers=headers)
+
+        response = Test_Add_Task.http.post('/push/set/update',data=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'更新任务失败')
 

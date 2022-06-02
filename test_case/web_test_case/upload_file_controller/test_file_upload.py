@@ -7,7 +7,7 @@ sys.path.append(path)
 from config.config_test import Conf
 import requests
 from common.login_token import get_token
-from common.http_requests import HttpRequests
+# from common.http_requests import HttpRequests
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod

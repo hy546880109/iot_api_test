@@ -21,7 +21,7 @@ class Test_Add_Task(unittest.TestCase):
         data = {'bucketName':'antian-apk'}
         payload = {
             'file': ("1.bin", open(file_path, 'rb'), 'application/x-msdownload')}
-        header = {'token': get_token(), 'Accept': 'application/json, text/plain, */*'}    
+        header = {'token': get_token(), 'Accept': 'application/json, text/plain, */*'}
         # response = Test_Add_Task.http.post('/file/uploadfile', files=payload,headers=header)
         response = requests.post(self.url + '/file/uploadfile', files=payload, data=data, headers=header)
         self.assertEqual(200, response.status_code, '返回非200')

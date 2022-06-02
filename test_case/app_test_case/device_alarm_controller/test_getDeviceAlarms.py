@@ -5,7 +5,7 @@ path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
+
 from common.mysql_data import Mysql_connet
 
 class Test_Add_Task(unittest.TestCase):
@@ -27,7 +27,7 @@ class Test_Add_Task(unittest.TestCase):
           "terminalNo": self.mysql.terminal_no
         }
         payload = json.dumps(payload)
-        
+
         response = Test_Add_Task.http.post(
             '/device/getDeviceAlarms', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')

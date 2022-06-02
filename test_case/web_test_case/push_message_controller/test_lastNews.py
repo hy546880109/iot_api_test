@@ -1,5 +1,4 @@
-from cgi import parse_multipart
-import unittest,os,sys,json
+import unittest,os,sys
 
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
@@ -21,7 +20,7 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_user()
         cls.mysql.close()
-    
+
     def test_add_task_success(self):
         '''最新推送消息成功用例：/stat/push/lastNews'''
         response = Test_Add_Task.http.get('/stat/push/lastNews')

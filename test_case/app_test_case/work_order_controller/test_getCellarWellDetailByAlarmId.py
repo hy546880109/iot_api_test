@@ -3,7 +3,7 @@ import unittest,os,sys,json
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
-from common.login_token import get_token
+
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
@@ -27,7 +27,6 @@ class Test_Get_Index(unittest.TestCase):
         payload = {
             "id": self.mysql.alarm_id
         }
-        # headers = {'Content-Type': 'application/json','token': get_token()}
         response = Test_Get_Index.http.get('/work/order/getCellarWellDetailByAlarmId', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '根据报警ID获取窖井信息失败')

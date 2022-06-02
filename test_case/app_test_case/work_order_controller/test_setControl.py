@@ -4,7 +4,6 @@ path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
-from common.login_token import get_token
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
@@ -20,7 +19,7 @@ class Test_Get_Index(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
-        cls.mysql.close() 
+        cls.mysql.close()
 
     def test_get_index_success(self):
         """布/撤控成功用例: /work/order/setControl"""

@@ -1,5 +1,4 @@
-from email import header
-import unittest,os,sys,json
+import unittest,os,sys
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
@@ -7,7 +6,6 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -20,8 +18,8 @@ class Test_Add_Task(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
-        cls.mysql.close() 
-    
+        cls.mysql.close()
+
     def test_add_task_success(self):
         '''获取锁芯编码用例：/key/getLockCoreNo'''
         params = {'terminalNo':self.mysql.terminal_no}

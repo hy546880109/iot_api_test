@@ -4,7 +4,6 @@ path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
-from common.login_token import get_token
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
@@ -20,7 +19,7 @@ class Test_Page_Query_Area(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_user()
-        cls.mysql.close()        
+        cls.mysql.close()
 
     def test_page_query_area_success(self):
         '''窖井分布-区域数据分布查询成功用例：/device/pageQueryAreaData'''

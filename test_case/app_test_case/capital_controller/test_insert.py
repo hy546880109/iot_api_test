@@ -4,7 +4,6 @@ path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 
-from common.login_token import get_token
 from common.mysql_data import Mysql_connet
 import unittest
 import json
@@ -24,7 +23,7 @@ class Test_Add_Task(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
-        cls.mysql.close()    
+        cls.mysql.close()
 
     def test_add_task_success(self):
         '''新增资产用例：/capital/insert'''

@@ -7,7 +7,7 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
+
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -17,7 +17,7 @@ class Test_Add_Task(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
         cls.mysql = Mysql_connet('user')
         cls.mysql.insert_user()
-        
+
     def test_add_task_success(self):
         '''查看钥匙关联的锁信息用例：/key/authorize/getTerminalInfoById'''
         params = {'id':self.mysql.key_id}
