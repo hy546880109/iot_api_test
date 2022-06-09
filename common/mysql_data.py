@@ -9,7 +9,7 @@ def add_syspath():
 
 add_syspath()
 from config.config_test import Conf
-from importlib.resources import path
+
 
 
 host = Conf.host.value
@@ -122,21 +122,21 @@ class Mysql_connet():
             "INSERT INTO `user`.`t_role`(`id`, `name`, `remark`, `is_delete`, `create_at`, `create_by`, `update_at`, `update_by`) VALUES ({}, '施工人员', '施工人员', 0,\
             '2021-06-24 09:21:23', 1377074593995628546, '2021-06-30 10:06:57', NULL);"
             .format(self.role_id))
-        self.mysql_conn.insert_sql("INSERT INTO `user`.`t_role_menu`(`id`, `role_id`, `menu_id`) VALUES ({}, {}, 10);"
-                                   .format(self.role_menu_id, self.role_id))
+        self.mysql_conn.insert_sql("INSERT INTO `user`.`t_role_menu`(`id`, `role_id`, `menu_id`) VALUES ({}, {}, {});"
+                                   .format(self.role_menu_id, self.role_id, self.menu_id))
 
     def delete_user(self):
         self.mysql_conn = Mysql_connet('user')
         self.mysql_conn.delete_sql(
-            "delete from t_department where id={}".format(self.department_id))
+            "delete from t_department where  char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_user where id={}".format(self.user_id))
+            "delete from t_user where  char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_user_role where id={}".format(self.user_role_id))
+            "delete from t_user_role where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_role where id={}".format(self.role_id))
+            "delete from t_role where  char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_role_menu where id={}".format(self.role_menu_id))
+            "delete from t_role_menu  where char_length(id) < 19")
 
     def insert_device(self):
         self.mysql_conn = Mysql_connet('device')
@@ -144,9 +144,9 @@ class Mysql_connet():
          `area_id`, `area_name`, `address`, `spec`, `department_id`, `department_name`, `type`, `sub_type`, `cover_type`, `is_online`, `control_status`, \
          `status`, `is_delete`, `create_at`, `create_by`, `update_at`, `update_by`, `longitude`, `latitude`, `name`, `remark`)  VALUES\
         ({}, {}, {}, 1, 44, '广东省', 4403, '深圳市', 440305, '南山区', '南山区科技中二路29号靠近深圳软件园2期',\
-        '1', 1456087868379238402, '测试部', 2, 2, 0, 0, 0, 0, 0, '2022-04-12 14:10:04', 1512260802038464514, '2022-04-12 17:17:11', 1512260802038464514,\
+        '1', {}, '测试部', 2, 2, 0, 0, 0, 0, 0, '2022-04-12 14:10:04', 1512260802038464514, '2022-04-12 17:17:11', 1512260802038464514,\
         '113.93764', '22.545283', 'hy', NULL);"
-                                   .format(self.device_id, self.no, self.terminal_no))
+                                   .format(self.device_id, self.no, self.terminal_no, self.department_id))
         self.mysql_conn.insert_sql("INSERT INTO `t_capital`(`id`, `no`, `unit_id`, `department_id`, `department_name`, `duty_man`, `duty_man_phone`,\
         `safe_man`, `safe_man_phone`, `insurance_corp`, `insurance_status`, `insurance_at`, `create_at`, `create_by`, `remark`) VALUES\
         ({}, {}, 1, {}, '测试部', NULL, NULL, NULL, NULL, NULL, 0, NULL, '2022-04-12 14:10:04', NULL, NULL)"
@@ -158,7 +158,7 @@ class Mysql_connet():
 
         self.mysql_conn.insert_sql("INSERT INTO `device`.`t_cellar_well_key`(`id`, `lock_id`, `name`, `mac`, `type`, `is_online`, `is_delete`, `battery_num`,\
              `remark`, `user_id`, `department_id`, `create_at`, `create_by`, `update_at`, `update_by`) VALUES \
-            ({}, NULL, 'ss', 'F2:A0:25:6D:03:56', 0, 1, 0, 0, NULL, {}, {}, '2022-02-17 16:16:03',\
+            ({}, NULL, 'ss', 'C3:B2:5D:7E:AE:7A', 0, 1, 0, 0, NULL, {}, {}, '2022-02-17 16:16:03',\
              1456088038487625729, '2022-04-12 14:23:36', 1512260802038464514);"
             .format(self.key_id, self.user_id, self.department_id))
 
@@ -203,8 +203,8 @@ class Mysql_connet():
         self.mysql_conn.insert_sql(
             "INSERT INTO `t_push_message`(`id`, `alarm_id`, `user_id`, `app_push_date`, `sms_push_date`, `phone_push_date`, `app_push_status`,\
              `sms_push_status`, `phone_push_status`, `department_id`) VALUES ({}, {}, {},\
-             '2022-03-24 15:24:36', '2022-03-24 15:24:36', '2022-03-24 15:24:36', 1, 1, 1, 1456087868379238402);"
-            .format(self.push_message_id, self.alarm_id, self.user_id))
+             '2022-03-24 15:24:36', '2022-03-24 15:24:36', '2022-03-24 15:24:36', 1, 1, 1, {});"
+            .format(self.push_message_id, self.alarm_id, self.user_id, self.department_id))
         self.mysql_conn.insert_sql(
             "INSERT INTO `t_push_set`(`id`, `user_id`, `department_id`, `message_type`, `app_type`, `sms_type`, `phone_type`, `create_at`, `create_by`)\
              VALUES ({}, {}, {}, '1', 1, 0, 0, '2022-04-07 09:52:54', 123456789);"
@@ -213,7 +213,7 @@ class Mysql_connet():
             "INSERT INTO `t_task`(`id`, `department_id`, `task_type`, `create_at`, `create_by`, `task_receive`, `device_type`, `alarm_type`,\
              `finsih_firish_policy_date`, `select_do_policy_date`, `pre_finish_time`, `remark`, `status`, `is_delete`, `app_type`, `sms_type`, `phone_type`)\
              VALUES ({}, {}, 0, '2022-03-24 18:45:37', 1377074593995628546, 1456088038487625729, 0,'13,9,11,1,51,4,53,109,16,12', 2, 0, NULL, '', 0, 0, 1, 1, 0);"
-            .format(self.task_id, self.department_id, self.user_id))
+            .format(self.task_id, self.department_id))
         self.mysql_conn.insert_sql("insert  into `t_work_order`(`id`,`work_no`,`work_src`,`work_type`,`terminal_no`,`alarm_id`,`user_id`,`reason`,`level`,\
             `prv_finish_time`,`actual_finish_time`,`status`,`create_at`,`create_by`,`address`,`longitude`,`latitude`,`is_delete`,`is_read`) values \
             ({},'GD202106118064',0,0,{},{},{},NULL,0,'2021-06-12 00:00:00','2021-06-11 17:54:58',2,'2021-06-11 17:52:15',NULL,'南山区高新中二道粤海街道25号',\
@@ -223,40 +223,40 @@ class Mysql_connet():
     def delete_device(self):
         self.mysql_conn = Mysql_connet('device')
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well where no={}".format(self.no))
+            "delete from t_cellar_well where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_capital where no={}".format(self.no))
+            "delete from t_capital where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_images where id={}".format(self.images_id))
+            "delete from t_images where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_terminal where id={}".format(self.cellar_well_terminal_id))
+            "delete from t_cellar_well_terminal where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_control_log where id={}".format(self.cellar_well_control_log_id))
+            "delete from t_cellar_well_control_log where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_cellar_well_sensor where id={}".format(self.cellar_well_sensor_id))
+            "delete from t_cellar_well_sensor where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_device_alarm where id={}".format(self.alarm_id))
+            "delete from t_device_alarm where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_push_message where id={}".format(self.push_message_id))
+            "delete from t_push_message where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_push_set where id={}".format(self.push_set_id))
+            "delete from t_push_set where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_task where id={}".format(self.task_id))
+            "delete from t_task where char_length(id) < 19")
         self.mysql_conn.delete_sql(
-            "delete from t_work_order where id={}".format(self.work_order_id))
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key where id={}".format(self.key_id))
+            "delete from t_work_order where char_length(id) < 19")
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key where char_length(id) < 19")
 
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize where id={}".format(self.key_authorize_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize where char_length(id) < 19")
 
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize_log where id={}".format(self.key_authorize_log_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_authorize_log where char_length(id) < 19")
 
-        self.mysql_conn.delete_sql("delete from t_cellar_well_key_user_relate where id={}".format(self.authorize_id))
+        self.mysql_conn.delete_sql("delete from t_cellar_well_key_user_relate where char_length(authorize_id) < 19")
 
 if __name__ == '__main__':
     con = Mysql_connet('device')
     print(con)
     # con.insert_device()
-    con.delete_device()
+    # con.delete_device()
     # con.insert_user()
-    # con.delete_user()
+    con.delete_user()
     con.close()

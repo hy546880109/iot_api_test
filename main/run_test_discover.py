@@ -4,7 +4,8 @@
 # @Email : hy546880109@qq.com
 # @date  : 2020.12.08
 # @Project: 云平台接口测试用例
-import unittest,os,sys,json,time
+import threading
+import unittest,os,sys,time
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     (os.path.abspath(__file__)))))
@@ -13,18 +14,26 @@ from config.config_test import Conf
 from lib.TestRunner.HTMLTestRunner import HTMLTestRunner
 from lib.TestRunner.HTMLTestRunner import SMTP
 
-if __name__ == '__main__':
+def run_time(func):
+    def wrapper(*args, **kwargs):
+        old_time = time.time()
+        cs = func(*args, **kwargs)
+        new_time = time.time()
+        print('程序运行时间：{}s'.format(round(new_time-old_time), 3))
+        return cs
+    return wrapper
+
+@run_time
+def run_test():
     path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'test_case')
     print(path)
     suite = unittest.defaultTestLoader.discover(path, pattern='test*.py')
-    # runner = unittest.TextTestRunner()
-    # runner.run(suite)
-
     project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     report_dir = os.path.join(project_root, 'report')
     # 测试报告地址
     current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
     report_abspath = os.path.join(report_dir, "HTMLReport_{}.html".format(current_time))
+    
     with open(report_abspath, 'wb') as f:
         runner = HTMLTestRunner(stream=f,
                                 title='安天智慧城市项目V1.0接口自动化测试报告',
@@ -36,6 +45,15 @@ if __name__ == '__main__':
     smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.qqmail.value)      #qq邮箱
     users = Conf.TO_EMAIL.value
     smtp.sender(to=users, attachments=report_abspath, subject = '安天智慧城市项目V1.0接口自动化测试报告')
+
+
+def tThread():
+    m = threading.Thread(target=run_test, args=())
+    m.run()
+
+
+if __name__ == '__main__':
+    tThread()
 
 
 

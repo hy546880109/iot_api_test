@@ -1,7 +1,7 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)# import pytest
 
 from common.mysql_data import Mysql_connet
@@ -43,7 +43,7 @@ class Test_login(unittest.TestCase):
 
     @ddt.data(*get_test_data().getDatasFromSheet())
     def test_login_success(self, data):
-        """登陆用例 /login"""
+        """app登陆用例 /login"""
         users, passwd, code, exp = tuple(data)
         password = Md5_add(str(passwd))
         payload = {
@@ -56,7 +56,7 @@ class Test_login(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         response = Test_login.http.post('/login', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertIn(exp, response.text, '登陆失败')
+        self.assertIn(exp, response.text, 'app登陆失败')
 
 
 if __name__ == '__main__':

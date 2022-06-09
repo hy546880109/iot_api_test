@@ -23,11 +23,11 @@ from common.mysql_data import Mysql_connet
 def get_token():
     uri = Conf.TEST_URL.value
     mysql = Mysql_connet('user')
+    mysql.delete_user()
     mysql.insert_user()
-    code = mysql.select_sql('select code from t_user where code="hy"')
-    password = mysql.select_sql('select password from t_user where code="hy"')
+
     payload = {
-    "code": code,
+    "code": 'hy',
     "password": 'e10adc3949ba59abbe56e057f20f883e'
     # "validateCode": '1234'  # 暂时屏蔽验证码用来测试
     }
@@ -36,7 +36,7 @@ def get_token():
     url = uri + '/login'
     res = requests.post(url, data=payload, headers=headers)
     token = res.json()['data']['token']
-    mysql.delete_user()
+    
     return token
 
 

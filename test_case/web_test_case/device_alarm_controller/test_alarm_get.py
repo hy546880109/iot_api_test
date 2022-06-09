@@ -1,7 +1,7 @@
-import unittest,os,sys,json
+import unittest,os,sys
 
-path = os.path.join(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf

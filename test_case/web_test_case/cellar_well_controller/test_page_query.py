@@ -4,7 +4,6 @@ path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
 from common.mysql_data import Mysql_connet
-from common.login_token import get_token
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 
@@ -22,7 +21,7 @@ class Test_Device_List(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
         cls.mysql.delete_user()
-        cls.mysql.close()        
+        cls.mysql.close()
 
 
     def test_device_list_success(self):
@@ -48,8 +47,8 @@ class Test_Device_List(unittest.TestCase):
         }
 
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json', 'token': get_token()}
-        response = Test_Device_List.http.post('/device/pageQuery', data=payload, headers=headers)
+        # headers = {'Content-Type': 'application/json', 'token': get_token()}
+        response = Test_Device_List.http.post('/device/pageQuery', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取窖井列表信息失败')
 

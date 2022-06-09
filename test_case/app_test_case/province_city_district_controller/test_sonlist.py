@@ -3,7 +3,7 @@ import unittest,os,sys,json
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
-from common.login_token import get_token
+
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
@@ -19,8 +19,8 @@ class Test_Get_Index(unittest.TestCase):
         payload = {
             "pid": 0
         }
-        headers = {'token': get_token()}
-        response = Test_Get_Index.http.get('/address/sonList', params=payload, headers=headers)
+
+        response = Test_Get_Index.http.get('/address/sonList', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取下属子地址列表失败')
 

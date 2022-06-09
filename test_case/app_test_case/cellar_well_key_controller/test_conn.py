@@ -6,7 +6,7 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
+
 
 class Test_Add_Task(unittest.TestCase):
 
@@ -19,8 +19,8 @@ class Test_Add_Task(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
-        cls.mysql.close() 
-    
+        cls.mysql.close()
+
     def test_add_task_success(self):
         '''窖井钥匙连接锁用例：/key/conn'''
         params = {'id':self.mysql.key_id}

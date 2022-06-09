@@ -4,10 +4,10 @@ path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
 
-# from common.http_requests import HttpRequests
 from config.config_test import Conf
 import requests
 from common.login_token import get_token
+# from common.http_requests import HttpRequests
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod
@@ -17,8 +17,10 @@ class Test_Add_Task(unittest.TestCase):
 
     def test_add_task_success(self):
         '''上传文件用例：/file/upload'''
+        file_path = os.path.join(path,'1.bin')
+
         payload = {
-            'file': ("1.bin", open('1.bin', 'rb'), 'application/octet-stream')}
+            'file': ("1.bin", open(file_path, 'rb'), 'application/octet-stream')}
         header = {'token': get_token()}
         # response = Test_Add_Task.http.post('/file/upload', files=payload,headers=header)
         response = requests.post(self.url + '/file/upload', files=payload,headers=header)

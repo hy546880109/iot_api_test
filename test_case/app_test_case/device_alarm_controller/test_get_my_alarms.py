@@ -5,7 +5,6 @@ path = os.path.join(os.path.dirname(os.path.dirname(
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-from common.login_token import get_token
 
 
 class Test_Add_Task(unittest.TestCase):
@@ -28,9 +27,8 @@ class Test_Add_Task(unittest.TestCase):
         }
 
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json', 'token': get_token()}
         response = Test_Add_Task.http.post(
-            '/work/order/getMyAlarms', data=payload, headers=headers)
+            '/work/order/getMyAlarms', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取我的报警失败')
 
