@@ -12,7 +12,8 @@ from config.config_test import Conf
 
 # }
 
-
+from common.retry import Retry
+@Retry
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod

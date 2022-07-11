@@ -12,7 +12,8 @@ import requests
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
-
+from common.retry import Retry
+@Retry
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod

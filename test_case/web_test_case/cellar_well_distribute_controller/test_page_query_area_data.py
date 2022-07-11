@@ -6,7 +6,8 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-
+from common.retry import Retry
+@Retry
 class Test_Page_Query_Area(unittest.TestCase):
 
     @classmethod

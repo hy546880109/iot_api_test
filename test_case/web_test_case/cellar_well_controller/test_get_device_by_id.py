@@ -8,7 +8,8 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 
 
-
+from common.retry import Retry
+@Retry
 class Test_get_device(unittest.TestCase):
 
     @classmethod

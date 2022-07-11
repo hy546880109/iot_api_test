@@ -20,7 +20,8 @@ payload  = {
     "remark": "aliquip esse"
 }
 
-
+from common.retry import Retry
+@Retry
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod 

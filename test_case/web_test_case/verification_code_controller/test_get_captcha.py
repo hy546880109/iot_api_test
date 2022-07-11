@@ -13,7 +13,8 @@ payload  = {
 
 }
 
-
+from common.retry import Retry
+@Retry
 class Test_Get_Code(unittest.TestCase):
 
     @classmethod 

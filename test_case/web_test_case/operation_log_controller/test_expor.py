@@ -19,7 +19,8 @@ path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
 
-
+from common.retry import Retry
+@Retry
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod

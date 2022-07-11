@@ -12,7 +12,8 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.md5 import Md5_add
 
-
+from common.retry import Retry
+@Retry
 class Test_Auto_Task(unittest.TestCase):
 
     @classmethod

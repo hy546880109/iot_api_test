@@ -16,7 +16,8 @@ import websocket
 from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
-
+from common.retry import Retry
+@Retry
 class Test_websoket(unittest.TestCase):
 
     @classmethod

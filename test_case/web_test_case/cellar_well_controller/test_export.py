@@ -13,7 +13,8 @@ from common.data_provide import XLS
 import pandas as pd
 
 
-
+from common.retry import Retry
+@Retry
 class Test_Export(unittest.TestCase):
 
     @classmethod

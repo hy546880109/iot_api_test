@@ -7,7 +7,8 @@ from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
-
+from common.retry import Retry
+@Retry
 class Test_Add_Task(unittest.TestCase):
     '''接口已停用暂时不判断逻辑'''
 

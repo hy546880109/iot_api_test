@@ -8,8 +8,8 @@ from config.config_test import Conf
 from common.mysql_data import Mysql_connet
 
 
-
-# payload = json.dumps(payload)
+from common.retry import Retry
+@Retry
 class Test_Add_Task(unittest.TestCase):
 
     @classmethod

@@ -1,5 +1,4 @@
 import unittest,os,sys,json
-
 import pandas as pd
 
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
@@ -8,7 +7,8 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
 from config.config_test import Conf
-
+from common.retry import Retry
+@Retry
 class Test_Device_List(unittest.TestCase):
 
     @classmethod

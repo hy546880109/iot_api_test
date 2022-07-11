@@ -25,7 +25,8 @@ def get_test_data():
     sheetName = '登陆用户'
     return ParseExcel(excelPath, sheetName)
 
-
+from common.retry import Retry
+@Retry
 @ddt.ddt
 class Test_login(unittest.TestCase):
 

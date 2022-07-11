@@ -7,7 +7,8 @@ from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 
-
+from common.retry import Retry
+@Retry
 class Test_Device_Data(unittest.TestCase):
 
     @classmethod

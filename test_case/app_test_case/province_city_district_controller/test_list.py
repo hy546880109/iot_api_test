@@ -9,7 +9,8 @@ import json
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
-
+from common.retry import Retry
+@Retry
 class Test_Get_Index(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

@@ -13,6 +13,7 @@ sys.path.append(path)
 from config.config_test import Conf
 from lib.TestRunner.HTMLTestRunner import HTMLTestRunner
 from lib.TestRunner.HTMLTestRunner import SMTP
+import logging
 
 def run_time(func):
     def wrapper(*args, **kwargs):
@@ -45,7 +46,7 @@ def run_test():
     smtp = SMTP(user=Conf.SEND_EMAIL.value, password=Conf.SEND_EMAIL_PASSWD.value, host=Conf.qqmail.value)      #qq邮箱
     users = Conf.TO_EMAIL.value
     smtp.sender(to=users, attachments=report_abspath, subject = '安天智慧城市项目V1.0接口自动化测试报告')
-
+    
 
 def tThread():
     m = threading.Thread(target=run_test, args=())
