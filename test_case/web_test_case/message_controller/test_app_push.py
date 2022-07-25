@@ -24,9 +24,9 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         '''APP推送成功用例：/app/push'''
         payload = {
-            "notificationAlert": "Excepteur id est incididunt voluptate",
-            "registrationId": "22",
-            "notificationTitle": "毛走观自"
+            "notificationAlert": "你妈妈叫你回家吃饭了你妈妈叫你回家吃饭了",
+            "registrationId": "1a0018970a5d99a65cc",
+            "notificationTitle": "智慧物联"
         }
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}

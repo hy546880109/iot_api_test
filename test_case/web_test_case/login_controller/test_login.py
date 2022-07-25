@@ -6,6 +6,7 @@ def add_syspath():
         os.path.dirname(os.path.abspath(__file__))))))
     sys.path.append(path)
 add_syspath()
+
 from common.md5 import Md5_add
 from common.http_requests import HttpRequests
 from config.config_test import Conf

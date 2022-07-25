@@ -2,7 +2,6 @@ import sys
 import functools
 import traceback
 import inspect
-import unittest
  
  
 class Retry(object):

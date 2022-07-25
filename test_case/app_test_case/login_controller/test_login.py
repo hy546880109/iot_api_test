@@ -1,9 +1,9 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__))))))
-sys.path.append(path)# import pytest
-
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+print(path)
+sys.path.append(path)
+print(sys.path)
 from common.mysql_data import Mysql_connet
 import ddt
 from common.parse_excel import ParseExcel
