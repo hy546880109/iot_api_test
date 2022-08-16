@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="web更新告警推送接口，app新增lora网关接口" />
+    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="web更新告警推送接口，app新增lora网关接口">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mysql_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/mysql_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_lora_detail_info_byid.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_lora_detail_info_byid.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +49,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.test_right_get_user_rights_byuserid">
+  <component name="RunManager" selected="Python.test_get_lora_detail_info_byid">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,9 +96,6 @@
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -124,28 +125,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_loradevices.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_insert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="iot_api_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/push_set_controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_insert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,20 +178,35 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_get_lora_detail_info_byid.Test_Get_Index 的 Python 测试" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="iot_api_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_get_lora_detail_info_byid.Test_Get_Index&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.test_delete_batch_ids" />
       <item itemvalue="Python.test_get_lora_detail_info_byid" />
       <item itemvalue="Python.test_get_loradevices" />
-      <item itemvalue="Python.test_insert" />
       <item itemvalue="Python.test_right_get_user_rights_byuserid" />
+      <item itemvalue="Python 测试.test_get_lora_detail_info_byid.Test_Get_Index 的 Python 测试" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_right_get_user_rights_byuserid" />
         <item itemvalue="Python.test_get_lora_detail_info_byid" />
+        <item itemvalue="Python 测试.test_get_lora_detail_info_byid.Test_Get_Index 的 Python 测试" />
+        <item itemvalue="Python.test_right_get_user_rights_byuserid" />
         <item itemvalue="Python.test_get_loradevices" />
         <item itemvalue="Python.test_delete_batch_ids" />
-        <item itemvalue="Python.test_insert" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +220,8 @@
       <updated>1659510969604</updated>
       <workItem from="1659510971778" duration="17036000" />
       <workItem from="1660631675954" duration="2523000" />
+      <workItem from="1660634695955" duration="329000" />
+      <workItem from="1660635488295" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="优化">
       <created>1659512785777</created>
@@ -248,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660633942678</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="web更新告警推送接口，app新增lora网关接口">
+      <created>1660634864067</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660634864067</updated>
+    </task>
+    <task id="LOCAL-00005" summary="web更新告警推送接口，app新增lora网关接口">
+      <created>1660634928954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660634928954</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +286,7 @@
     <SUITE FILE_PATH="coverage/iot_api_test$test_check_isversame.coverage" NAME="test_check_isversame 覆盖结果" MODIFIED="1659582097331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarmManager.coverage" NAME="test_alarmManager 覆盖结果" MODIFIED="1659511761719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_offline.coverage" NAME="test_offline 覆盖结果" MODIFIED="1659572588965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/xxl_job_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_get_lora_detail_info_byid.coverage" NAME="test_get_lora_detail_info_byid 覆盖结果" MODIFIED="1660637055205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_add_up.coverage" NAME="test_alarm_add_up 覆盖结果" MODIFIED="1659511794601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_dx_api.coverage" NAME="test_dx_api 覆盖结果" MODIFIED="1659520430239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/Callback_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_produce_checkinfo.coverage" NAME="test_get_produce_checkinfo 覆盖结果" MODIFIED="1659580219477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller" />
@@ -285,7 +296,7 @@
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_keys.coverage" NAME="test_get_keys 覆盖结果" MODIFIED="1659577046262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/user_search_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_capital.coverage" NAME="test_get_capital 覆盖结果" MODIFIED="1659514840719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$run_test_discover.coverage" NAME="run_test_discover 覆盖结果" MODIFIED="1659517299426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
-    <SUITE FILE_PATH="coverage/iot_api_test$.coverage" NAME=" 覆盖结果" MODIFIED="1660631818176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/push_set_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$.coverage" NAME=" 覆盖结果" MODIFIED="1660635575866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_sendSms.coverage" NAME="test_sendSms 覆盖结果" MODIFIED="1659573056032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_query.coverage" NAME="test_query 覆盖结果" MODIFIED="1659582107712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller" />
   </component>

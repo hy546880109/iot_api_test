@@ -4,6 +4,7 @@ path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
 
+from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 
@@ -14,11 +15,18 @@ class Test_Get_Index(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.url = Conf.TEST_APP_URL.value
         cls.http = HttpRequests(cls.url)
+        cls.mysql = Mysql_connet('device')
+        cls.mysql.insert_device()
+
+    @classmethod
+    def tearDown(cls) -> None:
+        cls.mysql.delete_device()
+        cls.mysql.close()
 
     def test_get_index_success(self):
         """通过子设备的设备ID获取Lora网关详情成功用例: /lora/getLoraGatewayDetailInfoById"""
         payload = {
-          "id": 0
+          "id": self.mysql.cellar_well_terminal_id
         }
 
         response = Test_Get_Index.http.get('/lora/getLoraGatewayDetailInfoById', params=payload)
