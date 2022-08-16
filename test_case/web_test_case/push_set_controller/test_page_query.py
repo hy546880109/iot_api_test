@@ -18,10 +18,14 @@ class Test_Add_Task(unittest.TestCase):
     def test_add_task_success(self):
         """获取个人报警推送设置列表成功用例：/push/set/pageQuery"""
         payload = {
-            "messageType": "8",
-            "pushType": "0",
-            "userId": 1377074593995628546,
-            "departmentId": 1382562817882931201
+            "addrId": 0,
+            "appType": 0,
+            "departmentId": 1382562817882931201,
+            "pageNum": 1,
+            "pageSize": 1,
+            "phoneType": 0,
+            "smsType": 0,
+            "userName": "string"
         }
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}

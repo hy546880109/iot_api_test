@@ -17,13 +17,13 @@ class Test_Add_Task(unittest.TestCase):
         
     
     def test_add_task_success(self):
-        '''批量删除成功用例：/push/set/deleteBatchIds'''
+        '''批量删除推送设置成功用例：/push/set/deleteBatchIds'''
         payload = [1,2]
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post('/push/set/deleteBatchIds',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']),'批量删除失败')
+        self.assertEqual(str(0), str(response.json()['code']),'批量删除推送设置失败')
 
 
 if __name__ == '__main__':

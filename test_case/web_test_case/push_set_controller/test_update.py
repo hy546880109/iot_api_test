@@ -35,13 +35,13 @@ class Test_Add_Task(unittest.TestCase):
 
     def test_add_task_success(self):
         '''更新任务成功用例：/push/set/update'''
-        payload = {
-        "id": self.mysql.push_set_id,
-        'departmentId': self.mysql.department_id,
-        'messageType': "1",
-        'pushType': "1,1,0",
-        'userId': self.mysql.user_id
+        payload ={
+            "alarms": "53",
+            "id": self.mysql.push_set_id,
+            "messageType": "1",
+            "pushType": "1,1,0"
         }
+
         payload = json.dumps(payload)
 
         response = Test_Add_Task.http.post('/push/set/update',data=payload)

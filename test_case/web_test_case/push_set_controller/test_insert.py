@@ -17,7 +17,7 @@ class Test_Add_Task(unittest.TestCase):
         
     
     def test_add_task_success(self):
-        '''创建任务成功用例：/push/set/insert'''
+        '''创建推送设置成功用例：/push/set/insert'''
         payload = {
         "departmentId":1382562817882931201,
         "messageType":"1",
@@ -28,7 +28,7 @@ class Test_Add_Task(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post('/push/set/insert',data=payload, headers=headers)
         self.assertEqual(200,response.status_code,'返回非200')
-        self.assertEqual(str(0), str(response.json()['code']),'创建任务失败')
+        self.assertEqual(str(0), str(response.json()['code']),'创建推送设置失败')
 
 
 if __name__ == '__main__':

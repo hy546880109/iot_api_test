@@ -10,7 +10,7 @@ from common.http_requests import HttpRequests
 from common.retry import Retry
 @Retry
 class Test_Add_Task(unittest.TestCase):
-    '''接口已停用暂时不判断逻辑'''
+    '''恢复出厂接口已停用暂时不判断逻辑'''
 
     @classmethod
     def setUpClass(cls) -> None:

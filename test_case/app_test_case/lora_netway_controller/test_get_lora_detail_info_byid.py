@@ -6,6 +6,7 @@ sys.path.append(path)
 
 from config.config_test import Conf
 from common.http_requests import HttpRequests
+
 from common.retry import Retry
 @Retry
 class Test_Get_Index(unittest.TestCase):
@@ -15,23 +16,14 @@ class Test_Get_Index(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
 
     def test_get_index_success(self):
-        """新增生产记录成功用例: /produce/check/insert"""
+        """通过子设备的设备ID获取Lora网关详情成功用例: /lora/getLoraGatewayDetailInfoById"""
         payload = {
-          "batchNo": "string",
-          "imsi": "string",
-          "item": 0,
-          "mac": "string",
-          "softwareVer": "string",
-          "status": 0,
-          "subType": 0,
-          "terminalNo": "string",
-          "type": 0,
-          "value": "string"
+          "id": 0
         }
-        payload = json.dumps(payload)
-        response = Test_Get_Index.http.post('/produce/check/insert', data=payload)
+
+        response = Test_Get_Index.http.get('/lora/getLoraGatewayDetailInfoById', params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '新增生产记录失败')
+        self.assertEqual(str(0), str(response.json()['code']), '通过子设备的设备ID获取Lora网关详情失败')
 
 
 if __name__ == '__main__':
