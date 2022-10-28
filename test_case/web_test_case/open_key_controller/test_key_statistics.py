@@ -7,6 +7,7 @@ from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_Device_List(unittest.TestCase):
 
@@ -39,6 +40,8 @@ class Test_Device_List(unittest.TestCase):
         }
         payload = json.dumps(payload)
         response = Test_Device_List.http.post('/stat/open/key/statistics', data=payload)
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '统计:开关锁失败')
 

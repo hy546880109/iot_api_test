@@ -6,7 +6,7 @@ sys.path.append(path)
 from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
 from config.config_test import Conf
-
+from common import logging_test
 from common.retry import Retry
 @Retry
 class Test_Add_Task(unittest.TestCase):
@@ -45,6 +45,8 @@ class Test_Add_Task(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
             '/history/alarm/historyAlarmTaskPageQuery', data=payload, headers=headers)
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取历史报警失败')
 

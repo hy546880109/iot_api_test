@@ -17,6 +17,7 @@ from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_websoket(unittest.TestCase):
 
@@ -43,7 +44,8 @@ class Test_websoket(unittest.TestCase):
         # ws.settimeout(10)   #设置超时时间
         # print(ws.gettimeout())  #获取超时时间
         ws.shutdown()  # 关闭连接
-
+        logging_test.log_test()
+        logging_test.logging.info('接口连接状态:' + str(ws.getstatus()))
 
 if __name__ == '__main__':
     unittest.main()

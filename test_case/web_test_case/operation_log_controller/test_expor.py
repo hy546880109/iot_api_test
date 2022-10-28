@@ -18,7 +18,7 @@ import json
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 sys.path.append(path)
-
+from common import logging_test
 from common.retry import Retry
 @Retry
 class Test_Add_Task(unittest.TestCase):
@@ -66,7 +66,8 @@ class Test_Add_Task(unittest.TestCase):
         with open('work.xls','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
         txt = pd.read_excel('work.xls')  #读取文件内容用作断言
-        print('txt:',txt)
+        print(txt)
+        logging_test.log_test()
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出xlsx文件失败')
         self.assertIn(str('操作员'), str(txt), '导出用户操作日志失败')

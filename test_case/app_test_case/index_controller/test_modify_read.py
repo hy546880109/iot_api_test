@@ -6,6 +6,7 @@ sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_Get_Index(unittest.TestCase):
     @classmethod
@@ -18,6 +19,8 @@ class Test_Get_Index(unittest.TestCase):
         response = Test_Get_Index.http.get('/modifyRead')
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), 'APP首页报警、工单已读失败')
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
 
 
 if __name__ == '__main__':

@@ -7,7 +7,7 @@ from common.mysql_data import Mysql_connet
 import pandas as pd
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-
+from common import logging_test
 from common.retry import Retry
 @Retry
 class Test_Add_Task(unittest.TestCase):
@@ -60,12 +60,11 @@ class Test_Add_Task(unittest.TestCase):
         headers = {'Content-Type':'application/json;charset=UTF-8'}
         response = Test_Add_Task.http.post(
             '/history/alarm/export', data=payload, headers=headers)
+        logging_test.log_test()
         res = response.content
         with open('alarm.xlsx','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
         txt = pd.read_excel(r'alarm.xlsx')  #读取文件内容用作断言
-        print(txt)
-
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出xlsx文件失败')
         self.assertIn(str('终端编号'), str(txt), '报警列表导出失败')

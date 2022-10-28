@@ -15,7 +15,7 @@ from common.mysql_data import Mysql_connet
 import json
 import ddt
 import unittest
-
+from common import logging_test
 
 def get_test_data():
     '''
@@ -59,6 +59,8 @@ class Test_login(unittest.TestCase):
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
         response = Test_login.http.post('/login',data=payload, headers=headers)
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertIn(exp, response.text, 'web登录失败')
 

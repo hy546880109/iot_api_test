@@ -8,6 +8,7 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -40,7 +41,8 @@ class Test_Add_Task(unittest.TestCase):
             '/key/authorize/skipApply', data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '维护人员通过窖井锁跳转到申请授权失败')
-
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
 
 if __name__ == '__main__':
     unittest.main()

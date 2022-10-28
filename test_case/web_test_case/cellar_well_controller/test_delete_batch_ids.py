@@ -1,4 +1,4 @@
-import unittest,os,sys,json
+import unittest,os,sys,json,logging
 
 path = os.path.join(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -7,6 +7,7 @@ from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.mysql_data import Mysql_connet
 from common.retry import Retry
+from common.logging_test import log_test
 @Retry
 class Test_Delete_Batch(unittest.TestCase):
 
@@ -29,8 +30,8 @@ class Test_Delete_Batch(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         response = Test_Delete_Batch.http.post(
             '/device/deleteBatchIds', data=payload, headers=headers)
-        print('payload:', payload)
-        print(response.text)
+        log_test()
+        logging.info('接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '批量删除设备失败')
 

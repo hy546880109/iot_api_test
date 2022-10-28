@@ -5,7 +5,7 @@ path = os.path.join(os.path.dirname(os.path.dirname(
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-
+from common import logging_test
 from common.retry import Retry
 @Retry
 class Test_Add_Task(unittest.TestCase):
@@ -25,6 +25,8 @@ class Test_Add_Task(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         print('data:',payload)
         response = Test_Add_Task.http.post('/dictionary/getDictionaryByCode',data=payload, headers=headers)
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'获取分类下的所有字典值失败')
 

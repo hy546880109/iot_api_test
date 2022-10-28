@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # _*_ codeing: utf-8 _*_
-import unittest,os,sys,json
+import unittest,os,sys,json,logging
 
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
@@ -8,7 +8,7 @@ sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
-
+from common.logging_test import log_test
 from common.retry import Retry
 @Retry
 class Test_Detele_Device(unittest.TestCase):
@@ -33,6 +33,8 @@ class Test_Detele_Device(unittest.TestCase):
         payload = json.dumps(payload)
         response = Test_Detele_Device.http.post(
             '/cwting/callback', data=payload)
+        log_test()
+        logging.info('接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         # self.assertEqual(str(0), str(response.json()['code']), '电信回调数据失败')
 

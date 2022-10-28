@@ -1,16 +1,17 @@
 import unittest,os,sys,json
 
-path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
-print(path)
+path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))))
 sys.path.append(path)
-print(sys.path)
+
 from common.mysql_data import Mysql_connet
 import ddt
 from common.parse_excel import ParseExcel
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.md5 import Md5_add
-
+from iot_api_test.common.retry import Retry
+from common import logging_test
 
 def get_test_data():
     """
@@ -25,7 +26,6 @@ def get_test_data():
     sheetName = '登陆用户'
     return ParseExcel(excelPath, sheetName)
 
-from common.retry import Retry
 @Retry
 @ddt.ddt
 class Test_login(unittest.TestCase):
@@ -58,6 +58,8 @@ class Test_login(unittest.TestCase):
         response = Test_login.http.post('/login', data=payload, headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(exp, response.text, 'app登陆失败')
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
 
 
 if __name__ == '__main__':

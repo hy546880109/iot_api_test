@@ -10,7 +10,7 @@ import sys
 path = os.path.join(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(path)
-from common.login_token import get_token
+from iot_api_test.common.login_token import get_token
 import requests
 
 # 定义一个HttpRequests的类，它的父类是object
@@ -19,6 +19,7 @@ import requests
 class HttpRequests(object):
 
     def __init__(self, url):
+        
         self.url = url
         self.req = requests.session()
         self.token = get_token()

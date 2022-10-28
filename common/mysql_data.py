@@ -8,7 +8,7 @@ def add_syspath():
     sys.path.append(path)
 
 add_syspath()
-from config.config_test import Conf
+from iot_api_test.config.config_test import Conf
 
 
 

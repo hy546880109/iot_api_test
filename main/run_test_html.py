@@ -19,11 +19,12 @@ def add_syspath():
     sys.path.append(path)
 
 add_syspath()
-print(sys.path)
+
 import time
 import unittest
-from test_case.web_test_case.cellar_well_controller.test_get_device_by_id import Test_get_device
-from test_case.app_test_case.cellar_well_controller.test_get_my_info import Test_Add_Task
+from iot_api_test.test_case.web_test_case.operation_log_controller.test_page_query import Test_Add_Task
+# from test_case.web_test_case.operation_log_controller.test_page_query import Test_Add_Task
+# from test_case.app_test_case.cellar_well_controller.test_get_my_info import Test_Add_Task
 
 from config.config_test import Conf
 from lib.TestRunner.HTMLTestRunner import HTMLTestRunner
@@ -32,12 +33,13 @@ from lib.TestRunner.HTMLTestRunner import SMTP
 if __name__ == '__main__':
     
     # 根据给定的测试类，获取其中所有以test开头的测试方法，并返回一个测试套件
-    suite1 = unittest.TestLoader().loadTestsFromTestCase(Test_get_device)
-    suite2 = unittest.TestLoader().loadTestsFromTestCase(Test_Add_Task)
+    suite1 = unittest.TestLoader().loadTestsFromTestCase(Test_Add_Task)
+    # suite2 = unittest.TestLoader().loadTestsFromTestCase(Test_Add_Task)
     
 
     # 将多个测试类加载到测试套件中
-    suite = unittest.TestSuite([suite1,suite2])
+    # suite = unittest.TestSuite([suite1,suite2])
+    suite = unittest.TestSuite([suite1])
 
     # 设置verbosity = 2，并生成HTML测试报告s
     project_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))

@@ -7,7 +7,7 @@ path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
-
+from common import logging_test
 from common.retry import Retry
 @Retry
 class Test_Add_Task(unittest.TestCase):
@@ -43,8 +43,9 @@ class Test_Add_Task(unittest.TestCase):
         with open('ins.xlsx','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
         txt = pd.read_excel(r'ins.xlsx')  #读取文件内容用作断言
-        # print(txt)
+        print(txt)
         self.assertIn(str('指令类型'), str(txt), '导出文件的内容不正确')
+        logging_test.log_test()
 
 
 if __name__ == '__main__':

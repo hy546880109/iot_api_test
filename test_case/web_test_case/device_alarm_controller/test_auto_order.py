@@ -9,6 +9,7 @@ from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common.login_token import get_token
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -41,6 +42,8 @@ class Test_Add_Task(unittest.TestCase):
         #     '/history/alarm/autoDistributeTask', data=payload, headers=header)
         response = requests.post(
             self.url + '/history/alarm/autoDistributeTask', data=payload, headers=header)
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '派单失败')
 

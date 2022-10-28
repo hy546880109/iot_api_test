@@ -8,6 +8,7 @@ from config.config_test import Conf
 import requests
 from common.login_token import get_token
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -27,7 +28,8 @@ class Test_Add_Task(unittest.TestCase):
         response = requests.post(self.url + '/file/upload', files=payload,headers=header)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '上传文件失败')
-
+        logging_test.log_test()
+        logging_test.logging.info('接口返回:' + response.text)
 
 if __name__ == '__main__':
     unittest.main()

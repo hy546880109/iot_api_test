@@ -9,6 +9,7 @@ from common.mysql_data import Mysql_connet
 from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.retry import Retry
+from common import logging_test
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -41,6 +42,7 @@ class Test_Add_Task(unittest.TestCase):
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
             '/key/authorize/export', data=payload, headers=headers)
+        logging_test.log_test()
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出xlsx文件失败')
         res = response.content

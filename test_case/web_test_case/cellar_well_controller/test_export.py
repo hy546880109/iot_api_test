@@ -1,7 +1,4 @@
-from pickle import NONE
-import unittest,os,sys,json
-
-from pymysql import NULL
+import unittest,os,sys,json,logging
 
 path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))))
@@ -11,7 +8,7 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.data_provide import XLS
 import pandas as pd
-
+from common.logging_test import log_test
 
 from common.retry import Retry
 @Retry
@@ -67,6 +64,7 @@ class Test_Export(unittest.TestCase):
         payload = json.dumps(payload)
         response = Test_Export.http.post(
             '/device/export', data=payload,headers=headers)
+        log_test()
         res = response.content
         with open('device.xlsx','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
