@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="新增日志打印接口返回信息">
+    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="新增日志打印接口返回信息和接口地址">
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_insert.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_pagequery.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py" afterDir="false" />
@@ -583,7 +583,7 @@
       <workItem from="1666346148367" duration="5546000" />
       <workItem from="1666837510514" duration="3078000" />
       <workItem from="1666842296978" duration="150000" />
-      <workItem from="1666855015120" duration="54850000" />
+      <workItem from="1666855015120" duration="55395000" />
     </task>
     <task id="LOCAL-00001" summary="优化">
       <created>1659512785777</created>
@@ -655,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667177126060</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="新增日志打印接口返回信息和接口地址">
+      <created>1667206323364</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667206323364</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +685,8 @@
     <MESSAGE value="web更新告警推送接口，app新增lora网关接口" />
     <MESSAGE value="优化APP的lora网关接口和数据解耦" />
     <MESSAGE value="新增日志打印接口返回信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增日志打印接口返回信息" />
+    <MESSAGE value="新增日志打印接口返回信息和接口地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增日志打印接口返回信息和接口地址" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iot_api_test$test_about.coverage" NAME="test_about 覆盖结果" MODIFIED="1667195257829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/index_controller" />
@@ -741,7 +749,7 @@
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallIllustrate.coverage" NAME="test_getInstallIllustrate 覆盖结果" MODIFIED="1666934154721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_auto_order.coverage" NAME="test_auto_order 覆盖结果" MODIFIED="1667194361013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_key_export.coverage" NAME="test_key_export 覆盖结果" MODIFIED="1666934858744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_websocket.coverage" NAME="test_websocket 覆盖结果" MODIFIED="1667205652341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/web_socket" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_websocket.coverage" NAME="test_websocket 覆盖结果" MODIFIED="1667205969478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/web_socket" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_offline.coverage" NAME="test_offline 覆盖结果" MODIFIED="1659572588965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/xxl_job_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_add_up.coverage" NAME="test_alarm_add_up 覆盖结果" MODIFIED="1659511794601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallResult.coverage" NAME="test_getInstallResult 覆盖结果" MODIFIED="1666934177063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
