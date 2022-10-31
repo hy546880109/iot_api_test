@@ -29,7 +29,7 @@ class Test_Add_Task(unittest.TestCase):
 
     @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''获取资产用例：/capital/getCapitalByTerminalNoOrSensorNo'''
+        '''获取资产用例：{}{}'''
         payload = {"terminalNo": self.mysql.no}
         payload = json.dumps(payload)
 
@@ -37,7 +37,7 @@ class Test_Add_Task(unittest.TestCase):
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取资产失败')
         logging_test.log_test()
-        logging_test.logging.info(Conf.TEST_URL + uri +'接口返回:' + response.text)
+        logging_test.logging.info(str(Conf.TEST_URL) + uri +'接口返回:' + response.text)
 
 if __name__ == '__main__':
     unittest.main()

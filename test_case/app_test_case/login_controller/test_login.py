@@ -10,7 +10,7 @@ from common.parse_excel import ParseExcel
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.md5 import Md5_add
-from iot_api_test.common.retry import Retry
+from common.retry import Retry
 from common import logging_test
 
 def get_test_data():
