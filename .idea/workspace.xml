@@ -9,10 +9,7 @@
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_pagequery.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_show_message_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/login_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/login_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mysql_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/mysql_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +350,7 @@
       <workItem from="1666346148367" duration="5546000" />
       <workItem from="1666837510514" duration="3078000" />
       <workItem from="1666842296978" duration="150000" />
-      <workItem from="1666855015120" duration="30466000" />
+      <workItem from="1666855015120" duration="30603000" />
     </task>
     <task id="LOCAL-00001" summary="优化">
       <created>1659512785777</created>
@@ -404,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666952824220</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="新增日志打印接口返回信息">
+      <created>1667176613180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667176613180</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

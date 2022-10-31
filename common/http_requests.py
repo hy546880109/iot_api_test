@@ -10,7 +10,7 @@ import sys
 path = os.path.join(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(path)
-from iot_api_test.common.login_token import get_token
+from common.login_token import get_token
 import requests
 
 # 定义一个HttpRequests的类，它的父类是object
@@ -56,3 +56,5 @@ class HttpRequests(object):
         response = self.req.delete(
             url, params=params, data=data, headers=headers, cookies=cookies)
         return response
+
+
