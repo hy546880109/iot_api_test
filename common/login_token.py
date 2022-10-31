@@ -15,10 +15,13 @@ def add_syspath():
     sys.path.append(path)
 
 add_syspath()
-from iot_api_test.config.config_test import Conf
+# path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+#     os.path.dirname(os.path.abspath(__file__))))))
+# sys.path.append(path)
+from config.config_test import Conf
 import requests
 import json
-from iot_api_test.common.mysql_data import Mysql_connet
+from common.mysql_data import Mysql_connet
 
 def get_token():
     uri = Conf.TEST_URL.value

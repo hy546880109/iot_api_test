@@ -8,8 +8,8 @@ from common.http_requests import HttpRequests
 from common import logging_test
 from common.retry import Retry
 from common.doc_value import doc_parameter
-
 uri = '/operate/log/pageQuery'
+
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
