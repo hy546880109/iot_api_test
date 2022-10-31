@@ -42,7 +42,7 @@ class Test_websoket(unittest.TestCase):
         websocket.enableTrace(True)  # 打开跟踪，查看日志
         ws = create_connection(url)  # 创建连接
         self.assertEqual(101, ws.getstatus(), 'websocket连接错误')  # 断言连接状态
-        ws.settimeout(10)   #设置超时时间
+        # ws.settimeout(10)   #设置超时时间
         ws.shutdown()  # 关闭连接
         logging_test.log_test()
         logging_test.logging.info(Conf.TEST_WS_URL.value  + str(user_id) +'-接口连接状态:' + str(ws.getstatus()))
