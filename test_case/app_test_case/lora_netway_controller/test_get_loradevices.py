@@ -24,7 +24,7 @@ class Test_Get_Index(unittest.TestCase):
           "terminalId": 0
         }
         payload = json.dumps(payload)
-        response = Test_Get_Index.http.post(uritemplate, data=payload)
+        response = Test_Get_Index.http.post(uri, data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获Lora网关连接的lora设备失败')
         logging_test.log_test()

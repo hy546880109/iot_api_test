@@ -7,6 +7,8 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common import logging_test
 from common.retry import Retry
+from common.doc_value import doc_parameter
+uri = '/device/upgrade/sensorUpgrade'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -15,16 +17,16 @@ class Test_Add_Task(unittest.TestCase):
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
         
-    
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''传感器设备升级成功用例：/device/upgrade/sensorUpgrade'''
+        '''传感器设备升级成功用例：{}{}'''
         payload = [
             "1",
             "2"
         ]
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
-        response = Test_Add_Task.http.post('/device/upgrade/sensorUpgrade',data=payload, headers=headers)
+
+        response = Test_Add_Task.http.post(uri,data=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'传感器设备升级失败')
         logging_test.log_test()

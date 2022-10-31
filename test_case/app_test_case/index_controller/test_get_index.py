@@ -18,12 +18,24 @@ class Test_Get_Index(unittest.TestCase):
         cls.http = HttpRequests(cls.url)
     @doc_parameter(Conf.TEST_URL.value,uri)
     def test_get_index_success(self):
-        """APP首页报警、工单未读数据成功用例: {}{}"""
-
-        response = Test_Get_Index.http.get(uri)
+        """APP首页地图数据成功用例: {}{}"""
+        data = {
+            "address": "string",
+            "alarmInterval": 0,
+            "alarmTypes": [
+                0
+            ],
+            "latitude": "string",
+            "longitude": "string",
+            "mac": "string",
+            "no": "string",
+            "type": 0
+        }
+        data = json.dumps(data)
+        response = Test_Get_Index.http.post(uri,data=data)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(
-            response.json()['code']), 'APP首页报警、工单未读数据成功用例失败')
+            response.json()['code']), 'APP首页地图数据失败')
         logging_test.log_test()
         logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
 

@@ -29,7 +29,7 @@ class Test_Add_Task(unittest.TestCase):
             "2"
         ]
         payload = json.dumps(payload)
-        response = Test_Add_Task.http.post(uri,data=payload, headers=headers)
+        response = Test_Add_Task.http.post(uri,data=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'取消设备升级失败')
         logging_test.log_test()
