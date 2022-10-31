@@ -1,2 +1,2 @@
 config/config_test.py
-report/
+report/*.html
