@@ -8,6 +8,8 @@ from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.retry import Retry
 from common import logging_test
+from common.doc_value import doc_parameter
+uri = '/key/deleteBatchIds'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -23,16 +25,16 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
         cls.mysql.close()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''批量删除锁授权成功用例：/key/deleteBatchIds'''
+        '''批量删除锁授权成功用例：{}{}'''
         payload = [self.mysql.device_id]
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/key/deleteBatchIds', data=payload, headers=headers)
+            uri, data=payload, headers=headers)
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '批量删除锁授权失败')
 

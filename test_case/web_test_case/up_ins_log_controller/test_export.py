@@ -9,6 +9,8 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common import logging_test
 from common.retry import Retry
+from common.doc_value import doc_parameter
+uri = '/ins/log/export'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -17,9 +19,9 @@ class Test_Add_Task(unittest.TestCase):
         cls.url = Conf.TEST_URL.value
         cls.http = HttpRequests(cls.url)
         
-    
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''导出设备上报指令日志成功用例：/ins/log/export'''
+        '''导出设备上报指令日志成功用例：{}{}'''
         payload = {
           "departmentId": 0,
           "endDate": "string",
@@ -35,8 +37,7 @@ class Test_Add_Task(unittest.TestCase):
           "total": 0
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
-        response = Test_Add_Task.http.post('/ins/log/export',data=payload, headers=headers)
+        response = Test_Add_Task.http.post(uri,data=payload)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出xlsx文件失败')
         res = response.content

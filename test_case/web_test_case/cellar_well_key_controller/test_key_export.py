@@ -9,6 +9,8 @@ from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.retry import Retry
 from common import logging_test
+from common.doc_value import doc_parameter
+uri = '/key/export'
 @Retry
 class Test_Device_List(unittest.TestCase):
 
@@ -26,9 +28,9 @@ class Test_Device_List(unittest.TestCase):
         cls.mysql.delete_user()
         cls.mysql.close()        
 
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_device_list_success(self):
-        '''导出锁信息成功用例：/key/export'''
+        '''导出锁信息成功用例：{}{}'''
         payload = {
           "mac": "C3:B2:5D:7E:AE:7A",
           "name": "ss",
@@ -39,7 +41,7 @@ class Test_Device_List(unittest.TestCase):
           "userName": "string"
         }
         payload = json.dumps(payload)
-        response = Test_Device_List.http.post('/key/export', data=payload)
+        response = Test_Device_List.http.post(uri, data=payload)
         logging_test.log_test()
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出锁信息失败')

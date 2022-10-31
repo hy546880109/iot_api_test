@@ -16,6 +16,8 @@ import json
 import ddt
 import unittest
 from common import logging_test
+from common.doc_value import doc_parameter
+uri = '/login'
 
 def get_test_data():
     '''
@@ -44,10 +46,10 @@ class Test_login(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_user()
         cls.mysql.close()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     @ddt.data(*get_test_data().getDatasFromSheet())
     def test_login_success(self, data):
-        '''web登陆用例 /login'''
+        '''web登陆用例 {}{}'''
         users,passwd,code,exp = tuple(data)
         password = Md5_add(str(passwd))
         payload = {
@@ -57,10 +59,10 @@ class Test_login(unittest.TestCase):
             # "validateCode": code       #暂时屏蔽验证码用来测试
         }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
-        response = Test_login.http.post('/login',data=payload, headers=headers)
+        # headers = {'Content-Type': 'application/json'}
+        response = Test_login.http.post(uri,data=payload)
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertIn(exp, response.text, 'web登录失败')
 

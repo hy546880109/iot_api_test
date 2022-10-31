@@ -10,6 +10,8 @@ from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common.retry import Retry
 from common import logging_test
+from common.doc_value import doc_parameter
+uri ='/key/authorize/export'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -25,9 +27,9 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
         cls.mysql.close()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''导出锁授权信息成功用例：/key/authorize/export'''
+        '''导出锁授权信息成功用例：{}{}'''
         payload = {
           "lockName": "string",
           "name": "string",
@@ -41,7 +43,7 @@ class Test_Add_Task(unittest.TestCase):
         payload = json.dumps(payload)
         headers = {'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/key/authorize/export', data=payload, headers=headers)
+            uri, data=payload, headers=headers)
         logging_test.log_test()
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertIn(str('.xlsx'),response.headers['content-disposition'] , '导出xlsx文件失败')

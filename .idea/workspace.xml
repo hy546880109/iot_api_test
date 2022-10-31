@@ -10,8 +10,239 @@
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_show_message_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_approveManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_approveManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_authorize_approve.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_authorize_approve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_getTerminalInfoById.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_getTerminalInfoById.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_reApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_reApply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_skipApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_skipApply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDefaultDeviceParam.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDefaultDeviceParam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDeviceParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDeviceParameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getTerminalBylNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getTerminalBylNo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_device_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_device_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_my_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_my_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_match.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_modify_device_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_modify_device_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_addImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_addImages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_getInstallStepByTerminalNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_getInstallStepByTerminalNo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_install_getInstallIllustrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_install_getInstallIllustrate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_install_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_install_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_install_pageQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_install_pageQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_validate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller/test_validate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_clear.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_clear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_conn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_encript.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_encript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getKeyByMac.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getKeyByMac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getKeys.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getKeys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getLockCoreNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getLockCoreNo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getTerminalInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_getTerminalInfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_isopen.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_isopen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_open_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_open_key.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_remote_open_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_key_controller/test_remote_open_key.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/department_controller/test_get_department_byid.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/department_controller/test_get_department_byid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/department_controller/test_get_myself_and_son.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/department_controller/test_get_myself_and_son.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/department_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/department_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_alarm_get.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_alarm_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_getDeviceAlarms.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_getDeviceAlarms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_getDeviceByTerminalNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_getDeviceByTerminalNo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_get_my_alarms.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/device_alarm_controller/test_get_my_alarms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/dictionary_controller/test_get_dictionary_bycode.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/dictionary_controller/test_get_dictionary_bycode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/dictionary_controller/test_get_dictionary_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/dictionary_controller/test_get_dictionary_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_get_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_get_index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_get_noread.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_get_noread.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_get_version_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_get_version_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_modify_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/index_controller/test_modify_read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/iot_platform_controller/test_deleteByDeviceId.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/iot_platform_controller/test_deleteByDeviceId.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/iot_platform_controller/test_registerIotPlatform.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/iot_platform_controller/test_registerIotPlatform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_getUserMenus.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_getUserMenus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_resetPwd.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_resetPwd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_updatePassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/login_controller/test_updatePassword.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_lora_detail_info_byid.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_lora_detail_info_byid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_loradevices.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_loradevices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/my_controller/test_modify_header_icon.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/my_controller/test_modify_header_icon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller/test_check_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller/test_check_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller/test_check_isversame.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller/test_check_isversame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller/test_get_produce_checkinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller/test_get_produce_checkinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/produce_user_right_controller/test_right_get_user_rights_byuserid.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/produce_user_right_controller/test_right_get_user_rights_byuserid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/province_city_district_controller/test_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/province_city_district_controller/test_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/province_city_district_controller/test_sonlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/province_city_district_controller/test_sonlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/upload_file_controller/test_file_upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/upload_file_controller/test_file_upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/user_controller/test_getMaintainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/user_controller/test_getMaintainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/user_search_controller/test_get_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/user_search_controller/test_get_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/version_controller/test_getUpgradePackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/version_controller/test_getUpgradePackage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_getCellarWellDetailByAlarmId.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_getCellarWellDetailByAlarmId.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_getCellarWellDetailByTerminalNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_getCellarWellDetailByTerminalNo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_getCellarWellDetailByWorkId.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_getCellarWellDetailByWorkId.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_get_my_work_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_get_my_work_orders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_saveMyWorkOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_saveMyWorkOrder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_setControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/work_order_controller/test_setControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/Callback_Controller/test_dx_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/Callback_Controller/test_dx_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/alarms_contriller/test_alarms_statisticss.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/alarms_contriller/test_alarms_statisticss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/capital_controller/test_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/capital_controller/test_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_get_device_by_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_get_device_by_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_setControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_setControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller/test_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_get_alarm_detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_get_alarm_detail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_page_query_alarm_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_page_query_alarm_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_page_query_area_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_page_query_area_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_page_query_device_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller/test_page_query_device_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_addInstallIllustrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_addInstallIllustrate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_getInstallFlow.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_getInstallFlow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_getInstallIllustrate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_getInstallIllustrate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_getInstallResult.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller/test_getInstallResult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_approve.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_approve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_authorize_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_authorize_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_authorize_deleteBatchIds.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_authorize_deleteBatchIds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_authorize_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_authorize_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_getCellarWellKeyAuthorizeLogById.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_getCellarWellKeyAuthorizeLogById.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_pageQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_pageQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller/test_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller/test_key_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller/test_key_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller/test_key_delete_batchids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller/test_key_delete_batchids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller/test_key_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller/test_key_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_delete_batchids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_delete_batchids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_get_department_byid.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_get_department_byid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_get_myself_and_son.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_get_myself_and_son.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_save_orupdate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/department_controller/test_save_orupdate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_get.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_get.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_send_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_alarm_send_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_auto_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_auto_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_get_alarm_pictures.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller/test_get_alarm_pictures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_canceldirective.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_canceldirective.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_dictionary_pageQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_dictionary_pageQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_getDeviceParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_getDeviceParameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_get_default_device_param.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_get_default_device_param.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_saveDirective.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_saveDirective.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_save_defalut_directive.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller/test_save_defalut_directive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/device_controller/test_device_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/device_controller/test_device_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_dictionary_saveOrUpdate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_dictionary_saveOrUpdate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_get_dictionary_bycode.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_get_dictionary_bycode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_get_dictionary_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_get_dictionary_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_alarm_percent.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_alarm_percent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_alarm_rstrend.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_alarm_rstrend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_basic_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_basic_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_platform_view_c.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_platform_view_c.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_platform_view_p.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_platform_view_p.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_platform_view_w.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_platform_view_w.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_today_notice.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_today_notice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_type_percent.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/index_controller/test_get_index_type_percent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_alarmManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_alarmManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_alarm_add_up.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_alarm_add_up.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_captionManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_captionManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_getDayMonthAddUp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_getDayMonthAddUp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_getPos.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_getPos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_basic_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_basic_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_day_alarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_day_alarm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_last_alarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_last_alarm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_last_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_last_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_moth_alarm.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_get_moth_alarm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_multiple.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller/test_multiple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/login_controller/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/login_controller/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_getLoraDetailInfoById.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_getLoraDetailInfoById.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_getLoraDevices.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_getLoraDevices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_deleteBatchIds.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_deleteBatchIds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_pageQuery.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_pageQuery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_lora_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_updateLoraConifg.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller/test_updateLoraConifg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_all_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_all_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_user_menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_get_user_menus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_query_role_owns_menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/menu_controller/test_query_role_owns_menus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/message_controller/test_app_push.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/message_controller/test_app_push.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/message_controller/test_sms_send.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/message_controller/test_sms_send.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/message_controller/test_voice_call.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/message_controller/test_voice_call.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/open_key_controller/test_key_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/open_key_controller/test_key_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_expor.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_expor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_get_operation_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_get_operation_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_get_province_city_district_byid.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_get_province_city_district_byid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_get_province_city_district_byname.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_get_province_city_district_byname.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_sonlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/province_city_controller/test_sonlist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_message_controller/test_lastNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_message_controller/test_lastNews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_message_controller/test_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_message_controller/test_message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_message_controller/test_rstrend.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_message_controller/test_rstrend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_getPushSetByUserId.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_getPushSetByUserId.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/push_set_controller/test_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller/test_sendApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller/test_sendApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller/test_sendSms.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller/test_sendSms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller/test_sendVoice.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller/test_sendVoice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_get_role_by_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_get_role_by_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_save_or_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/role_controller/test_save_or_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_auto.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_auto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/task_controller/test_task_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_cancel.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_cancel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_cancel_sensor_upgrade.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_cancel_sensor_upgrade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_sensor_upgrade.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_sensor_upgrade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_getLogTotal.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_getLogTotal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_getSensorHardwareVer.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_getSensorHardwareVer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_getUpgradePackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_getUpgradePackage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_get_hardware.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_get_hardware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_get_software.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_get_software.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_get_upload_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_get_upload_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_sensor_softwarever.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upgrade_package_controller/test_upgrade_sensor_softwarever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller/test_file_upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller/test_file_upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller/test_uploadfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller/test_uploadfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_get_main_tainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_get_main_tainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_get_send_personnel.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_get_send_personnel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_get_user_by_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_get_user_by_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_reset_pwd.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_reset_pwd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_save_or_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_save_or_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_update_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_update_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/verification_code_controller/test_get_captcha.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/verification_code_controller/test_get_captcha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_deleteBatchIds.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_deleteBatchIds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_get_version_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_get_version_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_save_orupdate.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_save_orupdate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/web_socket/test_websocket.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/web_socket/test_websocket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/work_controller/test_work_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/work_controller/test_work_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/work_order_controller/test_delete_batch_ids.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/work_order_controller/test_delete_batch_ids.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/work_order_controller/test_get_work_order_by_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/work_order_controller/test_get_work_order_by_id.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/work_order_controller/test_page_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/work_order_controller/test_page_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/web_test_case/xxl_job_controller/test_offline.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/web_test_case/xxl_job_controller/test_offline.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +297,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.test_get_capital">
+  <component name="RunManager" selected="Python.test_websocket">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,17 +318,17 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="http_requests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_delete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/version_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/http_requests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/version_controller/test_delete.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,17 +337,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="login_token" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_delete_batch_ids" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/user_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/login_token.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/user_controller/test_delete_batch_ids.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,55 +356,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mysql_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_file_upload" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/mysql_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="run_test_discover" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="iot_api_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/run_test_discover.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_get_capital" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="iot_api_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller/test_file_upload.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,6 +451,44 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_uploadfile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iot_api_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller/test_uploadfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_websocket" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iot_api_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/web_socket" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/web_socket/test_websocket.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server" singleton="false">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -316,21 +547,21 @@
       <item itemvalue="Python.test_message_queryrelateds" />
       <item itemvalue="Python.test_show_message_list" />
       <item itemvalue="Python.test_message_insert" />
-      <item itemvalue="Python.http_requests" />
-      <item itemvalue="Python.login_token" />
-      <item itemvalue="Python.mysql_data" />
-      <item itemvalue="Python.run_test_discover" />
-      <item itemvalue="Python.test_get_capital" />
+      <item itemvalue="Python.test_delete" />
+      <item itemvalue="Python.test_delete_batch_ids" />
+      <item itemvalue="Python.test_file_upload" />
+      <item itemvalue="Python.test_uploadfile" />
+      <item itemvalue="Python.test_websocket" />
       <item itemvalue="Python 测试.test_message_pagequery.Test_message_pagequery 的 Python 测试" />
       <item itemvalue="Python 测试.test_show_message_list.Test_message_list 的 Python 测试" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_get_capital" />
-        <item itemvalue="Python.http_requests" />
-        <item itemvalue="Python.mysql_data" />
-        <item itemvalue="Python.login_token" />
-        <item itemvalue="Python.run_test_discover" />
+        <item itemvalue="Python.test_websocket" />
+        <item itemvalue="Python.test_delete" />
+        <item itemvalue="Python.test_delete_batch_ids" />
+        <item itemvalue="Python.test_uploadfile" />
+        <item itemvalue="Python.test_file_upload" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +583,7 @@
       <workItem from="1666346148367" duration="5546000" />
       <workItem from="1666837510514" duration="3078000" />
       <workItem from="1666842296978" duration="150000" />
-      <workItem from="1666855015120" duration="31003000" />
+      <workItem from="1666855015120" duration="54850000" />
     </task>
     <task id="LOCAL-00001" summary="优化">
       <created>1659512785777</created>
@@ -417,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667176779505</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="新增日志打印接口返回信息">
+      <created>1667177126060</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667177126060</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,45 +681,55 @@
     <option name="LAST_COMMIT_MESSAGE" value="新增日志打印接口返回信息" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/iot_api_test$test_about.coverage" NAME="test_about 覆盖结果" MODIFIED="1667195257829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/index_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_get_dictionary_bycode.coverage" NAME="test_get_dictionary_bycode 覆盖结果" MODIFIED="1667194951121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_sms_send.coverage" NAME="test_sms_send 覆盖结果" MODIFIED="1667197225386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_myself_and_son.coverage" NAME="test_get_myself_and_son 覆盖结果" MODIFIED="1666935034518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/department_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getPos.coverage" NAME="test_getPos 覆盖结果" MODIFIED="1666936040709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_addImages.coverage" NAME="test_addImages 覆盖结果" MODIFIED="1667181348340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/cellar_well_install_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarmManager.coverage" NAME="test_alarmManager 覆盖结果" MODIFIED="1659511761719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_export.coverage" NAME="test_export 覆盖结果" MODIFIED="1666944265510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/up_ins_log_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_lora_detail_info_byid.coverage" NAME="test_get_lora_detail_info_byid 覆盖结果" MODIFIED="1660637055205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_approve.coverage" NAME="test_approve 覆盖结果" MODIFIED="1666934209276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$logging_test.coverage" NAME="logging_test 覆盖结果" MODIFIED="1663549297843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_delete_batch_ids.coverage" NAME="test_delete_batch_ids 覆盖结果" MODIFIED="1667194811152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_produce_checkinfo.coverage" NAME="test_get_produce_checkinfo 覆盖结果" MODIFIED="1659580219477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_login.coverage" NAME="test_login 覆盖结果" MODIFIED="1666946330142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/login_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_login.coverage" NAME="test_login 覆盖结果" MODIFIED="1667196306440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/login_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_delete_batchids.coverage" NAME="test_delete_batchids 覆盖结果" MODIFIED="1666934950508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/department_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_saveDirective.coverage" NAME="test_saveDirective 覆盖结果" MODIFIED="1667194706586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_uploadfile.coverage" NAME="test_uploadfile 覆盖结果" MODIFIED="1666944420898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_reApply.coverage" NAME="test_reApply 覆盖结果" MODIFIED="1659514880383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$.coverage" NAME=" 覆盖结果" MODIFIED="1666934337533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getCellarWellKeyAuthorizeLogById.coverage" NAME="test_getCellarWellKeyAuthorizeLogById 覆盖结果" MODIFIED="1666934425116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_addInstallIllustrate.coverage" NAME="test_addInstallIllustrate 覆盖结果" MODIFIED="1666934108175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallFlow.coverage" NAME="test_getInstallFlow 覆盖结果" MODIFIED="1666934135348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_expor.coverage" NAME="test_expor 覆盖结果" MODIFIED="1666943605956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_expor.coverage" NAME="test_expor 覆盖结果" MODIFIED="1667197657537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_dx_api.coverage" NAME="test_dx_api 覆盖结果" MODIFIED="1666926322761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/Callback_Controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_page_query.coverage" NAME="test_page_query 覆盖结果" MODIFIED="1666950825482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_insert.coverage" NAME="test_insert 覆盖结果" MODIFIED="1667197055167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/menu_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_page_query.coverage" NAME="test_page_query 覆盖结果" MODIFIED="1667195181824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$Unittest__iot_api_test__.coverage" NAME="Unittest (login_controller 内) 覆盖结果" MODIFIED="1659511612812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_update.coverage" NAME="test_update 覆盖结果" MODIFIED="1666934559390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_department_byid.coverage" NAME="test_get_department_byid 覆盖结果" MODIFIED="1666935005729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/department_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_update.coverage" NAME="test_update 覆盖结果" MODIFIED="1667198567728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/push_set_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$run_test_discover.coverage" NAME="run_test_discover 覆盖结果" MODIFIED="1659517299426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_canceldirective.coverage" NAME="test_canceldirective 覆盖结果" MODIFIED="1667194531929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_dictionary_pageQuery.coverage" NAME="test_dictionary_pageQuery 覆盖结果" MODIFIED="1667194510952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_page_query_device_data.coverage" NAME="test_page_query_device_data 覆盖结果" MODIFIED="1666934075117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_check_insert.coverage" NAME="test_check_insert 覆盖结果" MODIFIED="1659581140714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_page_query_area_data.coverage" NAME="test_page_query_area_data 覆盖结果" MODIFIED="1666934045534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_export.coverage" NAME="test_alarm_export 覆盖结果" MODIFIED="1666937698144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_lora_export.coverage" NAME="test_lora_export 覆盖结果" MODIFIED="1666938352724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_message_pagequery.coverage" NAME="test_message_pagequery 覆盖结果" MODIFIED="1666944064176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_lora_export.coverage" NAME="test_lora_export 覆盖结果" MODIFIED="1667196726221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/lora_netway_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_file_upload.coverage" NAME="test_file_upload 覆盖结果" MODIFIED="1667202378768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_message_pagequery.coverage" NAME="test_message_pagequery 覆盖结果" MODIFIED="1667199925326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_statistics.coverage" NAME="test_statistics 覆盖结果" MODIFIED="1666926479712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/capital_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$login_token.coverage" NAME="login_token 覆盖结果" MODIFIED="1667176390533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_key_delete_batchids.coverage" NAME="test_key_delete_batchids 覆盖结果" MODIFIED="1666934609848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_page_query_alarm_data.coverage" NAME="test_page_query_alarm_data 覆盖结果" MODIFIED="1666949345175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_delete.coverage" NAME="test_delete 覆盖结果" MODIFIED="1666934929277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/department_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_delete.coverage" NAME="test_delete 覆盖结果" MODIFIED="1667203307699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/version_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_pageQuery.coverage" NAME="test_pageQuery 覆盖结果" MODIFIED="1666934528741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_message_insert.coverage" NAME="test_message_insert 覆盖结果" MODIFIED="1666944007756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$run_test_html.coverage" NAME="run_test_html 覆盖结果" MODIFIED="1666952647747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_alarms_statisticss.coverage" NAME="test_alarms_statisticss 覆盖结果" MODIFIED="1666926263397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/alarms_contriller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_get_capital.coverage" NAME="test_get_capital 覆盖结果" MODIFIED="1667177039645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_message_insert.coverage" NAME="test_message_insert 覆盖结果" MODIFIED="1667199914456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_alarms_statisticss.coverage" NAME="test_alarms_statisticss 覆盖结果" MODIFIED="1667179745089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/alarms_contriller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_get_capital.coverage" NAME="test_get_capital 覆盖结果" MODIFIED="1667177327040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_sendSms.coverage" NAME="test_sendSms 覆盖结果" MODIFIED="1659573056032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_query.coverage" NAME="test_query 覆盖结果" MODIFIED="1666927426183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_show_message_list.coverage" NAME="test_show_message_list 覆盖结果" MODIFIED="1666944109799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
@@ -491,16 +739,19 @@
     <SUITE FILE_PATH="coverage/iot_api_test$test_message_queryrelateds.coverage" NAME="test_message_queryrelateds 覆盖结果" MODIFIED="1666944085405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$http_requests.coverage" NAME="http_requests 覆盖结果" MODIFIED="1667176729461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallIllustrate.coverage" NAME="test_getInstallIllustrate 覆盖结果" MODIFIED="1666934154721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_auto_order.coverage" NAME="test_auto_order 覆盖结果" MODIFIED="1667194361013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_alarm_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_key_export.coverage" NAME="test_key_export 覆盖结果" MODIFIED="1666934858744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_websocket.coverage" NAME="test_websocket 覆盖结果" MODIFIED="1666944697496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/web_socket" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_websocket.coverage" NAME="test_websocket 覆盖结果" MODIFIED="1667205652341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/web_socket" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_offline.coverage" NAME="test_offline 覆盖结果" MODIFIED="1659572588965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/xxl_job_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_add_up.coverage" NAME="test_alarm_add_up 覆盖结果" MODIFIED="1659511794601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/large_screen_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallResult.coverage" NAME="test_getInstallResult 覆盖结果" MODIFIED="1666934177063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_authorize_deleteBatchIds.coverage" NAME="test_authorize_deleteBatchIds 覆盖结果" MODIFIED="1666934249937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_keys.coverage" NAME="test_get_keys 覆盖结果" MODIFIED="1659577046262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/user_search_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_dictionary_saveOrUpdate.coverage" NAME="test_dictionary_saveOrUpdate 覆盖结果" MODIFIED="1667194870081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_get_dictionary_type.coverage" NAME="test_get_dictionary_type 覆盖结果" MODIFIED="1667195039377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_alarm_detail.coverage" NAME="test_get_alarm_detail 覆盖结果" MODIFIED="1666933865170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_key_delete.coverage" NAME="test_key_delete 覆盖结果" MODIFIED="1666934587584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_getmessagetempletalarms.coverage" NAME="test_alarm_getmessagetempletalarms 覆盖结果" MODIFIED="1666346728627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/Message_Templet_Alarm_Controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_get_device_by_id.coverage" NAME="test_get_device_by_id 覆盖结果" MODIFIED="1666927123468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_get_device_by_id.coverage" NAME="test_get_device_by_id 覆盖结果" MODIFIED="1667179128163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller" />
   </component>
 </project>

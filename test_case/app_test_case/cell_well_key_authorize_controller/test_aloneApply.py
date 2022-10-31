@@ -9,6 +9,8 @@ from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
 from common.retry import Retry
 from common import logging_test
+from common.doc_value import doc_parameter
+uri = '/key/authorize/aloneApply'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -27,9 +29,9 @@ class Test_Add_Task(unittest.TestCase):
         # cls.mysql.delete_user()
         cls.mysql.close()
 
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''单独申请授权用例：/key/authorize/aloneApply'''
+        '''单独申请授权用例：{}{}'''
         payload = {
           "endAt": "2022-05-01 12:00:00",
           "id": 0,
@@ -46,11 +48,11 @@ class Test_Add_Task(unittest.TestCase):
         headers = {
             'Content-Type': 'application/json'}
         response = Test_Add_Task.http.post(
-            '/key/authorize/aloneApply', data=payload,headers=headers)
+            uri, data=payload,headers=headers)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '单独申请授权失败')
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
 
 if __name__ == '__main__':
     unittest.main()

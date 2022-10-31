@@ -8,9 +8,10 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.data_provide import XLS
 import pandas as pd
-from common.logging_test import log_test
-
+from common import logging_test
+from common.doc_value import doc_parameter
 from common.retry import Retry
+uri = '/device/export'
 @Retry
 class Test_Export(unittest.TestCase):
 
@@ -29,9 +30,9 @@ class Test_Export(unittest.TestCase):
         cls.mysql.delete_device()
         cls.mysql.delete_user()
         cls.mysql.close()
-            
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_export_success(self):
-        '''导出窖井列表信息成功用例：/device/export'''
+        '''导出窖井列表信息成功用例：{}{}'''
         payload = {
             'addrId': None,
             'batteryNum': None,
@@ -63,8 +64,8 @@ class Test_Export(unittest.TestCase):
         headers = {'Content-Type':'application/json;charset=UTF-8'}
         payload = json.dumps(payload)
         response = Test_Export.http.post(
-            '/device/export', data=payload,headers=headers)
-        log_test()
+            uri, data=payload,headers=headers)
+        logging_test.log_test()
         res = response.content
         with open('device.xlsx','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)

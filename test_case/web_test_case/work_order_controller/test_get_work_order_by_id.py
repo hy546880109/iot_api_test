@@ -8,6 +8,8 @@ from common.mysql_data import Mysql_connet
 from config.config_test import Conf
 from common import logging_test
 from common.retry import Retry
+from common.doc_value import doc_parameter
+uri = '/work/order/getWorkOrderById'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -21,19 +23,19 @@ class Test_Add_Task(unittest.TestCase):
     @classmethod
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''查看回单结果成功用例：/work/order/getWorkOrderById'''
+        '''查看回单结果成功用例：{}{}'''
         payload = {
             "id": self.mysql.work_order_id,
         }
 
         response = Test_Add_Task.http.get(
-            '/work/order/getWorkOrderById', params=payload)
+            uri, params=payload)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '查看回单结果失败')
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
 
 if __name__ == '__main__':
     unittest.main()

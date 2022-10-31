@@ -35,7 +35,7 @@ class Conf(Enum):
     # TEST_URL = 'http://139.159.199.99:9527/admin/v1.0'
     # TEST_URL = 'http://106.52.198.240:9527/admin/v1.0'
     TEST_URL =   'http://' + ip + ':9527/admin/v1.0'
-    TEST_WS_URL = 'ws://' + ip + ':8003/websocket/'
+    TEST_WS_URL = 'ws://' + ip + ':8003/websocket'
 
     # TEST_APP_URL = 'http://124.71.31.43:9527/api/v1.0'
     # TEST_APP_URL = 'http://139.159.199.99:9527/api/v1.0'

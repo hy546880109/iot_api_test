@@ -6,8 +6,10 @@ sys.path.append(path)
 from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet 
-from common.logging_test import log_test
+from common import logging_test
 from common.retry import Retry
+from common.doc_value import doc_parameter
+uri = '/device/delete'
 @Retry
 class Test_Detele_Device(unittest.TestCase):
 
@@ -25,12 +27,12 @@ class Test_Detele_Device(unittest.TestCase):
         cls.mysql.close()
 
     def test_delete_device_success(self):
-        '''删除窖井成功用例：/device/delete'''
+        '''删除窖井成功用例：{}{}'''
         payload = {"id": self.mysql.device_id}
         response = Test_Detele_Device.http.get(
-            '/device/delete', params=payload)
-        log_test()
-        logging.info('接口返回:' + response.text)
+            uri, params=payload)
+        logging_test.log_test()
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '删除窖井失败')
         self.in_mysql = self.mysql.select_sql(

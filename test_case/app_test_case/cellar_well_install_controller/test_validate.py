@@ -9,6 +9,8 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common.retry import Retry
 from common import logging_test
+from common.doc_value import doc_parameter
+uri = '/device/install/validate'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -24,20 +26,20 @@ class Test_Add_Task(unittest.TestCase):
         cls.mysql.delete_user()
         cls.mysql.delete_device()
         cls.mysql.close()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''功能验证用例：/device/install/validate'''
+        '''功能验证用例：{}{}'''
         data = {
           "alarmType": 4,
           "pid": 0,
           "status": 0
         }
         data = json.dumps(data)
-        response = Test_Add_Task.http.post('/device/install/validate',data=data)
+        response = Test_Add_Task.http.post(uri,data=data)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '功能验证获取设备安装信息失败')
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
 
 
 if __name__ == '__main__':

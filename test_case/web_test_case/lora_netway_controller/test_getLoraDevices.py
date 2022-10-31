@@ -8,6 +8,8 @@ from common.http_requests import HttpRequests
 from common.mysql_data import Mysql_connet
 from common.retry import Retry
 from common import logging_test
+from common.doc_value import doc_parameter
+uri = '/lora/getLoraDevices'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -22,18 +24,18 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
         cls.mysql.close()
-    
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        """获Lora网关连接的lora设备成功用例：/lora/getLoraDevices"""
+        """获Lora网关连接的lora设备成功用例：{}{}"""
         ids = {
           "pageNum": 0,
           "pageSize": 0,
           "terminalId": 0
         }
         ids = json.dumps(ids)
-        response = Test_Add_Task.http.post('/lora/getLoraDevices', data=ids)
+        response = Test_Add_Task.http.post(uri, data=ids)
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
         self.assertEqual(200,response.status_code,'返回非200')
         self.assertEqual(str(0), str(response.json()['code']),'获Lora网关连接的lora设备失败')
 

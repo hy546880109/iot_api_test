@@ -35,8 +35,7 @@ class Test_Add_Task(unittest.TestCase):
             "startDate": "1992-12-19"
             }
         payload = json.dumps(payload)
-        headers = {'Content-Type': 'application/json'}
-        response = Test_Add_Task.http.post(uri,data=payload, headers=headers)
+        response = Test_Add_Task.http.post(uri,data=payload)
         logging_test.log_test()
         logging_test.logging.info(Conf.TEST_URL.value + uri + '>>>' +'接口返回:' + response.text)
         self.assertEqual(200,response.status_code,'返回非200')

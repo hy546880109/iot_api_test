@@ -9,6 +9,8 @@ from common.http_requests import HttpRequests
 from config.config_test import Conf
 from common import logging_test
 from common.retry import Retry
+from common.doc_value import doc_parameter
+uri = '/history/alarm/getAlarmPictures'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -24,14 +26,14 @@ class Test_Add_Task(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.mysql.delete_device()
         cls.mysql.close()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''获取报警的图像信息成功用例：/history/alarm/getAlarmPictures'''
+        '''获取报警的图像信息成功用例：{}{}'''
         payload = {'id':self.mysql.alarm_id, 'no': self.mysql.no}
         response = Test_Add_Task.http.get(
-            '/history/alarm/getAlarmPictures', params=payload)
+            uri , params=payload)
         logging_test.log_test()
-        logging_test.logging.info('接口返回:' + response.text)
+        logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
         self.assertEqual(200, response.status_code, '返回非200')
         self.assertEqual(str(0), str(response.json()['code']), '获取报警的图像信息失败')
 

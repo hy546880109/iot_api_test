@@ -9,6 +9,8 @@ from config.config_test import Conf
 from common.http_requests import HttpRequests
 from common import logging_test
 from common.retry import Retry
+from common.doc_value import doc_parameter
+uri = '/history/alarm/export'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -25,9 +27,9 @@ class Test_Add_Task(unittest.TestCase):
         cls.mysql.delete_device()
         cls.mysql.delete_user()
         cls.mysql.close()
-
+    @doc_parameter(Conf.TEST_URL.value,uri)
     def test_add_task_success(self):
-        '''报警列表导出成功用例：/history/alarm/export'''
+        '''报警列表导出成功用例：{}{}'''
         payload = {
             'addrId': None,
             'batteryNum': None,
@@ -59,7 +61,7 @@ class Test_Add_Task(unittest.TestCase):
         payload = json.dumps(payload)
         headers = {'Content-Type':'application/json;charset=UTF-8'}
         response = Test_Add_Task.http.post(
-            '/history/alarm/export', data=payload, headers=headers)
+            uri, data=payload, headers=headers)
         logging_test.log_test()
         res = response.content
         with open('alarm.xlsx','wb')as f:   #返回的xls内容写入新的文件中
