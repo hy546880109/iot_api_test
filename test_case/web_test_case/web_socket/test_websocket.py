@@ -38,14 +38,12 @@ class Test_websoket(unittest.TestCase):
     def test_websoket(self):
         '''websocket 消息推送:  {}{}'''
         url = self.ws + str(self.mysql.user_id)
-        print(url)
         # url = 'ws://106.52.198.240:8003/websocket/1377074593995628546'  
         websocket.enableTrace(True)  # 打开跟踪，查看日志
         ws = create_connection(url)  # 创建连接
         # print(ws.getstatus())  # 打印连接状态
         self.assertEqual(101, ws.getstatus(), 'websocket连接错误')  # 断言连接状态
-        # ws.settimeout(10)   #设置超时时间
-        # print(ws.gettimeout())  #获取超时时间
+        ws.settimeout(10)   #设置超时时间
         ws.shutdown()  # 关闭连接
         logging_test.log_test()
         logging_test.logging.info(Conf.TEST_WS_URL.value  + str(user_id) +'-接口连接状态:' + str(ws.getstatus()))
