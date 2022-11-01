@@ -55,9 +55,9 @@ class Test_Add_Task(unittest.TestCase):
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post(uri, data=payload)
         res = response.content
-        with open('work.xls','wb')as f:   #返回的xls内容写入新的文件中
+        with open('work.xlsx','wb')as f:   #返回的xls内容写入新的文件中
             f.write(res)
-        txt = pd.read_excel('work.xls')  #读取文件内容用作断言
+        txt = pd.read_excel('work.xlsx')  #读取文件内容用作断言
         print(txt)
         logging_test.log_test()
         self.assertEqual(200, response.status_code, '返回非200')
