@@ -13,8 +13,8 @@ global host
 
 #第一个参数服务器ip,第二个参数数据库ip,第二个不传则使用第一个的参数
 if len(argv) == 1:
-    # ip = '106.52.198.240'
-    ip = '139.159.199.99'
+    ip = '106.52.198.240'
+    # ip = '139.159.199.99'
     host = ip
     
 elif len(argv) == 2:
@@ -42,11 +42,11 @@ class Conf(Enum):
     # TEST_APP_URL = 'http://106.52.198.240:9527/api/v1.0'
     TEST_APP_URL =   'http://' + ip + ':9527/api/v1.0'
 
-    # host = host
+    host = host
     port = 3306
     user = 'root'
     password = 'Antian!2020'
-    host = '139.159.202.43'
+    # host = '139.159.202.43'
 
     SEND_EMAIL = 'hy546880109@qq.com'
     SEND_EMAIL_PASSWD = 'lwveldyrecfybdce'  # 邮箱授权码
