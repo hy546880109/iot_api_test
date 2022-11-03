@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="新增日志打印接口返回信息和接口地址">
-      <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_insert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_pagequery.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller/test_show_message_list.py" afterDir="false" />
+    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="新增消息模板设备关联管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/alarm.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/main/alarm.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/authorize.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/main/authorize.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/device.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/main/device.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/ins.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/main/ins.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/key.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/main/key.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/work.xls" beforeDir="false" afterPath="$PROJECT_DIR$/main/work.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_approveManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_approveManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_authorize_approve.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_authorize_approve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_getTerminalInfoById.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_getTerminalInfoById.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_reApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_reApply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_skipApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_skipApply.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDefaultDeviceParam.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDefaultDeviceParam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDeviceParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDeviceParameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getTerminalBylNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getTerminalBylNo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_device_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_device_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_my_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_my_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_match.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_modify_device_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_modify_device_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_query.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +85,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.run_test_discover">
+  <component name="RunManager" selected="Python.test_aloneApply">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,17 +106,17 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_test_discover" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_aloneApply" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/run_test_discover.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,20 +125,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_cancel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_get_capital" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_cancel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,20 +144,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_get_loradevices" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_insert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller/test_get_loradevices.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,28 +229,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_sensor_upgrade" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="iot_api_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller/test_sensor_upgrade.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_show_message_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -271,20 +251,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_websocket" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_update" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/web_test_case/web_socket" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/web_test_case/web_socket/test_websocket.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_updateImage4Name" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="iot_api_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -351,21 +347,21 @@
       <item itemvalue="Python.test_message_queryrelateds" />
       <item itemvalue="Python.test_show_message_list" />
       <item itemvalue="Python.test_message_insert" />
-      <item itemvalue="Python.run_test_discover" />
-      <item itemvalue="Python.test_cancel" />
-      <item itemvalue="Python.test_get_loradevices" />
-      <item itemvalue="Python.test_sensor_upgrade" />
-      <item itemvalue="Python.test_websocket" />
+      <item itemvalue="Python.test_aloneApply" />
+      <item itemvalue="Python.test_get_capital" />
+      <item itemvalue="Python.test_insert" />
+      <item itemvalue="Python.test_update" />
+      <item itemvalue="Python.test_updateImage4Name" />
       <item itemvalue="Python 测试.test_message_pagequery.Test_message_pagequery 的 Python 测试" />
       <item itemvalue="Python 测试.test_show_message_list.Test_message_list 的 Python 测试" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_test_discover" />
-        <item itemvalue="Python.test_websocket" />
-        <item itemvalue="Python.test_sensor_upgrade" />
-        <item itemvalue="Python.test_cancel" />
-        <item itemvalue="Python.test_get_loradevices" />
+        <item itemvalue="Python.test_aloneApply" />
+        <item itemvalue="Python.test_updateImage4Name" />
+        <item itemvalue="Python.test_update" />
+        <item itemvalue="Python.test_insert" />
+        <item itemvalue="Python.test_get_capital" />
       </list>
     </recent_temporary>
   </component>
@@ -563,24 +559,33 @@
     <SUITE FILE_PATH="coverage/iot_api_test$logging_test.coverage" NAME="logging_test 覆盖结果" MODIFIED="1663549297843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_delete_batch_ids.coverage" NAME="test_delete_batch_ids 覆盖结果" MODIFIED="1667194811152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_produce_checkinfo.coverage" NAME="test_get_produce_checkinfo 覆盖结果" MODIFIED="1659580219477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_product_delete.coverage" NAME="test_product_delete 覆盖结果" MODIFIED="1667269429629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/product_Join_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_login.coverage" NAME="test_login 覆盖结果" MODIFIED="1667196306440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/login_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_loradevices.coverage" NAME="test_get_loradevices 覆盖结果" MODIFIED="1667208051988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/lora_netway_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_delete_batchids.coverage" NAME="test_delete_batchids 覆盖结果" MODIFIED="1666934950508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/department_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_saveDirective.coverage" NAME="test_saveDirective 覆盖结果" MODIFIED="1667194706586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_uploadfile.coverage" NAME="test_uploadfile 覆盖结果" MODIFIED="1666944420898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/upload_file_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_reApply.coverage" NAME="test_reApply 覆盖结果" MODIFIED="1659514880383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_templet_insert.coverage" NAME="test_templet_insert 覆盖结果" MODIFIED="1667268002052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$.coverage" NAME=" 覆盖结果" MODIFIED="1666934337533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_sensor_upgrade.coverage" NAME="test_sensor_upgrade 覆盖结果" MODIFIED="1667208184895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_insert.coverage" NAME="test_alarm_insert 覆盖结果" MODIFIED="1667267333802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Alarm_Controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_property_getbyrelateid.coverage" NAME="test_property_getbyrelateid 覆盖结果" MODIFIED="1667280755575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/service_Property_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getCellarWellKeyAuthorizeLogById.coverage" NAME="test_getCellarWellKeyAuthorizeLogById 覆盖结果" MODIFIED="1666934425116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_addInstallIllustrate.coverage" NAME="test_addInstallIllustrate 覆盖结果" MODIFIED="1666934108175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallFlow.coverage" NAME="test_getInstallFlow 覆盖结果" MODIFIED="1666934135348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_templet_pagequery.coverage" NAME="test_templet_pagequery 覆盖结果" MODIFIED="1667268208067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_expor.coverage" NAME="test_expor 覆盖结果" MODIFIED="1667197657537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/operation_log_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_dx_api.coverage" NAME="test_dx_api 覆盖结果" MODIFIED="1666926322761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/Callback_Controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_insert.coverage" NAME="test_insert 覆盖结果" MODIFIED="1667197055167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/menu_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_device_deletebatchids.coverage" NAME="test_device_deletebatchids 覆盖结果" MODIFIED="1667268498914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet _Device_Controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_product_insert.coverage" NAME="test_product_insert 覆盖结果" MODIFIED="1667271111716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/product_Join_Controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_insert.coverage" NAME="test_insert 覆盖结果" MODIFIED="1667457885774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_page_query.coverage" NAME="test_page_query 覆盖结果" MODIFIED="1667195181824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_device_insert.coverage" NAME="test_device_insert 覆盖结果" MODIFIED="1667268632209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet _Device_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$Unittest__iot_api_test__.coverage" NAME="Unittest (login_controller 内) 覆盖结果" MODIFIED="1659511612812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_department_byid.coverage" NAME="test_get_department_byid 覆盖结果" MODIFIED="1666935005729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/department_controller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_update.coverage" NAME="test_update 覆盖结果" MODIFIED="1667198567728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/push_set_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_update.coverage" NAME="test_update 覆盖结果" MODIFIED="1667457999994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_updateImage4Name.coverage" NAME="test_updateImage4Name 覆盖结果" MODIFIED="1667458096499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$run_test_discover.coverage" NAME="run_test_discover 覆盖结果" MODIFIED="1659517299426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_canceldirective.coverage" NAME="test_canceldirective 覆盖结果" MODIFIED="1667194531929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_dictionary_pageQuery.coverage" NAME="test_dictionary_pageQuery 覆盖结果" MODIFIED="1667194510952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/device_configure_controller" />
@@ -594,19 +599,25 @@
     <SUITE FILE_PATH="coverage/iot_api_test$test_message_pagequery.coverage" NAME="test_message_pagequery 覆盖结果" MODIFIED="1667199925326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_statistics.coverage" NAME="test_statistics 覆盖结果" MODIFIED="1666926479712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/capital_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$login_token.coverage" NAME="login_token 覆盖结果" MODIFIED="1667176390533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_product_getproductbyid.coverage" NAME="test_product_getproductbyid 覆盖结果" MODIFIED="1667270998782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/product_Join_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_key_delete_batchids.coverage" NAME="test_key_delete_batchids 覆盖结果" MODIFIED="1666934609848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_page_query_alarm_data.coverage" NAME="test_page_query_alarm_data 覆盖结果" MODIFIED="1666949345175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_delete.coverage" NAME="test_delete 覆盖结果" MODIFIED="1667203307699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/version_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_device_pagequery.coverage" NAME="test_device_pagequery 覆盖结果" MODIFIED="1667268702123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet _Device_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_pageQuery.coverage" NAME="test_pageQuery 覆盖结果" MODIFIED="1666934528741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_product_getallproduct.coverage" NAME="test_product_getallproduct 覆盖结果" MODIFIED="1667269713831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/product_Join_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$run_test_html.coverage" NAME="run_test_html 覆盖结果" MODIFIED="1666952647747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_message_insert.coverage" NAME="test_message_insert 覆盖结果" MODIFIED="1667199914456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_alarms_statisticss.coverage" NAME="test_alarms_statisticss 覆盖结果" MODIFIED="1667179745089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/alarms_contriller" />
-    <SUITE FILE_PATH="coverage/iot_api_test$test_get_capital.coverage" NAME="test_get_capital 覆盖结果" MODIFIED="1667177327040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_get_capital.coverage" NAME="test_get_capital 覆盖结果" MODIFIED="1667457791611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_templet_deleteBatchIds.coverage" NAME="test_templet_deleteBatchIds 覆盖结果" MODIFIED="1667268010035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_sendSms.coverage" NAME="test_sendSms 覆盖结果" MODIFIED="1659573056032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/rabbit_mq_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_index.coverage" NAME="test_get_index 覆盖结果" MODIFIED="1667207926237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/index_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_cancel.coverage" NAME="test_cancel 覆盖结果" MODIFIED="1667208120655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/terminal_upgrade_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_query.coverage" NAME="test_query 覆盖结果" MODIFIED="1666927426183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_templet_update.coverage" NAME="test_templet_update 覆盖结果" MODIFIED="1667268277495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_show_message_list.coverage" NAME="test_show_message_list 覆盖结果" MODIFIED="1666944109799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/show_Message_Controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_alarm_update.coverage" NAME="test_alarm_update 覆盖结果" MODIFIED="1667267502916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Alarm_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_check_isversame.coverage" NAME="test_check_isversame 覆盖结果" MODIFIED="1659582097331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/produce_check_detail_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_authorize_delete.coverage" NAME="test_authorize_delete 覆盖结果" MODIFIED="1666934231446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_authorize_insert.coverage" NAME="test_authorize_insert 覆盖结果" MODIFIED="1666934272968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
@@ -621,6 +632,7 @@
     <SUITE FILE_PATH="coverage/iot_api_test$test_getInstallResult.coverage" NAME="test_getInstallResult 覆盖结果" MODIFIED="1666934177063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_install_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_authorize_deleteBatchIds.coverage" NAME="test_authorize_deleteBatchIds 覆盖结果" MODIFIED="1666934249937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_key_auhorize_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_keys.coverage" NAME="test_get_keys 覆盖结果" MODIFIED="1659577046262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/app_test_case/user_search_controller" />
+    <SUITE FILE_PATH="coverage/iot_api_test$test_getMessageTempletAlarms.coverage" NAME="test_getMessageTempletAlarms 覆盖结果" MODIFIED="1667266995766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/message_Templet_Alarm_Controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_dictionary_saveOrUpdate.coverage" NAME="test_dictionary_saveOrUpdate 覆盖结果" MODIFIED="1667194870081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_dictionary_type.coverage" NAME="test_get_dictionary_type 覆盖结果" MODIFIED="1667195039377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/dictionary_controller" />
     <SUITE FILE_PATH="coverage/iot_api_test$test_get_alarm_detail.coverage" NAME="test_get_alarm_detail 覆盖结果" MODIFIED="1666933865170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/cellar_well_distribute_controller" />

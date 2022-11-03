@@ -13,6 +13,7 @@ from common.http_requests import HttpRequests
 from common.retry import Retry
 from common.doc_value import doc_parameter
 uri = '/capital/updateImage4Name'
+title = '更新设备名称'
 @Retry
 class Test_Add_Task(unittest.TestCase):
 
@@ -30,8 +31,9 @@ class Test_Add_Task(unittest.TestCase):
         cls.mysql.delete_user()
         cls.mysql.close()
 
+    @doc_parameter(title, Conf.TEST_URL.value, uri)
     def test_add_task_success(self):
-        '''更新设备名称用例：{}{}'''
+        '''{}成功用例：{}{}'''
 
         payload = {
           "id":self.mysql.device_id,
@@ -42,12 +44,12 @@ class Test_Add_Task(unittest.TestCase):
           "name": "string"
         }
 
-        headers = {'Content-Type': 'application/json','Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7','Accept-Encoding': 'gzip, deflate','X-Requested-With': 'com.antancorp.iot.device.service.impl','Accept': 'application/json'}
+
         payload = json.dumps(payload)
         response = Test_Add_Task.http.post(
-            uri, data=payload, headers=headers)
+            uri, data=payload)
         self.assertEqual(200, response.status_code, '返回非200')
-        self.assertEqual(str(0), str(response.json()['code']), '更新设备名称失败')
+        self.assertEqual(str(0), str(response.json()['code']), '{}失败'.format(title))
         logging_test.log_test()
         logging_test.logging.info(Conf.TEST_URL.value + uri + '-接口返回:' + response.text)
 
