@@ -1,3 +1,11 @@
+'''
+Author: HY\harry hy546880109@qq.com
+Date: 2023-02-09 18:20:14
+LastEditors: HY\harry hy546880109@qq.com
+LastEditTime: 2023-04-17 12:01:53
+FilePath: \iot_api_test\common\ws_websocket.py
+Description: 
+'''
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 # @Author : Huny
@@ -6,6 +14,7 @@
 # @Project: 云平台接口测试用例
 
 from websocket import create_connection
+
 
 class WsWebsocket(object):
     def __init__(self, url):

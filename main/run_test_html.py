@@ -1,3 +1,11 @@
+'''
+Author: HY\harry hy546880109@qq.com
+Date: 2023-02-09 18:20:14
+LastEditors: HY\harry hy546880109@qq.com
+LastEditTime: 2023-04-24 10:15:41
+FilePath: \iot_api_test\main\run_test_html.py
+Description: 
+'''
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 # @Author : Huny
@@ -22,7 +30,7 @@ add_syspath()
 
 import time
 import unittest
-from iot_api_test.test_case.web_test_case.operation_log_controller.test_page_query import Test_Add_Task
+from test_case.web_test_case.operation_log_controller.test_page_query import Test_Add_Task
 # from test_case.web_test_case.operation_log_controller.test_page_query import Test_Add_Task
 # from test_case.app_test_case.cellar_well_controller.test_get_my_info import Test_Add_Task
 

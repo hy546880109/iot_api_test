@@ -1,3 +1,11 @@
+'''
+Author: HY\harry hy546880109@qq.com
+Date: 2023-02-09 18:20:14
+LastEditors: HY\harry hy546880109@qq.com
+LastEditTime: 2023-04-24 10:21:05
+FilePath: \iot_api_test\config\config_test.py
+Description: 
+'''
 # !/usr/bin/python3
 # -*- coding: utf-8 -*-
 # @Author : Huny
@@ -49,7 +57,7 @@ class Conf(Enum):
     host = '139.159.202.43'
 
     SEND_EMAIL = 'hy546880109@qq.com'
-    SEND_EMAIL_PASSWD = 'lwveldyrecfybdce'  # 邮箱授权码
+    SEND_EMAIL_PASSWD = 'mxtwjkwsayuibdah'  # 邮箱授权码
     TO_EMAIL = ['hy546880109@qq.com']
 
     foxmail = 'smtp.263.net'
