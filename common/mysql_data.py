@@ -179,10 +179,10 @@ class Mysql_connet():
             `last_heart_time`, `sim`, `sinr`, `upgrade_status`, `upgrade_at`, `config_status`, `config_value`, `curr_config_value`, `config_at`,\
             `iccid`, `is_delete`, `mac`, `imsi`, `firedamp`, `co`, `hs`, `mud_high`, `water_high`, `temperature`, `install_status`,\
             `down_config_value`, `lean_angle`, `name`, `remark`, `third_id`, `lock_id`, `lock_status`, `inner_cap_status`, `out_cap_stuatus`,\
-            `lock_temperature`, `lock_humidity`, `unlocking_at`, `voltage`, `pid`, `lora_gateway_addr`) VALUES ({}, {}, {}, 'IGW-NB-K-BX-V1.0',\
+            `lock_temperature`, `lock_humidity`, `unlocking_at`, `voltage`, `pid`, `lora_gateway_addr`,`led_pid`) VALUES ({}, {}, {}, 'IGW-NB-K-BX-V1.0',\
             'ZL-V1.0.5-220411', '96', '19', '0', 0, 1, 0, '2022-04-13 15:48:43', NULL, 0000000003, 22, '2022-04-14 11:23:19', '89861119212002368684','21', 4, NULL, 4,\
             {},NULL,NULL, '89861119212002368684', '0', 'C3:B2:5D:7E:AE:7B', '460113036642806', '0', '0', '0', '0', '0', '0', 1, '', 2, NULL, NULL,\
-            '', '', 0, 0, 1, '25\0', '80\0', '2022-04-13 15:50:07', '0', 1548872769326919681, '2205ACB653490800F7FF03B7FC48E5E6');"
+            '', '', 0, 0, 1, '25\0', '80\0', '2022-04-13 15:50:07', '0', 1548872769326919681, '2205ACB653490800F7FF03B7FC48E5E6',12345678998765);"
             .format(self.cellar_well_terminal_id, self.no, self.terminal_no, self.value))
                             
         self.mysql_conn.insert_sql(

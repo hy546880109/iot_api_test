@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="新增消息模板设备关联管理">
+    <list default="true" id="6a159031-cc82-41da-8e4c-9ac2f56d63a4" name="变更" comment="优化部分文档注释内容">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_get_capital.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_insert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/capital_controller/test_updateImage4Name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_aloneApply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_approveManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_approveManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_authorize_approve.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_authorize_approve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_getTerminalInfoById.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_getTerminalInfoById.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_reApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_reApply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_skipApply.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller/test_skipApply.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDefaultDeviceParam.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDefaultDeviceParam.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDeviceParameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getDeviceParameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getTerminalBylNo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_getTerminalBylNo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_device_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_device_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_my_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_get_my_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_match.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_modify_device_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_modify_device_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/app_test_case/cellar_well_controller/test_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mysql_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/mysql_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +93,9 @@
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/cell_well_key_authorize_controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -129,6 +115,9 @@
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -148,6 +137,9 @@
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -255,6 +247,9 @@
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -274,6 +269,9 @@
       <module name="iot_api_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/app_test_case/capital_controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -385,6 +383,7 @@
       <workItem from="1666842296978" duration="150000" />
       <workItem from="1666855015120" duration="61287000" />
       <workItem from="1667263494373" duration="355000" />
+      <workItem from="1667548224305" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="优化">
       <created>1659512785777</created>
@@ -519,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667211060979</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="优化部分文档注释内容">
+      <created>1667459599746</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667459599746</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +549,8 @@
     <MESSAGE value="优化APP的lora网关接口和数据解耦" />
     <MESSAGE value="新增日志打印接口返回信息" />
     <MESSAGE value="新增日志打印接口返回信息和接口地址" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增日志打印接口返回信息和接口地址" />
+    <MESSAGE value="优化部分文档注释内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化部分文档注释内容" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iot_api_test$test_about.coverage" NAME="test_about 覆盖结果" MODIFIED="1667195257829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/web_test_case/index_controller" />

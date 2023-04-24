@@ -1,0 +1,186 @@
+Index: test_case/web_test_case/show_Message_Controller/test_message_insert.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_case/web_test_case/show_Message_Controller/test_message_insert.py b/test_case/web_test_case/show_Message_Controller/test_message_insert.py
+new file mode 100644
+--- /dev/null	(date 1666944027965)
++++ b/test_case/web_test_case/show_Message_Controller/test_message_insert.py	(date 1666944027965)
+@@ -0,0 +1,40 @@
++import unittest
++import json,logging
++import os,sys
++
++path = os.path.join(os.path.dirname(os.path.dirname(
++    os.path.dirname(os.path.abspath(__file__)))))
++sys.path.append(path)
++
++from common.logging_test import log_test
++from config.config_test import Conf
++from common.http_requests import HttpRequests
++
++
++class Test_message_insert(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls) -> None:
++        cls.url = Conf.TEST_URL.value
++        cls.http = HttpRequests(cls.url)
++
++    def test_success(self):
++        data = {
++          "alarmAt": "2022-10-27 02:27:51.814Z",
++          "content": "string",
++          "createAt": "2022-10-27 02:27:51.814Z",
++          "name": "string",
++          "status": 0,
++          "terminalNo": "string"
++        }
++        data = json.dumps(data)
++        response = Test_message_insert.http.post('/show/message/insert', data=data)
++        # print(response.text)
++        log_test()
++        logging.info('接口返回:'+ response.text)
++        self.assertEqual(200,response.status_code,'响应码返回非200')
++        self.assertEqual(str(0),str(response.json()['code']),'code返回非0')
++
++
++
++if __name__ == "__main__":
++    unittest.main()
+Index: test_case/web_test_case/show_Message_Controller/test_show_message_list.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_case/web_test_case/show_Message_Controller/test_show_message_list.py b/test_case/web_test_case/show_Message_Controller/test_show_message_list.py
+new file mode 100644
+--- /dev/null	(date 1666944095481)
++++ b/test_case/web_test_case/show_Message_Controller/test_show_message_list.py	(date 1666944095481)
+@@ -0,0 +1,33 @@
++import unittest,json
++import os,sys
++import logging
++path = os.path.join(os.path.dirname(os.path.dirname(
++    os.path.dirname(os.path.abspath(__file__)))))
++sys.path.append(path)
++
++from common.logging_test import log_test
++from config.config_test import Conf
++from common.http_requests import HttpRequests
++
++class Test_message_list(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls) -> None:
++        cls.url = Conf.TEST_URL.value
++        cls.http = HttpRequests(cls.url)
++
++    def test_message_list(self):
++        data = {
++          "pageNum": 0,
++          "pageSize": 0,
++          "terminalNo": "string"
++        }
++        data = json.dumps(data)
++        response = Test_message_list.http.post('/show/message/list',data=data)
++        log_test()
++        logging.info('接口返回:' + response.text)
++        self.assertEqual(200,response.status_code,'状态码返回非200')
++        self.assertEqual(0,response.json()['code'], 'code返回非0')
++
++
++if __name__ == '__main__':
++    unittest.main()
+\ No newline at end of file
+Index: test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py b/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py
+new file mode 100644
+--- /dev/null	(date 1666944080301)
++++ b/test_case/web_test_case/show_Message_Controller/test_message_queryrelateds.py	(date 1666944080301)
+@@ -0,0 +1,36 @@
++import unittest,json,logging
++import os,sys
++path = os.path.join(os.path.dirname(os.path.dirname(
++    os.path.dirname(os.path.abspath(__file__)))))
++sys.path.append(path)
++
++from common.logging_test import log_test
++from config.config_test import Conf
++from common.http_requests import HttpRequests
++
++class Test_message_queryrelateds(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls) -> None:
++        cls.url = Conf.TEST_URL.value
++        cls.http = HttpRequests(cls.url)
++
++    def test_success(self):
++        data = {
++          "flag": 0,
++          "name": None,
++          "pageNum": 1,
++          "pageSize": 10,
++          "status": None,
++          "terminalNo": None,
++          "type": None
++        }
++        data = json.dumps(data)
++        response = Test_message_queryrelateds.http.post('/show/message/queryRelateds', data=data)
++        log_test()
++        logging.info('接口返回:' + response.text)
++        self.assertEqual(200, response.status_code, '状态码返回非200')
++        self.assertEqual(0, response.json()['code'], 'code返回非0')
++
++
++if __name__ == '__main__':
++    unittest.main()
+\ No newline at end of file
+Index: test_case/web_test_case/show_Message_Controller/test_message_pagequery.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test_case/web_test_case/show_Message_Controller/test_message_pagequery.py b/test_case/web_test_case/show_Message_Controller/test_message_pagequery.py
+new file mode 100644
+--- /dev/null	(date 1666944063665)
++++ b/test_case/web_test_case/show_Message_Controller/test_message_pagequery.py	(date 1666944063665)
+@@ -0,0 +1,34 @@
++import unittest,json,logging
++import os,sys
++path = os.path.join(os.path.dirname(os.path.dirname(
++    os.path.dirname(os.path.abspath(__file__)))))
++sys.path.append(path)
++
++from common.logging_test import log_test
++from config.config_test import Conf
++from common.http_requests import HttpRequests
++
++class Test_message_pagequery(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls) -> None:
++        cls.url = Conf.TEST_URL.value
++        cls.http = HttpRequests(cls.url)
++
++    def test_success(self):
++        data = {
++          "endDate": "string",
++          "name": "string",
++          "pageNum": 0,
++          "pageSize": 0,
++          "startDate": "string",
++          "terminalNo": "string"
++        }
++        data = json.dumps(data)
++        response = Test_message_pagequery.http.post('/show/message/pageQuery',data=data)
++        log_test()
++        logging.info('接口返回:' + response.text)
++        self.assertEqual(200,response.status_code, '状态码返回非200')
++        self.assertEqual(0,response.json()['code'], 'code返回非0')
++
++if __name__ == '__main__':
++    unittest.main()
+\ No newline at end of file

@@ -1,0 +1,34 @@
+<changelist name="在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]" date="1667211067738" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/shelved.patch" />
+  <option name="DESCRIPTION" value="在进行更新之前于 2022/10/31 18:11 取消提交了变更 [变更]" />
+  <binary>
+    <option name="BEFORE_PATH" value="main/key.xlsx" />
+    <option name="AFTER_PATH" value="main/key.xlsx" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/key.xlsx" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main/alarm.xlsx" />
+    <option name="AFTER_PATH" value="main/alarm.xlsx" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/alarm.xlsx" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main/device.xlsx" />
+    <option name="AFTER_PATH" value="main/device.xlsx" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/device.xlsx" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main/ins.xlsx" />
+    <option name="AFTER_PATH" value="main/ins.xlsx" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/ins.xlsx" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main/authorize.xlsx" />
+    <option name="AFTER_PATH" value="main/authorize.xlsx" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/authorize.xlsx" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="main/work.xls" />
+    <option name="AFTER_PATH" value="main/work.xls" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_10_31_18_11_取消提交了变更_[变更]/work.xls" />
+  </binary>
+</changelist>
